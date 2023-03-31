@@ -11,6 +11,10 @@ class Modulo(models.Model):
     Args:
         models (_type_): _description_
     """
+    id = models.CharField(primary_key=True, max_lenght=10)  # PK
+    name = models.CharField(max_length=100)
+
+    
 
 
 # lvl 1
@@ -44,6 +48,7 @@ class Mod_Families(models.Model):
     # Family_note (text)
     # Family_Private_note (text)
     # Fold (str) :
+
     # ModoS_uniqfct (str): bool yes/no
     # ModoS_Activity (text)
     # ModoS_Description (text)

@@ -1,166 +1,166 @@
-'11207', 'Simian parainfluenza virus 5', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', '';
-'38142', 'Hirame rhabdovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', NULL;
-'11234', 'Measles virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', '';
-'31647', 'Hepatitis C virus type 1b', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Hepacivirus', 'type 1';
-'70149', 'Measles virus strain edmonston-zagreb', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', '';
-'37131', 'Dolphin morbillivirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', NULL;
-'11168', 'Mumps virus (STRAIN JERYL-LYNN)', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', '';
-'11240', 'Phocine distemper virus (strain:Ulster/88)', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', '';
-'11036', 'Venezuelan equine encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'VEEV complex';
-'11287', 'Viral hemorrhagic septicemia virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', '';
-'103603', 'Snakehead rhabdovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', '';
-'12637', 'Dengue virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', '';
-'11292', 'Rabies virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Lyssavirus', '';
-'11191', 'Sendai virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', '';
-'11277', 'Vesicular stomatitis Indiana virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Vesiculovirus', '';
-'11082', 'West Nile virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', '';
-'12455', 'Borna disease virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Bornaviridae', 'nd', 'Bornavirus', '';
-'11269', 'Marburg virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Marburg-like viruses', '';
-'11307', 'Sonchus yellow net virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Nucleorhabdovirus', '';
-'11290', 'Infectious hematopoietic necrosis virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', '';
-'11250', 'Human respiratory syncytial virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Pneumovirus', '';
-'11216', 'Human parainfluenza virus 3', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', '';
-'12814', 'Respiratory syncytial virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Pneumovirus', '';
-'63330', 'Hendra virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Henipavirus', '';
-'11232', 'Canine distemper virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', '';
-'11573', 'Bunyamwera virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Orthobunyavirus', '';
-'11246', 'Bovine respiratory syncytial virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Pneumovirus', '';
-'11320', 'Influenza A virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus A', '';
-'11588', 'Rift Valley fever virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Phlebovirus', '';
-'11613', 'Tomato spotted wilt virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', '';
-'11215', 'Bovine parainfluenza virus 3', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', '';
-'92129', 'Tupaia paramyxovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'unclassified Paramyxovirinae', '';
-'11161', 'Mumps virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', '';
-'11520', 'Influenza B virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus B', '';
-'100880', 'Northern cereal mosaic virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Cytorhabdovirus', '';
-'66266', 'Rice grassy stunt virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'nd', 'nd', 'Tenuivirus', '';
-'11303', 'Bovine ephemeral fever virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Ephemerovirus', '';
-'186538', 'Zaire Ebola virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Ebola-like viruses', '';
-'11176', 'Newcastle disease virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Avulavirus', '';
-'121791', 'Nipah virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Henipavirus', '';
-'11275', 'Spring viremia of carp virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Vesiculovirus', '';
-'157619', 'Avian paramyxovirus 6', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Avulavirus', '';
-'90961', 'Australian bat lyssavirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Lyssavirus', '';
-'11212', 'Human parainfluenza virus 2', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', '';
-'188538', 'Human parainfluenza virus 1 strain Washington/1964', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', '';
-'46607', 'Andes virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Hantavirus', '';
-'11612', 'Impatiens necrotic spot virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', '';
-'198612', 'Groundnut bud necrosis virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', '';
-'59380', 'Rice yellow stunt virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Nucleorhabdovirus', '';
-'12331', 'Rice stripe virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'nd', 'nd', 'Tenuivirus', '';
-'43141', 'Watermelon silver mottle virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', '';
-'186769', 'Cryphonectria parasitica mitovirus 1-NB631', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', '';
-'198597', 'Ophiostoma mitovirus 3a', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', '';
-'198599', 'Saccharomyces cerevisiae narnavirus 23S RNA -T-', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Narnavirus', '';
-'198598', 'Saccharomyces cerevisiae narnavirus 20S RNA -W-', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Narnavirus', '';
-'88387', 'Ophiostoma novo-ulmi mitovirus 4-Ld', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', '';
-'88388', 'Ophiostoma novo-ulmi mitovirus 5-Ld', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', '';
-'88389', 'Ophiostoma novo-ulmi mitovirus 6-Ld', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', '';
-'162013', 'Tioman virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', '';
-'186539', 'Reston Ebola virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Ebola-like viruses', '';
-'138950', 'Human enterovirus C', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'204711', 'Theilovirus (ThV)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Cardiovirus', '';
-'11228', 'Simian parainfluenza virus 41', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', '';
-'11577', 'La Crosse virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Orthobunyavirus', '';
-'162145', 'Human metapneumovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Metapneumovirus', '';
-'11595', 'Dugbe virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Nairovirus', '';
-'11623', 'Lymphocytic choriomeningitis virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Arenaviridae', 'nd', 'Arenaviruses', '';
-'11631', 'Tacaribe virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Arenaviridae', 'nd', 'Arenaviruses', '';
-'11620', 'Lassa virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Arenaviridae', 'nd', 'Arenaviruses', '';
-'183764', 'Influenza A virus [A/Puerto Rico/8/34/Mount Sinai]', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus A', '';
-'11268', 'Ebola virus ', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Ebola-like viruses', NULL;
-'12730', 'Human parainfluenza virus 1', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', NULL;
-'227859', 'SARS coronavirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', NULL;
-'11120', 'Avian infectious bronchitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', NULL;
-'11138', 'Murine hepatitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 2 species';
-'11149', 'Transmissible gastroenteritis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 1 species';
-'11137', 'Human coronavirus 229E', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 1 species';
-'11128', 'Bovine coronavirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 2 species';
-'28295', 'Porcine epidemic diarrhea virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 1 species';
-'11103', 'Hepatitis C virus type 1a', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Hepacivirus', 'type 1';
-'11276', 'Vesicular stomatitis virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Vesiculovirus', NULL;
-'11079', 'Murray Valley encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Japanese encephalitis virus group';
-'11072', 'Japanese encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Japanese encephalitis virus group';
-'11099', 'Pestivirus type 1 ', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', 'synonym: Bovine viral diarrhea virus 1 ';
-'31658', 'Cell fusing agent virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL;
-'11089', 'Yellow fever virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Yellow fever virus group';
-'39113', 'Hepatitis GB virus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', NULL;
-'54315', 'Bovine viral diarrhea virus genotype 2 (BVDV-2)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL;
-'11101', 'Pestivirus type 3 ', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL;
-'11084', 'Tick-borne encephalitis virus', 'Viruse', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL;
-'39839', 'Hepatitis GB virus C', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', 'GBV-C/HGV group';
-'11083', 'Powassan virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group';
-'45255', 'Hepatitis G virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', 'GBV-C/HGV group';
-'54314', 'Pestivirus type 2', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL;
-'11085', 'Langat virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group';
-'11086', 'Louping ill virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group';
-'58535', 'Deer tick virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group';
-'161675', 'Tamana bat virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL;
-'39112', 'Hepatitis GB virus A', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', NULL;
-'64300', 'Modoc virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Modoc virus group';
-'64312', 'Montana myotis leukoencephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL;
-'64285', 'Rio Bravo virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Rio Bravo virus group';
-'172148', 'Alkhurma virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group';
-'64280', 'Apoi virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Rio Bravo virus group';
-'155906', 'Pestivirus Reindeer-1', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL;
-'155905', 'Pestivirus Giraffe-1', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL;
-'28344', 'Porcine reproductive and respiratory syndrome virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL;
-'11047', 'Equine arteritis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL;
-'11048', 'Lactate dehydrogenase-elevating virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL;
-'38143', 'Simian hemorrhagic fever virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL;
-'204987', 'Goose paramyxovirus SF02', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Avulavirus', NULL;
-'200255', 'Mirafiori lettuce virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'nd', 'nd', 'Ophiovirus', NULL;
-'98832', 'Influenza B virus (B/Memphis/12/97)', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus B', '';
-'228675', 'Influenza B virus (B/Memphis/12/97-MA)', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus B', NULL;
-'130760', 'Influenza A virus (A/Hong Kong/1073/99(H9N2))', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus A', 'H9N2 subtype';
-'122203', 'Fer-de-lance virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'unclassified Paramyxovirinae', NULL;
-'241630', 'Mossman virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'unclassified Paramyxovirinae', NULL;
-'31631', 'Human coronavirus OC43', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 2 species';
-'218849', 'Kamiti River virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL;
-'12542', 'Omsk hemorrhagic fever virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group';
-'64294', 'Yokose virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Ntaya virus group';
-'11027', "O\'nyong-nyong virus", 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex';
-'11029', 'Ross River virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex';
-'11041', 'Rubella virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Rubivirus', NULL;
-'11034', 'Sindbis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'WEEV complex';
-'11020', 'Barmah Forest virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'BFV complex';
-'79899', 'Igbo Ora virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', NULL;
-'11033', 'Semliki forest virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex';
-'59301', 'Mayaro virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex';
-'78540', 'Sleeping disease virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', NULL;
-'11021', 'Eastern equine encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'EEEV complex';
-'44158', 'Aura virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'WEEV complex';
-'11039', 'Western equine encephalomyelitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'WEEV complex';
-'84589', 'Salmon pancreas disease virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', NULL;
-'37124', 'Chikungunya virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex';
-'138951', 'Human enterovirus D', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'138949', 'Human enterovirus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'12104', 'Encephalomyocarditis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Cardiovirus', '';
-'12092', 'Hepatitis A virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Hepatovirus', '';
-'147712', 'Human rhinovirus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Rhinovirus', '';
-'138948', 'Human enterovirus A', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'147711', 'Human rhinovirus A', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Rhinovirus', '';
-'12064', 'Bovine enterovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'195054', 'Human parechovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Parechovirus', '';
-'72149', 'Aichi virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Kobuvirus', '';
-'138953', 'Poliovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'12116', 'Foot-and-mouth disease virus C', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
-'168014', 'Equine rhinovirus 3', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Rhinovirus', '';
-'172314', 'Ljungan virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Parechovirus', '';
-'47000', 'Equine rhinitis A virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
-'47001', 'Equine rhinitis B virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Erbovirus', '';
-'118140', 'Porcine teschovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Teschovirus', '';
-'46633', 'Human echovirus 1', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'138947', 'Porcine enterovirus A (PEV8)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'227355', 'Human enterovirus E', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'70796', 'Avian encephalomyelitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'nd', '';
-'35292', 'Foot-and-mouth disease virus SAT 2 (FMDV-SAT2)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
-'12118', 'Foot-and-mouth disease virus O', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
-'194965', 'Bovine kobuvirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Kobuvirus', '';
-'106966', 'Porcine enterovirus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'172026', 'Simian picornavirus 1 (SV2)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'nd', '';
-'123738', 'Enterovirus Yanbian 96-83csf', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', '';
-'110195', 'Foot-and-mouth disease virus Asia 1 (FMDV-Asia1)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
-'12111', 'Foot-and-mouth disease virus A (FMDV-A)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
-'12122', 'Foot-and-mouth disease virus SAT 1 (FMDV-SAT1)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
-'12123', 'Foot-and-mouth disease virus SAT 3 (FMDV-SAT3)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', '';
+'11207', 'Simian parainfluenza virus 5', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', ''
+'38142', 'Hirame rhabdovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', NULL
+'11234', 'Measles virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', ''
+'31647', 'Hepatitis C virus type 1b', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Hepacivirus', 'type 1'
+'70149', 'Measles virus strain edmonston-zagreb', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', ''
+'37131', 'Dolphin morbillivirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', NULL
+'11168', 'Mumps virus (STRAIN JERYL-LYNN)', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', ''
+'11240', 'Phocine distemper virus (strain:Ulster/88)', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', ''
+'11036', 'Venezuelan equine encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'VEEV complex'
+'11287', 'Viral hemorrhagic septicemia virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', ''
+'103603', 'Snakehead rhabdovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', ''
+'12637', 'Dengue virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', ''
+'11292', 'Rabies virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Lyssavirus', ''
+'11191', 'Sendai virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', ''
+'11277', 'Vesicular stomatitis Indiana virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Vesiculovirus', ''
+'11082', 'West Nile virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', ''
+'12455', 'Borna disease virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Bornaviridae', 'nd', 'Bornavirus', ''
+'11269', 'Marburg virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Marburg-like viruses', ''
+'11307', 'Sonchus yellow net virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Nucleorhabdovirus', ''
+'11290', 'Infectious hematopoietic necrosis virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Novirhabdovirus', ''
+'11250', 'Human respiratory syncytial virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Pneumovirus', ''
+'11216', 'Human parainfluenza virus 3', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', ''
+'12814', 'Respiratory syncytial virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Pneumovirus', ''
+'63330', 'Hendra virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Henipavirus', ''
+'11232', 'Canine distemper virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Morbillivirus', ''
+'11573', 'Bunyamwera virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Orthobunyavirus', ''
+'11246', 'Bovine respiratory syncytial virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Pneumovirus', ''
+'11320', 'Influenza A virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus A', ''
+'11588', 'Rift Valley fever virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Phlebovirus', ''
+'11613', 'Tomato spotted wilt virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', ''
+'11215', 'Bovine parainfluenza virus 3', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', ''
+'92129', 'Tupaia paramyxovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'unclassified Paramyxovirinae', ''
+'11161', 'Mumps virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', ''
+'11520', 'Influenza B virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus B', ''
+'100880', 'Northern cereal mosaic virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Cytorhabdovirus', ''
+'66266', 'Rice grassy stunt virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'nd', 'nd', 'Tenuivirus', ''
+'11303', 'Bovine ephemeral fever virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Ephemerovirus', ''
+'186538', 'Zaire Ebola virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Ebola-like viruses', ''
+'11176', 'Newcastle disease virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Avulavirus', ''
+'121791', 'Nipah virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Henipavirus', ''
+'11275', 'Spring viremia of carp virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Vesiculovirus', ''
+'157619', 'Avian paramyxovirus 6', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Avulavirus', ''
+'90961', 'Australian bat lyssavirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Lyssavirus', ''
+'11212', 'Human parainfluenza virus 2', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', ''
+'188538', 'Human parainfluenza virus 1 strain Washington/1964', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', ''
+'46607', 'Andes virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Hantavirus', ''
+'11612', 'Impatiens necrotic spot virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', ''
+'198612', 'Groundnut bud necrosis virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', ''
+'59380', 'Rice yellow stunt virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Nucleorhabdovirus', ''
+'12331', 'Rice stripe virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'nd', 'nd', 'Tenuivirus', ''
+'43141', 'Watermelon silver mottle virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Tospovirus', ''
+'186769', 'Cryphonectria parasitica mitovirus 1-NB631', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', ''
+'198597', 'Ophiostoma mitovirus 3a', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', ''
+'198599', 'Saccharomyces cerevisiae narnavirus 23S RNA -T-', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Narnavirus', ''
+'198598', 'Saccharomyces cerevisiae narnavirus 20S RNA -W-', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Narnavirus', ''
+'88387', 'Ophiostoma novo-ulmi mitovirus 4-Ld', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', ''
+'88388', 'Ophiostoma novo-ulmi mitovirus 5-Ld', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', ''
+'88389', 'Ophiostoma novo-ulmi mitovirus 6-Ld', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Narnaviridae', 'nd', 'Mitovirus', ''
+'162013', 'Tioman virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', ''
+'186539', 'Reston Ebola virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Ebola-like viruses', ''
+'138950', 'Human enterovirus C', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'204711', 'Theilovirus (ThV)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Cardiovirus', ''
+'11228', 'Simian parainfluenza virus 41', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Rubulavirus', ''
+'11577', 'La Crosse virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Orthobunyavirus', ''
+'162145', 'Human metapneumovirus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Pneumovirinae', 'Metapneumovirus', ''
+'11595', 'Dugbe virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Bunyaviridae', 'nd', 'Nairovirus', ''
+'11623', 'Lymphocytic choriomeningitis virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Arenaviridae', 'nd', 'Arenaviruses', ''
+'11631', 'Tacaribe virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Arenaviridae', 'nd', 'Arenaviruses', ''
+'11620', 'Lassa virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Arenaviridae', 'nd', 'Arenaviruses', ''
+'183764', 'Influenza A virus [A/Puerto Rico/8/34/Mount Sinai]', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus A', ''
+'11268', 'Ebola virus ', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Filoviridae', 'nd', 'Ebola-like viruses', NULL
+'12730', 'Human parainfluenza virus 1', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Respirovirus', NULL
+'227859', 'SARS coronavirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', NULL
+'11120', 'Avian infectious bronchitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', NULL
+'11138', 'Murine hepatitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 2 species'
+'11149', 'Transmissible gastroenteritis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 1 species'
+'11137', 'Human coronavirus 229E', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 1 species'
+'11128', 'Bovine coronavirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 2 species'
+'28295', 'Porcine epidemic diarrhea virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 1 species'
+'11103', 'Hepatitis C virus type 1a', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Hepacivirus', 'type 1'
+'11276', 'Vesicular stomatitis virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Rhabdoviridae', 'nd', 'Vesiculovirus', NULL
+'11079', 'Murray Valley encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Japanese encephalitis virus group'
+'11072', 'Japanese encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Japanese encephalitis virus group'
+'11099', 'Pestivirus type 1 ', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', 'synonym: Bovine viral diarrhea virus 1 '
+'31658', 'Cell fusing agent virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL
+'11089', 'Yellow fever virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Yellow fever virus group'
+'39113', 'Hepatitis GB virus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', NULL
+'54315', 'Bovine viral diarrhea virus genotype 2 (BVDV-2)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL
+'11101', 'Pestivirus type 3 ', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL
+'11084', 'Tick-borne encephalitis virus', 'Viruse', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL
+'39839', 'Hepatitis GB virus C', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', 'GBV-C/HGV group'
+'11083', 'Powassan virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group'
+'45255', 'Hepatitis G virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', 'GBV-C/HGV group'
+'54314', 'Pestivirus type 2', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL
+'11085', 'Langat virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group'
+'11086', 'Louping ill virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group'
+'58535', 'Deer tick virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group'
+'161675', 'Tamana bat virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL
+'39112', 'Hepatitis GB virus A', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'unclassified', 'unclassified', NULL
+'64300', 'Modoc virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Modoc virus group'
+'64312', 'Montana myotis leukoencephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL
+'64285', 'Rio Bravo virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Rio Bravo virus group'
+'172148', 'Alkhurma virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group'
+'64280', 'Apoi virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Rio Bravo virus group'
+'155906', 'Pestivirus Reindeer-1', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL
+'155905', 'Pestivirus Giraffe-1', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Pestivirus', NULL
+'28344', 'Porcine reproductive and respiratory syndrome virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL
+'11047', 'Equine arteritis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL
+'11048', 'Lactate dehydrogenase-elevating virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL
+'38143', 'Simian hemorrhagic fever virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Arteriviridae', 'nd', 'Arterivirus', NULL
+'204987', 'Goose paramyxovirus SF02', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'Avulavirus', NULL
+'200255', 'Mirafiori lettuce virus', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'nd', 'nd', 'Ophiovirus', NULL
+'98832', 'Influenza B virus (B/Memphis/12/97)', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus B', ''
+'228675', 'Influenza B virus (B/Memphis/12/97-MA)', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus B', NULL
+'130760', 'Influenza A virus (A/Hong Kong/1073/99(H9N2))', 'Viruses', 'ssRNA negative-strand viruses', 'nd', 'Orthomyxoviridae', 'nd', 'Influenzavirus A', 'H9N2 subtype'
+'122203', 'Fer-de-lance virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'unclassified Paramyxovirinae', NULL
+'241630', 'Mossman virus', 'Viruses', 'ssRNA negative-strand viruses', 'Mononegavirales', 'Paramyxoviridae', 'Paramyxovirinae', 'unclassified Paramyxovirinae', NULL
+'31631', 'Human coronavirus OC43', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'Nidovirales', 'Coronaviridae', 'nd', 'Coronavirus', 'Group 2 species'
+'218849', 'Kamiti River virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', NULL
+'12542', 'Omsk hemorrhagic fever virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'tick-borne encephalitis virus group'
+'64294', 'Yokose virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Flaviviridae', 'nd', 'Flavivirus', 'Ntaya virus group'
+'11027', "O\'nyong-nyong virus", 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex'
+'11029', 'Ross River virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex'
+'11041', 'Rubella virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Rubivirus', NULL
+'11034', 'Sindbis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'WEEV complex'
+'11020', 'Barmah Forest virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'BFV complex'
+'79899', 'Igbo Ora virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', NULL
+'11033', 'Semliki forest virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex'
+'59301', 'Mayaro virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex'
+'78540', 'Sleeping disease virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', NULL
+'11021', 'Eastern equine encephalitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'EEEV complex'
+'44158', 'Aura virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'WEEV complex'
+'11039', 'Western equine encephalomyelitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'WEEV complex'
+'84589', 'Salmon pancreas disease virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', NULL
+'37124', 'Chikungunya virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Togaviridae', 'nd', 'Alphavirus', 'SFV complex'
+'138951', 'Human enterovirus D', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'138949', 'Human enterovirus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'12104', 'Encephalomyocarditis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Cardiovirus', ''
+'12092', 'Hepatitis A virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Hepatovirus', ''
+'147712', 'Human rhinovirus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Rhinovirus', ''
+'138948', 'Human enterovirus A', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'147711', 'Human rhinovirus A', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Rhinovirus', ''
+'12064', 'Bovine enterovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'195054', 'Human parechovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Parechovirus', ''
+'72149', 'Aichi virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Kobuvirus', ''
+'138953', 'Poliovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'12116', 'Foot-and-mouth disease virus C', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
+'168014', 'Equine rhinovirus 3', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Rhinovirus', ''
+'172314', 'Ljungan virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Parechovirus', ''
+'47000', 'Equine rhinitis A virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
+'47001', 'Equine rhinitis B virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Erbovirus', ''
+'118140', 'Porcine teschovirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Teschovirus', ''
+'46633', 'Human echovirus 1', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'138947', 'Porcine enterovirus A (PEV8)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'227355', 'Human enterovirus E', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'70796', 'Avian encephalomyelitis virus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'nd', ''
+'35292', 'Foot-and-mouth disease virus SAT 2 (FMDV-SAT2)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
+'12118', 'Foot-and-mouth disease virus O', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
+'194965', 'Bovine kobuvirus', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Kobuvirus', ''
+'106966', 'Porcine enterovirus B', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'172026', 'Simian picornavirus 1 (SV2)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'nd', ''
+'123738', 'Enterovirus Yanbian 96-83csf', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Enterovirus', ''
+'110195', 'Foot-and-mouth disease virus Asia 1 (FMDV-Asia1)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
+'12111', 'Foot-and-mouth disease virus A (FMDV-A)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
+'12122', 'Foot-and-mouth disease virus SAT 1 (FMDV-SAT1)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
+'12123', 'Foot-and-mouth disease virus SAT 3 (FMDV-SAT3)', 'Viruses', 'ssRNA positive-strand viruses, no DNA stage', 'nd', 'Picornaviridae', 'nd', 'Aphthovirus', ''
