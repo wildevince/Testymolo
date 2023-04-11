@@ -11,10 +11,9 @@ class Modulo(models.Model):
     Args:
         models (_type_): _description_
     """
-    id = models.CharField(primary_key=True, max_lenght=10)  # PK
+    id = models.CharField(primary_key=True, max_length=10)  # PK
     name = models.CharField(max_length=100)
 
-    
 
 
 # lvl 1
