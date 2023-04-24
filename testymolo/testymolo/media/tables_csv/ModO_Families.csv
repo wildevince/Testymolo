@@ -1,514 +1,514 @@
-'UNK', 'unknown', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S42', '', 'Hemagglutinin-neuraminidase (EC 3.2.1.18)', NULL, '', 'also known as G proteins or HN proteins; corresponds to family GH83 in CAZy; MECHANISM (probable): Retaining B=Tyr+Glu AH=not known ', '', 'b-propeller', 'no', NULL, NULL, NULL, NULL, NULL, 'neuraminidase', 0
-'F20', '', '2-o-methyltransferase', 'Paramyxoviridae / Lyssavirus / Ephemerovirus / Filoviridae / Vesiculovirus', '2OMT_A', '', 'MTase : rossmann fold', '', 'no', NULL, NULL, NULL, NULL, NULL, 'methyltransferase', 0
-'F17', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'DISF9', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 0
-'M1', '', 'unknown', NULL, '', '', 'The VP24 is the third membrane-associated virus protein, and it has a decidedly hydrophobic profile. The role of this protein is unknown, but it may act as a minor matrix protein or function in the uncoating of the virion during infection.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'minor matrix protein', 0
-'S1', '', '', NULL, '', '', '', '', 'yes', '', 'G protein', NULL, 'Channel formed by glycoprotein spike is thought to function in a similar manner to Influenza virus M2 protein channel, thus allowing a signal to pass across the viral membrane to signal for viral uncoating.', NULL, 'glycoprotein', 0
-'S2', '', '', NULL, '', '', 'Treonine rich region; PROBLEMATIC REGION : strong prediction of DISORDER REGION ', '', 'yes', 'virion attachment (Pneumovirus attachment glycoprotein G)', '', NULL, 'The processes involved in the specific binding of a viral antireceptor to a cell surface receptor.', NULL, 'glycoprotein', 0
-'M7', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'M6', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'M5', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'M4', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'M3', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'M2', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S3', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F11', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F10', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F51', '', 'polymerase (RdRp)', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'polymerase', 0
-'F52', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F50', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F34', '', 'regulatory factor', NULL, '', 'M2-2 has a role in regulating RNA synthesis.', 'The M2-2 ORF is expressed by a translational termination-reinitition mechanism.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F21', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F35', 'PMD', '', 'Respirovirus', 'MD_1', 'EC 2.7.7.48', 'PMD domain : multimerization domain', 'coiled-coil', 'yes', NULL, 'polymerase co-factor', NULL, NULL, NULL, 'multimerization domain', 0
-'F1', 'N-core_1', '', NULL, '', 'N-core (two modules = N-core_1/N-core_2): function of RNA binding and auto-assembly.', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'encapsidation RNA protein', 0
-'F2', 'N-core_2', '', NULL, '', 'N-core (two modules = N-core_1/N-core_2): function of RNA binding and auto-assembly', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, '', '', NULL, 'encapsidation RNA protein', 0
-'S29', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'DISF6', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 1
-'F5', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F6', 'PMD', '', NULL, '', '', 'PMD domain : multimerization domain', 'coiled-coil', 'yes', NULL, 'polymerase co-factor', NULL, NULL, NULL, 'multimerization domain', 1
-'F8', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F9', 'Nucleocapsid', '', NULL, '', '', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN ', NULL, NULL, NULL, NULL, 'encapsidation RNA protein', 1
-'IHD', 'Inter Hydrophobic Domain', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S5', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S4', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'F36', 'X domain', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'X domain', 0
-'F12', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F13', '', '', NULL, '', 'These proteins (NS1 and NS2) enhance growth but are not essential.', 'NS1 might serve some role in RNA synthesis. NS1 and NS2, singly or together, do not appear to have an important role in the assembly or passage of virus-like particles.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F18', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F16', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F15', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F14', '', '', NULL, '', 'These proteins (NS1 and NS2) enhance growth but are not essential.', 'NS1 and NS2, singly or together, do not appear to have an important role in the assembly or passage of virus-like particles.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F23', 'PMD', '', 'Avulavirus; Rubulavirus', 'MD_1', '', 'PMD domain : multimerization domain', 'coiled-coil', 'yes', NULL, 'polymerase co-factor', NULL, NULL, NULL, 'multimerization domain', 0
-'F46', 'No binding region', '', NULL, '', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'DISF3', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 0
-'DISF8', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 0
-'DISF2', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 0
-'F22', '', 'zinc binding domain', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'zinc binding domain', 0
-'F24', 'No binding region', '', NULL, '', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F27', 'Y domain', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'DISF11', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF5', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF1', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 1
-'F26', 'No binding region', '', NULL, '', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'DISF7', 'N-tail', '', NULL, '', 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 0
-'F45', 'No binding region', '', NULL, '', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F44', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F43', 'N-core_1', '', NULL, '', 'N-core (two modules = N-core_1/N-core_2): function of RNA binding and auto-assembly.', 'typically : RESPIROVIRUS', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'encapsidation RNA protein', 0
-'F25', 'PMD', '', NULL, '', 'MOTIF: find trigger sequences motifs retrivied in coiled coil;', 'PMD domain: multimerization domain', 'coiled-coil', 'yes', NULL, 'polymerase co-factor', NULL, NULL, NULL, 'multimerization domain', 0
-'F28', 'X Domain', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'X domain', 1
-'F29', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S12', 'fusion', '', NULL, '', 'REF : VaZy169', '', '', 'yes', 'fusion', NULL, NULL, NULL, NULL, 'nd', 0
-'F48', '', 'RNA encapsidation', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'RNA encapsidation protein', 1
-'F47', 'No binding region', '', NULL, '', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'S6', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S7', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S8', 'Haemagglutinin', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'hemagglutinin', NULL
-'S10', '', '', NULL, '', '', '', '', 'yes', 'membrane protein', NULL, NULL, NULL, NULL, 'membrane protein', 0
-'S9', '', '', NULL, '', '', '', '', 'yes', 'membrane protein', NULL, NULL, NULL, NULL, 'membrane protein', 0
-'S13', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S30', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S31', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S32', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S33', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S34', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S35', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S36', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S37', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S38', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S39', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S40', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S41', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F66', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F65', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F64', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F49', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F53', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F54', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F55', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F57', '', '', NULL, '', '', 'Glutamine (Q) rich region', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F58', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F59', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F60', '', '2-o-methyltransferase', 'Rhabdoviridae; Cytorhabdovirus', '2OMT_A', '', 'MTase : rossman fold', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F61', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F62', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F19', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F7', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F3', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F67', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'HD', 'Hydrophobic Domain', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'ITM', 'Inter Trans Membrane', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'TM', 'Trans Membrane', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'LNK', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S14', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S15', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S16', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S17', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S18', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S19', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S20', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'M9', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'M14', 'Capsid protein', 'Protease', 'Togaviridae;Alphavirus ', 'PA(S)', 'Serine protease', '', 'beta barrel', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 0
-'S23', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S24', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S25', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S26', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S27', '', '', NULL, '', '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S43', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S44', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F68', '', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F69', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F70', '', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F71', '', '', NULL, NULL, 'glycoprotein', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F72', '', '', NULL, NULL, 'hydrophobic protein', 'NS2A is a hydrophobic protein about 25 kDa is size. NS2A is cleaved from NS1 by a membrane bound host protease. NS2A has been found to associate with the dsRNA within the vesicle packages. It has also been found that NS2A associates with the known replicase components and so NS2A has been postulated to be part of this replicase complex.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F73', 'hydrophobic', 'cofactor protease', NULL, NULL, 'NS2B-NS3 = functional protease ', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F74', 'serine peptidase', 'protease', 'Flaviviridae; Flavivirus; unclassified Flavivirus', 'PA(S)', '', NULL, 'beta barrel', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 0
-'F75', '', '', NULL, NULL, '', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, '', 0
-'F76', '', '', NULL, NULL, 'hydrophobic protein', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F77', '', 'methytransferase', NULL, NULL, '', NULL, 'rossmann', 'no', NULL, NULL, NULL, NULL, NULL, 'methytransferase', 0
-'F78', '', 'polymerase (RdRp)', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'polymerase', 0
-'S45', '', '', NULL, NULL, 'role of protection', NULL, '', 'yes', '', NULL, NULL, NULL, NULL, NULL, NULL
-'S46', '', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S47', '', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F33', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F42', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F56', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F63', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S28', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S11', 'ORF3', 'signaling protein, involved in endocytosis', NULL, NULL, NULL, 'propable CALCIUM PUMP', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F231', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F232', 'X domain', NULL, NULL, NULL, '', '3D labo - 3 helices', '', 'no', NULL, NULL, NULL, NULL, NULL, 'X domain', 0
-'F79', 'super family II', 'helicase/RNATriPhosphatase', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'helicase/RNATriPhosphatase', 0
-'M8', '', 'virion assembly and budding', NULL, NULL, NULL, 'By analogy with other matrix proteins, VP40 may facilitate virus budding by interacting with nucleocapsids and the membrane plasma (and a times with intracytoplasmic membranes, forming vacuoles). Specific interactions of VP40 with membrane-associated GP and VP24 during the budding process may also occur.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F80', 'minor nucleoprotein', 'RNA encapsidation', NULL, NULL, '', 'The VP30 protein is a minor nucleoprotein, and like the NP it is phosphorylated and tightly bound in the nucleocapsid. The N terminus is rich in basic amino acids (particularly arginine) and may be involved in binding  to virus RNA or the acidic C terminus of NP.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'minor RNA encapsidation protein', 1
-'S48', '', 'sialidase or  neuraminidase (EC 3.2.1.18)', NULL, NULL, 'corresponds to family GH34 in CAZy; MECHANISM : Retaining B=Tyr+Glu AH=not known  ', NULL, '6-fold b-propeller', 'no', NULL, NULL, NULL, NULL, NULL, 'neuraminidase or sialidase', 0
-'S49', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S50', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hemagglutinin', 0
-'S51', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S52', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S53', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S54', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S55', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S56', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S57', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S58', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S59', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S60', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S61', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S62', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S63', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S64', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F81', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S65', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S66', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S21', '', '', NULL, NULL, '', NULL, '', 'yes', 'ion channel', NULL, NULL, 'integral membrane protein, essential for virus uncoating.', 'extracellular orientation', 'ionic channel (mb protein)', 0
-'F83', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F82', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F84', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F85', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F86', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F87', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F88', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F89', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F90', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F91', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F92', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F93', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F94', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F95', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F96', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F97', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F98', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F99', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F100', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F101', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F102', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F103', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F104', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F105', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F106', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F107', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'M10', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F108', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F109', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F110', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'M12', '', NULL, NULL, NULL, NULL, NULL, '', 'yes', '', 'underlies lipid bilayer; interacts with RNPs and NS2', NULL, NULL, NULL, 'nd', 0
-'M11', '', NULL, NULL, NULL, NULL, NULL, '', 'yes', NULL, 'underlies lipid bilayer; interacts with RNPs and NS2', NULL, NULL, NULL, 'nd', 0
-'M13', '', NULL, NULL, NULL, NULL, NULL, '', 'yes', NULL, 'underlies lipid bilayer; interacts with RNPs and NS2', NULL, NULL, NULL, 'nd', NULL
-'F111', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F112', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F113', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F114', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'polymerase', 1
-'F115', 'Polymerase', NULL, 'orthomyxoviridae', NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'Polymerase', 1
-'F116', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F117', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F118', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F119', '', 'posttranscriptional regulator', NULL, NULL, 'N-terminus constitutes the RNA-binding domain', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'posttranscriptional regulator', 0
-'F120', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F121', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'DISF10', 'N-tail', NULL, NULL, NULL, 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 0
-'F123', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S67', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F124', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F125', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F126', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F127', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F128', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F129', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F130', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F131', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F132', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F133', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F134', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F135', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F136', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F137', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F138', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F139', '', 'polymerase', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F140', '', 'cofactor in polymerase complex', NULL, NULL, NULL, 'There is no evidence that VP35 is phosphorylated. Nervertheless, it appears that this protein has an essential role as a cofactor in transcription and replication, similar to that of the P proteins of other NNS viruses.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'cofactor in polymerase complex', 1
-'F141', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F142', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F143', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F144', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F145', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F146', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F147', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F148', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F149', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F150', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F151', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F152', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F153', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F154', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S68', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F155', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F156', 'No binding region', NULL, NULL, NULL, 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F157', 'X domain', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'X domain', 1
-'F158', 'X domain', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'X domain', 1
-'F159', 'X domain', NULL, 'Paramyxoviridae, rubulavirus', NULL, 'Characterization of Nucleocapsid Binding by the Measles Virus and Mumps Virus Phosphoproteins.Richard L. Kingston, Walter A. Baase, and Leslie S. GayJ. Virol. 2004;78 8630-8640', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'X domain', 0
-'F160', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F161', '', 'regulatory factor', NULL, NULL, 'M2-2 has a role in regulating RNA synthesis. ', 'The M2-2 ORF is expressed by a translational termination-reinitition mechanism.', '', 'no', NULL, NULL, NULL, NULL, NULL, 'regulatory factor of RNA synthesis', 1
-'F162', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'S70', '', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'membrane protein', NULL, NULL, NULL, NULL, 'membrane protein', 0
-'S22', '', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'ion channel', NULL, NULL, 'integral membrane protein, essential for virus uncoating. ', 'cytoplasmic tail', 'ionic channel (mb protein)', 0
-'M15', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S71', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S72', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S73', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S74', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S75', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S76', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S77', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S78', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S79', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S80', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S81', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S82', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S83', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F163', 'nucleocapsid', '', NULL, NULL, NULL, NULL, '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'encapsidation RNA protein', 1
-'F164', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F165', 'nucleocapsid', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'encapsidation RNA protein', 1
-'F166', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F167', 'nucleocapsid', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, NULL, NULL
-'F168', 'Polymerase', 'Polymerase', 'Pestivirus', NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F169', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F170', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F171', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F172', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F173', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S84', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S85', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S86', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F174', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'M16', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'M17', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F175', '', '', NULL, NULL, '', NULL, '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'RNA encapsidation protein', 0
-'M18', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F176', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F177', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F178', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F179', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F180', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F181', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F182', '', 'interaction with Nucleoprotein', NULL, NULL, '', NULL, 'a/b', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F183', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F184', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F185', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F186', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F187', '', 'cofactor polymerase', NULL, NULL, NULL, NULL, 'OB-fold', 'no', NULL, NULL, NULL, NULL, NULL, 'cofactor polymerase', 0
-'F188', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F189', '', 'polymerase (RdRp)', NULL, NULL, NULL, 'F189_A: Zn finger Nterm F189_B: Shorter Nterm', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F190', 'helicase super family I', 'metal binding; helicase', 'Coronaviridae;Coronavirus ', 'SF1', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F191', '', 'nuclease ExoN', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F192', '', 'endoRNase', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F193', '', 'methyltransferase', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F194', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F195', 'main protease (serine/cysteine protease)', 'protease ', 'Coronaviridae', NULL, NULL, NULL, 'Trypsin-like serine', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 0
-'IC18', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC19', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC20', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC21', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F196', '', '', NULL, NULL, 'have Hyrophobic Domain', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F197', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F198', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S87', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'M19', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S88', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'spike', 0
-'S89', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S90', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'spike', 0
-'S91', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S92', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S93', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F199', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F200', 'X domain', '', NULL, NULL, 'associated PL1 domain in coronavirus', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F201', 'PLP1 domain (protease papaine like)', 'protease', 'Coronaviridae', NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F202', 'Y domain', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F203', 'PLP2 (protease papaine like)', 'protease ', 'Coronaviridae', 'CA', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F204', 'acid domain', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F205', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F206', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'NF', 'No Fold', NULL, NULL, NULL, NULL, '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F207', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F208', 'acid domain', '', NULL, NULL, '', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F209', 'Unique Domain', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F210', '', NULL, NULL, NULL, '', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, '', 0
-'F211', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F212', '', NULL, NULL, NULL, 'hydrophobic protein', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F213', 'hydrophobic', 'cofactor protease', NULL, NULL, 'NS2B-NS3 = functional protease', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'S94', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S95', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F214', '', NULL, NULL, NULL, 'hydrophobic protein', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'S96', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S97', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S98', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S99', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S100', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F215', '', NULL, NULL, NULL, 'hydrophobic protein', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F216', 'serine peptidase', 'protease', 'Flavivirdae; Hepacivirus and unclassified', 'PA(S)', NULL, NULL, 'beta barrel', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 0
-'F217', 'hydrophobic', 'cofactor protease', NULL, NULL, 'NS2B-NS3 = functional protease', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F218', 'hydrophobic', 'cofactor protease', NULL, NULL, 'NS2B-NS3 = functional protease', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F219', 'super family II', 'helicase', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'helicase', 0
-'S101', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S102', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S103', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S104', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S105', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S106', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S107', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'M20', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F220', 'Cysteine protease', 'protease', 'Arteriviridae', 'CA', 'WARNING on the limits ', 'SAME protease familly as F37', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F221', 'Cysteine protease', 'protease', 'Arteriviridae', 'CA', 'Active protease', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F222', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F223', 'Proteinase (Chymotrypsin-Like serine)', 'protease ', 'Arteriviridae', 'PA(S)', NULL, NULL, 'beta barrel', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 0
-'F224', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S108', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F225', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F226', 'protease cofactor', '', NULL, NULL, '', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F227', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F228', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F229', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F230', '', 'polymerase (RdRp)', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'polymerase', 0
-'PS', 'Peptide Signal', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F233', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC1', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC2', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC3', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC4', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC5', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC6', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC7', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC8', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC9', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC10', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC11', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC12', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC13', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC14', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC15', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC16', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC17', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'EX', 'EXtremity', '', NULL, NULL, NULL, 'short EXtremity of the protein', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F234', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'DISF4', 'N-tail', NULL, NULL, NULL, 'Ntail: function of recruitment of P (and thus, complex L-P)', '', '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 1
-'IC22', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC23', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F236', 'PMD', NULL, NULL, NULL, '', 'PMD domain: multimerization domain', 'coiled-coil', 'yes', NULL, 'polymerase co-factor', NULL, NULL, NULL, 'multimerization domain', 1
-'F237', 'No binding region', NULL, NULL, NULL, 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'S109', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S110', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'S111', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'F238', 'X domain', NULL, NULL, NULL, '', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'X domain', 1
-'F239', '', 'transcription antitermination factor', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'transcription antitermination factor', 1
-'DIS', 'DISORDER', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S112', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F240', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F241', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S113', '', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'membrane protein', NULL, NULL, NULL, NULL, 'membrane protein', 0
-'S114', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'S115', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S117', '', NULL, NULL, NULL, 'domaine cytoplasmique', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F242', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F243', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F244', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F258', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F257', '', NULL, NULL, NULL, 'hydrophobic protein', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'hydrophobic', 0
-'F256', '', NULL, NULL, NULL, '', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, '', 0
-'F255', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F254', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F253', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F245', 'acid domain', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F246', '', 'PLP1 no active', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F247', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F248', '', 'PLP1', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F249', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F250', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F251', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F252', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F122', 'PMD (probable)', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'probable multimerization domain', 1
-'F235', 'Npro', 'protease-endopeptidase', 'Pestivirus', 'C', 'Active site residues occur in the order E, H, C in the sequence which is unlike that in any other family.', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F4', 'serine peptidase', 'protease', 'Flaviviridae; Pestivirus', 'PA(S)', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F40', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F30', 'serine protease', 'protease', 'Orthomyxoviridae', 'S-', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 1
-'F31', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F32', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 1
-'F39', 'Cysteine protease', 'protease', 'Arteriviridae', 'CA', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F38', 'Cysteine peptidase', 'protease', 'Arterivirdae', 'CA', 'No activity if F221 is present', NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F37', 'Cysteine peptidase', 'protease', 'Arteriviridae', 'CA', '', 'SAME protease familly as F220', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F41', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'DISS1', '', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'membrane protein', NULL, NULL, NULL, NULL, 'disorder (membrane protein)', 0
-'S69', '', NULL, NULL, NULL, NULL, 'Treonine rich region; PROBLEMATIC REGION : strong prediction of DISORDER REGION', '', 'yes', 'virion attachment', NULL, NULL, NULL, NULL, 'glycoprotein', 0
-'DISF13', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 0
-'DISF12', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF14', '', NULL, NULL, NULL, 'This family consists of several Paramyxovirus structural protein V sequences from the Nipah and Hendra virus.', '', '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF15', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF16', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 0
-'DISF18', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 0
-'DISF17', 'nucleocapsid', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF19', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF20', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 0
-'DISF21', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF22', 'nucleocapsid', NULL, NULL, NULL, NULL, NULL, '', 'yes', 'encapsidation of the genomic and anti-genomic ARN', NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF23', 'induced folding', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF24', 'induced folding', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF25', 'induced folding', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'DISF26', 'induced folding', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'IC24', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC25', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC26', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'IC27', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'DISF27', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 1
-'S116', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'DISS2', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 0
-'DISS3', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 0
-'DISS4', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F259', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'nd', 0
-'DISF28', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'disorder', 0
-'F260', 'Cysteine protease', 'protease', 'Togaviridae;Alphavirus', 'CA', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F261', 'helicase super family 1', 'Helicase', 'Togaviridae;Alphavirus', 'SF1', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F262', '', 'Polymerase', 'Togaviridae;Alphavirus', NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F263', '', 'guanine-7N-methyltransferase;guanylyltransferase', 'Togaviridae;Alphavirus', NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F264', 'Cysteine peptidase', 'Protease,endopeptidase ', 'Togaviridae;Rubivirus ', 'CA', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F265', 'Helicase super family1', 'Helicase', 'Togaviridae;Rubivirus ', 'SF1', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F266', 'Polymerase', 'Polymerase', 'Togaviridae;Rubivirus', NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F267', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F268', '', '', NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S118', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S119', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S120', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S121', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S124', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S123', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S122', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S125', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F269', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'DISF29', '', NULL, 'Filoviridae', NULL, NULL, 'The VP30 protein is a minor nucleoprotein, and like the NP it is phosphorylated and tightly bound in the nucleocapsid. The N terminus is rich in basic amino acids (particularly arginine) and may be involved in binding to virus RNA or the acidic C terminus of NP. ', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, 0
-'S126', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S127', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S129', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S130', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S131', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S132', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S128', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F270', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F271', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F272', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S133', '', NULL, NULL, NULL, NULL, '', '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S134', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S135', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S136', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S137', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F273', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F274', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F275', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F276', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F277', 'Cysteine peptidase', 'protease', 'aphthovirus;', 'CA', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 0
-'F278', 'polymerase', 'polymerase', 'aphthovirus', NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'polymerase', 0
-'F279', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S138', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S139', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S140', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'S141', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F280', 'Peptidase subfamily C3C', 'Cysteine peptidase', 'picornaviridae;', 'PA(C)', NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, 'protease', 0
-'F281', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F282', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
-'F284', '', NULL, NULL, NULL, NULL, NULL, '', 'no', NULL, NULL, NULL, NULL, NULL, NULL, NULL
+'UNK', 'unknown', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S42', 'None', 'Hemagglutinin-neuraminidase (EC 3.2.1.18)', 'NULL', 'None', 'also known as G proteins or HN proteins; corresponds to family GH83 in CAZy; MECHANISM (probable): Retaining B=Tyr+Glu AH=not known ', 'None', 'b-propeller', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'neuraminidase', 0
+'F20', 'None', '2-o-methyltransferase', 'Paramyxoviridae / Lyssavirus / Ephemerovirus / Filoviridae / Vesiculovirus', '2OMT_A', 'None', 'MTase : rossmann fold', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'methyltransferase', 0
+'F17', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'DISF9', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'M1', 'None', 'unknown', 'NULL', 'None', 'None', 'The VP24 is the third membrane-associated virus protein, and it has a decidedly hydrophobic profile. The role of this protein is unknown, but it may act as a minor matrix protein or function in the uncoating of the virion during infection.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'minor matrix protein', 0
+'S1', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'yes', 'None', 'G protein', 'NULL', 'Channel formed by glycoprotein spike is thought to function in a similar manner to Influenza virus M2 protein channel, thus allowing a signal to pass across the viral membrane to signal for viral uncoating.', 'NULL', 'glycoprotein', 0
+'S2', 'None', 'None', 'NULL', 'None', 'None', 'Treonine rich region; PROBLEMATIC REGION : strong prediction of DISORDER REGION ', 'None', 'yes', 'virion attachment (Pneumovirus attachment glycoprotein G)', 'None', 'NULL', 'The processes involved in the specific binding of a viral antireceptor to a cell surface receptor.', 'NULL', 'glycoprotein', 0
+'M7', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M6', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M5', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M4', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M3', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M2', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S3', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F11', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F10', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F51', 'None', 'polymerase (RdRp)', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'polymerase', 0
+'F52', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F50', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F34', 'None', 'regulatory factor', 'NULL', 'None', 'M2-2 has a role in regulating RNA synthesis.', 'The M2-2 ORF is expressed by a translational termination-reinitition mechanism.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F21', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F35', 'PMD', 'None', 'Respirovirus', 'MD_1', 'EC 2.7.7.48', 'PMD domain : multimerization domain', 'coiled-coil', 'yes', 'NULL', 'polymerase co-factor', 'NULL', 'NULL', 'NULL', 'multimerization domain', 0
+'F1', 'N-core_1', 'None', 'NULL', 'None', 'N-core (two modules = N-core_1/N-core_2): function of RNA binding and auto-assembly.', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'encapsidation RNA protein', 0
+'F2', 'N-core_2', 'None', 'NULL', 'None', 'N-core (two modules = N-core_1/N-core_2): function of RNA binding and auto-assembly', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'None', 'None', 'NULL', 'encapsidation RNA protein', 0
+'S29', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'DISF6', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'F5', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F6', 'PMD', 'None', 'NULL', 'None', 'None', 'PMD domain : multimerization domain', 'coiled-coil', 'yes', 'NULL', 'polymerase co-factor', 'NULL', 'NULL', 'NULL', 'multimerization domain', 1
+'F8', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F9', 'Nucleocapsid', 'None', 'NULL', 'None', 'None', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN ', 'NULL', 'NULL', 'NULL', 'NULL', 'encapsidation RNA protein', 1
+'IHD', 'Inter Hydrophobic Domain', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S5', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S4', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'F36', 'X domain', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'X domain', 0
+'F12', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F13', 'None', 'None', 'NULL', 'None', 'These proteins (NS1 and NS2) enhance growth but are not essential.', 'NS1 might serve some role in RNA synthesis. NS1 and NS2, singly or together, do not appear to have an important role in the assembly or passage of virus-like particles.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F18', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F16', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F15', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F14', 'None', 'None', 'NULL', 'None', 'These proteins (NS1 and NS2) enhance growth but are not essential.', 'NS1 and NS2, singly or together, do not appear to have an important role in the assembly or passage of virus-like particles.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F23', 'PMD', 'None', 'Avulavirus; Rubulavirus', 'MD_1', 'None', 'PMD domain : multimerization domain', 'coiled-coil', 'yes', 'NULL', 'polymerase co-factor', 'NULL', 'NULL', 'NULL', 'multimerization domain', 0
+'F46', 'No binding region', 'None', 'NULL', 'None', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'DISF3', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISF8', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISF2', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'F22', 'None', 'zinc binding domain', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'zinc binding domain', 0
+'F24', 'No binding region', 'None', 'NULL', 'None', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F27', 'Y domain', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'DISF11', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF5', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF1', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'F26', 'No binding region', 'None', 'NULL', 'None', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'DISF7', 'N-tail', 'None', 'NULL', 'None', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'F45', 'No binding region', 'None', 'NULL', 'None', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F44', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F43', 'N-core_1', 'None', 'NULL', 'None', 'N-core (two modules = N-core_1/N-core_2): function of RNA binding and auto-assembly.', 'typically : RESPIROVIRUS', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'encapsidation RNA protein', 0
+'F25', 'PMD', 'None', 'NULL', 'None', 'MOTIF: find trigger sequences motifs retrivied in coiled coil;', 'PMD domain: multimerization domain', 'coiled-coil', 'yes', 'NULL', 'polymerase co-factor', 'NULL', 'NULL', 'NULL', 'multimerization domain', 0
+'F28', 'X Domain', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'X domain', 1
+'F29', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S12', 'fusion', 'None', 'NULL', 'None', 'REF : VaZy169', 'None', 'None', 'yes', 'fusion', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F48', 'None', 'RNA encapsidation', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'RNA encapsidation protein', 1
+'F47', 'No binding region', 'None', 'NULL', 'None', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'S6', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S7', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S8', 'Haemagglutinin', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hemagglutinin', 'NULL'
+'S10', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'yes', 'membrane protein', 'NULL', 'NULL', 'NULL', 'NULL', 'membrane protein', 0
+'S9', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'yes', 'membrane protein', 'NULL', 'NULL', 'NULL', 'NULL', 'membrane protein', 0
+'S13', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S30', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S31', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S32', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S33', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S34', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S35', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S36', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S37', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S38', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S39', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S40', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S41', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F66', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F65', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F64', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F49', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F53', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F54', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F55', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F57', 'None', 'None', 'NULL', 'None', 'None', 'Glutamine (Q) rich region', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F58', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F59', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F60', 'None', '2-o-methyltransferase', 'Rhabdoviridae; Cytorhabdovirus', '2OMT_A', 'None', 'MTase : rossman fold', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F61', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F62', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F19', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F7', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F3', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F67', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'HD', 'Hydrophobic Domain', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'ITM', 'Inter Trans Membrane', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'TM', 'Trans Membrane', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'LNK', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S14', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S15', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S16', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S17', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S18', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S19', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S20', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'M9', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'M14', 'Capsid protein', 'Protease', 'Togaviridae;Alphavirus ', 'PA(S)', 'Serine protease', 'None', 'beta barrel', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 0
+'S23', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S24', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S25', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S26', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S27', 'None', 'None', 'NULL', 'None', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S43', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S44', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F68', 'None', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F69', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F70', 'None', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F71', 'None', 'None', 'NULL', 'NULL', 'glycoprotein', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F72', 'None', 'None', 'NULL', 'NULL', 'hydrophobic protein', 'NS2A is a hydrophobic protein about 25 kDa is size. NS2A is cleaved from NS1 by a membrane bound host protease. NS2A has been found to associate with the dsRNA within the vesicle packages. It has also been found that NS2A associates with the known replicase components and so NS2A has been postulated to be part of this replicase complex.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F73', 'hydrophobic', 'cofactor protease', 'NULL', 'NULL', 'NS2B-NS3 = functional protease ', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F74', 'serine peptidase', 'protease', 'Flaviviridae; Flavivirus; unclassified Flavivirus', 'PA(S)', 'None', 'NULL', 'beta barrel', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 0
+'F75', 'None', 'None', 'NULL', 'NULL', 'None', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', '0'
+'F76', 'None', 'None', 'NULL', 'NULL', 'hydrophobic protein', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F77', 'None', 'methytransferase', 'NULL', 'NULL', 'None', 'NULL', 'rossmann', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'methytransferase', 0
+'F78', 'None', 'polymerase (RdRp)', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'polymerase', 0
+'S45', 'None', 'None', 'NULL', 'NULL', 'role of protection', 'NULL', 'None', 'yes', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S46', 'None', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S47', 'None', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F33', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F42', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F56', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F63', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S28', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S11', 'ORF3', 'signaling protein, involved in endocytosis', 'NULL', 'NULL', 'NULL', 'propable CALCIUM PUMP', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F231', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F232', 'X domain', 'NULL', 'NULL', 'NULL', 'None', '3D labo - 3 helices', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'X domain', 0
+'F79', 'super family II', 'helicase/RNATriPhosphatase', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'helicase/RNATriPhosphatase', 0
+'M8', 'None', 'virion assembly and budding', 'NULL', 'NULL', 'NULL', 'By analogy with other matrix proteins, VP40 may facilitate virus budding by interacting with nucleocapsids and the membrane plasma (and a times with intracytoplasmic membranes, forming vacuoles). Specific interactions of VP40 with membrane-associated GP and VP24 during the budding process may also occur.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F80', 'minor nucleoprotein', 'RNA encapsidation', 'NULL', 'NULL', 'None', 'The VP30 protein is a minor nucleoprotein, and like the NP it is phosphorylated and tightly bound in the nucleocapsid. The N terminus is rich in basic amino acids (particularly arginine) and may be involved in binding  to virus RNA or the acidic C terminus of NP.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'minor RNA encapsidation protein', 1
+'S48', 'None', 'sialidase or  neuraminidase (EC 3.2.1.18)', 'NULL', 'NULL', 'corresponds to family GH34 in CAZy; MECHANISM : Retaining B=Tyr+Glu AH=not known  ', 'NULL', '6-fold b-propeller', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'neuraminidase or sialidase', 0
+'S49', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S50', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hemagglutinin', 0
+'S51', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S52', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S53', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S54', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S55', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S56', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S57', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S58', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S59', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S60', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S61', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S62', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S63', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S64', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F81', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S65', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S66', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S21', 'None', 'None', 'NULL', 'NULL', 'None', 'NULL', 'None', 'yes', 'ion channel', 'NULL', 'NULL', 'integral membrane protein, essential for virus uncoating.', 'extracellular orientation', 'ionic channel (mb protein)', 0
+'F83', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F82', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F84', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F85', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F86', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F87', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F88', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F89', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F90', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F91', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F92', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F93', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F94', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F95', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F96', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F97', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F98', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F99', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F100', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F101', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F102', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F103', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F104', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F105', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F106', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F107', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'M10', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F108', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F109', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F110', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'M12', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'None', 'underlies lipid bilayer; interacts with RNPs and NS2', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M11', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'NULL', 'underlies lipid bilayer; interacts with RNPs and NS2', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M13', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'NULL', 'underlies lipid bilayer; interacts with RNPs and NS2', 'NULL', 'NULL', 'NULL', 'nd', 'NULL'
+'F111', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F112', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F113', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F114', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'polymerase', 1
+'F115', 'Polymerase', 'NULL', 'orthomyxoviridae', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'Polymerase', 1
+'F116', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F117', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F118', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F119', 'None', 'posttranscriptional regulator', 'NULL', 'NULL', 'N-terminus constitutes the RNA-binding domain', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'posttranscriptional regulator', 0
+'F120', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F121', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'DISF10', 'N-tail', 'NULL', 'NULL', 'NULL', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'F123', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S67', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F124', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F125', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F126', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F127', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F128', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F129', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F130', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F131', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F132', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F133', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F134', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F135', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F136', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F137', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F138', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F139', 'None', 'polymerase', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F140', 'None', 'cofactor in polymerase complex', 'NULL', 'NULL', 'NULL', 'There is no evidence that VP35 is phosphorylated. Nervertheless, it appears that this protein has an essential role as a cofactor in transcription and replication, similar to that of the P proteins of other NNS viruses.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'cofactor in polymerase complex', 1
+'F141', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F142', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F143', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F144', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F145', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F146', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F147', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F148', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F149', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F150', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F151', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F152', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F153', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F154', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S68', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F155', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F156', 'No binding region', 'NULL', 'NULL', 'NULL', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F157', 'X domain', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'X domain', 1
+'F158', 'X domain', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'X domain', 1
+'F159', 'X domain', 'NULL', 'Paramyxoviridae, rubulavirus', 'NULL', 'Characterization of Nucleocapsid Binding by the Measles Virus and Mumps Virus Phosphoproteins.Richard L. Kingston, Walter A. Baase, and Leslie S. GayJ. Virol. 2004;78 8630-8640', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'X domain', 0
+'F160', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F161', 'None', 'regulatory factor', 'NULL', 'NULL', 'M2-2 has a role in regulating RNA synthesis. ', 'The M2-2 ORF is expressed by a translational termination-reinitition mechanism.', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'regulatory factor of RNA synthesis', 1
+'F162', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'S70', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'membrane protein', 'NULL', 'NULL', 'NULL', 'NULL', 'membrane protein', 0
+'S22', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'ion channel', 'NULL', 'NULL', 'integral membrane protein, essential for virus uncoating. ', 'cytoplasmic tail', 'ionic channel (mb protein)', 0
+'M15', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S71', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S72', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S73', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S74', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S75', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S76', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S77', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S78', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S79', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S80', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S81', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S82', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S83', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F163', 'nucleocapsid', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'encapsidation RNA protein', 1
+'F164', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F165', 'nucleocapsid', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'encapsidation RNA protein', 1
+'F166', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F167', 'nucleocapsid', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F168', 'Polymerase', 'Polymerase', 'Pestivirus', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F169', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F170', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F171', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F172', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F173', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S84', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S85', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S86', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F174', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'M16', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'M17', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F175', 'None', 'None', 'NULL', 'NULL', 'None', 'NULL', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'RNA encapsidation protein', 0
+'M18', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F176', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F177', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F178', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F179', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F180', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F181', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F182', 'None', 'interaction with Nucleoprotein', 'NULL', 'NULL', 'None', 'NULL', 'a/b', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F183', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F184', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F185', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F186', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F187', 'None', 'cofactor polymerase', 'NULL', 'NULL', 'NULL', 'NULL', 'OB-fold', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'cofactor polymerase', 0
+'F188', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F189', 'None', 'polymerase (RdRp)', 'NULL', 'NULL', 'NULL', 'F189_A: Zn finger Nterm F189_B: Shorter Nterm', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F190', 'helicase super family I', 'metal binding; helicase', 'Coronaviridae;Coronavirus ', 'SF1', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F191', 'None', 'nuclease ExoN', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F192', 'None', 'endoRNase', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F193', 'None', 'methyltransferase', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F194', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F195', 'main protease (serine/cysteine protease)', 'protease ', 'Coronaviridae', 'NULL', 'NULL', 'NULL', 'Trypsin-like serine', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 0
+'IC18', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC19', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC20', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC21', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F196', 'None', 'None', 'NULL', 'NULL', 'have Hyrophobic Domain', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F197', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F198', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S87', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'M19', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S88', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'spike', 0
+'S89', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S90', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'spike', 0
+'S91', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S92', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S93', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F199', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F200', 'X domain', 'None', 'NULL', 'NULL', 'associated PL1 domain in coronavirus', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F201', 'PLP1 domain (protease papaine like)', 'protease', 'Coronaviridae', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F202', 'Y domain', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F203', 'PLP2 (protease papaine like)', 'protease ', 'Coronaviridae', 'CA', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F204', 'acid domain', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F205', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F206', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'NF', 'No Fold', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F207', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F208', 'acid domain', 'None', 'NULL', 'NULL', 'None', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F209', 'Unique Domain', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F210', 'None', 'NULL', 'NULL', 'NULL', 'None', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', '0'
+'F211', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F212', 'None', 'NULL', 'NULL', 'NULL', 'hydrophobic protein', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F213', 'hydrophobic', 'cofactor protease', 'NULL', 'NULL', 'NS2B-NS3 = functional protease', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'S94', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S95', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F214', 'None', 'NULL', 'NULL', 'NULL', 'hydrophobic protein', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'S96', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S97', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S98', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S99', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S100', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F215', 'None', 'NULL', 'NULL', 'NULL', 'hydrophobic protein', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F216', 'serine peptidase', 'protease', 'Flavivirdae; Hepacivirus and unclassified', 'PA(S)', 'NULL', 'NULL', 'beta barrel', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 0
+'F217', 'hydrophobic', 'cofactor protease', 'NULL', 'NULL', 'NS2B-NS3 = functional protease', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F218', 'hydrophobic', 'cofactor protease', 'NULL', 'NULL', 'NS2B-NS3 = functional protease', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F219', 'super family II', 'helicase', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'helicase', 0
+'S101', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S102', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S103', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S104', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S105', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S106', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S107', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'M20', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F220', 'Cysteine protease', 'protease', 'Arteriviridae', 'CA', 'WARNING on the limits ', 'SAME protease familly as F37', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F221', 'Cysteine protease', 'protease', 'Arteriviridae', 'CA', 'Active protease', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F222', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F223', 'Proteinase (Chymotrypsin-Like serine)', 'protease ', 'Arteriviridae', 'PA(S)', 'NULL', 'NULL', 'beta barrel', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 0
+'F224', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S108', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F225', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F226', 'protease cofactor', 'None', 'NULL', 'NULL', 'None', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F227', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F228', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F229', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F230', 'None', 'polymerase (RdRp)', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'polymerase', 0
+'PS', 'Peptide Signal', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F233', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC1', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC2', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC3', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC4', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC5', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC6', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC7', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC8', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC9', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC10', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC11', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC12', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC13', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC14', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC15', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC16', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC17', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'EX', 'EXtremity', 'None', 'NULL', 'NULL', 'NULL', 'short EXtremity of the protein', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F234', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'DISF4', 'N-tail', 'NULL', 'NULL', 'NULL', 'Ntail: function of recruitment of P (and thus, complex L-P)', 'None', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'IC22', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC23', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F236', 'PMD', 'NULL', 'NULL', 'NULL', 'None', 'PMD domain: multimerization domain', 'coiled-coil', 'yes', 'NULL', 'polymerase co-factor', 'NULL', 'NULL', 'NULL', 'multimerization domain', 1
+'F237', 'No binding region', 'NULL', 'NULL', 'NULL', 'Region of interaction between the Phosphoprotein and monomeric form of Nucleoprotein.', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'S109', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S110', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'S111', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'F238', 'X domain', 'NULL', 'NULL', 'NULL', 'None', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'X domain', 1
+'F239', 'None', 'transcription antitermination factor', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'transcription antitermination factor', 1
+'DIS', 'DISORDER', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S112', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F240', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F241', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S113', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'membrane protein', 'NULL', 'NULL', 'NULL', 'NULL', 'membrane protein', 0
+'S114', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'S115', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S117', 'None', 'NULL', 'NULL', 'NULL', 'domaine cytoplasmique', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F242', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F243', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F244', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F258', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F257', 'None', 'NULL', 'NULL', 'NULL', 'hydrophobic protein', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'hydrophobic', 0
+'F256', 'None', 'NULL', 'NULL', 'NULL', 'None', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', '0'
+'F255', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F254', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F253', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F245', 'acid domain', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F246', 'None', 'PLP1 no active', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F247', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F248', 'None', 'PLP1', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F249', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F250', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F251', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F252', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F122', 'PMD (probable)', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'probable multimerization domain', 1
+'F235', 'Npro', 'protease-endopeptidase', 'Pestivirus', 'C', 'Active site residues occur in the order E, H, C in the sequence which is unlike that in any other family.', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F4', 'serine peptidase', 'protease', 'Flaviviridae; Pestivirus', 'PA(S)', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F40', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F30', 'serine protease', 'protease', 'Orthomyxoviridae', 'S-', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 1
+'F31', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F32', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 1
+'F39', 'Cysteine protease', 'protease', 'Arteriviridae', 'CA', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F38', 'Cysteine peptidase', 'protease', 'Arterivirdae', 'CA', 'No activity if F221 is present', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F37', 'Cysteine peptidase', 'protease', 'Arteriviridae', 'CA', 'None', 'SAME protease familly as F220', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F41', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'DISS1', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'membrane protein', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder (membrane protein)', 0
+'S69', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'Treonine rich region; PROBLEMATIC REGION : strong prediction of DISORDER REGION', 'None', 'yes', 'virion attachment', 'NULL', 'NULL', 'NULL', 'NULL', 'glycoprotein', 0
+'DISF13', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISF12', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF14', 'None', 'NULL', 'NULL', 'NULL', 'This family consists of several Paramyxovirus structural protein V sequences from the Nipah and Hendra virus.', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF15', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF16', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISF18', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISF17', 'nucleocapsid', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF19', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF20', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISF21', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF22', 'nucleocapsid', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'yes', 'encapsidation of the genomic and anti-genomic ARN', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF23', 'induced folding', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF24', 'induced folding', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF25', 'induced folding', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'DISF26', 'induced folding', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'IC24', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC25', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC26', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'IC27', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'DISF27', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 1
+'S116', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'DISS2', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISS3', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'DISS4', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F259', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'nd', 0
+'DISF28', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'disorder', 0
+'F260', 'Cysteine protease', 'protease', 'Togaviridae;Alphavirus', 'CA', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F261', 'helicase super family 1', 'Helicase', 'Togaviridae;Alphavirus', 'SF1', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F262', 'None', 'Polymerase', 'Togaviridae;Alphavirus', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F263', 'None', 'guanine-7N-methyltransferase;guanylyltransferase', 'Togaviridae;Alphavirus', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F264', 'Cysteine peptidase', 'Protease,endopeptidase ', 'Togaviridae;Rubivirus ', 'CA', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F265', 'Helicase super family1', 'Helicase', 'Togaviridae;Rubivirus ', 'SF1', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F266', 'Polymerase', 'Polymerase', 'Togaviridae;Rubivirus', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F267', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F268', 'None', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S118', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S119', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S120', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S121', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S124', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S123', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S122', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S125', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F269', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'DISF29', 'None', 'NULL', 'Filoviridae', 'NULL', 'NULL', 'The VP30 protein is a minor nucleoprotein, and like the NP it is phosphorylated and tightly bound in the nucleocapsid. The N terminus is rich in basic amino acids (particularly arginine) and may be involved in binding to virus RNA or the acidic C terminus of NP. ', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 0
+'S126', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S127', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S129', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S130', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S131', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S132', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S128', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F270', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F271', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F272', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S133', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S134', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S135', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S136', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S137', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F273', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F274', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F275', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F276', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F277', 'Cysteine peptidase', 'protease', 'aphthovirus;', 'CA', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 0
+'F278', 'polymerase', 'polymerase', 'aphthovirus', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'polymerase', 0
+'F279', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S138', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S139', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S140', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'S141', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F280', 'Peptidase subfamily C3C', 'Cysteine peptidase', 'picornaviridae;', 'PA(C)', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'protease', 0
+'F281', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F282', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
+'F284', 'None', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'None', 'no', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'

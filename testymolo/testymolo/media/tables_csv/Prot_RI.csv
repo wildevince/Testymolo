@@ -1,112 +1,113 @@
-90, 0, 2, 'antigenic region', 457, 476, NULL, 'N-TAIL; epitope recognized by monoclonal antibody Cl25', NULL, NULL
-90, 0, 1, 'P binding', 489, 506, NULL, 'N-TAIL (BOX 2)', 'Bourhis et al., unpublished data; Zhang et al.2002 ,Bankamp et al. 96', NULL
-90, 0, 3, 'HSP72 binding', 517, 525, NULL, 'N-TAIL (BOX 3)', 'J Virol. 2002 Sep;76(17):8737-46', 12163594
-90, 0, 4, 'antigenic region', 515, 525, NULL, 'N-TAIL; epitope recognized by monoclonal antibody Cl105', NULL, NULL
-90, 0, 5, 'interaction with IRF-3', 401, 420, '', 'N-TAIL; interaction with IRF-3 (BOX 1)', 'J. Virol. 2002', NULL
-90, 0, 6, 'antigenic region', 122, 150, NULL, 'N-CORE ; epitope recognized by monoclonal antibody Cl120', NULL, NULL
-90, 0, 7, 'region of  self-interaction and RNA binding', 189, 239, NULL, 'N-CORE ', NULL, NULL
-90, 0, 8, 'CCR region of self-interaction and RNA binding', 258, 357, NULL, 'N-CORE', NULL, NULL
-173, 0, 1, 'Interaction', NULL, NULL, 'x', 'Phosphoprotein binds to the complexe -N VP35 VP30 L-', '', NULL
-506, 9, 5, 'PKR interaction', 2209, 2274, '', '', '', NULL
-506, 9, 6, 'V3 region', 2353, 2360, '', 'region (hyper ?) variable', 'Viral Immunol. 2002;15(1):95-119', 11952150
-153, 0, 1, 'self-interaction', 1, 364, '', 'region of self-interaction (involved in nucleocapsid formation) (corresponding to NCORE of Paramyxovirinae)', 'Khattar et al. Virology 270, 215-228 (2000)', NULL
-506, 9, 1, 'SH3 binding motif', 1998, 2004, '', '', 'Viral Immunol. 2002;15(1):95-119', 11952150
-506, 9, 2, 'ISDR', 2209, 2248, '', '', 'Viral Immunol. 2002;15(1):95-119 ', 11952150
-506, 9, 3, 'SH3 binding motif Grb2-interaction', 2322, 2328, '', 'binds Grb2 through a proline rich', 'Viral Immunol. 2002;15(1):95-119 ', 11952150
-506, 9, 4, 'potential NLS', 2328, 2336, '', '', 'Viral Immunol. 2002;15(1):95-119 ', 11952150
-182, 0, 1, 'Interaction', NULL, NULL, 'x', 'Phosphoprotein binds to the complexe -N VP35 VP30 L-', '', NULL
-153, 0, 2, 'region not required', 365, 391, '', 'not required for encapsidation required for template function (likely corresponding to NTAIL of Paramyxovirinae)', 'Khattar et al. Virology 270, 215-228 (2000)', NULL
-153, 0, 3, 'Interaction 1', 244, 290, '', 'interaction with P in the N\B0-P complex', 'Khattar et al. Virology 270, 215-228 (2000)', NULL
-153, 0, 4, 'Interaction 2', 338, 364, '', 'interaction with P in the N\B0-P complex', 'Khattar et al. Virology 270, 215-228 (2000)', NULL
-170, 0, 1, 'Interaction', NULL, NULL, 'x', 'M2-1 interact with N via RNA', 'J Virol. 2003 May;77(9):5046-53', 12692207
-170, 0, 2, 'Interaction', NULL, NULL, 'x', "CCCH zinc finger proteins interact with the 3\' untranslated region of various mRNA.  Another protein containing this domain is the human splicing factor U2AF 35 kD subunit, which plays a critical role in both constitutive and enhancer-dependent splicing by mediating essential protein-protein interactions and protein-RNA interactions required for 3\' splice site selection.", 'J Virol. 2003 May;77(9):5046-53', 12692207
-170, 0, 3, 'Interaction', NULL, NULL, 'x', 'M2-1 is supposed to interact with P', 'J Virol. 2003 May;77(9):5046-53', 12692207
-244, 0, 1, 'NLS', 741, 749, '', "In article, limits are 844-852 (different strain BDV) but it\'s the same NLS motif.", 'J Virol 2002 Aug;76(16):8460-7', 12134049
-90, 0, 9, 'MORE region', 484, 499, '', 'by K.Dunker', '', NULL
-65, 0, 1, 'dissulfide bridge Cys 1', 76, 76, '', 'name of the region with Cys 76 : F2 (in S12 module)', '', NULL
-65, 0, 2, 'dissulfide bridge Cys 2', 199, 199, '', 'name of the region with Cys 199 : F1 (in S12 module) ', '', NULL
-94, 0, 1, 'HR1', 147, 184, '', "Between \'-\', important aa: -I-DNLRAS-L-ETTNQAIEAIRQA-G-QEMILA-V-QGVQDY-I-NN", 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
-94, 0, 2, 'HR2', 457, 488, '', "Between \'-\', important aa: LDVGTN-L-GNAIAK-L-EDAKEL-L-ESSDQI-L-RSMK", 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
-506, 7, 7, 'interaction', 1677, 1690, '', 'aa 21-34 of NS4A interacts with NS3 and fold the first 30 NS3 aa', 'isabelle', NULL
-506, 6, 8, 'Covalant interaction', 1208, 1212, '', 'Covalant interaction between HELICASE and PROTEASE via PVFTD segment', 'Structure Fold Des. 1999 Nov 15;7(11):1353-63', 10574797
-170, 0, 4, 'M2-1/P interaction', 100, 120, NULL, 'Phosphorylation of either M2-1 or P appears to be dispensable for this interaction. Internal deletions within P mapped the M2-1-binding domain to a region between residues 100 and 120.', 'J Virol. 2003 Oct;77(19):10670-6', 12970453
-540, 0, 1, 'DISORDER 1', 9, 19, '', 'putative unstructured segments (disorder), length 11 aa', 'Virology. 2003 Nov 10;316(1):135-45', 14599798
-540, 0, 2, 'DISORDER 2', 35, 56, '', 'putative unstructured segments (disorder), length 22 aa ', 'Virology. 2003 Nov 10;316(1):135-45', 14599798
-540, 0, 3, 'induced folding', 20, 34, '', 'region 20-34 globular induced folding on the RNA?', 'lab', NULL
-12, 0, 1, 'dissulfide bridge Cys 1', 74, 74, '', 'name of the region with Cys 74 : F2 (in S12 module) ', '', NULL
-12, 0, 2, 'dissulfide bridge Cys 2', 201, 201, '', 'name of the region with Cys 201 : F1 (in S12 module)', '', NULL
-572, 0, 1, 'dissulfide bridge Cys 1', 76, 76, '', 'name of the region with Cys 76 : F2 (in S12 module) ', '', NULL
-572, 0, 2, 'dissulfide bridge Cys 2', 199, 199, '', 'name of the region with Cys 199 : F1 (in S12 module)', '', NULL
-59, 0, 1, 'dissulfide bridge Cys 1', 68, 68, '', 'name of the region with Cys 68 : F2 (in S12 module)', '', NULL
-59, 0, 2, 'dissulfide bridge Cys 2', 189, 189, '', 'name of the region with Cys 189 : F1 (in S12 module)', '', NULL
-27, 0, 1, 'dissulfide bridge Cys 1', 71, 71, '', 'name of the region with Cys 71 : F2 (in S12 module)', '', NULL
-27, 0, 2, 'dissulfide bridge Cys 2', 192, 192, '', 'name of the region with Cys 192 : F1 (in S12 module)', '', NULL
-34, 0, 1, 'dissulfide bridge Cys 1', 64, 64, '', 'name of the region with Cys 64 : F2 (in S12 module)', '', NULL
-34, 0, 2, 'dissulfide bridge Cys 2', 185, 185, '', 'name of the region with Cys 185 : F1 (in S12 module)', '', NULL
-43, 0, 1, 'dissulfide bridge Cys 1', 64, 64, '', 'name of the region with Cys 64 : F2 (in S12 module)', '', NULL
-43, 0, 2, 'dissulfide bridge Cys 2', 185, 185, '', 'name of the region with Cys 185 : F1 (in S12 module)', '', NULL
-51, 0, 1, 'dissulfide bridge Cys 1', 64, 64, '', 'name of the region with Cys 64 : F2 (in S12 module)', '', NULL
-51, 0, 2, 'dissulfide bridge Cys 2', 185, 185, '', 'name of the region with Cys 185 : F1 (in S12 module)', '', NULL
-342, 0, 1, 'dissulfide bridge Cys 1', 64, 64, '', 'name of the region with Cys 64 : F2 (in S12 module)', '', NULL
-342, 0, 2, 'dissulfide bridge Cys 2', 187, 187, '', 'name of the region with Cys 187 : F1 (in S12 module)', '', NULL
-127, 0, 1, 'dissulfide bridge Cys 1', 63, 63, '', 'name of the region with Cys 63 : F2 (in S12 module)', '', NULL
-127, 0, 2, 'dissulfide bridge Cys 2', 192, 192, '', 'name of the region with Cys 192 : F1 (in S12 module)', '', NULL
-121, 0, 1, 'dissulfide bridge Cys 1', 63, 63, '', 'name of the region with Cys 63 : F2 (in S12 module)', '', NULL
-121, 0, 2, 'dissulfide bridge Cys 2', 192, 192, '', 'name of the region with Cys 192 : F1 (in S12 module)', '', NULL
-113, 0, 1, 'dissulfide bridge Cys 1', 66, 66, '', 'name of the region with Cys 66 : F2 (in S12 module)', '', NULL
-113, 0, 2, 'dissulfide bridge Cys 2', 195, 195, '', 'name of the region with Cys 195 : F1 (in S12 module)', '', NULL
-103, 0, 1, 'dissulfide bridge Cys 1', 70, 70, '', 'name of the region with Cys 70 : F2 (in S12 module)', '', NULL
-103, 0, 2, 'dissulfide bridge Cys 2', 199, 199, '', 'name of the region with Cys 199 : F1 (in S12 module)', '', NULL
-617, 0, 1, 'dissulfide bridge Cys 1', 64, 64, '', 'name of the region with Cys 64 : F2 (in S12 module)', '', NULL
-617, 0, 2, 'dissulfide bridge Cys 2', 193, 193, '', 'name of the region with Cys 193 : F1 (in S12 module)', '', NULL
-79, 0, 1, 'dissulfide bridge Cys 1', 180, 180, '', 'name of the region with Cys 180 : F2 (in S12 module)', '', NULL
-79, 0, 2, 'dissulfide bridge Cys 2', 307, 307, '', 'name of the region with Cys 307 : F1 (in S12 module)', '', NULL
-72, 0, 1, 'dissulfide bridge Cys 1', 55, 55, '', 'name of the region with Cys 55 : F2 (in S12 module)', '', NULL
-72, 0, 2, 'dissulfide bridge Cys 2', 182, 182, '', 'name of the region with Cys 182 : F1 (in S12 module)', '', NULL
-94, 0, 3, 'dissulfide bridge Cys 1', 68, 68, '', 'name of the region with Cys 68 : F2 (in S12 module)', '', NULL
-94, 0, 4, 'dissulfide bridge Cys 2', 195, 195, '', 'name of the region with Cys 195 : F1 (in S12 module)', '', NULL
-347, 0, 1, 'dissulfide bridge Cys 1', 71, 71, '', 'name of the region with Cys 71 : F2 (in S12 module)', '', NULL
-347, 0, 2, 'dissulfide bridge Cys 2', 198, 198, '', 'name of the region with Cys 198 : F1 (in S12 module)', '', NULL
-391, 0, 1, 'NLS', 6, 19, '', 'unconventional karyophilic signal sequence in the BDV p10 protein', 'J Biol Chem. 2002 Apr 5;277(14):12151-7. Epub 2002 Jan 16.', 11796712
-240, 0, 1, 'NLS', 1, 13, '', 'NLS (p40 isoform) has been mapped to the 13 N-terminal amino-acid residues, with the motif 4KRR6 playing an essential role.', 'Fields', NULL
-90, 0, 10, 'binding to NR receptor', 401, 420, '', '', '', NULL
-90, 0, 11, 'interaction with FcgammaRII Receptor', NULL, NULL, 'X', 'N-CORE', '', NULL
-102, 0, 1, 'membrane binding', 104, 119, '', 'a region encompassing amino acids 104\96119 of the SeV M protein was proposed to form an amphiphilic alpha-helix involved in binding of M protein to the bilipidic membrane.', 'J Gen Virol. 1999 Nov;80 (Pt 11):2977-86', 10580060
-178, 0, 1, 'VP30 self-assemble', 94, 112, '', 'the  Essential region for oligomerization of VP30. Within this region a cluster of four leucine residues is of critical importance.', 'J Biol Chem. 2003 Oct 24;278(43):41830-6. Epub 2003 Aug 11.', 12912982
-21, 0, 1, 'dissulfide bridge Cys 1', 70, 70, '', 'name of the region with Cys 70 : F2 (in S12 module)', '', NULL
-21, 0, 2, 'dissulfide bridge Cys 2', 191, 191, '', 'name of the region with Cys 191 : F1 (in S12 module)', '', NULL
-87, 0, 1, 'dissulfide bridge Cys 1', 71, 71, '', 'name of the region with Cys 71 : F2 (in S12 module)', '', NULL
-87, 0, 2, 'dissulfide bridge Cys 2', 192, 192, '', 'name of the region with Cys 192 : F1 (in S12 module)', '', NULL
-6, 0, 1, 'dissulfide bridge Cys 1', 71, 71, '', 'name of the region with Cys 71 : F2 (in S12 module)', '', NULL
-6, 0, 2, 'dissulfide bridge Cys 2', 192, 192, '', 'name of the region with Cys 192 : F1 (in S12 module)', '', NULL
-158, 0, 1, 'dissulfide bridge Cys 1', 69, 69, '', 'name of the region with Cys 69 : F2 (in S12 module)', '', NULL
-158, 0, 2, 'dissulfide bridge Cys 2', 212, 212, '', 'name of the region with Cys 212 : F1 (in S12 module)', '', NULL
-147, 0, 1, 'dissulfide bridge Cys 1', 69, 69, '', 'name of the region with Cys 69 : F2 (in S12 module)', '', NULL
-147, 0, 2, 'dissulfide bridge Cys 2', 212, 212, '', 'name of the region with Cys 212 : F1 (in S12 module)', '', NULL
-169, 0, 1, 'dissulfide bridge Cys 1', 69, 69, '', 'name of the region with Cys 69 : F2 (in S12 module)', '', NULL
-169, 0, 2, 'dissulfide bridge Cys 2', 212, 212, '', 'name of the region with Cys 212 : F1 (in S12 module)', '', NULL
-409, 0, 1, 'dissulfide bridge Cys 1', 60, 60, '', 'name of the region with Cys 60 : F2 (in S12 module)', '', NULL
-409, 0, 2, 'dissulfide bridge Cys 2', 182, 182, '', 'name of the region with Cys 182 : F1 (in S12 module)', '', NULL
-169, 0, 3, '1G2C', 158, 209, '', 'PDB', '', NULL
-241, 0, 1, 'Interaction P-P', 135, 172, '', '', 'J Biol Chem. 1998 Apr 10;273(15):9007-12.', 9535888
-241, 0, 2, 'Interaction P-N', 197, 201, '', '', 'J Biol Chem. 1998 Apr 10;273(15):9007-12.', 9535888
-241, 0, 3, 'Interaction P-X(or p10)', 33, 115, '', '', 'J Biol Chem. 1998 Apr 10;273(15):9007-12. ', 9535888
-193, 0, 1, 'membranar interaction', 59, 221, '', 'A hydrophobic photolabeling technique identified a peptide from residues 59 to 221 of VSV G protein interacting with the hydrophobic membrane core. Because this region encompasses residues 118 to 136, the results also provides support for the role of this domain in membrane insertion during fusion.', 'Fields p1227', NULL
-437, 0, 1, 'NLS', 101, 105, '', '', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
-333, 0, 1, 'NLS', 101, 105, '', '', 'J Virol. 1995 Mar;69(3):1964-70.', 7853543
-606, 0, 1, 'NLS', 101, 105, '', '', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
-582, 0, 1, 'NLS', 101, 105, '', '', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
-599, 0, 1, 'NLS', 101, 105, '', '', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
-310, 0, 1, 'NLS', 101, 105, '', '', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
-602, 0, 1, 'NLS', 1, 13, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-602, 0, 2, 'nNLS', 198, 216, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-602, 0, 3, 'NAS', 336, 345, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-331, 0, 1, 'NLS', 1, 13, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-331, 0, 2, 'nNLS', 198, 216, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-331, 0, 3, 'NAS', 336, 345, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-434, 0, 1, 'NLS', 1, 13, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-434, 0, 2, 'nNLS', 198, 216, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-434, 0, 3, 'NAS', 336, 345, '', '', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
-91, 0, 1, 'Nucleocapsid-Binding Domain', 457, 507, '', '[3D:1T6O] Nucleocapsid-Binding Domain Of The Measles Virus P Protein (Amino Acids 457-507 in Complex With Amino Acids 486-505 Of The Measles Virus N Protein', 'Proc Natl Acad Sci U S A. 2004 Jun 1;101(22):8301-6. Epub 2004 May 24', 15159535
-90, 0, 12, 'Nucleocapsid-Binding Domain', 486, 505, '', '[3D:1T6O VAZy91] Nucleocapsid-Binding Domain Of The Measles Virus P Protein (Amino Acids 457-507 in Complex With Amino Acids 486-505 Of The Measles Virus N Protein', 'Proc Natl Acad Sci U S A. 2004 Jun 1;101(22):8301-6. Epub 2004 May 24', 15159535
-633, 0, 1, 'interaction with membrane', 245, 264, '', ' alpha helix of nsP1 (residus 245 to 264) interact the bilayer lipid membrane ', '', NULL
+6, 0, 1, 'dissulfide bridge Cys 1', 71, 71, 'None', 'name of the region with Cys 71 : F2 (in S12 module)', 'None', 'NULL'
+6, 0, 2, 'dissulfide bridge Cys 2', 192, 192, 'None', 'name of the region with Cys 192 : F1 (in S12 module)', 'None', 'NULL'
+12, 0, 1, 'dissulfide bridge Cys 1', 74, 74, 'None', 'name of the region with Cys 74 : F2 (in S12 module) ', 'None', 'NULL'
+12, 0, 2, 'dissulfide bridge Cys 2', 201, 201, 'None', 'name of the region with Cys 201 : F1 (in S12 module)', 'None', 'NULL'
+21, 0, 1, 'dissulfide bridge Cys 1', 70, 70, 'None', 'name of the region with Cys 70 : F2 (in S12 module)', 'None', 'NULL'
+21, 0, 2, 'dissulfide bridge Cys 2', 191, 191, 'None', 'name of the region with Cys 191 : F1 (in S12 module)', 'None', 'NULL'
+27, 0, 1, 'dissulfide bridge Cys 1', 71, 71, 'None', 'name of the region with Cys 71 : F2 (in S12 module)', 'None', 'NULL'
+27, 0, 2, 'dissulfide bridge Cys 2', 192, 192, 'None', 'name of the region with Cys 192 : F1 (in S12 module)', 'None', 'NULL'
+34, 0, 1, 'dissulfide bridge Cys 1', 64, 64, 'None', 'name of the region with Cys 64 : F2 (in S12 module)', 'None', 'NULL'
+34, 0, 2, 'dissulfide bridge Cys 2', 185, 185, 'None', 'name of the region with Cys 185 : F1 (in S12 module)', 'None', 'NULL'
+43, 0, 1, 'dissulfide bridge Cys 1', 64, 64, 'None', 'name of the region with Cys 64 : F2 (in S12 module)', 'None', 'NULL'
+43, 0, 2, 'dissulfide bridge Cys 2', 185, 185, 'None', 'name of the region with Cys 185 : F1 (in S12 module)', 'None', 'NULL'
+51, 0, 1, 'dissulfide bridge Cys 1', 64, 64, 'None', 'name of the region with Cys 64 : F2 (in S12 module)', 'None', 'NULL'
+51, 0, 2, 'dissulfide bridge Cys 2', 185, 185, 'None', 'name of the region with Cys 185 : F1 (in S12 module)', 'None', 'NULL'
+59, 0, 1, 'dissulfide bridge Cys 1', 68, 68, 'None', 'name of the region with Cys 68 : F2 (in S12 module)', 'None', 'NULL'
+59, 0, 2, 'dissulfide bridge Cys 2', 189, 189, 'None', 'name of the region with Cys 189 : F1 (in S12 module)', 'None', 'NULL'
+65, 0, 1, 'dissulfide bridge Cys 1', 76, 76, 'None', 'name of the region with Cys 76 : F2 (in S12 module)', 'None', 'NULL'
+65, 0, 2, 'dissulfide bridge Cys 2', 199, 199, 'None', 'name of the region with Cys 199 : F1 (in S12 module) ', 'None', 'NULL'
+72, 0, 1, 'dissulfide bridge Cys 1', 55, 55, 'None', 'name of the region with Cys 55 : F2 (in S12 module)', 'None', 'NULL'
+72, 0, 2, 'dissulfide bridge Cys 2', 182, 182, 'None', 'name of the region with Cys 182 : F1 (in S12 module)', 'None', 'NULL'
+79, 0, 1, 'dissulfide bridge Cys 1', 180, 180, 'None', 'name of the region with Cys 180 : F2 (in S12 module)', 'None', 'NULL'
+79, 0, 2, 'dissulfide bridge Cys 2', 307, 307, 'None', 'name of the region with Cys 307 : F1 (in S12 module)', 'None', 'NULL'
+87, 0, 1, 'dissulfide bridge Cys 1', 71, 71, 'None', 'name of the region with Cys 71 : F2 (in S12 module)', 'None', 'NULL'
+87, 0, 2, 'dissulfide bridge Cys 2', 192, 192, 'None', 'name of the region with Cys 192 : F1 (in S12 module)', 'None', 'NULL'
+90, 0, 2, 'antigenic region', 457, 476, 'NULL', 'N-TAIL; epitope recognized by monoclonal antibody Cl25', 'NULL', 'NULL'
+90, 0, 1, 'P binding', 489, 506, 'NULL', 'N-TAIL (BOX 2)', 'Bourhis et al., unpublished data; Zhang et al.2002 ,Bankamp et al. 96', 'NULL'
+90, 0, 3, 'HSP72 binding', 517, 525, 'NULL', 'N-TAIL (BOX 3)', 'J Virol. 2002 Sep;76(17):8737-46', 12163594
+90, 0, 4, 'antigenic region', 515, 525, 'NULL', 'N-TAIL; epitope recognized by monoclonal antibody Cl105', 'NULL', 'NULL'
+90, 0, 5, 'interaction with IRF-3', 401, 420, 'None', 'N-TAIL; interaction with IRF-3 (BOX 1)', 'J. Virol. 2002', 'NULL'
+90, 0, 6, 'antigenic region', 122, 150, 'NULL', 'N-CORE ; epitope recognized by monoclonal antibody Cl120', 'NULL', 'NULL'
+90, 0, 7, 'region of  self-interaction and RNA binding', 189, 239, 'NULL', 'N-CORE ', 'NULL', 'NULL'
+90, 0, 8, 'CCR region of self-interaction and RNA binding', 258, 357, 'NULL', 'N-CORE', 'NULL', 'NULL'
+90, 0, 9, 'MORE region', 484, 499, 'None', 'by K.Dunker', 'None', 'NULL'
+90, 0, 10, 'binding to NR receptor', 401, 420, 'None', 'None', 'None', 'NULL'
+90, 0, 11, 'interaction with FcgammaRII Receptor', 'NULL', 'NULL', 'X', 'N-CORE', 'None', 'NULL'
+90, 0, 12, 'Nucleocapsid-Binding Domain', 486, 505, 'None', '[3D:1T6O VAZy91] Nucleocapsid-Binding Domain Of The Measles Virus P Protein (Amino Acids 457-507 in Complex With Amino Acids 486-505 Of The Measles Virus N Protein', 'Proc Natl Acad Sci U S A. 2004 Jun 1;101(22):8301-6. Epub 2004 May 24', 15159535
+91, 0, 1, 'Nucleocapsid-Binding Domain', 457, 507, 'None', '[3D:1T6O] Nucleocapsid-Binding Domain Of The Measles Virus P Protein (Amino Acids 457-507 in Complex With Amino Acids 486-505 Of The Measles Virus N Protein', 'Proc Natl Acad Sci U S A. 2004 Jun 1;101(22):8301-6. Epub 2004 May 24', 15159535
+94, 0, 1, 'HR1', 147, 184, 'None', 'Between \'-\', important aa: -I-DNLRAS-L-ETTNQAIEAIRQA-G-QEMILA-V-QGVQDY-I-NN', 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
+94, 0, 2, 'HR2', 457, 488, 'None', 'Between \'-\', important aa: LDVGTN-L-GNAIAK-L-EDAKEL-L-ESSDQI-L-RSMK', 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
+94, 0, 3, 'dissulfide bridge Cys 1', 68, 68, 'None', 'name of the region with Cys 68 : F2 (in S12 module)', 'None', 'NULL'
+94, 0, 4, 'dissulfide bridge Cys 2', 195, 195, 'None', 'name of the region with Cys 195 : F1 (in S12 module)', 'None', 'NULL'
+102, 0, 1, 'membrane binding', 104, 119, 'None', 'a region encompassing amino acids 104\96119 of the SeV M protein was proposed to form an amphiphilic alpha-helix involved in binding of M protein to the bilipidic membrane.', 'J Gen Virol. 1999 Nov;80 (Pt 11):2977-86', 10580060
+103, 0, 1, 'dissulfide bridge Cys 1', 70, 70, 'None', 'name of the region with Cys 70 : F2 (in S12 module)', 'None', 'NULL'
+103, 0, 2, 'dissulfide bridge Cys 2', 199, 199, 'None', 'name of the region with Cys 199 : F1 (in S12 module)', 'None', 'NULL'
+113, 0, 1, 'dissulfide bridge Cys 1', 66, 66, 'None', 'name of the region with Cys 66 : F2 (in S12 module)', 'None', 'NULL'
+113, 0, 2, 'dissulfide bridge Cys 2', 195, 195, 'None', 'name of the region with Cys 195 : F1 (in S12 module)', 'None', 'NULL'
+121, 0, 1, 'dissulfide bridge Cys 1', 63, 63, 'None', 'name of the region with Cys 63 : F2 (in S12 module)', 'None', 'NULL'
+121, 0, 2, 'dissulfide bridge Cys 2', 192, 192, 'None', 'name of the region with Cys 192 : F1 (in S12 module)', 'None', 'NULL'
+127, 0, 1, 'dissulfide bridge Cys 1', 63, 63, 'None', 'name of the region with Cys 63 : F2 (in S12 module)', 'None', 'NULL'
+127, 0, 2, 'dissulfide bridge Cys 2', 192, 192, 'None', 'name of the region with Cys 192 : F1 (in S12 module)', 'None', 'NULL'
+147, 0, 1, 'dissulfide bridge Cys 1', 69, 69, 'None', 'name of the region with Cys 69 : F2 (in S12 module)', 'None', 'NULL'
+147, 0, 2, 'dissulfide bridge Cys 2', 212, 212, 'None', 'name of the region with Cys 212 : F1 (in S12 module)', 'None', 'NULL'
+153, 0, 1, 'self-interaction', 1, 364, 'None', 'region of self-interaction (involved in nucleocapsid formation) (corresponding to NCORE of Paramyxovirinae)', 'Khattar et al. Virology 270, 215-228 (2000)', 'NULL'
+153, 0, 2, 'region not required', 365, 391, 'None', 'not required for encapsidation required for template function (likely corresponding to NTAIL of Paramyxovirinae)', 'Khattar et al. Virology 270, 215-228 (2000)', 'NULL'
+153, 0, 3, 'Interaction 1', 244, 290, 'None', 'interaction with P in the N\B0-P complex', 'Khattar et al. Virology 270, 215-228 (2000)', 'NULL'
+153, 0, 4, 'Interaction 2', 338, 364, 'None', 'interaction with P in the N\B0-P complex', 'Khattar et al. Virology 270, 215-228 (2000)', 'NULL'
+158, 0, 1, 'dissulfide bridge Cys 1', 69, 69, 'None', 'name of the region with Cys 69 : F2 (in S12 module)', 'None', 'NULL'
+158, 0, 2, 'dissulfide bridge Cys 2', 212, 212, 'None', 'name of the region with Cys 212 : F1 (in S12 module)', 'None', 'NULL'
+169, 0, 1, 'dissulfide bridge Cys 1', 69, 69, 'None', 'name of the region with Cys 69 : F2 (in S12 module)', 'None', 'NULL'
+169, 0, 2, 'dissulfide bridge Cys 2', 212, 212, 'None', 'name of the region with Cys 212 : F1 (in S12 module)', 'None', 'NULL'
+169, 0, 3, '1G2C', 158, 209, 'None', 'PDB', 'None', 'NULL'
+170, 0, 1, 'Interaction', 'NULL', 'NULL', 'x', 'M2-1 interact with N via RNA', 'J Virol. 2003 May;77(9):5046-53', 12692207
+170, 0, 2, 'Interaction', 'NULL', 'NULL', 'x', 'CCCH zinc finger proteins interact with the 3\'untranslatedregionofvariousmRNA.AnotherproteincontainingthisdomainisthehumansplicingfactorU2AF35kDsubunit', 'whichplaysacriticalroleinbothconstitutiveandenhancer-dependentsplicingbymediatingessentialprotein-proteininteractionsandprotein-RNAinteractionsrequiredfor3\' splice site selection.', 'J Virol. 2003 May;77(9):5046-53', 12692207
+170, 0, 3, 'Interaction', 'NULL', 'NULL', 'x', 'M2-1 is supposed to interact with P', 'J Virol. 2003 May;77(9):5046-53', 12692207
+170, 0, 4, 'M2-1/P interaction', 100, 120, 'NULL', 'Phosphorylation of either M2-1 or P appears to be dispensable for this interaction. Internal deletions within P mapped the M2-1-binding domain to a region between residues 100 and 120.', 'J Virol. 2003 Oct;77(19):10670-6', 12970453
+173, 0, 1, 'Interaction', 'NULL', 'NULL', 'x', 'Phosphoprotein binds to the complexe -N VP35 VP30 L-', 'None', 'NULL'
+178, 0, 1, 'VP30 self-assemble', 94, 112, 'None', 'the  Essential region for oligomerization of VP30. Within this region a cluster of four leucine residues is of critical importance.', 'J Biol Chem. 2003 Oct 24;278(43):41830-6. Epub 2003 Aug 11.', 12912982
+182, 0, 1, 'Interaction', 'NULL', 'NULL', 'x', 'Phosphoprotein binds to the complexe -N VP35 VP30 L-', 'None', 'NULL'
+193, 0, 1, 'membranar interaction', 59, 221, 'None', 'A hydrophobic photolabeling technique identified a peptide from residues 59 to 221 of VSV G protein interacting with the hydrophobic membrane core. Because this region encompasses residues 118 to 136, the results also provides support for the role of this domain in membrane insertion during fusion.', 'Fields p1227', 'NULL'
+240, 0, 1, 'NLS', 1, 13, 'None', 'NLS (p40 isoform) has been mapped to the 13 N-terminal amino-acid residues, with the motif 4KRR6 playing an essential role.', 'Fields', 'NULL'
+241, 0, 1, 'Interaction P-P', 135, 172, 'None', 'None', 'J Biol Chem. 1998 Apr 10;273(15):9007-12.', 9535888
+241, 0, 2, 'Interaction P-N', 197, 201, 'None', 'None', 'J Biol Chem. 1998 Apr 10;273(15):9007-12.', 9535888
+241, 0, 3, 'Interaction P-X(or p10)', 33, 115, 'None', 'None', 'J Biol Chem. 1998 Apr 10;273(15):9007-12. ', 9535888
+244, 0, 1, 'NLS', 741, 749, 'None', 'In article, limits are 844-852 (different strain BDV) but it\'sthesameNLSmotif.', 'JVirol2002Aug;76(16):8460-7', 12134049
+'
+310, 0, 1, 'NLS', 101, 105, 'None', 'None', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
+331, 0, 1, 'NLS', 1, 13, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+331, 0, 2, 'nNLS', 198, 216, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+331, 0, 3, 'NAS', 336, 345, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+333, 0, 1, 'NLS', 101, 105, 'None', 'None', 'J Virol. 1995 Mar;69(3):1964-70.', 7853543
+342, 0, 1, 'dissulfide bridge Cys 1', 64, 64, 'None', 'name of the region with Cys 64 : F2 (in S12 module)', 'None', 'NULL'
+342, 0, 2, 'dissulfide bridge Cys 2', 187, 187, 'None', 'name of the region with Cys 187 : F1 (in S12 module)', 'None', 'NULL'
+347, 0, 1, 'dissulfide bridge Cys 1', 71, 71, 'None', 'name of the region with Cys 71 : F2 (in S12 module)', 'None', 'NULL'
+347, 0, 2, 'dissulfide bridge Cys 2', 198, 198, 'None', 'name of the region with Cys 198 : F1 (in S12 module)', 'None', 'NULL'
+391, 0, 1, 'NLS', 6, 19, 'None', 'unconventional karyophilic signal sequence in the BDV p10 protein', 'J Biol Chem. 2002 Apr 5;277(14):12151-7. Epub 2002 Jan 16.', 11796712
+409, 0, 1, 'dissulfide bridge Cys 1', 60, 60, 'None', 'name of the region with Cys 60 : F2 (in S12 module)', 'None', 'NULL'
+409, 0, 2, 'dissulfide bridge Cys 2', 182, 182, 'None', 'name of the region with Cys 182 : F1 (in S12 module)', 'None', 'NULL'
+434, 0, 1, 'NLS', 1, 13, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+434, 0, 2, 'nNLS', 198, 216, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+434, 0, 3, 'NAS', 336, 345, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+437, 0, 1, 'NLS', 101, 105, 'None', 'None', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
+506, 9, 5, 'PKR interaction', 2209, 2274, 'None', 'None', 'None', 'NULL'
+506, 9, 6, 'V3 region', 2353, 2360, 'None', 'region (hyper ?) variable', 'Viral Immunol. 2002;15(1):95-119', 11952150
+506, 9, 1, 'SH3 binding motif', 1998, 2004, 'None', 'None', 'Viral Immunol. 2002;15(1):95-119', 11952150
+506, 9, 2, 'ISDR', 2209, 2248, 'None', 'None', 'Viral Immunol. 2002;15(1):95-119 ', 11952150
+506, 9, 3, 'SH3 binding motif Grb2-interaction', 2322, 2328, 'None', 'binds Grb2 through a proline rich', 'Viral Immunol. 2002;15(1):95-119 ', 11952150
+506, 9, 4, 'potential NLS', 2328, 2336, 'None', 'None', 'Viral Immunol. 2002;15(1):95-119 ', 11952150
+506, 7, 7, 'interaction', 1677, 1690, 'None', 'aa 21-34 of NS4A interacts with NS3 and fold the first 30 NS3 aa', 'isabelle', 'NULL'
+506, 6, 8, 'Covalant interaction', 1208, 1212, 'None', 'Covalant interaction between HELICASE and PROTEASE via PVFTD segment', 'Structure Fold Des. 1999 Nov 15;7(11):1353-63', 10574797
+540, 0, 1, 'DISORDER 1', 9, 19, 'None', 'putative unstructured segments (disorder), length 11 aa', 'Virology. 2003 Nov 10;316(1):135-45', 14599798
+540, 0, 2, 'DISORDER 2', 35, 56, 'None', 'putative unstructured segments (disorder), length 22 aa ', 'Virology. 2003 Nov 10;316(1):135-45', 14599798
+540, 0, 3, 'induced folding', 20, 34, 'None', 'region 20-34 globular induced folding on the RNA?', 'lab', 'NULL'
+572, 0, 1, 'dissulfide bridge Cys 1', 76, 76, 'None', 'name of the region with Cys 76 : F2 (in S12 module) ', 'None', 'NULL'
+572, 0, 2, 'dissulfide bridge Cys 2', 199, 199, 'None', 'name of the region with Cys 199 : F1 (in S12 module)', 'None', 'NULL'
+582, 0, 1, 'NLS', 101, 105, 'None', 'None', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
+599, 0, 1, 'NLS', 101, 105, 'None', 'None', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
+602, 0, 1, 'NLS', 1, 13, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+602, 0, 2, 'nNLS', 198, 216, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+602, 0, 3, 'NAS', 336, 345, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
+606, 0, 1, 'NLS', 101, 105, 'None', 'None', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
+617, 0, 1, 'dissulfide bridge Cys 1', 64, 64, 'None', 'name of the region with Cys 64 : F2 (in S12 module)', 'None', 'NULL'
+617, 0, 2, 'dissulfide bridge Cys 2', 193, 193, 'None', 'name of the region with Cys 193 : F1 (in S12 module)', 'None', 'NULL'
+633, 0, 1, 'interaction with membrane', 245, 264, 'None', ' alpha helix of nsP1 (residus 245 to 264) interact the bilayer lipid membrane ', 'None', 'NULL'
