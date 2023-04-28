@@ -4,6 +4,18 @@ from django.db import models
 
 # Create your models here.
 
+class Profile(models.Model):
+    """group of sub-sequences --like ModO_limits-- \
+        divided for each Modulo 
+    """
+    id = models.AutoField(primary_key=True)  # PK
+    filepath = models.CharField(max_length=300)  # filepath = filefield( ? )
+
+
+class Refseq(models.Model):
+    id = models.AutoField(primary_key=True)  # PK
+    accession = models.IntegerField()  # PK
+
 
 class Modulo(models.Model):
     """annotation (lvl 1)
@@ -12,8 +24,19 @@ class Modulo(models.Model):
         models (_type_): _description_
     """
     id = models.CharField(primary_key=True, max_length=10)  # PK
+    # , on_delete=models.CASCADE) Don't get ahead of ourselves
+    profile = models.OneToOneField(Profile)
+    refseq = models.OneToOneField(Refseq)
     name = models.CharField(max_length=100)
 
+
+class Structure(models.Model):
+    """Structure of reference, but not sure if one-to-one of one-to-many
+
+    For now : one-to-many
+    """
+    id = models.CharField(primary_key=True, max_length=4)  # PK
+    modulo_id = models.ForeignKey(Modulo, on_delete=models.CASCADE)  # FK
 
 
 # lvl 1
