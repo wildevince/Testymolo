@@ -35,8 +35,8 @@
 90, 0, 11, 'interaction with FcgammaRII Receptor', 'NULL', 'NULL', 'X', 'N-CORE', 'None', 'NULL'
 90, 0, 12, 'Nucleocapsid-Binding Domain', 486, 505, 'None', '[3D:1T6O VAZy91] Nucleocapsid-Binding Domain Of The Measles Virus P Protein (Amino Acids 457-507 in Complex With Amino Acids 486-505 Of The Measles Virus N Protein', 'Proc Natl Acad Sci U S A. 2004 Jun 1;101(22):8301-6. Epub 2004 May 24', 15159535
 91, 0, 1, 'Nucleocapsid-Binding Domain', 457, 507, 'None', '[3D:1T6O] Nucleocapsid-Binding Domain Of The Measles Virus P Protein (Amino Acids 457-507 in Complex With Amino Acids 486-505 Of The Measles Virus N Protein', 'Proc Natl Acad Sci U S A. 2004 Jun 1;101(22):8301-6. Epub 2004 May 24', 15159535
-94, 0, 1, 'HR1', 147, 184, 'None', 'Between \'-\', important aa: -I-DNLRAS-L-ETTNQAIEAIRQA-G-QEMILA-V-QGVQDY-I-NN', 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
-94, 0, 2, 'HR2', 457, 488, 'None', 'Between \'-\', important aa: LDVGTN-L-GNAIAK-L-EDAKEL-L-ESSDQI-L-RSMK', 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
+94, 0, 1, 'HR1', 147, 184, 'None', "Between gaps important aa: -I-DNLRAS-L-ETTNQAIEAIRQA-G-QEMILA-V-QGVQDY-I-NN", 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
+94, 0, 2, 'HR2', 457, 488, 'None', "Between gaps important aa: LDVGTN-L-GNAIAK-L-EDAKEL-L-ESSDQI-L-RSMK", 'Biochem Biophys Res Commun. 2002 Dec 20;299(5):897-902', 12470664
 94, 0, 3, 'dissulfide bridge Cys 1', 68, 68, 'None', 'name of the region with Cys 68 : F2 (in S12 module)', 'None', 'NULL'
 94, 0, 4, 'dissulfide bridge Cys 2', 195, 195, 'None', 'name of the region with Cys 195 : F1 (in S12 module)', 'None', 'NULL'
 102, 0, 1, 'membrane binding', 104, 119, 'None', 'a region encompassing amino acids 104\96119 of the SeV M protein was proposed to form an amphiphilic alpha-helix involved in binding of M protein to the bilipidic membrane.', 'J Gen Virol. 1999 Nov;80 (Pt 11):2977-86', 10580060
@@ -60,7 +60,7 @@
 169, 0, 2, 'dissulfide bridge Cys 2', 212, 212, 'None', 'name of the region with Cys 212 : F1 (in S12 module)', 'None', 'NULL'
 169, 0, 3, '1G2C', 158, 209, 'None', 'PDB', 'None', 'NULL'
 170, 0, 1, 'Interaction', 'NULL', 'NULL', 'x', 'M2-1 interact with N via RNA', 'J Virol. 2003 May;77(9):5046-53', 12692207
-170, 0, 2, 'Interaction', 'NULL', 'NULL', 'x', 'CCCH zinc finger proteins interact with the 3\'untranslatedregionofvariousmRNA.AnotherproteincontainingthisdomainisthehumansplicingfactorU2AF35kDsubunit', 'whichplaysacriticalroleinbothconstitutiveandenhancer-dependentsplicingbymediatingessentialprotein-proteininteractionsandprotein-RNAinteractionsrequiredfor3\' splice site selection.', 'J Virol. 2003 May;77(9):5046-53', 12692207
+170, 0, 2, 'Interaction', 'NULL', 'NULL', 'x', "CCCH zinc finger proteins interact with the 3'untranslatedregionofvariousmRNA.AnotherproteincontainingthisdomainisthehumansplicingfactorU2AF35kDsubunitwhichplaysacriticalroleinbothconstitutiveandenhancer-dependentsplicingbymediatingessentialprotein-proteininteractionsandprotein-RNAinteractionsrequiredfor3' splice site selection.", 'J Virol. 2003 May;77(9):5046-53', 12692207
 170, 0, 3, 'Interaction', 'NULL', 'NULL', 'x', 'M2-1 is supposed to interact with P', 'J Virol. 2003 May;77(9):5046-53', 12692207
 170, 0, 4, 'M2-1/P interaction', 100, 120, 'NULL', 'Phosphorylation of either M2-1 or P appears to be dispensable for this interaction. Internal deletions within P mapped the M2-1-binding domain to a region between residues 100 and 120.', 'J Virol. 2003 Oct;77(19):10670-6', 12970453
 173, 0, 1, 'Interaction', 'NULL', 'NULL', 'x', 'Phosphoprotein binds to the complexe -N VP35 VP30 L-', 'None', 'NULL'
@@ -71,8 +71,7 @@
 241, 0, 1, 'Interaction P-P', 135, 172, 'None', 'None', 'J Biol Chem. 1998 Apr 10;273(15):9007-12.', 9535888
 241, 0, 2, 'Interaction P-N', 197, 201, 'None', 'None', 'J Biol Chem. 1998 Apr 10;273(15):9007-12.', 9535888
 241, 0, 3, 'Interaction P-X(or p10)', 33, 115, 'None', 'None', 'J Biol Chem. 1998 Apr 10;273(15):9007-12. ', 9535888
-244, 0, 1, 'NLS', 741, 749, 'None', 'In article, limits are 844-852 (different strain BDV) but it\'sthesameNLSmotif.', 'JVirol2002Aug;76(16):8460-7', 12134049
-'
+244, 0, 1, 'NLS', 741, 749, 'None', "In article, limits are 844-852 (different strain BDV) but it'sthesameNLSmotif.", 'JVirol2002Aug;76(16):8460-7', 12134049
 310, 0, 1, 'NLS', 101, 105, 'None', 'None', 'J Virol. 1995 Mar;69(3):1964-70', 7853543
 331, 0, 1, 'NLS', 1, 13, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415
 331, 0, 2, 'nNLS', 198, 216, 'None', 'None', 'Virology. 1998 Oct 10;250(1):9-18', 9770415

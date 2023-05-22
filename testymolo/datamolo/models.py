@@ -4,30 +4,42 @@ from django.db import models
 
 # Create your models here.
 
+
 class Profile(models.Model):
     """group of sub-sequences --like ModO_limits-- \
         divided for each Modulo 
     """
     id = models.AutoField(primary_key=True)  # PK
-    filepath = models.CharField(max_length=300)  # filepath = filefield( ? )
-
-
-class Refseq(models.Model):
-    id = models.AutoField(primary_key=True)  # PK
-    accession = models.IntegerField()  # PK
+    # filepath = models.CharField(max_length=300)  # filepath = filefield( ? )
 
 
 class Modulo(models.Model):
-    """annotation (lvl 1)
-
-    Args:
-        models (_type_): _description_
-    """
     id = models.CharField(primary_key=True, max_length=10)  # PK
     # , on_delete=models.CASCADE) Don't get ahead of ourselves
-    profile = models.OneToOneField(Profile)
-    refseq = models.OneToOneField(Refseq)
-    name = models.CharField(max_length=100)
+
+    # name = models.CharField(max_length=100)
+
+    profile = models.OneToOneField(Profile)  # FK
+    # annotation = models.OneToOneField(Annotation)  # FK
+
+
+class Annotation(models.Model):
+    Tables_SQL = (
+        ("Prot_Infos", "Information"),
+        ("Prot_MOTIF", "motifs"),
+        ("Prot_MUT", "mutants"),
+        ("Prot_REG", "other regions of interest"),
+        ("Prot_RI", "regions of interest"),
+        ("CAZy_GB_GP", "genome"),
+        ("CAZy_PDB", "structure"),
+        ("CAZy_PP", "polyprotein"),
+        ("CAZy_SP", "single protein"),
+    )
+
+    id = models.AutoField(primary_key=True)  # PK
+    tab = models.CharField(max_length=10, choices=Tables_SQL)
+    data_ac = models.IntegerField()
+    modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE)
 
 
 class Structure(models.Model):
@@ -44,90 +56,6 @@ class Structure(models.Model):
 
 class Organism(models.Model):
     #:166
-    # Tax_id [PK] (int)
-    # Name (str)
-    # abr (str):  (=CAZy_DB.abr)
-    # Category (str): realm
-    # Class (str): genome type ['ssRNA positive-strand viruses' Or 'ssRNA negative-strand viruses']
-    # Order (str)
-    # Family (str)
-    # sFamily (str)
-    # Genre (str)
-    # Note (text)
-    pass
-
-
-class Mod_Families(models.Model):
-    # lots of NULL instances !
-
-    # Family (str) [PK] :
-    # Family_Name (str):
-    # Family_Activity (str):
-    # Family_Taxo (str ArrayField):
-    # Clan (str) : = sub families
-
-    # description
-    # Family_note (text)
-    # Family_Private_note (text)
-    # Fold (str) :
-
-    # ModoS_uniqfct (str): bool yes/no
-    # ModoS_Activity (text)
-    # ModoS_Description (text)
-    # ModoS_Fold (text)
-    # ModoS_note (text)
-    # ModoS_Private_note (text)
-
-    # web_descript (str) : keywords
-    # web_status (int) : [0 | 1]
-    pass
-
-
-class Motifs:
-    pass
-
-
-class EC_num:
-    #:1
-    pass
-
-
-class Biblio_struct:
-    #:2
-    pass
-
-
-class CAZyModO:
-    # outdated
-    #:2
-    pass
-
-
-# lvl 3
-class Sequence(models.Model):
-    """old CAZy_DB
-
-    Args:
-        models (_type_): _description_
-    """
-    # [PK] int auto-incrementation
-
-    # id
-    # protein
-    # DB_name 'nickname' (str): [unused]
-    # Organism.Tax_id (int): [FK]
-
-    # ?
-    # EC
-    # _3D_status (str):
-
-    # sequence
-    #length (int)
-    #sequence (text)
-
-    # info
-    #DB_note (text)
-    #Created (date)
-    #Modified (date)
-    # PP_status (str): bool yes/no (Is sequence from poly-protein ?)
-    # Lib_sort (text): list of keywords ?
+    id = models.IntegerField(primary_key=True)  # Tax_id[PK](int)
+    name = models.CharField(max_length=100)  # shortname (str)
+    phylogeny = models.CharField(max_length=200)  # phylogeny absolute path
