@@ -13,6 +13,8 @@ VAZyMolO 2 pre-alpha
 Data Base  -> Coronavirus
 structure
 filling
+add all annotations 
+    -> if necessary delete them all but one
 missing elements ?  
 structures ...
 module proper names 
@@ -24,7 +26,7 @@ search engine
 
 Back End  (django)
 views
-models
+models oki
 forms
 urls
 

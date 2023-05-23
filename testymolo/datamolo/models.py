@@ -11,9 +11,30 @@ class Modulo(models.Model):
     activity = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, blank=True) 
     ### ex: "#.#.#.#" ExplorEnz EC classification
 
-    # , on_delete=models.CASCADE) Don't get ahead of ourselves
-    # name = models.CharField(max_length=100)
-    ## profile = models.OneToOneField(Profile)  # FK
+    ModuloFamily_choice = (
+        ("UNK", "unkwnow"),
+        ("S", "surface"),
+        ('F', "functional"),
+        ('DISF', "disorder functional"),
+        ('M', "matrice"),
+        ('IHD', "?"),
+        ('HD', "??"),
+        ('ITM', "???"),
+        ('TM', "trans-membrane"),
+        ('LNK', "link"),
+        ('IC', "????"),
+        ('NF', "?????"),
+        ('PS', "peptide signal"),
+        ('EX', "??????"),
+        ('DIS', "disorder"),
+        ('DISS', "disorder surface"),
+    )
+    moduloFamily = models.CharField(verbose_name="type of molulo",choices=ModuloFamily_choice, max_length=6)
+
+    # Don't get ahead of ourselves
+    ## , on_delete=models.CASCADE)
+    
+    # profile = models.OneToOneField(Profile)  # FK
     # annotation = models.OneToOneField(Annotation)  # FK
 
 
@@ -39,8 +60,8 @@ class Organism(models.Model):
 
 
 class Protein(models.Model):
-    id = models.IntegerField(verbose_name="intern accession number")  #PK
-    organism = models.ForeignKey(Organism)  #FK
+    id = models.IntegerField(primary_key=True, verbose_name="intern accession number")  #PK
+    organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
     ### line number in multifasta file
     name = models.CharField(verbose_name="used name", max_length=100)
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
@@ -50,7 +71,7 @@ class Protein(models.Model):
 class Subseq(models.Model):
     #id autofield #PK
     origin = models.ForeignKey(Protein, on_delete=models.CASCADE)  #FK
-    profile = models.ForeignKey(Profile)  #FK
+    profile = models.ForeignKey(Profile, null=True, on_delete=models.SET_NULL)  #FK
     start = models.IntegerField()
     end = models.IntegerField()
     
@@ -81,11 +102,11 @@ class Annotation(models.Model):
     )
 
     id = models.AutoField(primary_key=True)  # PK
-    profile = models.ForeignKey(Profile, on_delete=models.CASCADE) # FK
+    modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE) # FK
     tab = models.CharField(verbose_name="type of annotation", max_length=10, choices=Tables_SQL)
     data_ac = models.IntegerField()
     
-    origin = models.ForeignKey(Subseq, verbose_name="subseq of origin")  # -> FK(subseq) 
+    origin = models.ForeignKey(Subseq, null=True ,verbose_name="subseq of origin", on_delete=models.SET_NULL)  # -> FK(subseq) 
 
     #numb_origin -> start(int) and end(int)
     start_origin = models.IntegerField()
@@ -100,10 +121,9 @@ class Annotation(models.Model):
 
 class Protein_alt(models.Model):
     #id autofield #PK
-    organism = models.ForeignKey(Organism)  #FK
+    organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
     name = models.CharField(verbose_name="used name", max_length=100)
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
     header = models.CharField(max_length=30)  #fasta
     sequence = models.TextField(blank=True)  #sequence  #fasta
-
 
