@@ -1,0 +1,58 @@
+2023/05/22-23
+    - extracted species from Organism for Coronaviridae
+    - contained reference from VAZymolo 1 into a python dictionnary 
+            *data[Organism_Tax_id][CAZy_DB_id]["annotation"] = list([Annotation_tab, lineNumber])
+                    //               //       ["subseq"][composition_lineNumber] = modulo_id
+    - decided and defined the structure of Vazymolo 2 database (testymolo)
+            *Modulo:
+                    id: vazymolo 1 Modo_familiy_id
+                    activity: "#.#.#.#" ExplorEnz EC classification
+            *Profile:
+                    id
+                    validated (bool) 
+                FK  Modulo
+            *Organism:
+                    id : Tax_id
+                    name: abbreviate name
+                    phylogeny : absolute path
+            *Protein:
+                    id: intern accession number  # line number in multifasta file
+                FK  Organism
+                    name: used name
+                    data_ac: VAZyMolO 1 CAZy_DB_id  #old  #safeKeeping
+            *Protein_ALT:
+                FK  Organism
+                    name
+                    data_ac
+                    header: #fasta
+                    sequence: #fasta
+            *Subseq:
+                FK  Protein
+                FK  profile
+                    start (int)
+                    end (int)
+            *Structure:
+                    id: PDB_id
+                FK  Modulo
+                    reference (bool)
+            *Annotation:
+                FK  Profile
+                    tab : annotation table
+                    data_ac : lineNumber in csv file
+                FK  origin: ForeignKey(Subseq)
+                    start_origin (int)
+                    end_origin (int)
+                    start_profile (int)
+                    end_profile (int)
+
+    - overall multifasta for concerned protein sequences
+
+    + sequence access test : 
+            *get sequence in file 
+            *get sequence in object
+    + taxonkit: retreive official phylo from any taxon
+        -> PhyML: produce "real" phylo tree by alignment and dataset
+    + Diamond (aligner) : replace BLAST ? 
+        -> CAZY are making the change ? Why aren't we ? 
+    + EC => ExplorEnz classification
+        -> ideal for our activity field 
