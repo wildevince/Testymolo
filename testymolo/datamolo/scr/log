@@ -1,0 +1,4438 @@
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )
+
+            Organism_model = Organism.objects.create(
+                id = int(Tax_id),
+                name = org_name,
+                phylogeny = ""
+            )
+
+            Protein_model = Protein.objects.create(
+                organism = Organism_model,
+                name = name,
+                data_ac = int(data_ac),
+                header = header,
+                sequence = fastaseq
+            )
+
+                Subseq_model = Subseq.objects.create(
+                    origin = Protein_model,
+                    start = start,
+                    end = end,
+                    profile = None
+                )

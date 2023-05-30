@@ -1,5 +1,17 @@
 from django.db import models
+from django.core.files.storage import FileSystemStorage
+from django.conf import settings
 #from django_mysql.models import ArrayField
+
+
+fs = FileSystemStorage(location="/media/data")
+
+
+# DEBUG class
+class DATA(models.Model):
+    id = models.CharField(primary_key=True, max_length=20)
+    file = models.FileField(storage=fs)
+
 
 
 # Create your models here.
@@ -43,7 +55,7 @@ class Profile(models.Model):
     """group of sub-sequences --like ModO_limits-- \
         divided for each Modulo 
     """
-    id = models.AutoField(primary_key=True)  # PK
+    # id = models.AutoField(primary_key=True)  # PK
     validated = models.BooleanField(default=False)
     modulo = models.OneToOneField(Modulo, on_delete=models.CASCADE) #FK
 
@@ -60,12 +72,12 @@ class Organism(models.Model):
 
 
 class Protein(models.Model):
-    id = models.IntegerField(primary_key=True, verbose_name="intern accession number")  #PK
+    #id autofield #PK
     organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
-    ### line number in multifasta file
     name = models.CharField(verbose_name="used name", max_length=100)
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
-
+    header = models.CharField(max_length=30)  #fasta
+    sequence = models.TextField(blank=True)  #sequence  #fasta
 
 
 class Subseq(models.Model):
@@ -120,10 +132,13 @@ class Annotation(models.Model):
 
 
 class Protein_alt(models.Model):
-    #id autofield #PK
+    
+    ### line number in multifasta file
+    id = models.IntegerField(primary_key=True, verbose_name="intern accession number")  #PK 
+
     organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
+    
     name = models.CharField(verbose_name="used name", max_length=100)
+    
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
-    header = models.CharField(max_length=30)  #fasta
-    sequence = models.TextField(blank=True)  #sequence  #fasta
 
