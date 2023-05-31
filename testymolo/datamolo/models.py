@@ -43,6 +43,21 @@ class Modulo(models.Model):
     )
     moduloFamily = models.CharField(verbose_name="type of molulo",choices=ModuloFamily_choice, max_length=6)
 
+    def Get_Family(id:str):
+        result:str = ""
+        for i in range(len(id)):
+            if not id[i].isdigit():
+                result += id[i]
+            else:
+                break
+        return result
+
+    def Do_exist(modulo_id:str):
+        for choice in Modulo.ModuloFamily_choice:
+            if(modulo_id.startswith(choice[0])):
+                return True
+        return False
+
     # Don't get ahead of ourselves
     ## , on_delete=models.CASCADE)
     
@@ -70,7 +85,6 @@ class Organism(models.Model):
     phylogeny = models.CharField(max_length=200)  # phylogeny absolute path
 
 
-
 class Protein(models.Model):
     #id autofield #PK
     organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
@@ -78,7 +92,6 @@ class Protein(models.Model):
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
     header = models.CharField(max_length=30)  #fasta
     sequence = models.TextField(blank=True)  #sequence  #fasta
-
 
 class Subseq(models.Model):
     #id autofield #PK
@@ -130,7 +143,7 @@ class Annotation(models.Model):
     
 
 
-
+"""
 class Protein_alt(models.Model):
     
     ### line number in multifasta file
@@ -141,4 +154,4 @@ class Protein_alt(models.Model):
     name = models.CharField(verbose_name="used name", max_length=100)
     
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
-
+"""

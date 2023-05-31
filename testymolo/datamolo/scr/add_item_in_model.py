@@ -1,4 +1,5 @@
 from datamolo.models import *
+from django.conf import settings
 
 import re
 import json
@@ -8,18 +9,9 @@ from os import path
 from Bio import SeqIO, Seq
 
 
-tables_csv: str = "./../../testymolo/media/tables_csv/"
-
-
-testydata: str = "./../../testymolo/media/data/"
-data_json: str = path.join(testydata,"data.json")
-multifasta: str = path.join(testydata,"sequences.fasta")
-
-
-
 
 def custom_csv_parser_to_list(infilepath:str) -> list:
-    with open(path.join(tables_csv, infilepath+".csv") ,'r') as handle:
+    with open(path.join(settings.TABLES_CSV, infilepath+".csv") ,'r') as handle:
 
         rows:list = []
 
@@ -65,14 +57,12 @@ def custom_csv_parser_to_list(infilepath:str) -> list:
         print("nbr of rows", len(rows))
         return rows
 
-
 def Get_fastaseq_from_file(id:str) -> Seq:
     # Read the Sequences fasta file
-    with open(multifasta) as handle:
+    with open(settings.MULTIFASTA) as handle:
         for record in SeqIO.parse(handle,format="fasta"):
             if(record.id == id):
                 return record.seq
-
 
 def Get_name_from_CAZy_DB(id:str) -> str:
     CAZy_DB = custom_csv_parser_to_list("CAZy_DB")
@@ -80,13 +70,11 @@ def Get_name_from_CAZy_DB(id:str) -> str:
         if(item[0] == id) :
             return item[1]
 
-
 def Get_org_name_from_CAZy_DB(id:str) -> str:
     CAZy_DB = custom_csv_parser_to_list("CAZy_DB")
     for item in CAZy_DB:
         if(item[0] == id) :
             return item[3]
-
 
 def Get_limits_of_subseq(id:str) -> tuple:
     Compositions = custom_csv_parser_to_list("ModO_Composition")
@@ -94,36 +82,32 @@ def Get_limits_of_subseq(id:str) -> tuple:
     Limits = custom_csv_parser_to_list("ModO_Limits")
     for lim in Limits:
         if(lim[0] == compo[0] and lim[1] == compo[1]):
-            return (lim[-2], lim[-1])
-
-
+            return (int(lim[-2]), int(lim[-1]))
 
 def parse_data():
-    log = open("./log", "w")
 
     # Read the DATA json file
     data:dict = {}
-    with open(data_json) as handle:
+    with open(settings.DATA) as handle:
         data = json.load(handle)
 
 
     # Parse data dict
     ## species -> Organism__Tax_id
-    for species in data:
-        Tax_id:str = species
+    for Oraganism__Tax_id in data:
+        Tax_id:str = Oraganism__Tax_id
 
-        ## sequence -> CAZy_DB__DB_ac
-        for sequence in data[species]:
+        for CAZy_DB__DB_ac in data[Oraganism__Tax_id]:
             ### data_ac -> CAZy_DB__DB_ac
-            data_ac:str = sequence
+            data_ac:str = CAZy_DB__DB_ac
             ### get fasta seq of CAZy_DB__DB_ac
-            fastaseq:str = Get_fastaseq_from_file(sequence)
+            fastaseq:str = Get_fastaseq_from_file(CAZy_DB__DB_ac)
             ### get protein name
-            name:str = Get_name_from_CAZy_DB(sequence)
+            name:str = Get_name_from_CAZy_DB(CAZy_DB__DB_ac)
             ### get organism name
-            org_name:str = Get_org_name_from_CAZy_DB(sequence)
+            org_name:str = Get_org_name_from_CAZy_DB(CAZy_DB__DB_ac)
             ### create header 
-            header:str = name.replace(" ", "_")+"__"+"(@"+data_ac+")"
+            header_fasta:str = name.replace(" ", "_")+"__"+"(@"+data_ac+")"
 
             ### organism doesnt exist yet 
             if(len(Organism.objects.filter(id=int(Tax_id)))<1): 
@@ -137,27 +121,69 @@ def parse_data():
                 Organism_model = Organism.objects.get(id=int(Tax_id))
 
             ### add protein in MODELS (Tax_id, data_ac, fastaseq, name, header)
-            Protein_model = Protein.objects.create(
-                organism = Organism_model,
-                name = name,
-                data_ac = int(data_ac),
-                header = header,
-                sequence = fastaseq
-            )
+            if(len(Protein.objects.filter(data_ac = int(data_ac)))<1):
+                Protein_model = Protein.objects.create(
+                    organism = Organism_model,
+                    name = name,
+                    data_ac = int(data_ac),
+                    header = header_fasta,
+                    sequence = fastaseq
+                )
+            else:
+                Protein_model = Protein.objects.get(data_ac = int(data_ac))
 
-            for subseq in data[species][sequence]["subseq"]:
+            for subseq in data[Oraganism__Tax_id][CAZy_DB__DB_ac]["subseq"]:
                 ### key   -> composition_lineNumber
                 ### value -> domain__id
                 start, end = Get_limits_of_subseq(subseq)
 
                 ### add subseq in MODELS (origin, profile?, start, end)
-                Subseq_model = Subseq.objects.create(
-                    origin = Protein_model,
-                    start = start,
-                    end = end,
-                    profile = None
-                )
+                if(len(Subseq.objects.filter(origin = Protein_model, start = int(start)))<1):
+                    Subseq_model = Subseq.objects.create(
+                        origin = Protein_model,
+                        start = start,
+                        end = end,
+                        profile = None
+                    )
+                else:
+                    Subseq_model = Subseq.objects.get(origin = Protein_model, start = int(start))
 
+                ### Parse Modulo
+                modulo_id:str = data[Oraganism__Tax_id][CAZy_DB__DB_ac]['subseq'][subseq]
+                #### check if modulo_id is legit (cuz' could happend)
+                if(Modulo.Do_exist(modulo_id)):
+                    if(len(Modulo.objects.filter(id=modulo_id))<1): 
+                        module = Modulo.objects.create(
+                            id = modulo_id,
+                            moduloFamily = Modulo.Get_Family(modulo_id),
+                            #activity = None
+                        )
+                        # create Profile
+                        profile = Profile.objects.create(modulo = module)
+                    else:
+                        module = Modulo.objects.get(id=modulo_id)
+                        profile = Profile.objects.get(modulo = module)
 
-#parse_data()
-#Modulo.objects.create()
+                    # link between subseq/profile
+                    Subseq_model.profile = profile
+                    Subseq_model.save()
+
+def parse_Modules():
+
+    # Read the DATA json file
+    data:dict = {}
+    with open(settings.DATA) as handle:
+        data = json.load(handle)
+    #
+    for Oraganism__Tax_id in data:
+        for CAZy_DB__DB_ac in data[Oraganism__Tax_id]:
+            for subseq in data[Oraganism__Tax_id][CAZy_DB__DB_ac]['subseq']:
+                modulo_id:str = data[Oraganism__Tax_id][CAZy_DB__DB_ac]['subseq'][subseq]
+                if(len(Modulo.objects.filter(id=modulo_id))<1): 
+                    Modulo.objects.create(
+                        id = modulo_id,
+                        moduloFamily = Modulo.Get_Family(modulo_id),
+                        #activity = None
+                    )
+                
+

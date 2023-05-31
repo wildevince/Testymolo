@@ -15,7 +15,10 @@ from os import path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR: str = path.join(BASE_DIR, "testymolo/media/data")
+TABLES_CSV = path.join(BASE_DIR, "testymolo/media/tables_csv/")
+
+DATA_DIR: str = path.join(BASE_DIR, "testymolo/media/data/")
+
 DATA: str = path.join(BASE_DIR, "testymolo/media/data/data.json")
 MULTIFASTA: str = path.join(BASE_DIR, "testymolo/media/data/sequences.fasta")
 
