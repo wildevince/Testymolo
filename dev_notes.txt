@@ -64,3 +64,34 @@
         -> SET_NULL : set the referenced field to NULL , if only null is True
     ? validate le profile 
     ? moduloFamily real meaning
+
+2023/05/31
+    + specific treatment for each type of Annotation
+        -> Prot_Infos
+            * just loads of comments
+        -> Prot_MOTIF
+            * add table Motifs (META{Annotation})
+                    name, regex, activity, phylogeny specific, 
+            * add Annotation__{limits} (int), Annotation__note
+        -> Method
+            * guiding list of Modulo 
+            * 
+
+
+2023/06/01
+    + add table Genome 
+            * one-to-one Organism
+            * FK : Protein__coded_by
+            * association class: Genome--Protein
+    + add table PolyProtein
+            * association class : Protein--Protein
+            * limits according to PP's numbering (int, int) 
+            * add Protein__isPP (bool)
+            * add Protein__derivedFromPP (bool)
+    + add table Meta{Annotation}
+            * generalized info on annotation
+        -> Annotation => association class : subseq--Meta{Annotation} 
+    
+    ? inqueiry : repr modules in Protein scheme 
+        -> Organism -> Protein__isPP -> Protein -> Subseq -> Profile -> Module
+    

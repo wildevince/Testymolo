@@ -47,3 +47,16 @@ sequence   -->  multialignment  ---
                                                                    --           genome/ protein data
                                                             ---
  keywords -> search engine --- 
+
+
+
+
+        ("Prot_Infos", "information"),
+        ("Prot_MOTIF", "motif"),
+        ("Prot_MUT", "mutant"),
+        ("Prot_REG", "feature"),
+        ("Prot_RI", "interaction"),
+        ("CAZy_GB_GP", "genome"),
+        ("CAZy_PDB", "structure"),
+        ("CAZy_PP", "polyprotein"),
+        ("CAZy_SP", "single protein"),

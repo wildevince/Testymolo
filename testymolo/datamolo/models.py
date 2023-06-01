@@ -85,14 +85,34 @@ class Organism(models.Model):
     phylogeny = models.CharField(max_length=200)  # phylogeny absolute path
 
 
+class Genome(models.Model):
+    genbank = models.CharField(verbose_name="Genbank accession number" max_length=30)
+    organism = models.OneToOneField(Organism, on_delete = models.CASCADE)  #FK
+
+
+class CDS(models.Model):
+    genome = models.ForeignKey(Genome, on_delete=models.PROTECT)  #FK
+    start = models.IntegerField()
+    end = models.IntegerField()
+
+
 class Protein(models.Model):
     #id autofield #PK
+    isPP = models.BooleanField(verbose_name="is PolyProtein", default=False)
+    derivedFromPP = models.BooleanField(verbose_name="derived_from_PolyProtein", default=False)
     organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
     name = models.CharField(verbose_name="used name", max_length=100)
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
     header = models.CharField(max_length=30)  #fasta
     sequence = models.TextField(blank=True)  #sequence  #fasta
+    codedBy = models.OneToOneField(CDS, verbose_name="coded by", on_delete=models.CASCADE) 
 
+
+class PolyProtein(models.Model):
+    PP = models.ForeignKey(Protein, verbose_name="Polyprotein", on_delete=models.DO_NOTHING)  #FK
+    protein = models.ForeignObject(Protein, verbose_name="Real Protein", on_delete=models.DO_NOTHING)  #FK
+    
+    
 class Subseq(models.Model):
     #id autofield #PK
     origin = models.ForeignKey(Protein, on_delete=models.CASCADE)  #FK
@@ -100,6 +120,8 @@ class Subseq(models.Model):
     start = models.IntegerField()
     end = models.IntegerField()
     
+
+
 
 
 class Structure(models.Model):
@@ -116,22 +138,23 @@ class Structure(models.Model):
 class Annotation(models.Model):
     Tables_SQL = (
         ("Prot_Infos", "information"),
-        ("Prot_MOTIF", "motifs"),
-        ("Prot_MUT", "mutants"),
-        ("Prot_REG", "other regions of interest"),
-        ("Prot_RI", "regions of interest"),
+        ("Prot_MOTIF", "motif"),
+        ("Prot_MUT", "mutant"),
+        ("Prot_REG", "feature"),
+        ("Prot_RI", "interaction"),
         ("CAZy_GB_GP", "genome"),
         ("CAZy_PDB", "structure"),
         ("CAZy_PP", "polyprotein"),
         ("CAZy_SP", "single protein"),
     )
 
-    id = models.AutoField(primary_key=True)  # PK
+    #id = models.AutoField(primary_key=True)  # PK
     modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE) # FK
     tab = models.CharField(verbose_name="type of annotation", max_length=10, choices=Tables_SQL)
     data_ac = models.IntegerField()
+    value = models.CharField(max_length=200)
     
-    origin = models.ForeignKey(Subseq, null=True ,verbose_name="subseq of origin", on_delete=models.SET_NULL)  # -> FK(subseq) 
+    origin = models.ForeignKey(Protein, null=True ,verbose_name="protein of origin", on_delete=models.SET_NULL)  # -> FK(subseq) 
 
     #numb_origin -> start(int) and end(int)
     start_origin = models.IntegerField()

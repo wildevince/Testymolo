@@ -168,22 +168,159 @@ def parse_data():
                     Subseq_model.profile = profile
                     Subseq_model.save()
 
-def parse_Modules():
+          
 
+def parse_Annotations():
+    #
+    def Fetch_Modulo(protein, start:int, end:int) -> list:
+        # input: protein is Protein.object
+        # method: models.objects.filter(...)
+        # return: list(modulo__id:str)
+        result:list = []
+        for subseq in Subseq.objects.filter(origin=protein):
+            ## subseq is within start-end 
+            if(subseq.start >= start and subseq.end <= end):
+                ### yatta !
+                ### get profile thus modulo name
+                if(subseq.profile):
+                    result.append(subseq.profile.modulo.id)
+    
+    def Fetch_CSV(table_name:str, nline:int) -> list:
+        with open(path.join(settings.TABLES_CSV, table_name+".csv") ,'r') as handle:
+            k = 0
+            for line in handle.readlines():
+                if(k == nline):
+                    line = line.strip(';') # removing terminal ';' 
+                    values:list = [] # re-initialize value list
+                    val:str = "" # current parsing value
+                    inquote:bool = False # re-initialize in quote : False
+                    quote_char:str = '' # ' or "
+                    for c in line:
+                        if(c == ','): # encounter comma
+                            if(not inquote): ## and not in quote
+                                val = val.strip("'")
+                                val = val.strip('"')
+                                if(len(val) > 0):
+                                    values.append(val)
+                                else:
+                                    values.append(None)
+                                val = ""
+                                continue
+                        elif(c == '"' or c == "'"): # encounter quote
+                            if(inquote): # already in quote 
+                                if(quote_char == c):  # encounter ending quote mark
+                                    inquote = False
+                                else: # encounter the other quote mark 
+                                    pass
+                            else: # encounter starting quote mark
+                                inquote = True
+                                quote_char = c
+                        elif((c == ' ' or c == '\n') and not inquote):  # get rid of whitespaces
+                            continue
+                        val += c
+                    if(len(val)>0):
+                        val = val.strip("'")
+                        val = val.strip('"')
+                        values.append(val)
+
+                    if(len(values) > 0):
+                        return(values)
+                        #print(values)  
+        return []
+
+    def Make_Annotation(**kwargs):
+        if(len(l_module) < 1):
+            #### no match
+            #### no module associated to annotation
+            #### OR annotation in between two subseqs
+            if(kwargs.get("error_NoMatch_txt")):
+                log.write(kwargs["error_NoMatch_txt"])
+        elif(len(l_module) > 1):
+            #### multiple Matches 
+            #### not sure it could happen
+            if(kwargs.get("error_MultiMatch_txt")):
+                log.write(kwargs["error_MultiMatch_txt"])
+        elif(len(l_module) == 1):
+            module_id = kwargs["modules"][0]
+            protein = Protein.objects.get(data_ac = kwargs["CAZy_DB__DB_ac"])
+            #### only one match
+            Annotation.objects.create(
+                modulo = Modulo.objects.get(id=module_id),
+                tab = kwargs["tab"],
+                data_ac = kwargs["data_ac"],
+                value = kwargs["value"],  #dict(regex=csv[6], activity=csv[7], phylogeny=csv[8]),
+                origin = protein ,
+                start_origin = kwargs["start_origin"],
+                end_origin = kwargs["end_origin"],
+                start_profile = 0,
+                end_profile = 0
+            )
+
+
+    # log 
+    log = open(path.join(settings.DATA_DIR,"log.txt"), 'w')
+    
     # Read the DATA json file
     data:dict = {}
     with open(settings.DATA) as handle:
         data = json.load(handle)
-    #
+
     for Oraganism__Tax_id in data:
         for CAZy_DB__DB_ac in data[Oraganism__Tax_id]:
-            for subseq in data[Oraganism__Tax_id][CAZy_DB__DB_ac]['subseq']:
-                modulo_id:str = data[Oraganism__Tax_id][CAZy_DB__DB_ac]['subseq'][subseq]
-                if(len(Modulo.objects.filter(id=modulo_id))<1): 
-                    Modulo.objects.create(
-                        id = modulo_id,
-                        moduloFamily = Modulo.Get_Family(modulo_id),
-                        #activity = None
-                    )
-                
+            for annotation in data[Oraganism__Tax_id][CAZy_DB__DB_ac]['annotation']:
+                table_name:str = annotation[0]
+                nline:int = int(annotation[1])
 
+                ## switch case 
+                if(table_name == "Prot_Infos"):
+                    #### ['6', '0', '1', 'Consult accession', 'VaZy 94 for HR1 and HR2 domains and VaZy 169 for HR1 stucture (PDB: 1G2C)', 'NULL']
+                    ### just comments 
+                    ### -> data mining
+                    """
+                    Annotation.objects.create(
+                        #modulo = Modulo.objects.get(id=),
+                        tab = table_name,
+                        data_ca = nline,
+                        #value = CSV.[4],
+                        origin = Protein.objects.get(data_ac = CAZy_DB__DB_ac),
+                        start_origin = 1
+                        #end_origin = len(Subseq.objects.get().sequence),
+                        start_profile = 0, 
+                        end_profile = 0
+                    )"""
+                    pass
+                elif(table_name == "Prot_MOTIF"):
+                    #### ['1', '0', '1', 'motif', '322', '336', 'F-x(4)-Y-x(3)-W-S-F-A-M-G', 'nucleocapsid', 'paramyxovirinae', 'None', 'None', 'NULL']
+                    protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                    csv = Fetch_CSV("Prot_MOTIF", nline)
+                    l_module = Fetch_Modulo(protein, csv[4], csv[5])
+                    
+                    Make_Annotation(
+                        modules = l_module,
+                        tab = table_name,
+                        data_ac = nline,
+                        value = str(dict(regex=csv[6], activity=csv[7], phylogeny=csv[8])),
+                        origin = CAZy_DB__DB_ac,
+                        start_origin = csv[4],
+                        end_origin = csv[5],
+                        error_NoMatch_txt = f"NoMatch {CAZy_DB__DB_ac}[{csv[4]}:{csv[5]}] {table_name}:{nline}\n",
+                        error_MultiMatch_txt = f"MultiMatch {CAZy_DB__DB_ac}[{csv[4]}:{csv[5]}] {table_name}:{nline} ({', '.join(l_module)})\n"
+                        )
+                    
+                elif(table_name == "Prot_MUT"):
+                    ### ['90', '0', '1', 'S228Q; L229D', "action sur l\\'interactionN=N', 'Supressiondelaformationdelanucleocapside(aggregatsaleatoires)etdelaliaisonal\\'ARN.", 'Virology 2002 Oct 25;302(2):420-32', '12441086']
+                    pass
+                elif(table_name == "Prot_REG"):
+                    pass
+                elif(table_name == "Prot_RI"):
+                    pass
+                elif(table_name == "CAZy_GB_GP"):
+                    pass
+                elif(table_name == "CAZy_PDB"):
+                    pass
+                elif(table_name == "CAZy_PP"):
+                    pass
+                elif(table_name == "CAZy_SP"):
+                    pass
+    
+    log.close()
