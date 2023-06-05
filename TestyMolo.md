@@ -60,3 +60,21 @@ sequence   -->  multialignment  ---
         ("CAZy_PDB", "structure"),
         ("CAZy_PP", "polyprotein"),
         ("CAZy_SP", "single protein"),
+
+
+
+    def Make_Annotation(**kwargs):
+        elif(len(l_module) == 1):
+            module_id = kwargs["modules"][0]
+            protein = Protein.objects.get(data_ac = kwargs["CAZy_DB__DB_ac"])
+            Annotation.objects.create(
+                modulo = Modulo.objects.get(id=module_id),
+                tab = kwargs["tab"],
+                data_ac = kwargs["data_ac"],
+                value = kwargs["value"],  #dict(regex=csv[6], activity=csv[7], phylogeny=csv[8]),
+                origin = protein ,
+                start_origin = kwargs["start_origin"],
+                end_origin = kwargs["end_origin"],
+                start_profile = 0,
+                end_profile = 0
+            )

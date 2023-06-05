@@ -9,6 +9,7 @@ fs = FileSystemStorage(location="/media/data")
 
 # DEBUG class
 class DATA(models.Model):
+    """ temp dev only """
     id = models.CharField(primary_key=True, max_length=20)
     file = models.FileField(storage=fs)
 
@@ -17,6 +18,7 @@ class DATA(models.Model):
 # Create your models here.
 
 class Modulo(models.Model):
+    #lvl 1
     id = models.CharField(primary_key=True, max_length=10)  # PK
     ### vazymolo 1 Modo_familiy_id
 
@@ -70,6 +72,7 @@ class Profile(models.Model):
     """group of sub-sequences --like ModO_limits-- \
         divided for each Modulo 
     """
+    #lvl 2
     # id = models.AutoField(primary_key=True)  # PK
     validated = models.BooleanField(default=False)
     modulo = models.OneToOneField(Modulo, on_delete=models.CASCADE) #FK
@@ -79,6 +82,7 @@ class Profile(models.Model):
 
 
 class Organism(models.Model):
+    #lvl 1
     #:166
     id = models.IntegerField(primary_key=True)  # Tax_id[PK](int)
     name = models.CharField(verbose_name="abbreviate name", max_length=100)  # shortname (str)
@@ -86,34 +90,44 @@ class Organism(models.Model):
 
 
 class Genome(models.Model):
-    genbank = models.CharField(verbose_name="Genbank accession number" max_length=30)
+    #lvl 2
+    name = models.CharField(max_length=50, blank=True)
+    genbank = models.CharField(verbose_name="Genbank accession number", max_length=30)
     organism = models.OneToOneField(Organism, on_delete = models.CASCADE)  #FK
 
 
-class CDS(models.Model):
-    genome = models.ForeignKey(Genome, on_delete=models.PROTECT)  #FK
-    start = models.IntegerField()
-    end = models.IntegerField()
-
-
 class Protein(models.Model):
+    #lvl 2
     #id autofield #PK
     isPP = models.BooleanField(verbose_name="is PolyProtein", default=False)
     derivedFromPP = models.BooleanField(verbose_name="derived_from_PolyProtein", default=False)
     organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
+    genbank = models.CharField(max_length=20, default=""),
     name = models.CharField(verbose_name="used name", max_length=100)
     data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
     header = models.CharField(max_length=30)  #fasta
     sequence = models.TextField(blank=True)  #sequence  #fasta
-    codedBy = models.OneToOneField(CDS, verbose_name="coded by", on_delete=models.CASCADE) 
+    #codedBy = models.OneToOneField(CDS, verbose_name="coded by", blank=True, on_delete=models.CASCADE) 
+
+
+class CDS(models.Model):
+    #lvl 3
+    protein = models.OneToOneField(Protein, verbose_name="protein product", on_delete=models.PROTECT)  #FK
+    genome = models.ForeignKey(Genome, on_delete=models.CASCADE)  #FK
+    name = models.CharField(max_length=200)
+    start = models.IntegerField()
+    end = models.IntegerField()
+    sequence = models.TextField(verbose_name="nucleotide sequence")
 
 
 class PolyProtein(models.Model):
+    #lvl 3
     PP = models.ForeignKey(Protein, verbose_name="Polyprotein", on_delete=models.DO_NOTHING)  #FK
     protein = models.ForeignObject(Protein, verbose_name="Real Protein", on_delete=models.DO_NOTHING)  #FK
     
     
 class Subseq(models.Model):
+    #lvl 3
     #id autofield #PK
     origin = models.ForeignKey(Protein, on_delete=models.CASCADE)  #FK
     profile = models.ForeignKey(Profile, null=True, on_delete=models.SET_NULL)  #FK
@@ -121,21 +135,20 @@ class Subseq(models.Model):
     end = models.IntegerField()
     
 
-
-
-
 class Structure(models.Model):
+    #lvl 2
     """Structure of reference, but not sure if one-to-one of one-to-many
 
     For now : one-to-many
     """
     id = models.CharField(verbose_name="PDB accession", primary_key=True, max_length=4)  # PK
-    modulo_id = models.ForeignKey(Modulo, on_delete=models.CASCADE)  # FK
+    modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE)  # FK
     reference = models.BooleanField(default=False)
 
 
 
 class Annotation(models.Model):
+    #lvl 4
     Tables_SQL = (
         ("Prot_Infos", "information"),
         ("Prot_MOTIF", "motif"),
@@ -161,8 +174,8 @@ class Annotation(models.Model):
     end_origin = models.IntegerField()
 
     #numb_profile -> start(int) and end(int)
-    start_profile = models.IntegerField()
-    end_profile = models.IntegerField()
+    start_profile = models.IntegerField(default=0)
+    end_profile = models.IntegerField(default=0)
     
 
 

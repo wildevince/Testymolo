@@ -91,7 +91,6 @@ def parse_data():
     with open(settings.DATA) as handle:
         data = json.load(handle)
 
-
     # Parse data dict
     ## species -> Organism__Tax_id
     for Oraganism__Tax_id in data:
@@ -123,6 +122,8 @@ def parse_data():
             ### add protein in MODELS (Tax_id, data_ac, fastaseq, name, header)
             if(len(Protein.objects.filter(data_ac = int(data_ac)))<1):
                 Protein_model = Protein.objects.create(
+                    #isPP = False, 
+                    #derivedFromPP = False,
                     organism = Organism_model,
                     name = name,
                     data_ac = int(data_ac),
@@ -167,11 +168,10 @@ def parse_data():
                     # link between subseq/profile
                     Subseq_model.profile = profile
                     Subseq_model.save()
-
-          
+            
 
 def parse_Annotations():
-    #
+    
     def Fetch_Modulo(protein, start:int, end:int) -> list:
         # input: protein is Protein.object
         # method: models.objects.filter(...)
@@ -235,11 +235,13 @@ def parse_Annotations():
             #### OR annotation in between two subseqs
             if(kwargs.get("error_NoMatch_txt")):
                 log.write(kwargs["error_NoMatch_txt"])
+        
         elif(len(l_module) > 1):
             #### multiple Matches 
             #### not sure it could happen
             if(kwargs.get("error_MultiMatch_txt")):
                 log.write(kwargs["error_MultiMatch_txt"])
+        
         elif(len(l_module) == 1):
             module_id = kwargs["modules"][0]
             protein = Protein.objects.get(data_ac = kwargs["CAZy_DB__DB_ac"])
@@ -311,15 +313,133 @@ def parse_Annotations():
                     ### ['90', '0', '1', 'S228Q; L229D', "action sur l\\'interactionN=N', 'Supressiondelaformationdelanucleocapside(aggregatsaleatoires)etdelaliaisonal\\'ARN.", 'Virology 2002 Oct 25;302(2):420-32', '12441086']
                     pass
                 elif(table_name == "Prot_REG"):
-                    pass
+                    #13, 0, 1, 'PS', 1, 26, 'GlobPlot : 1-26=PS', 'None', 'NULL'
+                    protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                    csv = Fetch_CSV("Prot_REG", nline)
+                    l_module = Fetch_Modulo(protein, csv[5], csv[6])
+                    Make_Annotation(
+                        modules = l_module,
+                        tab = table_name,
+                        data_ac = nline,
+                        value = str(dict(name=csv[3], description=csv[6])),
+                        origin = CAZy_DB__DB_ac,
+                        start_origin = csv[5],
+                        end_origin = csv[6],
+                        error_NoMatch_txt = f"NoMatch {CAZy_DB__DB_ac}[{csv[5]}:{csv[6]}] {table_name}:{nline}\n",
+                        error_MultiMatch_txt = f"MultiMatch {CAZy_DB__DB_ac}[{csv[5]}:{csv[6]}] {table_name}:{nline} ({', '.join(l_module)})\n"
+                        )
+                    
                 elif(table_name == "Prot_RI"):
-                    pass
+                    #6, 0, 1, 'dissulfide bridge Cys 1', 71, 71, 'None', 'name of the region with Cys 71 : F2 (in S12 module)', 'None', 'NULL'
+                    protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                    csv = Fetch_CSV("Prot_RI", nline)
+                    l_module = Fetch_Modulo(protein, csv[4], csv[5])
+                    Make_Annotation(
+                        modules = l_module,
+                        tab = table_name,
+                        data_ac = nline,
+                        value = str(dict(name=csv[3], description=csv[7])),
+                        origin = CAZy_DB__DB_ac,
+                        start_origin = csv[4],
+                        end_origin = csv[5],
+                        error_NoMatch_txt = f"NoMatch {CAZy_DB__DB_ac}[{csv[4]}:{csv[5]}] {table_name}:{nline}\n",
+                        error_MultiMatch_txt = f"MultiMatch {CAZy_DB__DB_ac}[{csv[4]}:{csv[5]}] {table_name}:{nline} ({', '.join(l_module)})\n"
+                        )
+                    
                 elif(table_name == "CAZy_GB_GP"):
-                    pass
+                    # 1, 'NP_112021.1', 'NC_002728', '13559809', 'N', 'None', '1', 532, 'Reference'
+                    # DB_ac, prot_.gb, gen_.gb, acc?, gen_name, genomic? , begin, end, ref
+                    #  0   ,    1    ,   2    ,  3  ,    4    ,    5     ,   6  ,  7 ,  8
+                    protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                    csv = Fetch_CSV("CAZy_GB_GP", nline)
+                    l_module = Fetch_Modulo(protein, csv[6], csv[7])
+
+                    if(len(Genome.objects.filter(organism=protein.organism)) < 1):
+                        Genome.objects.create(  
+                            name = csv[4],
+                            genbank = csv[2],
+                            organism = protein.organism
+                        )
+
+                    if(len(l_module) < 1):
+                        #### no match
+                        #### no module associated to annotation
+                        #### OR annotation in between two subseqs
+                        log.write(f"NoMatch {CAZy_DB__DB_ac}[{csv[6]}:{csv[7]}] {table_name}:{nline}\n")
+                    elif(len(l_module) > 1):
+                        #### multiple Matches 
+                        #### not sure it could happen
+                        log.write(f"MultiMatch {CAZy_DB__DB_ac}[{csv[6]}:{csv[7]}] {table_name}:{nline} ({', '.join(l_module)})\n")
+                    elif(len(l_module) == 1):
+                        if(protein.genbank == ""):
+                            protein.genbank = csv[1]
+                            protein.save()
+                        else:
+                           log.write(f"AlreadyMatch {CAZy_DB__DB_ac}[{csv[6]}:{csv[7]}] {table_name}:{nline} {protein.genbank}--{csv[1]}")
+                    
                 elif(table_name == "CAZy_PDB"):
-                    pass
+                    #"DB_ac", "PDB_id", "PDB_chain", "PDB_begin", "PDB_end", "PDB_note", "PDB_bornModo"
+                    #65, '1G5G', 'A', 32, 500, 'Warning: only 94.5% identity', 'S12'
+                    protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                    csv = Fetch_CSV(table_name, nline)
+                    l_module = Fetch_Modulo(protein, csv[3], csv[4])
+
+                    if(len(l_module) < 1):
+                        #### no match
+                        #### no module associated to annotation
+                        #### OR annotation in between two subseqs
+                        log.write(f"NoMatch {CAZy_DB__DB_ac}[{csv[3]}:{csv[4]}] {table_name}:{nline}\n")
+                    elif(len(l_module) > 1):
+                        #### multiple Matches 
+                        #### not sure it could happen
+                        log.write(f"MultiMatch {CAZy_DB__DB_ac}[{csv[3]}:{csv[4]}] {table_name}:{nline} ({', '.join(l_module)})\n")
+                    elif(len(l_module) == 1):
+                        module = Modulo.objects.get(id=l_module[0])
+                        if(len(Structure.objects.filter(id=csv[1])) < 1):
+                            Structure.objects.create(
+                                id = csv[1],
+                                modulo = module
+                            )
+                            Annotation.objects.create(
+                                modulo = module,
+                                tab = table_name,
+                                data_ac = nline,
+                                value = str(dict(note=csv[5])),
+                                origin = protein,
+                                start_origin = csv[3],
+                                end_origin = csv[4]
+                            )
+                        
+                        if(protein.genbank == ""):
+                            protein.genbank = csv[1]
+                            protein.save()
+                        else:
+                           log.write(f"AlreadyMatch {CAZy_DB__DB_ac}[{csv[3]}:{csv[4]}] {table_name}:{nline} {protein.genbank}--{csv[1]}")
+                    
+
                 elif(table_name == "CAZy_PP"):
-                    pass
+                    #"DB_ac", "PP_ac", "PP_gi", "PP_gene", "PP_begin", "PP_end", "PP_note", "PP_diff"
+                    #268, 1, 'NP_739581', 'anchored capsid C', 1, 114, 'S98-PS', 'no'
+                    protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                    csv = Fetch_CSV(table_name, nline)
+                    l_module = Fetch_Modulo(protein, csv[4], csv[5])
+
+                    if(len(l_module) < 1):
+                        #### no match
+                        #### no module associated to annotation
+                        #### OR annotation in between two subseqs
+                        if(kwargs.get("error_NoMatch_txt")):
+                            log.write(kwargs["error_NoMatch_txt"])
+                    
+                    elif(len(l_module) > 1):
+                        #### multiple Matches 
+                        #### not sure it could happen
+                        if(kwargs.get("error_MultiMatch_txt")):
+                            log.write(kwargs["error_MultiMatch_txt"])
+                    
+                    elif(len(l_module) == 1):
+                        pass
+
                 elif(table_name == "CAZy_SP"):
                     pass
     

@@ -28,6 +28,15 @@ def index(request):
     ### need to flush and restart
     scr.parse_data()
 
+    ### need to do 
+    # Protein_ _isPP _derivedFromPP _codedBy
+    # Annotation_ _origin
+    # Genome
+    # CDS
+    # PolyProtein
+    # Structure 
+    ## Structure_ _reference =?
+
 
 
     return HttpResponse("The World !")
