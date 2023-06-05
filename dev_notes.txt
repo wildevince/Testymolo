@@ -95,3 +95,14 @@
     ? inqueiry : repr modules in Protein scheme 
         -> Organism -> Protein__isPP -> Protein -> Subseq -> Profile -> Module
     
+
+2023/06/05
+    - finish parse_Modules
+    - finish parse_Annotations....
+
+    + put all to polyprotein 
+        -> every 'nsp' as test pool 
+        -> cuz' not subseq in 'nsp'
+    + correct parse_Annotations
+        -> then figure in JS 
+            -> add genome and CDS (wait I haven't messed up)

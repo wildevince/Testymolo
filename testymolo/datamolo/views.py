@@ -25,17 +25,12 @@ def index(request):
     ### Subseq +-- Annotation --* Modulo  (difficile => positioning within limits && sorting types of annotation)
 
     ### Subseq --+ Profile -1-1- Modulo   (facile => aggregation && one-to-one )
-    ### need to flush and restart
-    scr.parse_data()
 
-    ### need to do 
-    # Protein_ _isPP _derivedFromPP _codedBy
-    # Annotation_ _origin
-    # Genome
-    # CDS
-    # PolyProtein
-    # Structure 
-    ## Structure_ _reference =?
+
+    ### need to hard flush and restart 
+    #scr.parse_data() 
+    scr.parse_Annotations(["CAZy_PP"]) 
+    scr.parse_Annotations(["Prot_Infos", "Prot_MOTIF", "Prot_MUT", "Prot_REG","Prot_RI","CAZy_PDB","CAZy_SP","CAZy_GB_GP"]) 
 
 
 

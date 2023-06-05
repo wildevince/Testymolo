@@ -102,9 +102,9 @@ class Protein(models.Model):
     isPP = models.BooleanField(verbose_name="is PolyProtein", default=False)
     derivedFromPP = models.BooleanField(verbose_name="derived_from_PolyProtein", default=False)
     organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
-    genbank = models.CharField(max_length=20, default=""),
+    genbank = models.CharField(max_length=20, default="")
     name = models.CharField(verbose_name="used name", max_length=100)
-    data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
+    data_ac = models.PositiveIntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
     header = models.CharField(max_length=30)  #fasta
     sequence = models.TextField(blank=True)  #sequence  #fasta
     #codedBy = models.OneToOneField(CDS, verbose_name="coded by", blank=True, on_delete=models.CASCADE) 
@@ -115,24 +115,29 @@ class CDS(models.Model):
     protein = models.OneToOneField(Protein, verbose_name="protein product", on_delete=models.PROTECT)  #FK
     genome = models.ForeignKey(Genome, on_delete=models.CASCADE)  #FK
     name = models.CharField(max_length=200)
-    start = models.IntegerField()
-    end = models.IntegerField()
+    start = models.PositiveIntegerField()
+    end = models.PositiveIntegerField()
     sequence = models.TextField(verbose_name="nucleotide sequence")
 
 
 class PolyProtein(models.Model):
     #lvl 3
-    PP = models.ForeignKey(Protein, verbose_name="Polyprotein", on_delete=models.DO_NOTHING)  #FK
-    protein = models.ForeignObject(Protein, verbose_name="Real Protein", on_delete=models.DO_NOTHING)  #FK
+    ## association class
+    PP = models.ForeignKey(Protein, related_name="mother", verbose_name="Polyprotein", on_delete=models.CASCADE)  #FK
+    protein = models.ForeignKey(Protein, related_name="child", verbose_name="Real Protein", on_delete=models.CASCADE)  #FK
+    index = models.PositiveIntegerField()
+    start = models.PositiveIntegerField()
+    end = models.PositiveIntegerField()
     
     
 class Subseq(models.Model):
     #lvl 3
+    ## association class
     #id autofield #PK
     origin = models.ForeignKey(Protein, on_delete=models.CASCADE)  #FK
     profile = models.ForeignKey(Profile, null=True, on_delete=models.SET_NULL)  #FK
-    start = models.IntegerField()
-    end = models.IntegerField()
+    start = models.PositiveIntegerField()
+    end = models.PositiveIntegerField()
     
 
 class Structure(models.Model):
@@ -143,6 +148,7 @@ class Structure(models.Model):
     """
     id = models.CharField(verbose_name="PDB accession", primary_key=True, max_length=4)  # PK
     modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE)  # FK
+    comment = models.CharField(max_length=200, default="")
     reference = models.BooleanField(default=False)
 
 
@@ -164,18 +170,18 @@ class Annotation(models.Model):
     #id = models.AutoField(primary_key=True)  # PK
     modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE) # FK
     tab = models.CharField(verbose_name="type of annotation", max_length=10, choices=Tables_SQL)
-    data_ac = models.IntegerField()
+    data_ac = models.PositiveIntegerField()
     value = models.CharField(max_length=200)
     
     origin = models.ForeignKey(Protein, null=True ,verbose_name="protein of origin", on_delete=models.SET_NULL)  # -> FK(subseq) 
 
     #numb_origin -> start(int) and end(int)
-    start_origin = models.IntegerField()
-    end_origin = models.IntegerField()
+    start_origin = models.PositiveIntegerField()
+    end_origin = models.PositiveIntegerField()
 
     #numb_profile -> start(int) and end(int)
-    start_profile = models.IntegerField(default=0)
-    end_profile = models.IntegerField(default=0)
+    start_profile = models.PositiveIntegerField(default=0)
+    end_profile = models.PositiveIntegerField(default=0)
     
 
 
