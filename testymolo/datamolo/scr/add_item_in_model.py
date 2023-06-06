@@ -323,6 +323,8 @@ def parse_Annotations(Annotations_tab:list):
 
                 if(table_name in Annotations_tab):
                     ## switch case 
+
+                    ### manualy (later) 
                     if(table_name == "Prot_Infos"):
                         csv = Fetch_CSV(table_name, nline)
                         #### ['6', '0', '1', 'Consult accession', 'VaZy 94 for HR1 and HR2 domains and VaZy 169 for HR1 stucture (PDB: 1G2C)', 'NULL']
@@ -331,6 +333,7 @@ def parse_Annotations(Annotations_tab:list):
                         log.write(f"prot_info:{nline} {CAZy_DB__DB_ac}:{csv[1]}:{csv[2]} {csv[3]}")
                         pass
 
+                    ### automatic
                     elif(table_name == "Prot_MOTIF"):
                         #### ['1', '0', '1', 'motif', '322', '336', 'F-x(4)-Y-x(3)-W-S-F-A-M-G', 'nucleocapsid', 'paramyxovirinae', 'None', 'None', 'NULL']
                         protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, derivedFromPP=False)
@@ -349,15 +352,17 @@ def parse_Annotations(Annotations_tab:list):
                             error_MultiMatch_txt = f"MultiMatch {CAZy_DB__DB_ac}[{csv[4]}:{csv[5]}] {table_name}:{nline} ({l_module})\n"
                             )
                         
+                    ### manualy (later)
                     elif(table_name == "Prot_MUT"):
                         ### ['90', '0', '1', 'S228Q; L229D', "action sur l\\'interactionN=N', 'Supressiondelaformationdelanucleocapside(aggregatsaleatoires)etdelaliaisonal\\'ARN.", 'Virology 2002 Oct 25;302(2):420-32', '12441086']
                         csv = Fetch_CSV(table_name, nline)
                         log.write(f"{table_name}:{nline} {CAZy_DB__DB_ac}:{csv[1]}:{csv[2]} {csv[3]}")
                         pass
 
+                    ### automatic
                     elif(table_name == "Prot_REG"):
                         #13, 0, 1, 'PS', 1, 26, 'GlobPlot : 1-26=PS', 'None', 'NULL'
-                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, isPP=False)
+                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, derivedFromPP=False)
                         csv = Fetch_CSV("Prot_REG", nline)
                         l_module = Fetch_Modulo(protein, csv[4], csv[5])
                         Make_Annotation(
@@ -372,9 +377,10 @@ def parse_Annotations(Annotations_tab:list):
                             error_MultiMatch_txt = f"MultiMatch {CAZy_DB__DB_ac}[{csv[4]}:{csv[5]}] {table_name}:{nline} ({l_module})\n"
                             )
                         
+                    ### automatic
                     elif(table_name == "Prot_RI"):
                         #6, 0, 1, 'dissulfide bridge Cys 1', 71, 71, 'None', 'name of the region with Cys 71 : F2 (in S12 module)', 'None', 'NULL'
-                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, isPP=False)
+                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, derivedFromPP=False)
                         csv = Fetch_CSV("Prot_RI", nline)
                         l_module = Fetch_Modulo(protein, csv[4], csv[5])
                         Make_Annotation(
@@ -389,11 +395,12 @@ def parse_Annotations(Annotations_tab:list):
                             error_MultiMatch_txt = f"MultiMatch {CAZy_DB__DB_ac}[{csv[4]}:{csv[5]}] {table_name}:{nline} ({l_module})\n"
                             )
                         
+                    ### automatic
                     elif(table_name == "CAZy_GB_GP"):
                         # 1, 'NP_112021.1', 'NC_002728', '13559809', 'N', 'None', '1', 532, 'Reference'
                         # DB_ac, prot_.gb, gen_.gb, acc?, gen_name, genomic? , begin, end, ref
                         #  0   ,    1    ,   2    ,  3  ,    4    ,    5     ,   6  ,  7 ,  8
-                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, derivedFromPP=False)
                         csv = Fetch_CSV("CAZy_GB_GP", nline)
                         l_module = Fetch_Modulo(protein, csv[6], csv[7])
 
@@ -422,10 +429,11 @@ def parse_Annotations(Annotations_tab:list):
                             else:
                                 log.write(f"AlreadyMatch {CAZy_DB__DB_ac}[{csv[6]}:{csv[7]}] {table_name}:{nline} {protein.genbank}--{csv[1]}")
                         
+                    ### automatic
                     elif(table_name == "CAZy_PDB"):
                         #"DB_ac", "PDB_id", "PDB_chain", "PDB_begin", "PDB_end", "PDB_note", "PDB_bornModo"
                         #65, '1G5G', 'A', 32, 500, 'Warning: only 94.5% identity', 'S12'
-                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, derivedFromPP=False)
                         csv = Fetch_CSV(table_name, nline)
                         l_module = Fetch_Modulo(protein, csv[3], csv[4])
 
@@ -456,6 +464,7 @@ def parse_Annotations(Annotations_tab:list):
                                     end_origin = csv[4]
                                 )
                             
+                    ### automatic
                     elif(table_name == "CAZy_PP"):
                         #"DB_ac", "PP_ac", "PP_gi", "PP_gene", "PP_begin", "PP_end", "PP_note", "PP_diff"
                         #268, 1, 'NP_739581', 'anchored capsid C', 1, 114, 'S98-PS', 'no'
@@ -488,11 +497,12 @@ def parse_Annotations(Annotations_tab:list):
                             end = csv[5]
                         )
 
+                    ### automatic
                     elif(table_name == "CAZy_SP"):
                         #68, 'nucleocapsid protein', 'None', 'phocine distemper virus Ulster/88', 'PhoDisV-U88', 11240, 'None', 'None', '523', 'MASLLKSLSLFKKTREQPPLASGSGGAIRGIKHVIIVLIPGDSSIVTRSRLLDRLVRMVGDPEVSGPKLTGVLISILSLFVESPGQLIQRIIDDPDISIKLVEVIPSINSTCGLTFASRGASLDAEADEFFGTMDEGSKDHNQMGWLENKDIIDIEVNDAEQFNILLASILAQIWILLAKAVTAPDTAADSEMRRWIKYTQQRRVIGEFRMNKIWLDIVRNRIAEDLSLRRFMVALILDIKRSPGNKPRIAEMICDIDNYIVEAGLASFILTIKFGIETMYPALGLHEFSGELTTIESLMVLYQQMGETAPYMVILENSVQNKFSAGSYPLLWSYAMGVGVELENSMGGLNFGRSYFDPAYFRLGQEMVRRSAGKVSSTFAAEFGITKEEAQLVSEIVSRTTEDRTTRATGPKQSQITFLHSERNEAPNQRLPPITMKSEFQGGDKYSNQLIDDRLSGYTSDVQSSEWDESRQITQLTQEGDHDNDQQSMDGLAKMRQLTKILNQSDTNGEVSPAHNDRDLLS', 'None', '2002-05-15', '2004-03-12', 'no', 'N mononegavirales'
                         #['68', 'P35944', 'NCAP_PHODV', 'N', '1', '523', 'Reference']
                         ## simply completing Protein item
-                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac)
+                        protein = Protein.objects.get(data_ac=CAZy_DB__DB_ac, derivedFromPP=False)
                         csv = Fetch_CSV(table_name, nline)
                         protein.genbank = csv[1]
                         protein.save()

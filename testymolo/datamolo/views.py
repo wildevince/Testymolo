@@ -1,13 +1,20 @@
+import os
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
 
 import datamolo.scr.add_item_in_model as scr
+import datamolo.models as data
+
 
 
 # Create your views here.
 
 def index(request):
+
+    template_name:str = os.path.join("datamolo", "datamolo.html")
+    context:dict = {}
 
     ## implement Database
     
@@ -29,9 +36,22 @@ def index(request):
 
     ### need to hard flush and restart 
     #scr.parse_data() 
-    scr.parse_Annotations(["CAZy_PP"]) 
-    scr.parse_Annotations(["Prot_Infos", "Prot_MOTIF", "Prot_MUT", "Prot_REG","Prot_RI","CAZy_PDB","CAZy_SP","CAZy_GB_GP"]) 
+    
+    ### BACKUP
 
+    #Table_names = [tab[0] for tab in Annotation.Tables_SQL]
+    #scr.parse_Annotations(Table_names) 
 
+    ### BACKUP 2
 
-    return HttpResponse("The World !")
+    ### -> visualization JS tool !
+    ### question: protein 375 -> polyprotein 1ab du HCoV
+
+    prot_ac = 375
+    protein = data.Protein.objects.get(data_ac=prot_ac, derivedFromPP=False)
+    subseq_list = data.Subseq.objects.filter(origin=protein)
+    modulo_list = [subseq.profile.modulo for subseq in subseq_list]
+    context[str(prot_ac)] = { "protein":protein, "subseq":subseq_list, "modulo":modulo_list }
+
+    #return HttpResponse("The World !")
+    return render(request, template_name, context)
