@@ -452,6 +452,7 @@ def parse_Annotations(Annotations_tab:list):
                                 Structure.objects.create(
                                     id = csv[1],
                                     modulo = module,
+                                    origin = Protein.objects.get(data_ac=CAZy_DB__DB_ac, derivedFromPP=False)
                                     #comment = "" (as default)
                                 )
                                 Annotation.objects.create(

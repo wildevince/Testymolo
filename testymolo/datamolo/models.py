@@ -147,9 +147,10 @@ class Structure(models.Model):
     For now : one-to-many
     """
     id = models.CharField(verbose_name="PDB accession", primary_key=True, max_length=4)  # PK
-    modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE)  # FK
+    modulo = models.ForeignKey(Modulo, on_delete=models.CASCADE)  #FK
     comment = models.CharField(max_length=200, default="")
     reference = models.BooleanField(default=False)
+    origin = models.ForeignKey(Protein, on_delete=models.CASCADE)  #FK
 
 
 

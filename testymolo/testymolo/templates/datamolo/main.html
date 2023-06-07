@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block datamolo_static %}
+ {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+        
+
+{% block datamolo %}
+    <p class='hovered'>Here will be the figure !</p>
+    <div id="data_fig" class="figure">
+        hi
+    </div>
+{% endblock %}

@@ -2,6 +2,7 @@ import os
 
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.conf import settings
 
 
 import datamolo.scr.add_item_in_model as scr
@@ -13,7 +14,7 @@ import datamolo.models as data
 
 def index(request):
 
-    template_name:str = os.path.join("datamolo", "datamolo.html")
+    template_name:str = os.path.join("datamolo", "main.html")
     context:dict = {}
 
     ## implement Database
@@ -39,7 +40,7 @@ def index(request):
     
     ### BACKUP
 
-    #Table_names = [tab[0] for tab in Annotation.Tables_SQL]
+    #Table_names = [tab[0] for tab in data.Annotation.Tables_SQL]
     #scr.parse_Annotations(Table_names) 
 
     ### BACKUP 2
@@ -47,11 +48,27 @@ def index(request):
     ### -> visualization JS tool !
     ### question: protein 375 -> polyprotein 1ab du HCoV
 
+
     prot_ac = 375
     protein = data.Protein.objects.get(data_ac=prot_ac, derivedFromPP=False)
     subseq_list = data.Subseq.objects.filter(origin=protein)
     modulo_list = [subseq.profile.modulo for subseq in subseq_list]
     context[str(prot_ac)] = { "protein":protein, "subseq":subseq_list, "modulo":modulo_list }
 
+    print("BASE_DIR", settings.BASE_DIR)
+    print("STATIC_ROOT", settings.STATIC_ROOT)
+
     #return HttpResponse("The World !")
     return render(request, template_name, context)
+
+
+
+# works !
+def download(request):
+    dirpath = os.path.join(settings.MEDIA_ROOT, 'data', 'sequences.fasta')
+    if(os.path.exists(dirpath)):
+        handle = open(dirpath, 'r')
+        response = HttpResponse(handle, content_type=dirpath)
+        response['Content-Disposition'] = f"attachment; filename=sequences.fasta"
+        return response
+    return HttpResponse("not found")
