@@ -53,7 +53,7 @@ def index(request):
     protein = data.Protein.objects.get(data_ac=prot_ac, derivedFromPP=False)
     subseq_list = data.Subseq.objects.filter(origin=protein)
     modulo_list = [subseq.profile.modulo for subseq in subseq_list]
-    context[str(prot_ac)] = { "protein":protein, "subseq":subseq_list, "modulo":modulo_list }
+    context["data"] = { "protein":protein, "subseq":subseq_list, "modulo":modulo_list }
 
     print("BASE_DIR", settings.BASE_DIR)
     print("STATIC_ROOT", settings.STATIC_ROOT)
