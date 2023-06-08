@@ -10,7 +10,73 @@
 
 {% block datamolo %}
     <p class='hovered'>Here will be the figure !</p>
+
     <div id="data_fig" class="figure">
-        hi
+        
+        {% load data_extras %}
+
+        <p><button value="false" onclick="switchSize()">size</button></p>
+
+        <svg width="1880" height="400">
+            <rect id="background" width="100%" height="100%" fill="grey" fill-opacity="0.1" stroke="black" />
+            <rect id="protein" x="0%" y="40%" width="100%" height="20%" fill="blue" fill-opacity="0.1" />
+            {% for subseq in data.subseq %}
+                <rect class="subseq" id={{ subseq.id }} height="20%" y="40%" fill="blue" fill-opacity="0.2" 
+                    x="{{ subseq|subseq_rect_xpos:data.protein.length }}%" 
+                    width="{{ subseq|subseq_rect_width:data.protein.length }}%"  />
+                <text class="module_name" id={{ subseq.id }} font-size='14' y="35%" x="{{ subseq|subseq_rect_xpos:data.protein.length }}%" >{{ subseq.module }}</text>
+                <line class="separator" id={{ subseq.id }} y1="40%" y2="60%" stroke="black" stroke-width="2" 
+                    x1="{{ subseq|subseq_line_xpos:data.protein.length }}%" 
+                    x2="{{ subseq|subseq_line_xpos:data.protein.length }}%"  />
+                <text class="numbering" id={{ subseq.id }} font-size='10' y="65%" x="{{ subseq|subseq_rect_xpos:data.protein.length }}%"  >{{ subseq.end }}</text>
+            {% endfor %}
+        </svg>
+
+
+        <script>
+            $("rect.subseq").mouseover(function(){
+                $(this).attr("fill-opacity", "0.8");
+            });
+            $("rect.subseq").mouseout(function(){
+                $(this).attr("fill-opacity", "0.2");
+            });
+            function switchSize() {
+                var $button = $("div#data_fig button");
+                if($button.attr("value") == "false") {
+                    $button.attr("value", "true");
+                    $("div#data_fig svg").attr("width", "1600");
+                } else {
+                    $button.attr("value", "false");
+                    $("div#data_fig svg").attr("width", "1200");
+                }
+            }
+            /*
+            $("rect.subseq").each(function() {
+                const id = $(this).attr("id");
+                var Text = $("svg text.module_name#"+id);   
+                let x = $(this).attr("x");
+                let width = $(this).attr("width");
+                if(width > 20%){
+                    let middlearea = x + 2/5*width;
+                    Text.attr("x", middlearea);
+                }
+            }); 
+            $("rect.subseq").each(function(){
+                const id = $(this).attr("id");
+                var Text_module = $("svg text.module_name#"+id);
+                var Text_numbering = $("svg text.numbering#"+id);
+                let width = $(this).attr("width");
+                if(width < 20%){
+                    
+                    let y = Text_module.attr("y");
+                    Text_module.attr("x", y-0.05);
+                    
+                    let y = Text_numbering.attr("y");
+                    Text_numbering.attr("x", y+0.05);
+                }
+            }); */
+
+        </script>
+
     </div>
 {% endblock %}

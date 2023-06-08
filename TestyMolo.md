@@ -78,3 +78,44 @@ sequence   -->  multialignment  ---
                 start_profile = 0,
                 end_profile = 0
             )
+
+
+
+{% for subseq in data.subseq %}
+                    <rect class="subseq" height="20%" y="40%" fill="blue" film-opacity="0.4" 
+                        x="" width=""  />
+                    <line class="separator" y1="40%" y2="60%" stroke="black" stroke-width="2" 
+                        x1="" x2=""  />
+            {% endfor %}
+
+
+
+<script>
+            const data = JSON.parse($('#data'));
+            const N = data.protein.length;
+            var $svg = $(svg);
+            let I = length(data.subseq);
+            let i = 0;
+
+            for (subseq in data.subseq) {
+                
+                $svg.innerhtml += '<rect class="subseq" height="20%" y="40%" fill="blue" fill-opacity="0.4" ';
+                $svg.innerhtml += 'x="'+ subseq.start/N*100 +'%" width="'+ (subseq.start-subseq.end)/N*100 +'%"  />';
+                
+                i ++;
+                if (i > I) {
+                    $svg.innerhtml += '<line class="separator" y1="40%" y2="60%" stroke="black" stroke-width="2" ';
+                    let pos = subseq.end/N*100;
+                    $svg.innerhtml += 'x1="'+ pos +'%" x2="'+ pos +'%"  />';
+                }                
+                
+            }
+            
+            $("rect.subseq").mouseover(function(){
+                $(this).att("fill-opacity", "0.8");
+            });
+            $("rect.subseq").mouseout(function(){
+                $(this).att("fill-opacity", "0.4");
+            });
+
+        </script>

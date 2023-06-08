@@ -60,11 +60,12 @@ class Modulo(models.Model):
                 return True
         return False
 
-    # Don't get ahead of ourselves
-    ## , on_delete=models.CASCADE)
-    
-    # profile = models.OneToOneField(Profile)  # FK
-    # annotation = models.OneToOneField(Annotation)  # FK
+    def serialize(item):
+        return {
+            "id":item.id,
+            "activity":item.activity,
+            "moduloFamily":item.moduloFamily,
+        }
 
 
 
@@ -109,6 +110,18 @@ class Protein(models.Model):
     sequence = models.TextField(blank=True)  #sequence  #fasta
     #codedBy = models.OneToOneField(CDS, verbose_name="coded by", blank=True, on_delete=models.CASCADE) 
 
+    def serialize(item):
+        return {
+            "isPP":item.isPP,
+            "derivedFromPP":item.derivedFromPP,
+            "organism":item.organism.id,
+            "genbank":item.genbank,
+            "name":item.name,
+            "data_ac":item.data_ac,
+            "header":item.header,
+            "sequence":item.sequence,
+            "length":len(item.sequence),
+        }
 
 class CDS(models.Model):
     #lvl 3
@@ -118,6 +131,16 @@ class CDS(models.Model):
     start = models.PositiveIntegerField()
     end = models.PositiveIntegerField()
     sequence = models.TextField(verbose_name="nucleotide sequence")
+
+    def serialize(item):
+        return {
+            "protein":item.protein.id,
+            "name":item.name,
+            "start":item.start,
+            "end":item.end,
+            "sequence":item.sequence,
+            "length":len(item.sequence),
+        }
 
 
 class PolyProtein(models.Model):
@@ -138,6 +161,22 @@ class Subseq(models.Model):
     profile = models.ForeignKey(Profile, null=True, on_delete=models.SET_NULL)  #FK
     start = models.PositiveIntegerField()
     end = models.PositiveIntegerField()
+
+    class Meta:
+        ordering = ['origin', 'start']
+
+    def serialize(item):
+        seq = item.origin.sequence[item.start:item.end]
+        return {
+            "id":item.id,
+            "origin":item.origin.id,
+            "profile":item.profile.id,
+            "module":item.profile.modulo.id,
+            "start":item.start,
+            "end":item.end,
+            "sequence":seq,
+            "length":len(seq),
+        }
     
 
 class Structure(models.Model):

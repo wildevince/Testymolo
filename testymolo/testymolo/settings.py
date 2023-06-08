@@ -144,6 +144,9 @@ STATIC_ROOT = path.join(BASE_DIR, "datamolo", "static")
 MEDIA_ROOT = path.join(BASE_DIR,"testymolo/media")
 MEDIA_URL = "media/"
 
+SCREEN = [(16,10),(16,9)]
+RESOLUTION = [(1440,900),(1920,1080)]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

@@ -51,12 +51,18 @@ def index(request):
 
     prot_ac = 375
     protein = data.Protein.objects.get(data_ac=prot_ac, derivedFromPP=False)
-    subseq_list = data.Subseq.objects.filter(origin=protein)
-    modulo_list = [subseq.profile.modulo for subseq in subseq_list]
-    context["data"] = { "protein":protein, "subseq":subseq_list, "modulo":modulo_list }
-
-    print("BASE_DIR", settings.BASE_DIR)
-    print("STATIC_ROOT", settings.STATIC_ROOT)
+    subseq_list:list = data.Subseq.objects.filter(origin=protein)
+    #modulo_list:list = [subseq.profile.modulo for subseq in subseq_list]
+    
+    context["data"] = { 
+        "protein": data.Protein.serialize(protein), 
+        "subseq": [data.Subseq.serialize(subseq) for subseq in subseq_list],
+        #"modulo": [data.Modulo.serialize(module) for module in modulo_list],
+        #"subseq": {str(j): data.Subseq.serialize(subseq) for j, subseq in enumerate(subseq_list)},
+        #"modulo": {str(j): data.Modulo.serialize(module) for j, module in enumerate(modulo_list)},
+        }
+    #print("BASE_DIR", settings.BASE_DIR)
+    #print("STATIC_ROOT", settings.STATIC_ROOT)
 
     #return HttpResponse("The World !")
     return render(request, template_name, context)
