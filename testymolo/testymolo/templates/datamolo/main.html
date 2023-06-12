@@ -50,31 +50,52 @@
                     $("div#data_fig svg").attr("width", "1200");
                 }
             }
-            /*
-            $("rect.subseq").each(function() {
-                const id = $(this).attr("id");
-                var Text = $("svg text.module_name#"+id);   
-                let x = $(this).attr("x");
-                let width = $(this).attr("width");
-                if(width > 20%){
-                    let middlearea = x + 2/5*width;
-                    Text.attr("x", middlearea);
-                }
-            }); 
-            $("rect.subseq").each(function(){
-                const id = $(this).attr("id");
-                var Text_module = $("svg text.module_name#"+id);
-                var Text_numbering = $("svg text.numbering#"+id);
-                let width = $(this).attr("width");
-                if(width < 20%){
+            
+            var WIDTH = parseInt($("svg").attr("width"));
+            var width_min = 360; // 350 px
+            var chnext = false;
+            var chlvl = 0;
+            var done = false;
+
+            if(done == false) {
+                $("rect.subseq").each(function(){
+                    let id = $(this).attr("id");
+                    let w = parseInt($(this).attr("width"));
                     
-                    let y = Text_module.attr("y");
-                    Text_module.attr("x", y-0.05);
-                    
-                    let y = Text_numbering.attr("y");
-                    Text_numbering.attr("x", y+0.05);
-                }
-            }); */
+                    if(chnext == true){
+
+                        let selectorus = concat("svg text.module_name#", id);
+                        var $modname = $(selectorus);
+                        let posx = parseInt($modname.attr("y"));
+                        $modname.attr("y", concat(posx -(5*(1+chlvl)),'%'));
+
+                        selectorus = concat("svg text.numbering#", id);
+                        var $number = $(selectorus);
+                        posx = parseInt($number.attr("y"));
+                        $number.attr("y", concat(posx -(5*(1+chlvl)),'%'));
+
+                        chnext = false; 
+                        chlvl --;
+                        if(chlvl < 0) {chlvl = 0;}
+
+                    }
+
+                    if(w < width_min) {
+                        chnext = true;
+                        chlvl ++;
+                    }
+
+                    if(w > width_min){
+                        let selectorus = concat("svg text.module_name#", id);
+                        var $modname = $(selectorus);
+                        let x = parseInt($modname.attr("x"));
+                        let middlewidth = x + 2/5 * w;
+                        $modname.attr("x", middlewidth);
+                    }
+                    })
+                    done = true;
+                }; 
+            
 
         </script>
 
