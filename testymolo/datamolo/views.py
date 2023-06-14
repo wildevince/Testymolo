@@ -48,23 +48,25 @@ def index(request):
     ### -> visualization JS tool !
     ### question: protein 375 -> polyprotein 1ab du HCoV
 
+    context['data'] = []
 
-    prot_ac = 375
-    protein = data.Protein.objects.get(data_ac=prot_ac, derivedFromPP=False)
-    subseq_list:list = data.Subseq.objects.filter(origin=protein)
-    #modulo_list:list = [subseq.profile.modulo for subseq in subseq_list]
-    
-    context["data"] = { 
-        "protein": data.Protein.serialize(protein), 
-        "subseq": [data.Subseq.serialize(subseq) for subseq in subseq_list],
-        #"modulo": [data.Modulo.serialize(module) for module in modulo_list],
-        #"subseq": {str(j): data.Subseq.serialize(subseq) for j, subseq in enumerate(subseq_list)},
-        #"modulo": {str(j): data.Modulo.serialize(module) for j, module in enumerate(modulo_list)},
-        }
-    #print("BASE_DIR", settings.BASE_DIR)
-    #print("STATIC_ROOT", settings.STATIC_ROOT)
+    def get_random_protein():
+        import random
+        PROTEINS = data.Protein.objects.filter(derivedFromPP=False)
+        N:int = len(PROTEINS)
+        i = random.randint(1, N-1)
+        return PROTEINS[i]
 
-    #return HttpResponse("The World !")
+    for k in range(2):
+        protein = get_random_protein()
+        print("protein: "+str(protein.data_ac))
+        subseq_list = data.Subseq.objects.filter(origin=protein)
+        context['data'].append({
+            "protein": data.Protein.serialize(protein), 
+            "subseq": [data.Subseq.serialize(subseq) for subseq in subseq_list],
+        })
+
+
     return render(request, template_name, context)
 
 

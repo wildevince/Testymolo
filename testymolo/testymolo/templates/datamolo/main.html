@@ -17,29 +17,26 @@
 
         <p><button value="false" onclick="switchSize()">size</button></p>
 
-        <svg width="1880" height="400">
-            <rect id="background" width="100%" height="100%" fill="grey" fill-opacity="0.1" stroke="black" />
-            <rect id="protein" x="0%" y="40%" width="100%" height="20%" fill="blue" fill-opacity="0.1" />
-            {% for subseq in data.subseq %}
-                <rect class="subseq" id={{ subseq.id }} height="20%" y="40%" fill="blue" fill-opacity="0.2" 
-                    x="{{ subseq|subseq_rect_xpos:data.protein.length }}%" 
-                    width="{{ subseq|subseq_rect_width:data.protein.length }}%"  />
-                <text class="module_name" id={{ subseq.id }} font-size='14' y="35%" x="{{ subseq|subseq_rect_xpos:data.protein.length }}%" >{{ subseq.module }}</text>
-                <line class="separator" id={{ subseq.id }} y1="40%" y2="60%" stroke="black" stroke-width="2" 
-                    x1="{{ subseq|subseq_line_xpos:data.protein.length }}%" 
-                    x2="{{ subseq|subseq_line_xpos:data.protein.length }}%"  />
-                <text class="numbering" id={{ subseq.id }} font-size='10' y="65%" x="{{ subseq|subseq_rect_xpos:data.protein.length }}%"  >{{ subseq.end }}</text>
+        {% for protein in data %}
+            {{ protein|generate_svg }}
             {% endfor %}
-        </svg>
 
 
         <script>
             $("rect.subseq").mouseover(function(){
                 $(this).attr("fill-opacity", "0.8");
+                let $id = $(this).attr('id');
+                $("module_name_"+$id).attr("hightlighted", "true");
+                $("numbering_"+$id).attr("hightlighted", "true");
+                
             });
             $("rect.subseq").mouseout(function(){
                 $(this).attr("fill-opacity", "0.2");
+                let $id = $(this).attr('id');
+                $("module_name_"+$id).attr("hightlighted", "false");
+                $("numbering_"+$id).attr("hightlighted", "false");
             });
+
             function switchSize() {
                 var $button = $("div#data_fig button");
                 if($button.attr("value") == "false") {
@@ -51,52 +48,6 @@
                 }
             }
             
-            var WIDTH = parseInt($("svg").attr("width"));
-            var width_min = 360; // 350 px
-            var chnext = false;
-            var chlvl = 0;
-            var done = false;
-
-            if(done == false) {
-                $("rect.subseq").each(function(){
-                    let id = $(this).attr("id");
-                    let w = parseInt($(this).attr("width"));
-                    
-                    if(chnext == true){
-
-                        let selectorus = concat("svg text.module_name#", id);
-                        var $modname = $(selectorus);
-                        let posx = parseInt($modname.attr("y"));
-                        $modname.attr("y", concat(posx -(5*(1+chlvl)),'%'));
-
-                        selectorus = concat("svg text.numbering#", id);
-                        var $number = $(selectorus);
-                        posx = parseInt($number.attr("y"));
-                        $number.attr("y", concat(posx -(5*(1+chlvl)),'%'));
-
-                        chnext = false; 
-                        chlvl --;
-                        if(chlvl < 0) {chlvl = 0;}
-
-                    }
-
-                    if(w < width_min) {
-                        chnext = true;
-                        chlvl ++;
-                    }
-
-                    if(w > width_min){
-                        let selectorus = concat("svg text.module_name#", id);
-                        var $modname = $(selectorus);
-                        let x = parseInt($modname.attr("x"));
-                        let middlewidth = x + 2/5 * w;
-                        $modname.attr("x", middlewidth);
-                    }
-                    })
-                    done = true;
-                }; 
-            
-
         </script>
 
     </div>

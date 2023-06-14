@@ -5,3 +5,12 @@ div#data_fig {
 .hovered {
     color: blue;
 }
+
+
+svg text[hightlighted='true'] {
+    font-weight: bold;
+}
+
+svg text {
+    font-weight: normal;
+}

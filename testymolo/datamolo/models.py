@@ -167,11 +167,17 @@ class Subseq(models.Model):
 
     def serialize(item):
         seq = item.origin.sequence[item.start:item.end]
+        if(item.profile is not None):
+            profile = item.profile.id
+            module = item.profile.modulo.id
+        else:
+            profile = None
+            module = None
         return {
             "id":item.id,
             "origin":item.origin.id,
-            "profile":item.profile.id,
-            "module":item.profile.modulo.id,
+            "profile":profile,
+            "module":module,
             "start":item.start,
             "end":item.end,
             "sequence":seq,

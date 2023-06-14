@@ -119,3 +119,24 @@ sequence   -->  multialignment  ---
             });
 
         </script>
+
+
+
+
+        {% for protein in data %}
+        <svg width="1860" height="400">
+            <rect id="background" width="100%" height="100%" fill="grey" fill-opacity="0.1" stroke="black" />
+            <rect id="protein" x="0%" y="40%" width="100%" height="20%" fill="blue" fill-opacity="0.1" />
+            {{ protein|json_script }}
+            {% for subseq in protein.subseq %}
+                <rect class="subseq" id={{ subseq.id }} height="20%" y="40%" fill="blue" fill-opacity="0.2" 
+                    x="{{ protein.subseq|subseq_rect_xpos:data.protein.length }}%" 
+                    width="{{ protein.subseq|subseq_rect_width:data.protein.length }}%"  />
+                <text class="module_name" id={{ subseq.id }} font-size='14' y="35%" x="{{ protein.subseq|subseq_rect_xpos:data.protein.length }}%" >{{ subseq.module }}</text>
+                <line class="separator" id={{ subseq.id }} y1="40%" y2="60%" stroke="black" stroke-width="2" 
+                    x1="{{ protein.subseq|subseq_line_xpos:data.protein.length }}%" 
+                    x2="{{ protein.subseq|subseq_line_xpos:data.protein.length }}%"  />
+                <text class="numbering" id={{ subseq.id }} font-size='10' y="65%" x="{{ protein.subseq|subseq_rect_xpos:data.protein.length }}%"  >{{ subseq.end }}</text>
+            {% endfor %}
+        {% endfor %}
+        </svg>
