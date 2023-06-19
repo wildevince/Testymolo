@@ -85,7 +85,7 @@ class Profile(models.Model):
 class Organism(models.Model):
     #lvl 1
     #:166
-    id = models.IntegerField(primary_key=True)  # Tax_id[PK](int)
+    id = models.IntegerField(verbose_name="Tax_id", primary_key=True)  # Tax_id[PK](int)
     name = models.CharField(verbose_name="abbreviate name", max_length=100)  # shortname (str)
     phylogeny = models.CharField(max_length=200)  # phylogeny absolute path
 

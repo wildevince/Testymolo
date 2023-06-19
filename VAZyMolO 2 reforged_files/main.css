@@ -1,0 +1,16 @@
+div#data_fig {
+    color: brown;
+}
+
+.hovered {
+    color: blue;
+}
+
+
+svg text[hightlighted='true'] {
+    font-weight: bold;
+}
+
+svg text {
+    font-weight: normal;
+}

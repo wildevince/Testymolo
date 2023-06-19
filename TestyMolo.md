@@ -140,3 +140,13 @@ sequence   -->  multialignment  ---
             {% endfor %}
         {% endfor %}
         </svg>
+
+
+        {% load data_extras %}
+
+        <p><button value="false" onclick="switchSize()">size</button></p>
+
+        {% for protein in data %}
+            {{ protein|generate_svg }}
+            {% endfor %}
+

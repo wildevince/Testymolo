@@ -1,25 +1,40 @@
-
-$(document).ready(function() {
-
-    $("p").hover(function(){
-        $(this).css('color','red');
-    })
-
-    $("div#data_fig").hover(
-        function()
-        {
-            var $this = $(this);
-
-            $this
-                .data('prehovercolor', $this.css('color'))
-                .css('color', '#aaa');
+function updateSection_figure() {
+    // Send AJAX request to load figure
+    $.ajax({
+        url: '/load-figure',
+        dataType: 'html',
+        success: function(data) {
+            $("#loadingFigure")
+                .html(data)
+                .prop('loaded', true);
         },
-        function()
-        {
-            var $this = $(this);
-            $this
-                .css('color', $this.data('prehovercolor'));
+        error: function(error) {
+            console.error('Error', error);
         }
-    );
+    });
+}
+
+$(document).ready(function(){
+
+    // generate figure
+    updateSection_figure();
+
+    // change opacity on mouseover
+    $(document).on("mouseover", "rect.subseq", function() {
+        $(this).attr("fill-opacity", "0.8");
+        //let $id = $(this).attr('id');
+        //$("#module_name_" + $id).prop("hightlighted", true);
+        //$("#numbering_" + $id).prop("hightlighted", true);
+    });
+
+    $(document).on("mouseout", "rect.subseq", function() {
+        $(this).attr("fill-opacity", "0.2");
+        //let $id = $(this).attr('id');
+        //$("#module_name_" + $id).prop("hightlighted", false);
+        //$("#numbering_" + $id).prop("hightlighted", false);
+    });
 
 })
+
+
+

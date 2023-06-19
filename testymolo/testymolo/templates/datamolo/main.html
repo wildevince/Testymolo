@@ -2,8 +2,9 @@
 
 
 {% block datamolo_static %}
- {% load static %}
+    {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'js/main.js' %}"></script>
 {% endblock %}
         
@@ -13,42 +14,7 @@
 
     <div id="data_fig" class="figure">
         
-        {% load data_extras %}
-
-        <p><button value="false" onclick="switchSize()">size</button></p>
-
-        {% for protein in data %}
-            {{ protein|generate_svg }}
-            {% endfor %}
-
-
-        <script>
-            $("rect.subseq").mouseover(function(){
-                $(this).attr("fill-opacity", "0.8");
-                let $id = $(this).attr('id');
-                $("module_name_"+$id).attr("hightlighted", "true");
-                $("numbering_"+$id).attr("hightlighted", "true");
-                
-            });
-            $("rect.subseq").mouseout(function(){
-                $(this).attr("fill-opacity", "0.2");
-                let $id = $(this).attr('id');
-                $("module_name_"+$id).attr("hightlighted", "false");
-                $("numbering_"+$id).attr("hightlighted", "false");
-            });
-
-            function switchSize() {
-                var $button = $("div#data_fig button");
-                if($button.attr("value") == "false") {
-                    $button.attr("value", "true");
-                    $("div#data_fig svg").attr("width", "1600");
-                } else {
-                    $button.attr("value", "false");
-                    $("div#data_fig svg").attr("width", "1200");
-                }
-            }
-            
-        </script>
+        <div id='loadingFigure' loaded='false'>nothing here mate</div>
 
     </div>
 {% endblock %}
