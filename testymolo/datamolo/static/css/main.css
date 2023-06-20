@@ -6,6 +6,24 @@ div#data_fig {
     color: blue;
 }
 
+#mainfocus {
+    display: block;
+}
+
+#mainfocus button {
+    position: relative;
+    right: -1840px;
+}
+
+#mainminus {
+    display: block;
+}
+
+#mainminus button {
+    position: relative;
+    right: -980px;
+}
+
 
 svg text[hightlighted='true'] {
     font-weight: bold;

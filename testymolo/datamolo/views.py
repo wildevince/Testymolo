@@ -3,169 +3,152 @@ import os
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.conf import settings
+from django.views.generic import TemplateView
+from django.utils.safestring import mark_safe
 
 
 import datamolo.scr.add_item_in_model as scr
+import datamolo.scr.figures as fig
+
 import datamolo.models as data
 
 
 
 # Create your views here.
-
-def index(request):
-
-    template_name:str = os.path.join("datamolo", "main.html")
-    context:dict = {}
-
-    ## implement Database
-    
-    ### Organism , Protein , Subseq 
-    ###scr.parse_data()  #-> done
-
-    ### Modulo
-    ###scr.parse_Modules()  #-> done
-
-    ### Structure
-    ### lack info
-
-    ### link between Modulo--Subeq
-    ### Subseq --+ Profile -1-1- Modulo   (facile => aggregation && one-to-one )
-    ### Subseq +-- Annotation --* Modulo  (difficile => positioning within limits && sorting types of annotation)
-
-    ### Subseq --+ Profile -1-1- Modulo   (facile => aggregation && one-to-one )
+class Main(TemplateView):
+    template_name = os.path.join("datamolo", "main.html")
+    mainfocus_protein = None
+    mainfocus_profile = None
+    mainminus_protein = []
+    module = None
+    phylo = None
 
 
-    ### need to hard flush and restart 
-    #scr.parse_data() 
-    
-    ### BACKUP
+    def index(request):
 
-    #Table_names = [tab[0] for tab in data.Annotation.Tables_SQL]
-    #scr.parse_Annotations(Table_names) 
+        context:dict = {}
 
-    ### BACKUP 2
+        ## implement Database
+        
+        ### Organism , Protein , Subseq 
+        ###scr.parse_data()  #-> done
 
-    ### -> visualization JS tool !
-    ### question: protein 375 -> polyprotein 1ab du HCoV
+        ### Modulo
+        ###scr.parse_Modules()  #-> done
 
-    """
-    context['data'] = []
+        ### Structure
+        ### lack info
 
-    def get_random_protein():
-        import random
-        PROTEINS = data.Protein.objects.filter(derivedFromPP=False)
-        N:int = len(PROTEINS)
-        i = random.randint(1, N-1)
-        return PROTEINS[i]
+        ### link between Modulo--Subeq
+        ### Subseq --+ Profile -1-1- Modulo   (facile => aggregation && one-to-one )
+        ### Subseq +-- Annotation --* Modulo  (difficile => positioning within limits && sorting types of annotation)
 
-    for k in range(2):
+        ### Subseq --+ Profile -1-1- Modulo   (facile => aggregation && one-to-one )
+
+
+        ### need to hard flush and restart 
+        #scr.parse_data() 
+        
+        ### BACKUP
+
+        #Table_names = [tab[0] for tab in data.Annotation.Tables_SQL]
+        #scr.parse_Annotations(Table_names) 
+
+        ### BACKUP 2
+
+        ### -> visualization JS tool !
+        ### question: protein 375 -> polyprotein 1ab du HCoV
+
+        context:dict = {}
+
+        if(Main.mainfocus_profile):
+            context['Profile'] = "<p>work in progress</p>"
+        elif(Main.mainfocus_protein):
+            context['Protein'] = fig.generate_mainfigure_protein
+        
+        if(len(Main.mainminus_protein) >= 0):
+            html:str = ""
+            for protein_id in Main.mainminus_protein:
+                html += fig.generate_minusfigure_protein(data.Protein.objects.get(id=protein_id)) + '\n'
+            context['proteins'] = mark_safe(html)
+        
+        if(Main.module):
+            context['Module'] = "<p>work in progress</p>"
+
+        if(Main.phylo):
+            context['Phylo'] = "<p>work in progress</p>"
+
+        return render(request, Main.template_name, context)
+
+
+    def load_mainfigure_protein(request):
+        # AJAX
+        def get_random_protein():
+            import random
+            PROTEINS = data.Protein.objects.filter(derivedFromPP=False)
+            N:int = len(PROTEINS)
+            i = random.randint(1, N-1)
+            print("protein: "+str(PROTEINS[i]))
+            return PROTEINS[i]
         protein = get_random_protein()
-        print("protein: "+str(protein.data_ac))
-        subseq_list = data.Subseq.objects.filter(origin=protein)
-        context['data'].append({
-            "protein": data.Protein.serialize(protein), 
-            "subseq": [data.Subseq.serialize(subseq) for subseq in subseq_list],
-        })
-    """
 
-    return render(request, template_name, context)
+        Main.mainfocus_protein = protein.id
+        Main.mainfocus_profile = None
 
+        updated_html:str = ""
+        updated_html = fig.generate_mainfigure_protein(protein)
+
+        return HttpResponse(updated_html)
 
 
+    def load_plusfigure_protein(request, protein_id):
+        #ajax POST
 
-def load_figure(request):
-    # AJAX
+        Main.mainfocus_profile = None
+        
+        if(protein_id not in Main.mainminus_protein):
+            Main.mainminus_protein.append(protein_id)
 
-    def get_random_protein():
-        import random
-        PROTEINS = data.Protein.objects.filter(derivedFromPP=False)
-        N:int = len(PROTEINS)
-        i = random.randint(1, N-1)
-        print("protein: "+str(PROTEINS[i]))
-        return PROTEINS[i]
-    protein = get_random_protein()
+        protein = data.Protein.objects.get(id=protein_id)
+        updated_html:str = fig.generate_mainfigure_protein(protein)
+        
+        return HttpResponse(updated_html)
 
-    ## generate figure
-    real_WIDTH = 1860
-    WIDTH = 1800
-    x0 = 30
-    html:str = ""
-    chtext:bool = False
-    chlvl:int = 0
+        
+    def load_minusfigure_protein(request):
+        #Ajax
 
-    organism = protein.organism
-    L = len(protein.sequence)
+        protein = data.Protein.objects.get(id=Main.mainfocus_protein)
+        
+        if(protein.id not in Main.mainminus_protein):
+            Main.mainminus_protein.append(Main.mainfocus_protein)
+        Main.mainfocus_protein = None
+
+        updated_html:str= ""
+
+        updated_html = fig.generate_minusfigure_protein(protein)
+
+        return HttpResponse(updated_html)
+
+
+    def load_card_module(request, module_id):
+        #ajax
     
-    html += f"<svg width='{str(real_WIDTH)}' height='400'> \n"
-    html += f"<rect id='background' width='100%' height='100%' fill='grey' fill-opacity='0.1' stroke='black' /> \n"
-    html += f"<rect id='protein' x='{x0}' y='40%' width='{WIDTH}' height='20%' fill='blue' fill-opacity='0.1'/> \n"
-    text1 = f"name:{protein.name},    polyprotein:{protein.isPP},  derived from polyprotein:{protein.derivedFromPP}"
-    text2 = f"organism:{organism.name},    acc:{protein.data_ac},    length:{L}"
-    html += f"<text x='10' y='5%' >{text1}</text>\n"
-    html += f"<text x='10' y='10%' >{text2}</text>\n"
+        Main.module = module_id
+        #module = data.Modulo.objects.get(id=module_id)
 
-    i=0
-    Subseqs = data.Subseq.objects.filter(origin=protein)
-    for subseq in Subseqs:
-        i+=1
-        lenseq = len(protein.sequence[subseq.start:subseq.end])
-        w = (lenseq / L) * WIDTH
-        x = (subseq.start-1)/L *WIDTH +x0
+        html = mark_safe("<p>Don't get ahead of yourself dude !</p>")
 
-        html += f"<rect class='subseq' id='subseq_{i}' height='20%' y='40%' fill='blue' fill-opacity='0.2' "
-        html += f"x='{x}' width='{w}' />\n"
-        if(w < (0.020 *WIDTH)):
-            chtext = True
-            chlvl += 1  
-        else:
-            chlvl = chlvl-1 if(chlvl > 0) else 0
-
-        #text module_name
-        if(w > (0.020 *WIDTH)):
-            x += w*2/5
-        y = 35
-        if(chtext):
-            y -= (4 *chlvl)
-        if(subseq.profile):
-            module = subseq.profile.modulo.id 
-        else:
-            module = "unknown"
-        html += f"<text class='module_name' id='module_name_{i}' font-size='14' y='{y}%' "
-        html += f"x='{x}' >{module}</text>\n"
-
-        #line separator
-        x1 = ((subseq.end-1) / L) *WIDTH +x0
-        html += f"<line class='separator' id='separator_{i}' y1='40%' y2='60%' stroke='black' stroke-width='2' "
-        html += f"x1='{x1}' x2='{x1}' />\n"
-
-        #text numbering
-        if(i < len(Subseqs)):
-            y = 65
-            if(chtext):
-                chtext = False
-                y += (4 *chlvl)
-            x = ((subseq.end -1) / L) *WIDTH +x0
-        else:
-            text_length:int = len(str(subseq.end))
-            y = 70 + 5 *chlvl
-            x = (real_WIDTH - text_length *10)
-        html += f"<text class='numbering' id='numbering_{i}' font-size='10'  "
-        html += f" y='{y}%' x='{x}' >{subseq.end -1}</text>\n"
-    html += "</svg>"
-
-    return HttpResponse(html)
+        return HttpResponse(html)
+        
 
 
-
-
-
-
-# works !
-def download(request):
-    dirpath = os.path.join(settings.MEDIA_ROOT, 'data', 'sequences.fasta')
-    if(os.path.exists(dirpath)):
-        handle = open(dirpath, 'r')
-        response = HttpResponse(handle, content_type=dirpath)
-        response['Content-Disposition'] = f"attachment; filename=sequences.fasta"
-        return response
-    return HttpResponse("not found")
+    # works !
+    def download(request):
+        dirpath = os.path.join(settings.MEDIA_ROOT, 'data', 'sequences.fasta')
+        if(os.path.exists(dirpath)):
+            handle = open(dirpath, 'r')
+            response = HttpResponse(handle, content_type=dirpath)
+            response['Content-Disposition'] = f"attachment; filename=sequences.fasta"
+            return response
+        return HttpResponse("not found")

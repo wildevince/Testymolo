@@ -23,9 +23,12 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', views.index, name='index'),
-    path('load-figure/', views.load_figure, name="load-figure" ),
-    path('download/', views.download, name='download'),
+    path('', views.Main.index, name='index'),
+    path('load-figure/', views.Main.load_mainfigure_protein, name="load-figure" ),
+    path('minus-figure/', views.Main.load_minusfigure_protein, name="minus-figure" ),
+    path('plus-figure/<int:protein_id>/', views.Main.load_plusfigure_protein, name="plus-figure" ),
+    path('module/<str:module_id>/', views.Main.load_card_module, name="module" ),
+    path('download/', views.Main.download, name='download'),
 ] 
 #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 

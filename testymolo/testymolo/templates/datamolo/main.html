@@ -10,11 +10,19 @@
         
 
 {% block datamolo %}
-    <p class='hovered'>Here will be the figure !</p>
+    <div id="mainfocus" class='frame'>
 
-    <div id="data_fig" class="figure">
-        
-        <div id='loadingFigure' loaded='false'>nothing here mate</div>
-
+        <div id="loadingProfile" class="figure" >{{ Profile }}</div>
+        <div id="loadingFigure" class="figure" >{{ Protein }}</div>
+    
     </div>
+
+    <div id="modulecard" class='card'>{{ Module }}</div>
+
+    <div id="mainminus" class='figure'>{{ proteins }}</div>
+
+    <div id="phylofocus" class='figure'>{{ Phylo }}</div>
+
+
+
 {% endblock %}
