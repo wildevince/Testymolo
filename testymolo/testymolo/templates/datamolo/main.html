@@ -4,24 +4,29 @@
 {% block datamolo_static %}
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/moduleCard.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{% static 'js/main.js' %}"></script>
 {% endblock %}
         
 
 {% block datamolo %}
+
+    {% csrf_token %}
+
     <div id="mainfocus" class='frame'>
 
-        <div id="loadingProfile" class="figure" >{{ Profile }}</div>
-        <div id="loadingFigure" class="figure" >{{ Protein }}</div>
+        <div id="loadingProfile" class="frame" >{{ Profile }}</div>
+        <div id="loadingFigure" class="frame" >{{ Protein }}</div>
     
     </div>
 
-    <div id="modulecard" class='card'>{{ Module }}</div>
+    <div id="modulecard" class='frame'>{{ Module }}</div>
 
-    <div id="mainminus" class='figure'>{{ proteins }}</div>
+    <div id="mainminus" class='frame'>{{ proteins }}</div>
 
-    <div id="phylofocus" class='figure'>{{ Phylo }}</div>
+    <div id="phylofocus" class='frame'>{{ Phylo }}</div>
 
 
 

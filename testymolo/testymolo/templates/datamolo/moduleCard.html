@@ -1,0 +1,22 @@
+<div class='card'>
+    <div class='info'>
+        <p>{{ module.id }}</p>
+        <p>[{{ module.moduloFamily }}]    activity: {{ module.activity }}</p>
+        <p>protein: {{ subseq.origin.id }}  [ {{ subseq.start }} : {{ subseq.end }} ]</p>
+    </div>
+    <div class='profile'>
+        <p>Profile</p>
+        <p>number of sequence: {{ profile_length }}</p>
+        <p>validated: {{ subseq.profile.validated }}</p>
+        <p>method: '...'<p>
+    </div>
+    <div class='structure'>
+        <p>Structure</p>
+        {% for structure in Structures %}
+        <p> {% if structure.reference %}(ref){% endif %}[{{ structure.comment }}] {{ structure.id }}:{{ structure.chain }}</p>
+        {% endfor %}
+    </div>
+    <div class='phylo'>
+        <p>clade: {{ commun_ancestor }}</p>
+    </div>
+</div>

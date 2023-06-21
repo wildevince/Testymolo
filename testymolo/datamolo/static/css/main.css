@@ -6,24 +6,24 @@ div#data_fig {
     color: blue;
 }
 
-#mainfocus {
-    display: block;
-}
 
-#mainfocus button {
+.figure {
     position: relative;
-    right: -1840px;
-}
-
-#mainminus {
     display: block;
+    width: fit-content;
 }
 
-#mainminus button {
-    position: relative;
-    right: -980px;
+.button-container {
+    display: flex;
+    float:right;
+}
+.button-container button {
+    margin-left: 1em;
 }
 
+span.uni_star {
+    color: grey;
+}
 
 svg text[hightlighted='true'] {
     font-weight: bold;

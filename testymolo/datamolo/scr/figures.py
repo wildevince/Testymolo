@@ -4,7 +4,6 @@ import datamolo.models as data
 
 
 def generate_mainfigure_protein(protein:data.Protein):
-
     ## generate figure
     real_WIDTH = 1860
     WIDTH = 1800
@@ -16,9 +15,10 @@ def generate_mainfigure_protein(protein:data.Protein):
     organism = protein.organism
     L = len(protein.sequence)
     
-    
-    html += f"<div><button class='minus' onclick='updateSection_figure_minus()'>-</button></div>\n"
-    html += f"<div><svg protein={protein.id} width='{str(real_WIDTH)}' height='400'> \n"
+    html += "<div class='button-container'>"
+    #html += "<button class='compare' >Compare with <span class='uni_star' value=false style='color: orange;'>★</span></button>\n"
+    html += "<button class='minus' onclick='updateSection_figure_minus()'>-</button></div>\n"
+    html += f"<div class='svg-container'><svg protein={protein.id} width='{str(real_WIDTH)}' height='400'> \n"
     html += f"<rect class='background' width='100%' height='100%' fill='grey' fill-opacity='0.1' stroke='black' /> \n"
     html += f"<rect class='protein' x='{x0}' y='40%' width='{WIDTH}' height='20%' fill='blue' fill-opacity='0.1'/> \n"
     text1 = f"name:{protein.name},    polyprotein:{protein.isPP},  derived from polyprotein:{protein.derivedFromPP}"
@@ -31,10 +31,15 @@ def generate_mainfigure_protein(protein:data.Protein):
     for subseq in Subseqs:
         i+=1
         lenseq = len(protein.sequence[subseq.start:subseq.end])
-        w = (lenseq / L) * WIDTH
+        w = ((lenseq +1) / L) * WIDTH
         x = (subseq.start-1)/L *WIDTH +x0
-
-        html += f"<rect class='subseq' id='{subseq.id}' height='20%' y='40%' fill='blue' fill-opacity='0.2' "
+        # find module
+        if(subseq.profile):
+            module = subseq.profile.modulo.id 
+        else:
+            module = "unknown"
+        
+        html += f"<rect class='subseq' subseq='{subseq.id}' height='20%' y='40%' fill='blue' fill-opacity='0.2' "
         html += f"x='{x}' width='{w}' />\n"
         if(w < (0.020 *WIDTH)):
             chtext = True
@@ -48,15 +53,11 @@ def generate_mainfigure_protein(protein:data.Protein):
         y = 35
         if(chtext):
             y -= (4 *chlvl)
-        if(subseq.profile):
-            module = subseq.profile.modulo.id 
-        else:
-            module = "unknown"
         html += f"<text class='module_name' id='module_name_{i}' font-size='14' y='{y}%' "
         html += f"x='{x}' >{module}</text>\n"
 
         #line separator
-        x1 = ((subseq.end-1) / L) *WIDTH +x0
+        x1 = ((subseq.end) / L) *WIDTH +x0
         html += f"<line class='separator' id='separator_{i}' y1='40%' y2='60%' stroke='black' stroke-width='2' "
         html += f"x1='{x1}' x2='{x1}' />\n"
 
@@ -66,16 +67,16 @@ def generate_mainfigure_protein(protein:data.Protein):
             if(chtext):
                 chtext = False
                 y += (4 *chlvl)
-            x = ((subseq.end -1) / L) *WIDTH +x0
+            x = ((subseq.end) / L) *WIDTH +x0
         else:
             text_length:int = len(str(subseq.end))
             y = 70 + 5 *chlvl
             x = (real_WIDTH - text_length *10)
         html += f"<text class='numbering' id='numbering_{i}' font-size='10'  "
-        html += f" y='{y}%' x='{x}' >{subseq.end -1}</text>\n"
+        html += f" y='{y}%' x='{x}' >{subseq.end}</text>\n"
     html += "</svg></div>"
 
-    return '<div>'+html+'</div>'
+    return "<div class='figure'>"+html+"</div>"
 
 
 def generate_minusfigure_protein(protein:data.Protein):
@@ -85,8 +86,9 @@ def generate_minusfigure_protein(protein:data.Protein):
     organism = protein.organism
     L = len(protein.sequence)
 
-    html += f"<div><button class='plus' onclick='updateSection_figure_plus({protein.id})'>+</button></div>\n"
-    html += f"<div><svg protein={protein.id} width={WIDTH} height='150'>"
+    html += f"<div class='button-container'><button id='button_{protein.id}' onclick='makeAsReference({protein.id})' class='btn'><span class='uni_star' value=false >★</span></button>"
+    html += f"<button class='plus' onclick='updateSection_figure_plus({protein.id})'>+</button></div>\n"
+    html += f"<div class='svg-container'><svg protein={protein.id} width={WIDTH} height='150'>"
     html += f"<rect id='background' width='100%' height='100%' fill='grey' fill-opacity='0.1' stroke='black' /> \n"
     html += f"<rect id='protein' y='60%' width='100%' height='25%' fill='blue' fill-opacity='0.1'/> \n"
     text1 = f"name:{protein.name},    polyprotein:{protein.isPP},  derived from polyprotein:{protein.derivedFromPP}"
@@ -105,5 +107,5 @@ def generate_minusfigure_protein(protein:data.Protein):
 
     html += "</svg></div>"
 
-    return '<div>'+html+'</div>'
+    return "<div class='figure'>"+html+"</div>"
 

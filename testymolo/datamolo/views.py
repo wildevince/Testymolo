@@ -17,6 +17,7 @@ import datamolo.models as data
 # Create your views here.
 class Main(TemplateView):
     template_name = os.path.join("datamolo", "main.html")
+    moduleCard_template = os.path.join("datamolo", "moduleCard.html")
     mainfocus_protein = None
     mainfocus_profile = None
     mainminus_protein = []
@@ -131,15 +132,23 @@ class Main(TemplateView):
         return HttpResponse(updated_html)
 
 
-    def load_card_module(request, module_id):
+    def load_card_module(request, subseq_id):
         #ajax
-    
-        Main.module = module_id
-        #module = data.Modulo.objects.get(id=module_id)
+        context:dict = {}
+        subseq = data.Subseq.objects.get(id=subseq_id)
+        if(subseq.profile):
+            Main.module = subseq.profile.modulo.id
+            module = data.Modulo.objects.get(id=Main.module)
+            context['module'] = module
+            context['subseq'] = subseq
+            context['profile_length'] = len(data.Subseq.objects.filter(profile=subseq.profile))
+            context['Structures'] = [structure for structure in data.Structure.objects.filter(modulo=subseq.profile.modulo)]
+            context['commun_ancestor'] = "'...'"
 
-        html = mark_safe("<p>Don't get ahead of yourself dude !</p>")
+            return render(request, Main.moduleCard_template, context)
+        
+        return mark_safe("<p>Don't get ahead of yourself dude !</p>")
 
-        return HttpResponse(html)
         
 
 

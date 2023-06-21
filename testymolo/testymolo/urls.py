@@ -27,7 +27,7 @@ urlpatterns = [
     path('load-figure/', views.Main.load_mainfigure_protein, name="load-figure" ),
     path('minus-figure/', views.Main.load_minusfigure_protein, name="minus-figure" ),
     path('plus-figure/<int:protein_id>/', views.Main.load_plusfigure_protein, name="plus-figure" ),
-    path('module/<str:module_id>/', views.Main.load_card_module, name="module" ),
+    path('module/<int:subseq_id>/', views.Main.load_card_module, name="module" ),
     path('download/', views.Main.download, name='download'),
 ] 
 #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
