@@ -165,6 +165,12 @@ class Subseq(models.Model):
     class Meta:
         ordering = ['origin', 'start']
 
+    def header(item) -> str:
+        return f"{item.origin.header}:[{item.start}-{item.end}]"
+
+    def sequence(item) -> str:
+        return str(item.origin.sequence[item.start:item.end])
+
     def serialize(item):
         seq = item.origin.sequence[item.start:item.end]
         if(item.profile is not None):

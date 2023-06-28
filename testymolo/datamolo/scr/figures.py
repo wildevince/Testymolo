@@ -11,6 +11,8 @@ def generate_mainfigure_protein(protein:data.Protein):
     html:str = ""
     chtext:bool = False
     chlvl:int = 0
+    y_top = 50
+    y_height = 20
 
     organism = protein.organism
     L = len(protein.sequence)
@@ -18,13 +20,13 @@ def generate_mainfigure_protein(protein:data.Protein):
     html += "<div class='button-container'>"
     #html += "<button class='compare' >Compare with <span class='uni_star' value=false style='color: orange;'>★</span></button>\n"
     html += "<button class='minus' onclick='updateSection_figure_minus()'>-</button></div>\n"
-    html += f"<div class='svg-container'><svg protein={protein.id} width='{str(real_WIDTH)}' height='400'> \n"
+    html += f"<div class='svg-container'><svg protein={protein.id} width='{str(real_WIDTH)}' height='300'> \n"
     html += f"<rect class='background' width='100%' height='100%' fill='grey' fill-opacity='0.1' stroke='black' /> \n"
-    html += f"<rect class='protein' x='{x0}' y='40%' width='{WIDTH}' height='20%' fill='blue' fill-opacity='0.1'/> \n"
+    html += f"<rect class='protein' x='{x0}' y='{y_top}%' width='{WIDTH}' height='{y_height}%' fill='blue' fill-opacity='0.1'/> \n"
     text1 = f"name:{protein.name},    polyprotein:{protein.isPP},  derived from polyprotein:{protein.derivedFromPP}"
     text2 = f"organism:{organism.name},    acc:{protein.data_ac},    length:{L}"
     html += f"<text x='10' y='5%' >{text1}</text>\n"
-    html += f"<text x='10' y='10%' >{text2}</text>\n"
+    html += f"<text x='10' y='15%' >{text2}</text>\n"
 
     i=0
     Subseqs = data.Subseq.objects.filter(origin=protein)
@@ -39,7 +41,7 @@ def generate_mainfigure_protein(protein:data.Protein):
         else:
             module = "unknown"
         
-        html += f"<rect class='subseq' subseq='{subseq.id}' height='20%' y='40%' fill='blue' fill-opacity='0.2' "
+        html += f"<rect class='subseq' subseq='{subseq.id}' height='{y_height}%' y='{y_top}%' fill='blue' fill-opacity='0.2' "
         html += f"x='{x}' width='{w}' />\n"
         if(w < (0.020 *WIDTH)):
             chtext = True
@@ -50,27 +52,27 @@ def generate_mainfigure_protein(protein:data.Protein):
         #text module_name
         if(w > (0.020 *WIDTH)):
             x += w*2/5
-        y = 35
+        y = y_top-5
         if(chtext):
-            y -= (4 *chlvl)
+            y -= (5 *chlvl)
         html += f"<text class='module_name' id='module_name_{i}' font-size='14' y='{y}%' "
         html += f"x='{x}' >{module}</text>\n"
 
         #line separator
         x1 = ((subseq.end) / L) *WIDTH +x0
-        html += f"<line class='separator' id='separator_{i}' y1='40%' y2='60%' stroke='black' stroke-width='2' "
+        html += f"<line class='separator' id='separator_{i}' y1='{y_top}%' y2='{y_top+y_height}%' stroke='black' stroke-width='2' "
         html += f"x1='{x1}' x2='{x1}' />\n"
 
         #text numbering
         if(i < len(Subseqs)):
-            y = 65
+            y = y_top + y_height + 5
             if(chtext):
                 chtext = False
-                y += (4 *chlvl)
+                y += (5 *chlvl)
             x = ((subseq.end) / L) *WIDTH +x0
         else:
             text_length:int = len(str(subseq.end))
-            y = 70 + 5 *chlvl
+            y = y_top + y_height + 10 + 5 *chlvl
             x = (real_WIDTH - text_length *10)
         html += f"<text class='numbering' id='numbering_{i}' font-size='10'  "
         html += f" y='{y}%' x='{x}' >{subseq.end}</text>\n"
@@ -109,3 +111,6 @@ def generate_minusfigure_protein(protein:data.Protein):
 
     return "<div class='figure'>"+html+"</div>"
 
+
+def generate_mainfigure_profile(profile:dict):
+    return "The World !"

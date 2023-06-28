@@ -7,9 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/moduleCard.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
     <script src="{% static 'js/main.js' %}"></script>
-    <script src="{% static 'js/figure.js' %}"></script>
 {% endblock %}
         
 
@@ -18,7 +16,7 @@
     {% csrf_token %}
 
     <div id="mainfocus" class='frame'>
-
+        <button id="refresh-button" onclick="updateSection_figure()" >Random</button>
         <div id="loadingProfile" class="frame" >{{ Profile }}</div>
         <div id="loadingFigure" class="frame" >{{ Protein }}</div>
         
@@ -29,7 +27,6 @@
     <div id="mainminus" class='frame'>{{ proteins }}</div>
 
     <div id="phylofocus" class='frame'>{{ Phylo }}</div>
-
 
 
 {% endblock %}

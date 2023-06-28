@@ -1,14 +1,12 @@
 
-
-
 function updateSection_figure() {
     // Send AJAX request to load figure
     $.ajax({
         url: '/load-figure',
         dataType: 'html',
         success: function(data) {
-            $("#loadingFigure")
-                .html(data)
+            $("#loadingFigure").html(data);
+            //figure
         },
         error: function(error) {
             console.error('Error', error);
@@ -21,33 +19,7 @@ function updateSection_figure_plus(id) {
     //var csrftoken = getCookie('csrftoken');
     var url = '/plus-figure/' + id + '/';
 
-    $.ajaxSetup({
-        beforeSend: function(xhr, settings) {
-            if (!this.crossDomain) {
-                var csrftoken = getCookie('csrftoken');
-                xhr.setRequestHeader('X-CSRFToken', csrftoken);
-            }
-        }
-    });
-
-    $.ajax({
-        url: url,
-        method: 'POST',
-        data: { 
-            //csrfmiddlewaretoken: csrftoken,
-            protein_id: id 
-        },
-        dataType: 'html',
-        success: function(response) {
-            // console log 
-            //$("#loadingProfile").html("<p>The World !</p>");
-            //$("#loadingFigure").html(response);
-            //$("#loadingFigure").html("<p>The World !</p>");
-        },
-        error: function(error) {
-            console.error('Error', error);
-        }
-    });
+    AJAX(url, id, "#loadingFigure");
 }
 
 function updateSection_figure_minus() {
@@ -61,9 +33,8 @@ function updateSection_figure_minus() {
                 .append(data);
             sortSection_minusfigure();
 
-            // remove protein in main focus
-            $("#loadingFigure")
-                .html("")
+            // random protein in main focus
+            updateSection_figure();
         },
         error: function(error) {
             console.error('Error', error);
@@ -75,31 +46,7 @@ function updateSection_modulecard(subseqId) {
     //var csrftoken = getCookie('csrftoken'); 
     var url = '/module/' + subseqId + '/';
 
-    $.ajaxSetup({
-        beforeSend: function(xhr, settings) {
-            if (!this.crossDomain) {
-                var csrftoken = getCookie('csrftoken');
-                xhr.setRequestHeader('X-CSRFToken', csrftoken);
-            }
-        }
-    });
-
-    $.ajax({
-        url: url,
-        method: 'POST',
-        data: {
-            //csrfmiddlewaretoken: csrftoken,
-            subseq_id: subseqId
-        },
-        dataType: 'html',
-        success: function(response) {
-            // do stuff
-            $("#modulecard").html(response);
-        },
-        error: function(error) {
-            console.error('Error', error);
-        }
-    });
+    AJAX(url, subseqId, "#modulecard");
 }
 
 function sortSection_minusfigure() {
@@ -122,6 +69,39 @@ function sortSection_minusfigure() {
     $div_list.detach().appendTo($div);
 }
 
+function updateSection_profile(profileId) {
+    // sent the protein from mainframe to mainminus
+    //var csrftoken = getCookie('csrftoken');
+    var url = '/profile/' + profileId + '/';
+
+    AJAX(url, profileId, "#loadingProfile");
+}
+
+function AJAX(url, value, parentDOM) {
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!this.crossDomain) {
+                var csrftoken = getCookie('csrftoken');
+                xhr.setRequestHeader('X-CSRFToken', csrftoken);
+            }
+        }
+    });
+    $.ajax({
+        url: url,
+        method: 'POST',
+        data: { 
+            key: value 
+        },
+        dataType: 'html',
+        success: function(response) {
+            $(parentDOM).html(response);
+        },
+        error: function(error) {
+            console.error('Error', error);
+        }
+    });
+}
+
 function makeAsReference(proteinID) {
     $button = $("button#button_" + proteinID);
     $star = $button.children("span");
@@ -140,12 +120,7 @@ function makeAsReference(proteinID) {
 }
 
 
-
 $(document).ready(function(){
-
-    // generate figure
-    updateSection_figure();
-
     // change opacity on mouseover
     $(document).on("mouseover", "rect.subseq", function() {
         $(this).attr("fill-opacity", "0.8");
@@ -160,16 +135,26 @@ $(document).ready(function(){
         $("#module_name_" + $id).prop("hightlighted", false);
         $("#numbering_" + $id).prop("hightlighted", false);
     });
-
     // click_module
     $(document).on("click", "svg rect.subseq", function() {
         var $id = $(this).attr('subseq');
         // run ajax 
-        console.log("ajax to subseq "+ $id);
+        console.log("ajax to subseq " +$id);
         updateSection_modulecard($id);
     });
 
-    
+
+    $(document).on("mouseover", "p.profile", function() {
+        $(this).css('color', 'purple');
+    });
+    $(document).on("mouseout", "p.profile", function() {
+        $(this).css('color', 'blue');
+    });
+    $(document).on("click", "p.profile", function() {
+        var $id = $(this).attr('id');
+        console.log("ajax to profile " +$id);
+        updateSection_profile($id);
+    });
 
 
 })

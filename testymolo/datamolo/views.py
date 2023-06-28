@@ -23,6 +23,8 @@ class Main(TemplateView):
     mainminus_protein = []
     module = None
     phylo = None
+    subseq = None
+    profile = None
 
 
     def index(request):
@@ -74,10 +76,12 @@ class Main(TemplateView):
             context['proteins'] = mark_safe(html)
         
         if(Main.module):
-            context['Module'] = "<p>work in progress</p>"
+            Main.module = None
+            #context['Module'] = Main.load_card_module(request, Main.subseq)
 
         if(Main.phylo):
-            context['Phylo'] = "<p>work in progress</p>"
+            Main.phylo = None
+            #context['Phylo'] = "<p>work in progress</p>"
 
         return render(request, Main.template_name, context)
 
@@ -135,12 +139,14 @@ class Main(TemplateView):
     def load_card_module(request, subseq_id):
         #ajax
         context:dict = {}
+        Main.subseq = subseq_id
         subseq = data.Subseq.objects.get(id=subseq_id)
         if(subseq.profile):
             Main.module = subseq.profile.modulo.id
             module = data.Modulo.objects.get(id=Main.module)
             context['module'] = module
             context['subseq'] = subseq
+            context['profile_id'] = subseq.profile.id
             context['profile_length'] = len(data.Subseq.objects.filter(profile=subseq.profile))
             context['Structures'] = [structure for structure in data.Structure.objects.filter(modulo=subseq.profile.modulo)]
             context['commun_ancestor'] = "'...'"
@@ -149,7 +155,18 @@ class Main(TemplateView):
         
         return mark_safe("<p>Don't get ahead of yourself dude !</p>")
 
+
+    def load_mainfigure_profile(request, profile_id):
+        #ajax
+        context:dict = {}   
+        profile = data.Profile.objects.get(id=profile_id)
+        # gather all subseq.sequence when subseq.profile = profile
+        Subseqs:dict = {}
+        for subseq in data.Subseq.objects.filter(profile=profile):
+            Subseqs[str(subseq.id)] = {'header': subseq.header() ,'sequence':subseq.sequence}
+        context['subseq'] = Subseqs
         
+        return HttpResponse(fig.generate_mainfigure_profile(context))
 
 
     # works !

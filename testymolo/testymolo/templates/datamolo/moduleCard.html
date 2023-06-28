@@ -5,7 +5,7 @@
         <p>protein: {{ subseq.origin.id }}  [ {{ subseq.start }} : {{ subseq.end }} ]</p>
     </div>
     <div class='profile'>
-        <p>Profile</p>
+        <p class='profile' id="{{ profile_id }}">Profile</p>
         <p>number of sequence: {{ profile_length }}</p>
         <p>validated: {{ subseq.profile.validated }}</p>
         <p>method: '...'<p>
@@ -17,6 +17,7 @@
         {% endfor %}
     </div>
     <div class='phylo'>
-        <p>clade: {{ commun_ancestor }}</p>
+        <p>clade:</p>
+        <p>{{ commun_ancestor }}</p>
     </div>
 </div>

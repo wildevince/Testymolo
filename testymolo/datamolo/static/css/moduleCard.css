@@ -1,26 +1,26 @@
 .card {
     position: relative;
     margin: 1px;
-    display: inline-flexbox;
     background-color: rgb(240, 240, 240);
     padding: 1em;
+    display: block;
+    height: fit-content;
 }
 
-.card .info {
-    width: 25%;
-}
-.card .profile {
-    width: 25%;
-}
-.card .structure {
-    width: 25%;
-}
-.card .phylo {
-    width: 25%;
-}
-
-p::first-line {
+.card div {
+    width: 24%;
+    height: 100%;
+    top : 0;
     position: relative;
-    margin-left: 50%;
-    margin-right: 50%;
+    display: inline-table;   
+}
+
+.card div p:first-child {
+    font-weight: bold;
+}
+
+p.profile {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
 }
