@@ -40,8 +40,9 @@ function updateSection_figure_plus(id) {
         dataType: 'html',
         success: function(response) {
             // console log 
-            $("#loadingProfile").html("");
-            $("#loadingFigure").html(response);
+            //$("#loadingProfile").html("<p>The World !</p>");
+            //$("#loadingFigure").html(response);
+            //$("#loadingFigure").html("<p>The World !</p>");
         },
         error: function(error) {
             console.error('Error', error);
