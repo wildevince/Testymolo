@@ -150,3 +150,35 @@ sequence   -->  multialignment  ---
             {{ protein|generate_svg }}
             {% endfor %}
 
+
+
+## implement Database
+        
+        ### Organism , Protein , Subseq 
+        ###scr.parse_data()  #-> done
+
+        ### Modulo
+        ###scr.parse_Modules()  #-> done
+
+        ### Structure
+        ### lack info
+
+        ### link between Modulo--Subeq
+        ### Subseq --+ Profile -1-1- Modulo   (facile => aggregation && one-to-one )
+        ### Subseq +-- Annotation --* Modulo  (difficile => positioning within limits && sorting types of annotation)
+
+        ### Subseq --+ Profile -1-1- Modulo   (facile => aggregation && one-to-one )
+
+
+        ### need to hard flush and restart 
+        #scr.parse_data() 
+        
+        ### BACKUP
+
+        #Table_names = [tab[0] for tab in data.Annotation.Tables_SQL]
+        #scr.parse_Annotations(Table_names) 
+
+        ### BACKUP 2
+
+        ### -> visualization JS tool !
+        ### question: protein 375 -> polyprotein 1ab du HCoV

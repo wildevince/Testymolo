@@ -4,15 +4,43 @@ from django.conf import settings
 #from django_mysql.models import ArrayField
 
 
-fs = FileSystemStorage(location="/media/data")
+class Session(models.Model):
+    #currentDate = models.CharField(max_length=50)
+    protein = models.IntegerField(null=True)  #-> mainfocus figure
+    profile = models.IntegerField(null=True)  #-> mainfocus logo
+    module = models.CharField(null=True, max_length=10)  
+    subseq = models.IntegerField(null=True)  #-> cardmodule
+    phylo = models.IntegerField(null=True)   #-> phylo (wip)
+    proteins = models.CharField(null=True, max_length=100)  #-> minus figures
+
+    def add_protein_minus(item, *proteinIDs):
+        for proteinID in proteinIDs:
+            proteinID = str(proteinID)
+            if(not item.proteins):
+                item.proteins = ' '.join([proteinID])
+            proteins:list = item.proteins.split(' ')
+            if not proteinID in proteins:
+                proteins.append(proteinID)
+                proteins.sort()
+                item.proteins = ' '.join(proteins)
+    
+    def supp_protein_minus(item, *proteinIDs):
+        for proteinID in proteinIDs:
+            proteinID = str(proteinID)
+            proteins:list = item.proteins.split(' ')
+            if proteinID in proteins:
+                proteins.remove(proteinID)
+                item.proteins = ' '.join(proteins)
 
 
-# DEBUG class
-class DATA(models.Model):
-    """ temp dev only """
-    id = models.CharField(primary_key=True, max_length=20)
-    file = models.FileField(storage=fs)
-
+# temp session class
+class TempFasta(models.Model):
+    # id: autofield -> served in cookie
+    method = models.CharField(max_length=100, blank=True)
+    aligned = models.BooleanField(default=False)
+    path = models.FileField(upload_to="temp/")
+    filename = models.CharField(max_length=30)
+    profile_id = models.IntegerField()
 
 
 # Create your models here.
@@ -122,6 +150,13 @@ class Protein(models.Model):
             "sequence":item.sequence,
             "length":len(item.sequence),
         }
+    
+    def random():
+        import random
+        PROTEINS = Protein.objects.filter(derivedFromPP=False)
+        N:int = len(PROTEINS)
+        i = random.randint(1, N-1)
+        return PROTEINS[i]
 
 class CDS(models.Model):
     #lvl 3

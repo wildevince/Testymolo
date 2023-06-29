@@ -119,8 +119,41 @@ function makeAsReference(proteinID) {
     }
 }
 
+function updateSection_logo(profileId) {
+    var url = '/load-logo/' + profileId + '/';
+    AJAX(url, profileId, "#loadingProfile div.logo")
+}
+
+function session_refresh() {
+    // delete the cookie
+    //document.cookie = 'session' + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    // ajax 
+    var url = '/new-session/';
+    $.ajax({
+        url: url,
+        dataType: 'html',
+        success: function(response) {
+            console.log("session: "+response);
+        },
+        error: function(error) {
+            console.error('Error', error);
+        }
+    });
+}
+
+
 
 $(document).ready(function(){
+
+    // check cookie 'session'
+    var session = getCookie('session');
+    if(session) {
+        console.log("session: "+session)
+    } else {
+        session_refresh();
+    }
+    
+
     // change opacity on mouseover
     $(document).on("mouseover", "rect.subseq", function() {
         $(this).attr("fill-opacity", "0.8");
@@ -157,6 +190,21 @@ $(document).ready(function(){
     });
 
 
+    // auto-hide minus protein if in mainfocus
+    $.when($("#loadingFigure svg")).then(function(self) {
+        var proteinID = $(self).attr('protein');
+        $.when($("#mainminus svg")).then(function(self) {
+            let minusprotID = $(self).attr('protein');
+            if(minusprotID == proteinID) {
+                $(self).hide();
+            }
+        });
+    });
+    
+
+
+    // look for witness to search for logo(SVG)
+    //$.when($("#loadingProfile div.logo")).then((self) => {});
 })
 
 

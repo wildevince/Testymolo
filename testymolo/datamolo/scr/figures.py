@@ -1,6 +1,6 @@
-from django.http import HttpResponse
 import datamolo.models as data
 
+import logomaker as logo
 
 
 def generate_mainfigure_protein(protein:data.Protein):
@@ -39,7 +39,7 @@ def generate_mainfigure_protein(protein:data.Protein):
         if(subseq.profile):
             module = subseq.profile.modulo.id 
         else:
-            module = "unknown"
+            module = "?"
         
         html += f"<rect class='subseq' subseq='{subseq.id}' height='{y_height}%' y='{y_top}%' fill='blue' fill-opacity='0.2' "
         html += f"x='{x}' width='{w}' />\n"
@@ -112,5 +112,7 @@ def generate_minusfigure_protein(protein:data.Protein):
     return "<div class='figure'>"+html+"</div>"
 
 
-def generate_mainfigure_profile(profile:dict):
-    return "The World !"
+def generate_mainfigure_profileLogo(data:dict):
+    #
+    return f"<div class='logo' id='{data['id']}'></div>"
+

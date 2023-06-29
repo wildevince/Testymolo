@@ -32,3 +32,9 @@ svg text[hightlighted='true'] {
 svg text {
     font-weight: normal;
 }
+
+.button-container {
+    display: flex;
+    float:right;
+}
+
