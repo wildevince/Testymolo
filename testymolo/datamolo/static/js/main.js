@@ -133,7 +133,10 @@ function session_refresh() {
         url: url,
         dataType: 'html',
         success: function(response) {
-            console.log("session: "+response);
+            //console.log("session: "+response);
+            document.open();
+            document.write(response);
+            document.close();
         },
         error: function(error) {
             console.error('Error', error);
