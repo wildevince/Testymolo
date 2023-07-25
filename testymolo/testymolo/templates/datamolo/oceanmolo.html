@@ -1,12 +1,40 @@
 {% extends "base.html" %}
 
-{% block datamolo_static %}
+{% block static %}
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/moduleCard.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/oceanmolo.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/oceanmolo.js' %}"></script>
+
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js" ></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" ></script>
+    <script crossorigin src="https://unpkg.com/react-msaview/bundle/index.js" ></script>
+
 {% endblock %}
 
 
+{% block content %}
+
+<p>Hello world !</p>
+
+<div class="main" id="my_msa" >
+    <script>
+        const { MSAView, MSAModel } = window.ReactMSAView
+      const model = MSAModel.create({ id: `${Math.random()}`, type: 'MsaView' })
+      // can pass msaFilehandle and treeFilehandle if you want to point at a URL of a MSA/tree
+      // const model = MSAModel.create({ id: `${Math.random()}`, type: "MsaView", msaFilehandle: {uri:'http://path/to/msa.stock'} });
+      // or pass a string of an msa/tree directly to the "data" field if not pointing to a URL
+      // const model = MSAModel.create({ id: `${Math.random()}`, type: "MsaView", data: {msa:/*string of msa here */} });
+
+      // choose MSA width, calculate width of div/rendering area if needed beforehand
+      model.setWidth(1800)
+
+      ReactDOM.render(
+        React.createElement(MSAView, { model }),
+        document.getElementById('root'),
+      );
+    </script>
+</div>
+
+{% endblock %}

@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         {% load static %}
         
-        {% block datamolo_static %}{% endblock %}
+        {% block static %}{% endblock %}
         <title>{% block title %}VAZyMolO 2: reforged{% endblock %}</title>
     </head>
+    
     <body>
         <div class='debug'></div>
-        {% block datamolo %}{% endblock %}
+        {% block content %}{% endblock %}
     </body>
 </html>

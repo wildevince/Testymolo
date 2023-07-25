@@ -20,8 +20,9 @@ from datamolo import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+
     ####path('', views.Main.index, name='index'),####
-    path('', views.OceanMolo.index, name='index'),
+    path('', views.OceanMolo.index, name='index'),####
 
     
     path('new-session/', views.Main.new_session, name="new-session"),
