@@ -17,20 +17,21 @@ from django.contrib import admin
 from django.urls import path
 from datamolo import views
 
-from django.conf import settings
-from django.conf.urls.static import static
-
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', views.Main.index, name='index'),
+    ####path('', views.Main.index, name='index'),####
+    path('', views.OceanMolo.index, name='index'),
+
+    
     path('new-session/', views.Main.new_session, name="new-session"),
     path('load-figure/', views.Main.load_mainfigure_protein, name="load-figure" ),
     path('minus-figure/', views.Main.load_minusfigure_protein, name="minus-figure" ),
     path('plus-figure/<int:protein_id>/', views.Main.load_plusfigure_protein, name="plus-figure" ),
     path('module/<int:subseq_id>/', views.Main.load_card_module, name="module" ),
     path('profile/<int:profile_id>/', views.Main.load_mainfigure_profile, name="profile"),
-    path('load-logo/<int:temp_id>/', views.Main.load_mainfigure_logo, name="load-logo"),
+    path('check_logo/', views.Main.check_mainfigure_logo, name="check-logo"),
+    #path('load-logo/<str:temp_id>/', views.Main.load_mainfigure_logo, name="load-logo"),
     path('download/', views.Main.download, name='download'),
 ] 
 #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

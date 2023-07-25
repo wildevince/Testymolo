@@ -10,6 +10,7 @@ from django.utils.safestring import mark_safe
 #import datamolo.scr.add_item_in_model as scr
 import datamolo.scr.figures as fig
 import datamolo.scr.alignments as align
+import datamolo.tasks as tasks
 
 import datamolo.models as data
 
@@ -17,6 +18,7 @@ import datamolo.models as data
 
 # Create your views here.
 class Main(TemplateView):
+    
     template_name = os.path.join("datamolo", "main.html")
     moduleCard_template = os.path.join("datamolo", "moduleCard.html")
 
@@ -34,6 +36,7 @@ class Main(TemplateView):
         session = data.Session.objects.create()
         response = render(request, Main.template_name, {})
         response.set_cookie('session', session.id)
+        response.delete_cookie('tempFasta')
         return response
 
 
@@ -62,9 +65,9 @@ class Main(TemplateView):
                     html += fig.generate_minusfigure_protein(protein) + '\n'
                 context['proteins'] = mark_safe(html)
             
-            if(SESSION.profile):
-                context['ProfileLogo'] = "<p>work in progress</p>" 
-                #fig.generate_mainfigure_profileLogo(sessionID)
+            if(SESSION.profile and SESSION.logo_prot_path):
+                #context['ProfileLogo'] = mark_safe(fig.generate_mainfigure_profileLogo(SESSION.logo_prot_path))
+                pass
 
         else:
             Main.new_session(request)
@@ -154,47 +157,50 @@ class Main(TemplateView):
 
 
     def load_mainfigure_profile(request, profile_id):
+        """ profile info when profile link is clicked on module card """      
+        # initate the sequence alignment and setting cookie to notify that the process has begun  
         #ajax
         sessionID = request.COOKIES.get('session')
         if(sessionID):
             SESSION = data.Session.objects.get(id=sessionID)
-            SESSION.profile = profile_id
+            SESSION.set_profile(profile_id)
             SESSION.save()
 
-            Subseqs:dict = {}
-            Subseqs['id'] = profile_id
-            profile = data.Profile.objects.get(id=profile_id)
-            # gather all subseq.sequence when subseq.profile = profile
-            for subseq in data.Subseq.objects.filter(profile=profile):
-                Subseqs[str(subseq.id)] = {'header': subseq.header() ,'sequence':subseq.sequence}
+            # set up a cookie
+            response = HttpResponse("")
+            response.set_cookie('tempFasta', SESSION.logo_prot_path)
 
-            align.to_fasta_to_align(Subseqs)  # launch fastaformat & run_align(muscle)
+            # set up a task
+            file_path = os.path.join(settings.MEDIA_ROOT, 'temp', SESSION.logo_prot_path)
+            tasks.wait_for_muscle_outfile(file_path)
 
-            # to_model
-            temp = data.TempFasta.objects.create(
-                path = os.path.join(settings.MEDIA_ROOT, 'temp/') + "temp.fasta",
-                filename = "temp.fasta",
-                profile_id = profile_id
-            )
-            response = HttpResponse(f"<div class='logo' id='{profile_id}'></div>")
-            response.set_cookie('tempFasta', temp.id)
-
+            # immediate response
             return response
         return HttpResponse(mark_safe("<p>session not valid : please accept our cookies</p>"))
-
-
-    def load_mainfigure_logo(request):
-
-        sessionID = request.COOKIES.get('session')
-        tempFastaID = request.COOKIES.get('tempFasta')
-        if(sessionID and tempFastaID):
-            ### Is the alignment ready yet ?
-            ### -> yes -> fig.generate_logo(...)
-            return mark_safe("<p>The World !</p>")
+    
+    
+    def check_mainfigure_logo(request):
+        # AJAX GET 
+        # read cookie 'tempFasta'
+        tempFasta = request.COOKIES.get('tempFasta')
+        
+        # if task is ready
+        outfile_path = os.path.join(settings.MEDIA_ROOT, 'temp', tempFasta) + '.out'
+        task = tasks.check_outfile_ready(outfile_path)
+        if(task == True):
+            return Main.load_mainfigure_logo(request, tempFasta)
         else:
-            # errors
-            return HttpResponse(mark_safe("<p>session not valid : please accept our cookies</p>"))
+            response = HttpResponse("Please wait few seconds more.")
+            return response
 
+
+    def load_mainfigure_logo(request, tempFasta):
+        outfile_path = os.path.join(settings.MEDIA_ROOT, 'temp', tempFasta) + '.out'
+        for_logo:dict = {"outfile_path":outfile_path,'tempFasta':tempFasta}
+        response = HttpResponse(fig.generate_mainfigure_profileLogo(for_logo))
+        response.delete_cookie('tempFasta')
+        return response
+        
 
     # works !
     def download(request):
@@ -205,3 +211,15 @@ class Main(TemplateView):
             response['Content-Disposition'] = f"attachment; filename=sequences.fasta"
             return response
         return HttpResponse("not found")
+
+
+########################################################################################
+########################################################################################
+########################################################################################
+
+class OceanMolo(TemplateView):
+    template_name = os.path.join("datamolo", "oceanmolo.html")
+
+    def index(request):
+        context:dict = {}
+        return render(request, OceanMolo.template_name, context)

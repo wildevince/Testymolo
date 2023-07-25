@@ -75,6 +75,8 @@ function updateSection_profile(profileId) {
     var url = '/profile/' + profileId + '/';
 
     AJAX(url, profileId, "#loadingProfile");
+
+    intervalId;
 }
 
 function AJAX(url, value, parentDOM) {
@@ -133,13 +135,41 @@ function session_refresh() {
         url: url,
         dataType: 'html',
         success: function(response) {
-            console.log("session: "+response);
+            document.open("text/html", "replace");
+            document.write(response);
+            document.close();
         },
         error: function(error) {
             console.error('Error', error);
         }
     });
 }
+
+// intervally (1 sec) check if logo is finish and fetch the logo figure
+var intervalId = setInterval(function() {
+
+    tempFasta = getCookie('tempFasta')
+    if (tempFasta != null) {
+        // AJAX request to fetch HTML content
+        // AJAX(url, tempFasta, "#mainfocus #loadingProfile");
+        $.ajax({
+            url: '/check_logo',
+            dataType: 'html',
+            success: function(data) {
+                $("#mainfocus #loadingProfile").html(data);
+            },
+            error: function(error) {
+                console.error('Error', error);
+            }
+        });
+        
+        // Clear the interval once the cookie is found
+        clearInterval(intervalId);
+    }
+}, 1000); // Repeat every 1 second
+
+
+//######################################################################
 
 
 
@@ -152,7 +182,11 @@ $(document).ready(function(){
     } else {
         session_refresh();
     }
+
+    //setInterval(function(){console.log("Hey dude !")},1000);
+
     
+
 
     // change opacity on mouseover
     $(document).on("mouseover", "rect.subseq", function() {
@@ -225,7 +259,11 @@ function getCookie(name) {
     }
     return cookieValue;
   }
- 
+
+function checkCookie(cookieName) {
+    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*) + cookieName \s*=\s*([^;]*).*$)|^.*$/, "$1");
+    return cookieValue !== undefined;
+}
   
   
   

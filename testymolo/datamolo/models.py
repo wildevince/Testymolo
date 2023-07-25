@@ -1,17 +1,46 @@
+from os import path
+
 from django.db import models
+from django.utils import timezone
 from django.core.files.storage import FileSystemStorage
 from django.conf import settings
 #from django_mysql.models import ArrayField
 
+import datamolo.scr.alignments as align
+
 
 class Session(models.Model):
-    #currentDate = models.CharField(max_length=50)
+    # lifetime: 72h
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
     protein = models.IntegerField(null=True)  #-> mainfocus figure
     profile = models.IntegerField(null=True)  #-> mainfocus logo
+    logo_prot_path = models.FilePathField(null=True)
     module = models.CharField(null=True, max_length=10)  
     subseq = models.IntegerField(null=True)  #-> cardmodule
     phylo = models.IntegerField(null=True)   #-> phylo (wip)
     proteins = models.CharField(null=True, max_length=100)  #-> minus figures
+
+    def set_profile(item, profileId):
+        item.profile = profileId
+        profile = Profile.objects.get(id=profileId)
+        Subseqs:dict = {}
+        Subseqs['id'] = profileId
+        
+        # gather all subseq.sequence when subseq.profile = profile
+        subseqs = Subseq.objects.filter(profile=profile)
+        
+        if(len(subseqs)>0):
+            date = timezone.now().strftime('%Y-%m-%d-%H-%M-%S')
+            outpath = f"{item.id}_{profileId}_{date}.fasta"
+            Subseqs['file'] = path.join(settings.MEDIA_ROOT, 'temp/') + outpath
+            item.logo_prot_path = outpath
+
+            Subseqs['subseq']:list = []
+            for subseq in subseqs:
+                Subseqs['subseq'].append({'header': subseq.header() ,'sequence':subseq.sequence()})
+
+            align.to_fasta_to_align(Subseqs)  # launch fastaformat & run_align(muscle)
 
     def add_protein_minus(item, *proteinIDs):
         for proteinID in proteinIDs:
@@ -31,16 +60,6 @@ class Session(models.Model):
             if proteinID in proteins:
                 proteins.remove(proteinID)
                 item.proteins = ' '.join(proteins)
-
-
-# temp session class
-class TempFasta(models.Model):
-    # id: autofield -> served in cookie
-    method = models.CharField(max_length=100, blank=True)
-    aligned = models.BooleanField(default=False)
-    path = models.FileField(upload_to="temp/")
-    filename = models.CharField(max_length=30)
-    profile_id = models.IntegerField()
 
 
 # Create your models here.

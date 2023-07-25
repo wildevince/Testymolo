@@ -114,5 +114,11 @@ def generate_minusfigure_protein(protein:data.Protein):
 
 def generate_mainfigure_profileLogo(data:dict):
     #
-    return f"<div class='logo' id='{data['id']}'></div>"
+    html:str = f"<div class='logo' id='{data['tempFasta']}'>"
+    ### 
+    html += "<p>The World !</p>"
+    ### 
+    html += "</div>"
+    return html
+
 

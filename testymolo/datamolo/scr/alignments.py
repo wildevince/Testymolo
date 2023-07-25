@@ -7,10 +7,11 @@ from Bio.Align.Applications import MuscleCommandline
 
 
 def to_fasta_to_align(data:dict):
-    # to_fasta
-    filepath = os.path.join(settings.MEDIA_ROOT, 'temp/') + "temp.fasta"
+    # to_fasta 
+    # fasta formating : 60 residues per line
+    filepath = data['file']
     with open(filepath, 'w') as handle:
-        for id, fasta in data.items():
+        for fasta in data['subseq']:
             handle.write(">"+fasta['header']+"\n")
             sequence = fasta['sequence']
             while (len(sequence) < 60):
@@ -18,5 +19,8 @@ def to_fasta_to_align(data:dict):
                 sequence = sequence[60:]
             handle.write(sequence+"\n")
     # to_align
-    Popen(str(MuscleCommandline(cmd="muscle -quiet", input=filepath, out=filepath)).split(''))
+    out_filepath = filepath+'.out'
+    command:str = str(MuscleCommandline(cmd='muscle', input=filepath, out=out_filepath))
+    print(command+" -quiet" )  # adding "-quiet" option ... doen't work in v3.8 ?! (but does in v5.)
+    Popen(command.split(' '))  # command must be a list of words
     pass
