@@ -135,12 +135,8 @@ function session_refresh() {
         url: url,
         dataType: 'html',
         success: function(response) {
-<<<<<<< HEAD
-            document.open("text/html", "replace");
-=======
             //console.log("session: "+response);
             document.open();
->>>>>>> 2d7fe3c7a4cade570a3b7bd45ee9457e1c77de84
             document.write(response);
             document.close();
         },

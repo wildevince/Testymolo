@@ -1,7 +1,5 @@
 import os
 
-from background_task import background
-
 
 #@background(schedule=1)  # schedule the task to run every 1 seconds
 async def wait_for_muscle_outfile(file_path:str, max_attempts=10):
