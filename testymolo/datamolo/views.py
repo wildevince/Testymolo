@@ -216,10 +216,3 @@ class Main(TemplateView):
 ########################################################################################
 ########################################################################################
 ########################################################################################
-
-class OceanMolo(TemplateView):
-    template_name = os.path.join("datamolo", "oceanmolo.html")
-
-    def index(request):
-        context:dict = {}
-        return render(request, OceanMolo.template_name, context)
