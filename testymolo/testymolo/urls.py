@@ -21,10 +21,7 @@ from datamolo import views
 urlpatterns = [
     path("admin/", admin.site.urls),
 
-    path('', views.Main.index, name='index'),####
-    ####path('', views.OceanMolo.index, name='index'),####
-
-    
+    path('', views.Main.index, name='index'),
     path('new-session/', views.Main.new_session, name="new-session"),
     path('load-figure/', views.Main.load_mainfigure_protein, name="load-figure" ),
     path('minus-figure/', views.Main.load_minusfigure_protein, name="minus-figure" ),
