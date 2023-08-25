@@ -1,3 +1,11 @@
+
+div#SESSION {
+    position: absolute;
+    display: block;
+    right: 1vw;
+}
+
+
 div#data_fig {
     color: brown;
 }
@@ -37,4 +45,85 @@ svg text {
     display: flex;
     float:right;
 }
+div.msa {
+    /*background: lightcyan;*/
+    display: inline-flex;
+    margin: 1em;
+ }
+ 
+ div.msa div.headers {
+     position: relative;
+     width: 18vw;
+     border-right-style: solid;
+     border-right-width: 2px;
+     padding-right: 1em;
+     overflow: scroll;
+ }
+ 
+ div.headers img.sequence_selected_icon {
+    display: none;
+    width: 10px;
+    height: 10px;
+ }
 
+ div.msa div.headers span {
+     display: block ruby;   
+     font-family: Anonymous, monospace;
+     margin-bottom: 0.2em; 
+ }
+
+ 
+ div.msa div.sequences {
+     position: relative;
+     width: 78vw;
+     overflow: scroll;
+ }
+ 
+ div.msa div.sequences span.sequence {
+     margin-left: 1em;
+     display: block ruby;
+     margin-bottom: 0.2em;
+ }
+
+ div.msa div.sequences span {
+     display: inline-block;
+     font-family: Anonymous, monospace;
+ }
+ div.msa span.whitespace {
+    visibility: hidden;
+}
+
+
+
+span.residue[data-residue='-'] {color: gray;}
+span.residue[data-residue='*'] {background: rgb(220, 220, 220); color: gray; }
+span.residue[data-residue='~'] {color: gray;}
+span.residue[data-residue='_'] {color: rgb(40, 40, 50);}
+
+span.residue[data-residue='A'] {color: rgb(230, 230, 230);}
+span.residue[data-residue='I'] {color: rgb(230, 230, 230);}
+span.residue[data-residue='L'] {color: rgb(230, 230, 230);}
+span.residue[data-residue='P'] {color: rgb(230, 230, 230);}
+span.residue[data-residue='V'] {color: rgb(230, 230, 230);}
+span.residue[data-residue='M'] {color: rgb(230, 230, 230);}
+
+span.residue[data-residue='D'] {color: rgb(230, 10, 10);}
+span.residue[data-residue='E'] {color: rgb(230, 10, 10);}
+
+span.residue[data-residue='S'] {color: rgb(10, 230, 10);}
+span.residue[data-residue='T'] {color: rgb(10, 230, 10);}
+span.residue[data-residue='G'] {color: rgb(10, 230, 10);}
+span.residue[data-residue='C'] {color: rgb(10, 230, 10);}
+
+span.residue[data-residue='R'] {color: rgb(0, 150, 250);}
+span.residue[data-residue='H'] {color: rgb(0, 150, 250);}
+span.residue[data-residue='K'] {color: rgb(0, 150, 250);}
+
+span.residue[data-residue='F'] {color: rgb(250, 220, 190);}
+span.residue[data-residue='W'] {color: rgb(250, 220, 190);}
+span.residue[data-residue='Y'] {color: rgb(250, 220, 190);}
+
+span.residue[data-residue='N'] {color: rgb(210, 20, 230);}
+span.residue[data-residue='Q'] {color: rgb(210, 20, 230);}
+
+span.residue[data-residue='X'] {color: gray;}

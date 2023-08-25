@@ -34,7 +34,7 @@ class Main(TemplateView):
                 pass
         # new session
         session = data.Session.objects.create()
-        response = render(request, Main.template_name, {})
+        response = render(request, Main.template_name, {'SESSION':session})
         response.set_cookie('session', session.id)
         response.delete_cookie('tempFasta')
         return response
@@ -47,6 +47,7 @@ class Main(TemplateView):
         sessionID = request.COOKIES.get('session')
         if(sessionID):
             SESSION = data.Session.objects.get(id=sessionID)
+            context['SESSION'] = SESSION
             
             if(SESSION.protein):
                 protein_id = SESSION.protein
@@ -156,14 +157,23 @@ class Main(TemplateView):
         return HttpResponse(mark_safe("<p>session not valid : please accept our cookies</p>"))
 
 
-    def load_mainfigure_profile(request, profile_id):
+    def get_mainfigure_profile(request, profile_id):
         """ profile info when profile link is clicked on module card """      
         # initate the sequence alignment and setting cookie to notify that the process has begun  
         #ajax
+        ## 
+        #+ [event : request POST] : AJAX : get_profile(request, profile_id)
+        # input is profile (already aligned) : data.profile.aligned (bool) == true
+        #   \-> read aligned fasta file
+        # :: 
+        # align sequences prot with muscle (task)
+        #   \-> [event : repeated call] : AJAX : read aligned  outfile
+        # => fig.msaViewer(aligned file: string or fileHandler or filePath)
+        # # 
         sessionID = request.COOKIES.get('session')
         if(sessionID):
             SESSION = data.Session.objects.get(id=sessionID)
-            SESSION.set_profile(profile_id)
+            SESSION.set_profile(profile_id)  # launch fastaformat & run_align(muscle)
             SESSION.save()
 
             # set up a cookie
@@ -171,15 +181,15 @@ class Main(TemplateView):
             response.set_cookie('tempFasta', SESSION.logo_prot_path)
 
             # set up a task
-            file_path = os.path.join(settings.MEDIA_ROOT, 'temp', SESSION.logo_prot_path)
-            tasks.wait_for_muscle_outfile(file_path)
+            #file_path = os.path.join(settings.MEDIA_ROOT, 'temp', SESSION.logo_prot_path)
+            #tasks.wait_for_muscle_outfile(file_path)
 
             # immediate response
             return response
         return HttpResponse(mark_safe("<p>session not valid : please accept our cookies</p>"))
     
     
-    def check_mainfigure_logo(request):
+    def check_mainfigure_profile(request):
         # AJAX GET 
         # read cookie 'tempFasta'
         tempFasta = request.COOKIES.get('tempFasta')
@@ -188,19 +198,26 @@ class Main(TemplateView):
         outfile_path = os.path.join(settings.MEDIA_ROOT, 'temp', tempFasta) + '.out'
         task = tasks.check_outfile_ready(outfile_path)
         if(task == True):
-            return Main.load_mainfigure_logo(request, tempFasta)
+            return Main.load_mainfigure_profile(request, tempFasta)
         else:
             response = HttpResponse("Please wait few seconds more.")
             return response
 
 
-    def load_mainfigure_logo(request, tempFasta):
+    def load_mainfigure_profile(request, tempFasta):
         outfile_path = os.path.join(settings.MEDIA_ROOT, 'temp', tempFasta) + '.out'
         for_logo:dict = {"outfile_path":outfile_path,'tempFasta':tempFasta}
-        response = HttpResponse(fig.generate_mainfigure_profileLogo(for_logo))
+        response = HttpResponse(fig.generate_mainfigure_profile(for_logo))
         response.delete_cookie('tempFasta')
         return response
         
+
+ 
+
+
+
+
+
 
     # works !
     def download(request):

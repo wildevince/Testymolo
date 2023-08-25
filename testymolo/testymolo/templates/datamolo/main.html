@@ -15,6 +15,9 @@
 
     {% csrf_token %}
 
+    <div id='SESSION'>{{SESSION.id}}</div>
+
+
     <div id="mainfocus" class='frame'>
         <button class="session-button" id="random-button" onclick="updateSection_figure()" >Random</button>
         <button class="session-button" id="refresh-button" onclick="session_refresh()" >Refresh</button>

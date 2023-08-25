@@ -1,5 +1,6 @@
 import datamolo.models as data
 
+from Bio import SeqIO
 import logomaker as logo
 
 
@@ -112,13 +113,47 @@ def generate_minusfigure_protein(protein:data.Protein):
     return "<div class='figure'>"+html+"</div>"
 
 
-def generate_mainfigure_profileLogo(data:dict):
-    #
-    html:str = f"<div class='logo' id='{data['tempFasta']}'>"
+def generate_mainfigure_profile(data:dict):
+    msa:list = []   
+    with open(data["outfile_path"]) as handle:
+        for record in SeqIO.parse(handle, format="fasta"):
+            msa.append({"header": record.description, "sequence":str(record.seq)})
+    # parameters 
+    N:int = len(msa)
+    L:int = len(msa[0]["sequence"])
+    ### html
+    html:str = f"<div class='msa'>"
     ### 
-    html += "<p>The World !</p>"
+    # div functional button #
+    # div header #
+    div_header:str = "<div class='headers' >"
+    div_header += "<span class='residue' >Records:</span>"
+    # div graduated ruler #
+    # div sequences #
+    div_sequences:str = "<div class='sequences' >"
+    ruler:str = ""
+    for l in range(L):
+        if(l%5 == 0 and l > 0):
+            ruler += '<span>|</span>'
+        else :
+            ruler += "<span class='whitespace' >_</span>"
+    div_sequences += f"<span class='sequence' >{ruler}</span>"
+    # div horizontal scroll # 
+
+    for record in msa:
+        div_header += f"<img class='sequence_selected_icon'><span>{record['header']}</span>"
+        div_sequences += "<span class='sequence' >"
+        div_sequences +=  "".join(f"<span data-residue='{residue}' class='residue' >{residue}</span>" for residue in record['sequence'])
+        div_sequences += "</span>"
+
+    div_header += "</div>"
+    div_sequences += "</div>"
+
+    ### 
+    html += div_header
+    html += div_sequences
     ### 
     html += "</div>"
-    return html
+    return html 
 
 

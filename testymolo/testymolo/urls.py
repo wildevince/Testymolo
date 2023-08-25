@@ -27,8 +27,8 @@ urlpatterns = [
     path('minus-figure/', views.Main.load_minusfigure_protein, name="minus-figure" ),
     path('plus-figure/<int:protein_id>/', views.Main.load_plusfigure_protein, name="plus-figure" ),
     path('module/<int:subseq_id>/', views.Main.load_card_module, name="module" ),
-    path('profile/<int:profile_id>/', views.Main.load_mainfigure_profile, name="profile"),
-    path('check_logo/', views.Main.check_mainfigure_logo, name="check-logo"),
+    path('profile/<int:profile_id>/', views.Main.get_mainfigure_profile, name="profile"),
+    path('check_logo/', views.Main.check_mainfigure_profile, name="check-logo"),
     #path('load-logo/<str:temp_id>/', views.Main.load_mainfigure_logo, name="load-logo"),
     path('download/', views.Main.download, name='download'),
 ] 
