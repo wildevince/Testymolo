@@ -41,16 +41,39 @@ svg text {
     font-weight: normal;
 }
 
+
+div.figure span[arrow='arrow-thick-right'] {
+    margin-left:1vw;
+}
+
+span[arrow='arrow-thick-right'] svg {
+    width : 1em;
+    height: 1em;
+     
+ }
+ 
+
 .button-container {
     display: flex;
     float:right;
 }
+
+
+
 div.msa {
     /*background: lightcyan;*/
     display: inline-flex;
     margin: 1em;
+    --sequences: 76vw;
  }
  
+ div.msa div.icons {
+     position: relative;
+     width: 1vw;
+     padding-bottom: 0.5vw;
+}
+ 
+
  div.msa div.headers {
      position: relative;
      width: 18vw;
@@ -58,13 +81,21 @@ div.msa {
      border-right-width: 2px;
      padding-right: 1em;
      overflow: scroll;
+     padding-bottom: 0.5vw;
  }
  
  div.headers img.sequence_selected_icon {
     display: none;
-    width: 10px;
-    height: 10px;
+    width: 0.8em;
+    height: 0.8em;
  }
+
+ div.msa div.icons span {
+     display: block ruby;   
+     font-family: Anonymous, monospace;
+     margin-bottom: 0.2em; 
+ }
+
 
  div.msa div.headers span {
      display: block ruby;   
@@ -72,11 +103,11 @@ div.msa {
      margin-bottom: 0.2em; 
  }
 
- 
- div.msa div.sequences {
+div.msa div.sequences {
      position: relative;
-     width: 78vw;
+     width: var(--sequences);
      overflow: scroll;
+     padding-bottom: 0.5vw;
  }
  
  div.msa div.sequences span.sequence {
@@ -85,45 +116,92 @@ div.msa {
      margin-bottom: 0.2em;
  }
 
- div.msa div.sequences span {
-     display: inline-block;
+
+div.msa .scroll_values{
+    margin-left: 1em;
+    display: block ruby;
+    margin-bottom: 0.2em;
+    width: var(--sequences);
+}
+
+
+ div.msa .scroll_values span {
+     display: block;
      font-family: Anonymous, monospace;
+     position: relative;
  }
- div.msa span.whitespace {
+
+div.msa  .scroll_values span#start {
+    /* background: lightcoral; */
+    left: 0%;
+    width: 10vw;
+}
+div.msa  .scroll_values span#end {
+    /* background: lightblue; */
+    right: 0%;
+    text-align: right;
+    width: 10vw;
+}
+
+div.msa .scroll_values span#middle {
+    /* background: lightgrey; */
     visibility: hidden;
+    right: 0%;
+    width: calc(75vw - 10vw - 10vw);
 }
 
 
 
+ div.msa div.sequences span {
+     display: inline-block;
+     font-family: Anonymous, monospace;
+ }
+
+ 
+span.whitespace {
+    visibility: hidden;
+}
+ 
+span.residue[data-residue='X'] {color: gray;}
 span.residue[data-residue='-'] {color: gray;}
 span.residue[data-residue='*'] {background: rgb(220, 220, 220); color: gray; }
 span.residue[data-residue='~'] {color: gray;}
 span.residue[data-residue='_'] {color: rgb(40, 40, 50);}
 
-span.residue[data-residue='A'] {color: rgb(230, 230, 230);}
-span.residue[data-residue='I'] {color: rgb(230, 230, 230);}
-span.residue[data-residue='L'] {color: rgb(230, 230, 230);}
-span.residue[data-residue='P'] {color: rgb(230, 230, 230);}
-span.residue[data-residue='V'] {color: rgb(230, 230, 230);}
-span.residue[data-residue='M'] {color: rgb(230, 230, 230);}
+/* aliphatic/ hydrophobic */
+span.residue[data-residue='A'] {color: black;}
+span.residue[data-residue='I'] {color: black;}
+span.residue[data-residue='L'] {color: black;}
+span.residue[data-residue='V'] {color: black;}
+span.residue[data-residue='M'] {color: black;}
 
-span.residue[data-residue='D'] {color: rgb(230, 10, 10);}
-span.residue[data-residue='E'] {color: rgb(230, 10, 10);}
+/* special */
+span.residue[data-residue='G'] {color: darkgrey;}
+span.residue[data-residue='P'] {color: darkgrey;}
 
-span.residue[data-residue='S'] {color: rgb(10, 230, 10);}
-span.residue[data-residue='T'] {color: rgb(10, 230, 10);}
-span.residue[data-residue='G'] {color: rgb(10, 230, 10);}
-span.residue[data-residue='C'] {color: rgb(10, 230, 10);}
+/* aromatic */
+span.residue[data-residue='F'] {color: orange;}
+span.residue[data-residue='W'] {color: orange;}
+span.residue[data-residue='Y'] {color: orange;}
 
-span.residue[data-residue='R'] {color: rgb(0, 150, 250);}
-span.residue[data-residue='H'] {color: rgb(0, 150, 250);}
-span.residue[data-residue='K'] {color: rgb(0, 150, 250);}
+/* cysteine C */
+span.residue[data-residue='C'] {color: yellow;}
 
-span.residue[data-residue='F'] {color: rgb(250, 220, 190);}
-span.residue[data-residue='W'] {color: rgb(250, 220, 190);}
-span.residue[data-residue='Y'] {color: rgb(250, 220, 190);}
+/* hydrophile */
+span.residue[data-residue='N'] {color: green;}
+span.residue[data-residue='Q'] {color: green;}
+span.residue[data-residue='S'] {color: green;}
+span.residue[data-residue='T'] {color: green;}
 
-span.residue[data-residue='N'] {color: rgb(210, 20, 230);}
-span.residue[data-residue='Q'] {color: rgb(210, 20, 230);}
+/* nega charged */
+span.residue[data-residue='D'] {color: red;}
+span.residue[data-residue='E'] {color: red;}
 
-span.residue[data-residue='X'] {color: gray;}
+/* posi charged */
+span.residue[data-residue='R'] {color: blue;}
+span.residue[data-residue='H'] {color: blue;}
+span.residue[data-residue='K'] {color: blue;}
+
+
+
+

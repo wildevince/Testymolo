@@ -12,6 +12,7 @@ function updateSection_figure() {
             console.error('Error', error);
         }
     });
+
 }
 
 function updateSection_figure_plus(id) {
@@ -158,6 +159,9 @@ var intervalId = setInterval(function() {
             dataType: 'html',
             success: function(data) {
                 $("#mainfocus #loadingProfile").html(data);
+                arrowMSA();
+                ruler();
+                               
             },
             error: function(error) {
                 console.error('Error', error);
@@ -172,8 +176,6 @@ var intervalId = setInterval(function() {
 
 //######################################################################
 
-
-
 $(document).ready(function(){
 
     // check cookie 'session'
@@ -185,9 +187,6 @@ $(document).ready(function(){
     }
 
     //setInterval(function(){console.log("Hey dude !")},1000);
-
-    
-
 
     // change opacity on mouseover
     $(document).on("mouseover", "rect.subseq", function() {
@@ -224,7 +223,7 @@ $(document).ready(function(){
         updateSection_profile($id);
     });
 
-
+    
     // auto-hide minus protein if in mainfocus
     $.when($("#loadingFigure svg")).then(function(self) {
         var proteinID = $(self).attr('protein');
@@ -235,15 +234,94 @@ $(document).ready(function(){
             }
         });
     });
-    
-
-
-    // look for witness to search for logo(SVG)
-    //$.when($("#loadingProfile div.logo")).then((self) => {});
 })
 
 
+function ruler() {
+    // container
+    $ruler = $("div.msa .sequence:first-child");
+    start = -1;
+    end = -1;
+    check_bool = false;
 
+    // loop child
+    $ruler.find("span").each(($child) => {
+        if(CheckInVue($ruler, $child) && !check_bool) {
+            start = parseInt($child.attr('pos')) +1;
+            check_bool = true;
+            console.log("Allons-y Allonso !");
+        }
+        if(!CheckInVue($ruler, $child) && check_bool) {
+            end = parseInt($child.attr('pos')) +1;
+            console.log("Geronimo !");
+        }
+    });
+    // if end is visible (not overflowed)
+    if(end == -1) {
+        end = $ruler.length;
+        console.log('Fantastic !')
+    }
+    $(".scroll_values #start").html(start);
+    $(".scroll_values #end").html(end);
+}
+
+/*
+// Assistant based on GPT-3.5, developed by OpenAI 
+function ruler() {
+    const parent = $("div.msa .sequence:first-child ");
+    const items = parent.find("span");
+    const rule_start = $(".scroll_values #start");
+    const rule_end = $(".scroll_values #end");
+
+    const itemWidth = items.first().outerWidth();
+    const parentWidth = parent.width();
+
+    parent.scroll(function() {
+        const scrollLeft = parent.scrollLeft();
+
+        const firstVisibleIndex = Math.floor(scrollLeft / itemWidth);
+        const lastVisibleIndex = Math.floor((scrollLeft + parentWidth) / itemWidth);
+
+        // Mettez à jour la règle graduée avec les numéros des éléments visibles
+        rule_start.html(firstVisibleIndex);
+        rule_end.html(lastVisibleIndex);
+    });
+};
+*/
+
+function arrowMSA() {
+    // fetch subseq of interrest
+    let id = $("div#modulecard div.info p.subseq_info").attr('subseq');
+    console.log("subseq marked: "+id);
+
+    setTimeout($null => {}, 1000); // wait 1 sec 
+    
+    // when elm is ready 
+    console.log("searching for: "+"div.icons span.sequence_selected_icon[subseq='"+id+"']");
+    $.when($("div.icons span.sequence_selected_icon[subseq='"+id+"']")).then(($this) => {
+        $this.attr('arrow', 'arrow-thick-right');
+        $this.html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 7H2v6h8v5l8-8-8-8v5z"/></svg>');
+    });
+    // placing the arrow 
+    $("span.sequence_selected_icon[arrow='arrow-thick-right']").html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 7H2v6h8v5l8-8-8-8v5z"/></svg>');
+}
+
+
+const CheckInVue = (container, child) => {
+    const menuHeight = container.offsetHeight;
+    const menuScrollOffset = container.scrollTop;
+    
+    const elemTop = child.offsetTop - container.offsetTop;
+    const elemBottom = elemTop + child.offsetHeight;
+    return (elemTop >= menuScrollOffset &&
+    elemBottom <= menuScrollOffset + menuHeight);
+}
+
+
+
+
+
+    
 
 // utilities
 function getCookie(name) {

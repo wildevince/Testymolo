@@ -220,7 +220,7 @@ class Subseq(models.Model):
         ordering = ['origin', 'start']
 
     def header(item) -> str:
-        return f"{item.origin.header}:[{item.start}-{item.end}]"
+        return f"{item.origin.header[:-1]}.{item.id}):[{item.start}-{item.end}]"
 
     def sequence(item) -> str:
         return str(item.origin.sequence[item.start:item.end])

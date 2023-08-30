@@ -200,7 +200,7 @@ class Main(TemplateView):
         if(task == True):
             return Main.load_mainfigure_profile(request, tempFasta)
         else:
-            response = HttpResponse("Please wait few seconds more.")
+            response = HttpResponse("<p>Please wait few seconds more.</p>")
             return response
 
 

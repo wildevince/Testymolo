@@ -2,7 +2,7 @@
     <div class='info'>
         <p>{{ module.id }}</p>
         <p>[{{ module.moduloFamily }}]    activity: {{ module.activity }}</p>
-        <p>protein: {{ subseq.origin.id }}  [ {{ subseq.start }} : {{ subseq.end }} ]</p>
+        <p class='subseq_info' subseq={{ subseq.id }} >protein: {{ subseq.origin.id }}.{{ subseq.id }} : [ {{ subseq.start }} : {{ subseq.end }} ]</p>
     </div>
     <div class='profile'>
         <p class='profile' id="{{ profile_id }}">Profile</p>

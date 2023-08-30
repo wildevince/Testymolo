@@ -21,6 +21,7 @@ def generate_mainfigure_protein(protein:data.Protein):
     html += "<div class='button-container'>"
     #html += "<button class='compare' >Compare with <span class='uni_star' value=false style='color: orange;'>★</span></button>\n"
     html += "<button class='minus' onclick='updateSection_figure_minus()'>-</button></div>\n"
+    html += f"<span class='sequence_selected_icon' arrow='arrow-thick-right' ><span class='whitespace'>_</span></span><span class='header'>{protein.header}</span> \n"
     html += f"<div class='svg-container'><svg protein={protein.id} width='{str(real_WIDTH)}' height='300'> \n"
     html += f"<rect class='background' width='100%' height='100%' fill='grey' fill-opacity='0.1' stroke='black' /> \n"
     html += f"<rect class='protein' x='{x0}' y='{y_top}%' width='{WIDTH}' height='{y_height}%' fill='blue' fill-opacity='0.1'/> \n"
@@ -125,31 +126,40 @@ def generate_mainfigure_profile(data:dict):
     html:str = f"<div class='msa'>"
     ### 
     # div functional button #
+    div_icons:str = "<div class='icons' ><span class='whitespace'>_</span><span class='whitespace'>_</span>"
     # div header #
     div_header:str = "<div class='headers' >"
-    div_header += "<span class='residue' >Records:</span>"
+    div_header += "<span class='residue' >Records:</span><span class='whitespace'>_</span>"
     # div graduated ruler #
     # div sequences #
-    div_sequences:str = "<div class='sequences' >"
+    div_sequences:str = "<div >"
+    # visible positions
+    div_sequences += "<div class='scroll_values' ><span id='start' ></span><span id='middle' ><span class='whitespace'>_</span></span><span id='end' ></span></div>"
+    div_sequences += "<div class='sequences' >"
     ruler:str = ""
     for l in range(L):
         if(l%5 == 0 and l > 0):
-            ruler += '<span>|</span>'
+            ruler += f"<span pos={l} >|</span>"
         else :
-            ruler += "<span class='whitespace' >_</span>"
+            ruler += f"<span class='whitespace' pos={l} >_</span>"
     div_sequences += f"<span class='sequence' >{ruler}</span>"
     # div horizontal scroll # 
 
     for record in msa:
-        div_header += f"<img class='sequence_selected_icon'><span>{record['header']}</span>"
+        subseq_id:str = record['header']
+        subseq_id = subseq_id.split('@')[-1].split('.')[-1].split(')')[0]
+        div_icons += f"<span class='sequence_selected_icon' subseq='{subseq_id}' ><span class='whitespace'>_</span></span>"
+        div_header += f"<span >{record['header']}</span>"
         div_sequences += "<span class='sequence' >"
         div_sequences +=  "".join(f"<span data-residue='{residue}' class='residue' >{residue}</span>" for residue in record['sequence'])
         div_sequences += "</span>"
 
+    div_icons += "</div>"
     div_header += "</div>"
-    div_sequences += "</div>"
+    div_sequences += "</div></div>"
 
     ### 
+    html += div_icons
     html += div_header
     html += div_sequences
     ### 
