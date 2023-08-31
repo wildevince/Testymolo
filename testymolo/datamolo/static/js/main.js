@@ -289,6 +289,7 @@ function ruler() {
 };
 */
 
+
 function arrowMSA() {
     // fetch subseq of interrest
     let id = $("div#modulecard div.info p.subseq_info").attr('subseq');
@@ -306,7 +307,7 @@ function arrowMSA() {
     $("span.sequence_selected_icon[arrow='arrow-thick-right']").html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 7H2v6h8v5l8-8-8-8v5z"/></svg>');
 }
 
-
+/*
 const CheckInVue = (container, child) => {
     const menuHeight = container.offsetHeight;
     const menuScrollOffset = container.scrollTop;
@@ -317,7 +318,7 @@ const CheckInVue = (container, child) => {
     elemBottom <= menuScrollOffset + menuHeight);
 }
 
-
+*/
 
 
 
