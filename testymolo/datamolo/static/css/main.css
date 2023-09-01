@@ -64,7 +64,7 @@ div.msa {
     /*background: lightcyan;*/
     display: inline-flex;
     margin: 1em;
-    --sequences: 76vw;
+    --sequences: 77vw;
  }
  
  div.msa div.icons {
@@ -87,7 +87,7 @@ div.msa {
  div.headers img.sequence_selected_icon {
     display: none;
     width: 0.8em;
-    height: 0.8em;
+    height: 0.7em;
  }
 
  div.msa div.icons span {
@@ -176,16 +176,16 @@ span.residue[data-residue='V'] {color: black;}
 span.residue[data-residue='M'] {color: black;}
 
 /* special */
-span.residue[data-residue='G'] {color: darkgrey;}
-span.residue[data-residue='P'] {color: darkgrey;}
+span.residue[data-residue='G'] {color: orange;}
+span.residue[data-residue='P'] {color: orange;}
 
 /* aromatic */
-span.residue[data-residue='F'] {color: orange;}
-span.residue[data-residue='W'] {color: orange;}
-span.residue[data-residue='Y'] {color: orange;}
+span.residue[data-residue='F'] {color: purple;}
+span.residue[data-residue='W'] {color: purple;}
+span.residue[data-residue='Y'] {color: purple;}
 
 /* cysteine C */
-span.residue[data-residue='C'] {color: yellow;}
+span.residue[data-residue='C'] {color: orange;}
 
 /* hydrophile */
 span.residue[data-residue='N'] {color: green;}
@@ -201,7 +201,4 @@ span.residue[data-residue='E'] {color: red;}
 span.residue[data-residue='R'] {color: blue;}
 span.residue[data-residue='H'] {color: blue;}
 span.residue[data-residue='K'] {color: blue;}
-
-
-
 

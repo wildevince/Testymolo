@@ -120,8 +120,8 @@ def generate_mainfigure_profile(data:dict):
         for record in SeqIO.parse(handle, format="fasta"):
             msa.append({"header": record.description, "sequence":str(record.seq)})
     # parameters 
-    N:int = len(msa)
-    L:int = len(msa[0]["sequence"])
+    N:int = len(msa) #number of sequences
+    L:int = len(msa[0]["sequence"]) #length of alignment
     ### html
     html:str = f"<div class='msa'>"
     ### 
@@ -134,14 +134,18 @@ def generate_mainfigure_profile(data:dict):
     # div sequences #
     div_sequences:str = "<div >"
     # visible positions
-    div_sequences += "<div class='scroll_values' ><span id='start' ></span><span id='middle' ><span class='whitespace'>_</span></span><span id='end' ></span></div>"
+    div_sequences += f"<div class='scroll_values' ><span id='start' >1</span><span id='middle' ><span class='whitespace'>_</span></span><span id='end' >{L}</span></div>"
     div_sequences += "<div class='sequences' >"
     ruler:str = ""
     for l in range(L):
-        if(l%5 == 0 and l > 0):
-            ruler += f"<span pos={l} >|</span>"
+        l += 1
+        #title = position => read as caption on mouseover
+        if(l%10 == 0):
+            ruler += f"<span title={l} >|</span>"
+        elif(l%5 == 0):
+            ruler += f"<span title={l} >-</span>"
         else :
-            ruler += f"<span class='whitespace' pos={l} >_</span>"
+            ruler += f"<span class='whitespace' title={l} >_</span>"
     div_sequences += f"<span class='sequence' >{ruler}</span>"
     # div horizontal scroll # 
 
@@ -149,9 +153,15 @@ def generate_mainfigure_profile(data:dict):
         subseq_id:str = record['header']
         subseq_id = subseq_id.split('@')[-1].split('.')[-1].split(')')[0]
         div_icons += f"<span class='sequence_selected_icon' subseq='{subseq_id}' ><span class='whitespace'>_</span></span>"
-        div_header += f"<span >{record['header']}</span>"
-        div_sequences += "<span class='sequence' >"
-        div_sequences +=  "".join(f"<span data-residue='{residue}' class='residue' >{residue}</span>" for residue in record['sequence'])
+        div_header += f"<span class='header' subseq='{subseq_id}' >{record['header']}</span>"
+        div_sequences += f"<span class='sequence' subseq='{subseq_id}' >"
+        n = 1 #aligned position => read as caption when mouseovered 
+        p = 0 #real position
+        for residue in record['sequence']:
+            if(residue != '-'): #if not a gap
+                p += 1
+            div_sequences +=  f"<span class='residue' data-residue='{residue}' realpos='{p}' alignedpos='{n}' title='{p}-{n}' >{residue}</span>"
+            n += 1
         div_sequences += "</span>"
 
     div_icons += "</div>"

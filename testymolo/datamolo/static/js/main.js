@@ -161,6 +161,7 @@ var intervalId = setInterval(function() {
                 $("#mainfocus #loadingProfile").html(data);
                 arrowMSA();
                 ruler();
+                MSA_column_highlight();
                                
             },
             error: function(error) {
@@ -234,71 +235,60 @@ $(document).ready(function(){
             }
         });
     });
+
+    // debug
+    /*
+    $(".sequences").on('scroll', function() {
+        var scrollLeft = $(this).scrollLeft();
+        console.log("Geronimo ! ", scrollLeft);
+    });
+    */
+
 })
 
 
-function ruler() {
-    // container
-    $ruler = $("div.msa .sequence:first-child");
-    start = -1;
-    end = -1;
-    check_bool = false;
-
-    // loop child
-    $ruler.find("span").each(($child) => {
-        if(CheckInVue($ruler, $child) && !check_bool) {
-            start = parseInt($child.attr('pos')) +1;
-            check_bool = true;
-            console.log("Allons-y Allonso !");
-        }
-        if(!CheckInVue($ruler, $child) && check_bool) {
-            end = parseInt($child.attr('pos')) +1;
-            console.log("Geronimo !");
-        }
-    });
-    // if end is visible (not overflowed)
-    if(end == -1) {
-        end = $ruler.length;
-        console.log('Fantastic !')
-    }
-    $(".scroll_values #start").html(start);
-    $(".scroll_values #end").html(end);
-}
-
-/*
 // Assistant based on GPT-3.5, developed by OpenAI 
 function ruler() {
-    const parent = $("div.msa .sequence:first-child ");
-    const items = parent.find("span");
-    const rule_start = $(".scroll_values #start");
-    const rule_end = $(".scroll_values #end");
+    $.when($("div.sequences")).then(($this) => {
+        // obj
+        //const scroll =  $this;
+        const items = $this.find(".sequence:first-child span[alignedpos]");
 
-    const itemWidth = items.first().outerWidth();
-    const parentWidth = parent.width();
+        // ruler indexes
+        var $rule_start = $(".scroll_values #start");
+        var $rule_end = $(".scroll_values #end");
 
-    parent.scroll(function() {
-        const scrollLeft = parent.scrollLeft();
+        // dimensions
+        const itemWidth = items.first().outerWidth(); // size in px of 1st item (outsides included)
+        const parentWidth = $this.width(); // size in px of the window 
 
-        const firstVisibleIndex = Math.floor(scrollLeft / itemWidth);
-        const lastVisibleIndex = Math.floor((scrollLeft + parentWidth) / itemWidth);
+        $this.on('scroll', function() {
+            var scrollLeft = $this.scrollLeft(); 
+            // new position-y of the scrollbar (also the count of px passed the left side of the div)
+            
+            const firstVisibleIndex = Math.floor(scrollLeft / itemWidth) +1;
+            // how many objects of entirely passed the left side (out of view)
+            const lastVisibleIndex = Math.floor((scrollLeft + parentWidth) / itemWidth) -1;
+            // how many objects of entirely passed the *right* side 
 
-        // Mettez à jour la règle graduée avec les numéros des éléments visibles
-        rule_start.html(firstVisibleIndex);
-        rule_end.html(lastVisibleIndex);
+            // Update the ruler indexes 
+            $rule_start.html(firstVisibleIndex);
+            $rule_end.html(lastVisibleIndex);
+        });
     });
-};
-*/
+}
 
 
+// place arrows on teh figure and the corresponding entry in MSA
 function arrowMSA() {
     // fetch subseq of interrest
     let id = $("div#modulecard div.info p.subseq_info").attr('subseq');
-    console.log("subseq marked: "+id);
+    /// console.log("subseq marked: "+id);
 
     setTimeout($null => {}, 1000); // wait 1 sec 
     
     // when elm is ready 
-    console.log("searching for: "+"div.icons span.sequence_selected_icon[subseq='"+id+"']");
+    // console.log("searching for: "+"div.icons span.sequence_selected_icon[subseq='"+id+"']");
     $.when($("div.icons span.sequence_selected_icon[subseq='"+id+"']")).then(($this) => {
         $this.attr('arrow', 'arrow-thick-right');
         $this.html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 7H2v6h8v5l8-8-8-8v5z"/></svg>');
@@ -307,22 +297,27 @@ function arrowMSA() {
     $("span.sequence_selected_icon[arrow='arrow-thick-right']").html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 7H2v6h8v5l8-8-8-8v5z"/></svg>');
 }
 
-/*
-const CheckInVue = (container, child) => {
-    const menuHeight = container.offsetHeight;
-    const menuScrollOffset = container.scrollTop;
-    
-    const elemTop = child.offsetTop - container.offsetTop;
-    const elemBottom = elemTop + child.offsetHeight;
-    return (elemTop >= menuScrollOffset &&
-    elemBottom <= menuScrollOffset + menuHeight);
+
+// Assistant based on GPT-3.5, developed by OpenAI 
+function MSA_column_highlight() {
+    $.when($("span.residue[alignedpos]")).then(function() {
+        
+        $("span.residue[alignedpos]").each(function() {
+            var $item = $(this);
+            var pos = $item.attr('alignedpos');
+            
+            $item.on("mouseover", function() {
+                $("span.residue[alignedpos='" + pos + "']").css("background", "lightgrey");
+            });
+            
+            $item.on("mouseout", function() {
+                $("span.residue[alignedpos='" + pos + "']").css("background", "none");
+            });
+        });
+    });
 }
 
-*/
-
-
-
-    
+   
 
 // utilities
 function getCookie(name) {
