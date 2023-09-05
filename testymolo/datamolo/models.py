@@ -115,7 +115,6 @@ class Modulo(models.Model):
         }
 
 
-
 class Profile(models.Model):
     """group of sub-sequences --like ModO_limits-- \
         divided for each Modulo 
@@ -128,12 +127,12 @@ class Profile(models.Model):
     # filepath = models.CharField(max_length=300)  # filepath = filefield( ? )
 
 
-
 class Organism(models.Model):
     #lvl 1
     #:166
     id = models.IntegerField(verbose_name="Tax_id", primary_key=True)  # Tax_id[PK](int)
-    name = models.CharField(verbose_name="abbreviate name", max_length=100)  # shortname (str)
+    name = models.CharField(verbose_name="scientific name", max_length=100)  # realname (str)
+    abr = models.CharField(verbose_name="abbreviate name", max_length=25)  # shortname (str)
     phylogeny = models.CharField(max_length=200)  # phylogeny absolute path
 
 

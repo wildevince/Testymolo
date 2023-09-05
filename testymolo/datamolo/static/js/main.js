@@ -158,7 +158,7 @@ var intervalId = setInterval(function() {
             url: '/check_logo',
             dataType: 'html',
             success: function(data) {
-                $("#mainfocus #loadingProfile").html(data);
+                $("#loadingProfile").html(data);
                 arrowMSA();
                 ruler();
                 MSA_column_highlight();

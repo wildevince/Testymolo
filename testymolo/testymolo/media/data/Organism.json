@@ -1,0 +1,1004 @@
+[
+    {
+        "TaxId": "3052225",
+        "Name": "Henipavirus nipahense",
+        "abr": "NipahV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Henipavirus"
+    },
+    {
+        "TaxId": "2560316",
+        "Name": "Avian metaavulavirus 6",
+        "abr": "AvianPV6",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Avulavirinae; Metaavulavirus; Metaavulavirus hongkongense"
+    },
+    {
+        "TaxId": "92129",
+        "Name": "Tupaia paramyxovirus",
+        "abr": "TupaiaV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Narmovirus; Narmovirus tupaiae"
+    },
+    {
+        "TaxId": "3052561",
+        "Name": "Orthorubulavirus simiae",
+        "abr": "SPiV41-T/C",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirinae; Orthorubulavirus"
+    },
+    {
+        "TaxId": "2560580",
+        "Name": "Mammalian orthorubulavirus 5",
+        "abr": "SPiV5[W3A]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirinae; Orthorubulavirus; Orthorubulavirus mammalis"
+    },
+    {
+        "TaxId": "11168",
+        "Name": "Mumps virus strain Jeryl Lynn",
+        "abr": "MumpsV(J-L)",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirinae; Orthorubulavirus; Orthorubulavirus parotitidis; Mumps orthorubulavirus; Mumps virus genotype A"
+    },
+    {
+        "TaxId": "2560602",
+        "Name": "Mumps orthorubulavirus",
+        "abr": "MumpsV-Miya",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirinae; Orthorubulavirus; Orthorubulavirus parotitidis"
+    },
+    {
+        "TaxId": "2560525",
+        "Name": "Human orthorubulavirus 2",
+        "abr": "HPiV2",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirinae; Orthorubulavirus; Orthorubulavirus laryngotracheitidis"
+    },
+    {
+        "TaxId": "2560319",
+        "Name": "Avian orthoavulavirus 1",
+        "abr": "NDV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Avulavirinae; Orthoavulavirus; Orthoavulavirus javaense"
+    },
+    {
+        "TaxId": "11240",
+        "Name": "Phocine morbillivirus",
+        "abr": "PhoDisV-U88",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Morbillivirus; Morbillivirus phocae"
+    },
+    {
+        "TaxId": "3052342",
+        "Name": "Morbillivirus canis",
+        "abr": "CDV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Morbillivirus"
+    },
+    {
+        "TaxId": "3052223",
+        "Name": "Henipavirus hendraense",
+        "abr": "HendraV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Henipavirus"
+    },
+    {
+        "TaxId": "11234",
+        "Name": "Measles morbillivirus",
+        "abr": "MV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Morbillivirus; Morbillivirus hominis"
+    },
+    {
+        "TaxId": "3052731",
+        "Name": "Respirovirus muris",
+        "abr": "SendaiV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus"
+    },
+    {
+        "TaxId": "12730",
+        "Name": "Human respirovirus 1",
+        "abr": "HPiV1[W1964]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus; Respirovirus laryngotracheitidis"
+    },
+    {
+        "TaxId": "11216",
+        "Name": "Human respirovirus 3",
+        "abr": "HPiV3",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus; Respirovirus pneumoniae"
+    },
+    {
+        "TaxId": "3052729",
+        "Name": "Respirovirus bovis",
+        "abr": "BPV3",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus"
+    },
+    {
+        "TaxId": "11612",
+        "Name": "Impatiens necrotic spot virus",
+        "abr": "INSV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Tospoviridae; Orthotospovirus; Orthotospovirus impatiensnecromaculae"
+    },
+    {
+        "TaxId": "198612",
+        "Name": "Groundnut bud necrosis virus",
+        "abr": "GBNV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Tospoviridae; Orthotospovirus; Orthotospovirus arachinecrosis"
+    },
+    {
+        "TaxId": "1980456",
+        "Name": "Orthohantavirus andesense",
+        "abr": "AndesV[Chile]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Hantaviridae; Mammantavirinae; Orthohantavirus"
+    },
+    {
+        "TaxId": "3052762",
+        "Name": "Tenuivirus oryzabrevis",
+        "abr": "RGSV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Phenuiviridae; Tenuivirus"
+    },
+    {
+        "TaxId": "11250",
+        "Name": "Human orthopneumovirus",
+        "abr": "HRSV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Pneumoviridae; Orthopneumovirus; Orthopneumovirus hominis"
+    },
+    {
+        "TaxId": "11246",
+        "Name": "Bovine orthopneumovirus",
+        "abr": "BRSV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Pneumoviridae; Orthopneumovirus; Orthopneumovirus bovis"
+    },
+    {
+        "TaxId": "12814",
+        "Name": "Respiratory syncytial virus",
+        "abr": "RSV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Pneumoviridae; Orthopneumovirus; Orthopneumovirus bovis; Bovine orthopneumovirus"
+    },
+    {
+        "TaxId": "205488",
+        "Name": "Ebola virus sp.",
+        "abr": "EbolaV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Ebolavirus; unclassified Ebolavirus"
+    },
+    {
+        "TaxId": "3052505",
+        "Name": "Orthomarburgvirus marburgense",
+        "abr": "MarburgV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthomarburgvirus"
+    },
+    {
+        "TaxId": "11276",
+        "Name": "Vesicular stomatitis virus",
+        "abr": "VSVindiana",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Alpharhabdovirinae; Vesiculovirus; unclassified Vesiculovirus"
+    },
+    {
+        "TaxId": "696863",
+        "Name": "Sprivivirus cyprinus",
+        "abr": "SVCV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Alpharhabdovirinae; Sprivivirus"
+    },
+    {
+        "TaxId": "11292",
+        "Name": "Lyssavirus rabies",
+        "abr": "RabiesV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Alpharhabdovirinae; Lyssavirus"
+    },
+    {
+        "TaxId": "90961",
+        "Name": "Lyssavirus australis",
+        "abr": "AusBatLyssaV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Alpharhabdovirinae; Lyssavirus"
+    },
+    {
+        "TaxId": "11303",
+        "Name": "Bovine ephemeral fever virus",
+        "abr": "BEFV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Alpharhabdovirinae; Ephemerovirus; Ephemerovirus febris"
+    },
+    {
+        "TaxId": "11287",
+        "Name": "Viral hemorrhagic septicemia virus",
+        "abr": "VHSV[Fil3]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Gammarhabdovirinae; Novirhabdovirus; Novirhabdovirus piscine"
+    },
+    {
+        "TaxId": "103603",
+        "Name": "Snakehead virus",
+        "abr": "SnakeheadRhabV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Gammarhabdovirinae; Novirhabdovirus; Novirhabdovirus snakehead"
+    },
+    {
+        "TaxId": "11290",
+        "Name": "Infectious hematopoietic necrosis virus",
+        "abr": "IHNV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Gammarhabdovirinae; Novirhabdovirus; Novirhabdovirus salmonid"
+    },
+    {
+        "TaxId": "12455",
+        "Name": "Borna disease virus",
+        "abr": "BornaV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Bornaviridae; unclassified Bornaviridae"
+    },
+    {
+        "TaxId": "11307",
+        "Name": "Sonchus yellow net nucleorhabdovirus",
+        "abr": "SYNV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Betarhabdovirinae; Betanucleorhabdovirus; Betanucleorhabdovirus retesonchi"
+    },
+    {
+        "TaxId": "1985704",
+        "Name": "Cytorhabdovirus gramineae",
+        "abr": "NCMV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Betarhabdovirinae; Cytorhabdovirus"
+    },
+    {
+        "TaxId": "12637",
+        "Name": "Dengue virus",
+        "abr": "Dengue_2",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus denguei"
+    },
+    {
+        "TaxId": "31647",
+        "Name": "Hepatitis C virus subtype 1b",
+        "abr": "HCV1b",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Hepacivirus; Hepacivirus hominis; Hepatitis C virus genotype 1"
+    },
+    {
+        "TaxId": "12542",
+        "Name": "Omsk hemorrhagic fever virus",
+        "abr": "OHFV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus omskense"
+    },
+    {
+        "TaxId": "88389",
+        "Name": "Ophiostoma mitovirus 6",
+        "abr": "On-uMV6-Ld",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Lenarviricota; Howeltoviricetes; Cryppavirales; Mitoviridae; Unuamitovirus; Unuamitovirus opno6"
+    },
+    {
+        "TaxId": "88388",
+        "Name": "Ophiostoma mitovirus 5",
+        "abr": "On-uMV5-Ld",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Lenarviricota; Howeltoviricetes; Cryppavirales; Mitoviridae; Unuamitovirus; Unuamitovirus opno5"
+    },
+    {
+        "TaxId": "88387",
+        "Name": "Ophiostoma mitovirus 4",
+        "abr": "On-uMV4-Ld",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Lenarviricota; Howeltoviricetes; Cryppavirales; Mitoviridae; Unuamitovirus; Unuamitovirus opno4"
+    },
+    {
+        "TaxId": "3052571",
+        "Name": "Orthotospovirus citrullomaculosi",
+        "abr": "WSMV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Tospoviridae; Orthotospovirus"
+    },
+    {
+        "TaxId": "35304",
+        "Name": "Bunyamwera virus",
+        "abr": "BunyamweraV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Peribunyaviridae; Orthobunyavirus; Orthobunyavirus bunyamweraense"
+    },
+    {
+        "TaxId": "11320",
+        "Name": "Influenza A virus",
+        "abr": "InfluAV[PR/8/34]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus influenzae"
+    },
+    {
+        "TaxId": "198597",
+        "Name": "Ophiostoma mitovirus 3a",
+        "abr": "OMV3a",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Lenarviricota; Howeltoviricetes; Cryppavirales; Mitoviridae; Duamitovirus; Duamitovirus opno3a"
+    },
+    {
+        "TaxId": "186772",
+        "Name": "Saccharomyces 20S RNA narnavirus",
+        "abr": "SCNV-20S-RNA-W[37-4C]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Lenarviricota; Amabiliviricetes; Wolframvirales; Narnaviridae; Narnavirus"
+    },
+    {
+        "TaxId": "198599",
+        "Name": "Saccharomyces 23S RNA narnavirus",
+        "abr": "SCNV-23S-RNA-T[37-4C]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Lenarviricota; Amabiliviricetes; Wolframvirales; Narnaviridae; Narnavirus"
+    },
+    {
+        "TaxId": "186769",
+        "Name": "Cryphonectria parasitica mitovirus 1-NB631",
+        "abr": "CPMV1[NB631]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Lenarviricota; Howeltoviricetes; Cryppavirales; Mitoviridae; Duamitovirus; Duamitovirus crpa1; Cryphonectria mitovirus 1"
+    },
+    {
+        "TaxId": "3052763",
+        "Name": "Tenuivirus oryzaclavatae",
+        "abr": "RiceStripeV-T",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Phenuiviridae; Tenuivirus"
+    },
+    {
+        "TaxId": "59380",
+        "Name": "Rice yellow stunt nucleorhabdovirus",
+        "abr": "RiceYellowSV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Betarhabdovirinae; Alphanucleorhabdovirus; Alphanucleorhabdovirus oryzae"
+    },
+    {
+        "TaxId": "11520",
+        "Name": "Influenza B virus",
+        "abr": "InfluBV[B/Lee/40]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Betainfluenzavirus; Betainfluenzavirus influenzae"
+    },
+    {
+        "TaxId": "3052585",
+        "Name": "Orthotospovirus tomatomaculae",
+        "abr": "TSWV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Tospoviridae; Orthotospovirus"
+    },
+    {
+        "TaxId": "11588",
+        "Name": "Rift Valley fever virus",
+        "abr": "RiftValleyFV[MM12]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Phenuiviridae; Phlebovirus; Phlebovirus riftense"
+    },
+    {
+        "TaxId": "162013",
+        "Name": "Tioman virus",
+        "abr": "TiomanV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirinae; Pararubulavirus; Pararubulavirus tiomanense"
+    },
+    {
+        "TaxId": "11082",
+        "Name": "West Nile virus",
+        "abr": "West-NileV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus nilense"
+    },
+    {
+        "TaxId": "70149",
+        "Name": "Measles virus strain Edmonston-Zagreb",
+        "abr": "MV[Ed-zagreb]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Morbillivirus; Morbillivirus hominis; Measles morbillivirus; Measles virus strain Edmonston"
+    },
+    {
+        "TaxId": "11036",
+        "Name": "Venezuelan equine encephalitis virus",
+        "abr": "VEEV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "2169701",
+        "Name": "Onyong-nyong virus",
+        "abr": "On-nV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "1980915",
+        "Name": "Novirhabdovirus hirame",
+        "abr": "HirameRV[CA 9703]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Gammarhabdovirinae; Novirhabdovirus"
+    },
+    {
+        "TaxId": "37131",
+        "Name": "Dolphin morbillivirus",
+        "abr": "DolphinMV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Morbillivirus; Morbillivirus ceti"
+    },
+    {
+        "TaxId": "241630",
+        "Name": "Mossman virus",
+        "abr": "MossmanV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Narmovirus; Narmovirus mossmanense"
+    },
+    {
+        "TaxId": "31631",
+        "Name": "Human coronavirus OC43",
+        "abr": "HCoV-OC43",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Embecovirus; Betacoronavirus 1"
+    },
+    {
+        "TaxId": "227984",
+        "Name": "Severe acute respiratory syndrome-related coronavirus TOR2",
+        "abr": "SARS-TOR2",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Sarbecovirus"
+    },
+    {
+        "TaxId": "218849",
+        "Name": "Kamiti River virus",
+        "abr": "KamitiRivV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Flavivirus; unclassified Flavivirus"
+    },
+    {
+        "TaxId": "64294",
+        "Name": "Yokose virus",
+        "abr": "YokoseV[Oita36]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus yokoseense"
+    },
+    {
+        "TaxId": "186539",
+        "Name": "Reston ebolavirus",
+        "abr": "EbV-Reston",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthoebolavirus; Orthoebolavirus restonense"
+    },
+    {
+        "TaxId": "11577",
+        "Name": "La Crosse virus",
+        "abr": "LaCrosseV[Hu78]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Peribunyaviridae; Orthobunyavirus; Orthobunyavirus lacrosseense"
+    },
+    {
+        "TaxId": "162145",
+        "Name": "Human metapneumovirus",
+        "abr": "HmetaPV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Pneumoviridae; Metapneumovirus; Metapneumovirus hominis"
+    },
+    {
+        "TaxId": "3052514",
+        "Name": "Orthonairovirus dugbeense",
+        "abr": "DugbeV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Nairoviridae; Orthonairovirus"
+    },
+    {
+        "TaxId": "3052303",
+        "Name": "Mammarenavirus choriomeningitidis",
+        "abr": "LCV[A_53b]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Arenaviridae; Mammarenavirus"
+    },
+    {
+        "TaxId": "3052328",
+        "Name": "Mammarenavirus tacaribeense",
+        "abr": "TacaribeV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Arenaviridae; Mammarenavirus"
+    },
+    {
+        "TaxId": "3052310",
+        "Name": "Mammarenavirus lassaense",
+        "abr": "LassaV[Josiah]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Ellioviricetes; Bunyavirales; Arenaviridae; Mammarenavirus"
+    },
+    {
+        "TaxId": "183764",
+        "Name": "Influenza A virus (A/Puerto Rico/8/34/Mount Sinai(H1N1))",
+        "abr": "InfluAV[MtSinai/PR/8/34]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus influenzae; Influenza A virus; H1N1 subtype; Influenza A virus (A/Puerto Rico/8/1934(H1N1))"
+    },
+    {
+        "TaxId": "11149",
+        "Name": "Transmissible gastroenteritis virus",
+        "abr": "TGV[Purdue]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Alphacoronavirus; Tegacovirus; Alphacoronavirus 1"
+    },
+    {
+        "TaxId": "28295",
+        "Name": "Porcine epidemic diarrhea virus",
+        "abr": "PEDV [CV777]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Alphacoronavirus; Pedacovirus"
+    },
+    {
+        "TaxId": "11137",
+        "Name": "Human coronavirus 229E",
+        "abr": "HCoV-229E",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Alphacoronavirus; Duvinacovirus"
+    },
+    {
+        "TaxId": "11120",
+        "Name": "Infectious bronchitis virus",
+        "abr": "AIBV[Beaudette]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Gammacoronavirus; Igacovirus; Avian coronavirus"
+    },
+    {
+        "TaxId": "11138",
+        "Name": "Murine hepatitis virus",
+        "abr": "MHV[A59]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Embecovirus; Murine coronavirus"
+    },
+    {
+        "TaxId": "11128",
+        "Name": "Bovine coronavirus",
+        "abr": "BCoV-ENT",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Embecovirus; Betacoronavirus 1"
+    },
+    {
+        "TaxId": "3052230",
+        "Name": "Hepacivirus hominis",
+        "abr": "HCV1a-H77",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Hepacivirus"
+    },
+    {
+        "TaxId": "11079",
+        "Name": "Murray Valley encephalitis virus",
+        "abr": "MurrayValleyEV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus murrayense"
+    },
+    {
+        "TaxId": "11072",
+        "Name": "Japanese encephalitis virus",
+        "abr": "JEV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus japonicum"
+    },
+    {
+        "TaxId": "11099",
+        "Name": "Bovine viral diarrhea virus 1",
+        "abr": "PV1[NADL]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pestivirus; Pestivirus bovis"
+    },
+    {
+        "TaxId": "31658",
+        "Name": "Cell fusing agent virus",
+        "abr": "Cell-fusingAV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Flavivirus; unclassified Flavivirus"
+    },
+    {
+        "TaxId": "11089",
+        "Name": "Yellow fever virus",
+        "abr": "YellowFV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus flavi"
+    },
+    {
+        "TaxId": "2847087",
+        "Name": "GB virus-B",
+        "abr": "HGBV_B",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Hepacivirus; Hepacivirus platyrrhini"
+    },
+    {
+        "TaxId": "54315",
+        "Name": "Bovine viral diarrhea virus 2",
+        "abr": "BVDV_2[C413]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pestivirus; Pestivirus tauri"
+    },
+    {
+        "TaxId": "11101",
+        "Name": "Pestivirus type 3",
+        "abr": "PV3 [X818]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pestivirus; Pestivirus ovis; Border disease virus 1"
+    },
+    {
+        "TaxId": "11084",
+        "Name": "Tick-borne encephalitis virus",
+        "abr": "Tick-borneEV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus encephalitidis"
+    },
+    {
+        "TaxId": "54290",
+        "Name": "GB virus C",
+        "abr": "HGBV_C",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pegivirus; Pegivirus hominis"
+    },
+    {
+        "TaxId": "11083",
+        "Name": "Powassan virus",
+        "abr": "PowassanV[LB]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus powassanense"
+    },
+    {
+        "TaxId": "54290",
+        "Name": "GB virus C",
+        "abr": "HGV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pegivirus; Pegivirus hominis"
+    },
+    {
+        "TaxId": "11096",
+        "Name": "Classical swine fever virus",
+        "abr": "PV2[Eystrup]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pestivirus; Pestivirus suis"
+    },
+    {
+        "TaxId": "11085",
+        "Name": "Langat virus",
+        "abr": "LangatV[TP21]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus langatense"
+    },
+    {
+        "TaxId": "11086",
+        "Name": "Louping ill virus",
+        "abr": "LoupingIV[369/T2]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus loupingi"
+    },
+    {
+        "TaxId": "58535",
+        "Name": "Deer tick virus",
+        "abr": "Deer-tick[ctb30]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus powassanense; Powassan virus"
+    },
+    {
+        "TaxId": "161675",
+        "Name": "Tamana bat virus",
+        "abr": "TamanaBatV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Flavivirus; unclassified Flavivirus"
+    },
+    {
+        "TaxId": "3052610",
+        "Name": "Pegivirus platyrrhini",
+        "abr": "HGBV_A",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pegivirus"
+    },
+    {
+        "TaxId": "64300",
+        "Name": "Modoc virus",
+        "abr": "ModocV[M544]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus modocense"
+    },
+    {
+        "TaxId": "64312",
+        "Name": "Montana myotis leukoencephalitis virus",
+        "abr": "MMLEV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus montanaense"
+    },
+    {
+        "TaxId": "64285",
+        "Name": "Rio Bravo virus",
+        "abr": "RioBravoV[RiMAR]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus bravoense"
+    },
+    {
+        "TaxId": "172148",
+        "Name": "Alkhumra hemorrhagic fever virus",
+        "abr": "AlkhurmaV[1176]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus kyasanurense; Kyasanur Forest disease virus"
+    },
+    {
+        "TaxId": "64280",
+        "Name": "Apoi virus",
+        "abr": "Apoi[ApMAR]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Orthoflavivirus; Orthoflavivirus apoiense"
+    },
+    {
+        "TaxId": "155906",
+        "Name": "Pestivirus Reindeer-1",
+        "abr": "PV-reindeer",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pestivirus; Pestivirus ovis; Border disease virus 2"
+    },
+    {
+        "TaxId": "155905",
+        "Name": "Pestivirus Giraffe-1",
+        "abr": "PV-giraffe",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Pestivirus; unclassified Pestivirus"
+    },
+    {
+        "TaxId": "28344",
+        "Name": "Porcine reproductive and respiratory syndrome virus",
+        "abr": "PRRSV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Arnidovirineae; Arteriviridae; Variarterivirinae; Betaarterivirus; Ampobartevirus; Betaarterivirus suid 2"
+    },
+    {
+        "TaxId": "11047",
+        "Name": "Equine arteritis virus",
+        "abr": "EAV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Arnidovirineae; Arteriviridae; Equarterivirinae; Alphaarterivirus; Alphaarterivirus equid"
+    },
+    {
+        "TaxId": "11048",
+        "Name": "Lactate dehydrogenase-elevating virus",
+        "abr": "LDV-NV_C",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Arnidovirineae; Arteriviridae; Variarterivirinae; Gammaarterivirus; Gammaarterivirus lacdeh"
+    },
+    {
+        "TaxId": "38143",
+        "Name": "Simian hemorrhagic fever virus",
+        "abr": "SHFV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Arnidovirineae; Arteriviridae; Simarterivirinae; Deltaarterivirus; Hedartevirus; Deltaarterivirus hemfev"
+    },
+    {
+        "TaxId": "204987",
+        "Name": "Goose paramyxovirus SF02",
+        "abr": "GoosePVSF02",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Avulavirinae; unclassified Avulavirinae"
+    },
+    {
+        "TaxId": "200255",
+        "Name": "Mirafiori lettuce big-vein virus",
+        "abr": "MirafioriLV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Milneviricetes; Serpentovirales; Aspiviridae; Ophiovirus; Ophiovirus mirafioriense"
+    },
+    {
+        "TaxId": "98832",
+        "Name": "Influenza B virus (B/Memphis/12/97)",
+        "abr": "InfluBV[Men/12/97]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Betainfluenzavirus; Betainfluenzavirus influenzae; Influenza B virus"
+    },
+    {
+        "TaxId": "228675",
+        "Name": "Influenza B virus (B/Memphis/12/97-MA)",
+        "abr": "InfluBV[MA-Men/12/97]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Betainfluenzavirus; Betainfluenzavirus influenzae; Influenza B virus"
+    },
+    {
+        "TaxId": "130760",
+        "Name": "Influenza A virus (A/Hong Kong/1073/99(H9N2))",
+        "abr": "InfluAV[HK(H9N2)]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Polyploviricotina; Insthoviricetes; Articulavirales; Orthomyxoviridae; Alphainfluenzavirus; Alphainfluenzavirus influenzae; Influenza A virus; H9N2 subtype"
+    },
+    {
+        "TaxId": "3052205",
+        "Name": "Ferlavirus reptilis",
+        "abr": "Fer-lanceV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Ferlavirus"
+    },
+    {
+        "TaxId": "11029",
+        "Name": "Ross River virus",
+        "abr": "RossRiverV[NB5092]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "11041",
+        "Name": "Rubella virus",
+        "abr": "RubellaV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Hepelivirales; Matonaviridae; Rubivirus; Rubivirus rubellae"
+    },
+    {
+        "TaxId": "11034",
+        "Name": "Sindbis virus",
+        "abr": "SindbisV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "11020",
+        "Name": "Barmah Forest virus",
+        "abr": "BarmahFV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "79899",
+        "Name": "Igbo Ora virus",
+        "abr": "Igbo-OraV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus; Onyong-nyong virus"
+    },
+    {
+        "TaxId": "11033",
+        "Name": "Semliki Forest virus",
+        "abr": "SemlikiFoV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "59301",
+        "Name": "Mayaro virus",
+        "abr": "MayaroV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "78540",
+        "Name": "Sleeping disease virus",
+        "abr": "SleepingDV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus; Salmon pancreas disease virus"
+    },
+    {
+        "TaxId": "11021",
+        "Name": "Eastern equine encephalitis virus",
+        "abr": "EEEV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "44158",
+        "Name": "Aura virus",
+        "abr": "AuraV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "11039",
+        "Name": "Western equine encephalitis virus",
+        "abr": "WEEEV[71V-1658]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "84589",
+        "Name": "Salmon pancreas disease virus",
+        "abr": "SalmonPDV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "37124",
+        "Name": "Chikungunya virus",
+        "abr": "ChikungunyaV[S27]",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Alsuviricetes; Martellivirales; Togaviridae; Alphavirus"
+    },
+    {
+        "TaxId": "11111",
+        "Name": "Hepatitis C virus HC-J2",
+        "abr": "HC-J2",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes; Amarillovirales; Flaviviridae; Hepacivirus; Hepacivirus hominis; unclassified Hepatitis C virus"
+    },
+    {
+        "TaxId": "110195",
+        "Name": "Foot-and-mouth disease virus Asia 1",
+        "abr": "FmDVasia1",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus; Foot-and-mouth disease virus"
+    },
+    {
+        "TaxId": "12111",
+        "Name": "Foot-and-mouth disease virus A",
+        "abr": "FmDV-A",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus; Foot-and-mouth disease virus"
+    },
+    {
+        "TaxId": "12118",
+        "Name": "Foot-and-mouth disease virus O",
+        "abr": "FmDV-O",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus; Foot-and-mouth disease virus"
+    },
+    {
+        "TaxId": "11277",
+        "Name": "Vesicular stomatitis Indiana virus",
+        "abr": "VSVindiana",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Rhabdoviridae; Alpharhabdovirinae; Vesiculovirus; Vesiculovirus indiana"
+    },
+    {
+        "TaxId": "12064",
+        "Name": "Enterovirus E",
+        "abr": "BEV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "12092",
+        "Name": "Hepatovirus A",
+        "abr": "HAV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Heptrevirinae; Hepatovirus"
+    },
+    {
+        "TaxId": "12104",
+        "Name": "Encephalomyocarditis virus",
+        "abr": "EMCV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Cardiovirus; Cardiovirus A"
+    },
+    {
+        "TaxId": "12116",
+        "Name": "Foot and mouth disease virus C",
+        "abr": "HFMD-C",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus; Foot-and-mouth disease virus"
+    },
+    {
+        "TaxId": "12122",
+        "Name": "Foot-and-mouth disease virus SAT 1",
+        "abr": "HFMD-sat1",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus; Foot-and-mouth disease virus"
+    },
+    {
+        "TaxId": "12123",
+        "Name": "Foot-and-mouth disease virus SAT 3",
+        "abr": "HFMD-sat3",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus; Foot-and-mouth disease virus"
+    },
+    {
+        "TaxId": "35292",
+        "Name": "Foot-and-mouth disease virus SAT 2",
+        "abr": "HFMD-sat2",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus; Foot-and-mouth disease virus"
+    },
+    {
+        "TaxId": "135855",
+        "Name": "Human echovirus 1 (strain Bryson)",
+        "abr": "h-ECHO-Bryson",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus; Enterovirus B"
+    },
+    {
+        "TaxId": "47000",
+        "Name": "Equine rhinitis A virus",
+        "abr": "ERAV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Aphthovirus"
+    },
+    {
+        "TaxId": "47001",
+        "Name": "Equine rhinitis B virus 1",
+        "abr": "ERBV-1",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Erbovirus; Erbovirus A"
+    },
+    {
+        "TaxId": "70796",
+        "Name": "Tremovirus A",
+        "abr": "Tremovirus A",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Heptrevirinae; Tremovirus"
+    },
+    {
+        "TaxId": "72149",
+        "Name": "Aichivirus A",
+        "abr": "Aiv",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Kodimesavirinae; Kobuvirus"
+    },
+    {
+        "TaxId": "106966",
+        "Name": "Enterovirus G",
+        "abr": "Porcine enterovirus B",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "118140",
+        "Name": "Teschovirus A",
+        "abr": "TV-A",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Teschovirus"
+    },
+    {
+        "TaxId": "123738",
+        "Name": "Enterovirus Yanbian 96-83csf",
+        "abr": "Enterovirus Yanbian 96-83csf",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus; Enterovirus B"
+    },
+    {
+        "TaxId": "686984",
+        "Name": "Sapelovirus A",
+        "abr": "Sapelovirus A",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Sapelovirus"
+    },
+    {
+        "TaxId": "138948",
+        "Name": "Enterovirus A",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "138949",
+        "Name": "Enterovirus B",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "138950",
+        "Name": "Enterovirus C",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "138951",
+        "Name": "Enterovirus D",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "138950",
+        "Name": "Enterovirus C",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "147711",
+        "Name": "Rhinovirus A",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "147712",
+        "Name": "Rhinovirus B",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "168014",
+        "Name": "Equine rhinitis B virus 2",
+        "abr": "ERBV-2",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Erbovirus; Erbovirus A"
+    },
+    {
+        "TaxId": "172026",
+        "Name": "Simian picornavirus 1",
+        "abr": "SPV-1",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; unclassified Picornaviridae"
+    },
+    {
+        "TaxId": "172314",
+        "Name": "Ljungan virus",
+        "abr": "LV",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Paavivirinae; Parechovirus; Parechovirus B"
+    },
+    {
+        "TaxId": "186538",
+        "Name": "Zaire ebolavirus",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthoebolavirus; Orthoebolavirus zairense"
+    },
+    {
+        "TaxId": "188538",
+        "Name": "Human parainfluenza virus 1 strain Washington/1964",
+        "abr": "HPIV1 WASH/64",
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus; Respirovirus laryngotracheitidis; Human respirovirus 1"
+    },
+    {
+        "TaxId": "194965",
+        "Name": "Aichivirus B",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Kodimesavirinae; Kobuvirus"
+    },
+    {
+        "TaxId": "1803956",
+        "Name": "Parechovirus A",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Paavivirinae; Parechovirus"
+    },
+    {
+        "TaxId": "204711",
+        "Name": "Theilovirus",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Cardiovirus; Cardiovirus B"
+    },
+    {
+        "TaxId": "310907",
+        "Name": "Enterovirus H",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    }
+]
