@@ -158,6 +158,7 @@ class Protein(models.Model):
 
     def serialize(item):
         return {
+            'id':item.id,
             "isPP":item.isPP,
             "derivedFromPP":item.derivedFromPP,
             "organism":item.organism.id,
@@ -205,7 +206,17 @@ class PolyProtein(models.Model):
     start = models.PositiveIntegerField()
     end = models.PositiveIntegerField()
     
+    def serialize(item):
+        return {
+            "PP":item.PP.id,
+            "protein":item.protein.id,
+            "data_ac":item.PP.data_ac,
+            "index":item.index,
+            "start":item.start,
+            "end":item.end
+        }
     
+
 class Subseq(models.Model):
     #lvl 3
     ## association class

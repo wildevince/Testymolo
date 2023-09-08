@@ -33,6 +33,7 @@
 
     <div id="phylofocus" class='frame'>{{ Phylo }}
         <script src="https://unpkg.com/@phylocanvas/phylocanvas.gl@latest/dist/bundle.min.js"></script>
+        <p>Taxonomy Tree</p>
         <div id='demo'></div>
         <script>
             const tree = new phylocanvas.PhylocanvasGL(
@@ -40,9 +41,10 @@
             {
                 size: { width: 400, height: 300 },
                 props: { alignLabels: true },
-                source: `(((TGV:1,MHV:1):2,(SARS-TOR2:1,HCoV-229E:1):1):2,(((PEDV:1,BCoV-ENT:1):1,HCoV-OC43:1):2,AIBV[Beaudette]:1):3);`,
+                source: `(((TGV:1,MHV:1):2,(SARS-TOR2:1,HCoV-229E:1):1):2,((PEDV:1,BCoV-ENT:1,HCoV-OC43:1):1,AIBV[Beaudette]:1):3);`,
+                // `(((TGV:1,MHV:1):2,(SARS-TOR2:1,HCoV-229E:1):1):2,(((PEDV:1,BCoV-ENT:1):1,HCoV-OC43:1):2,AIBV[Beaudette]:1):3);`,
                 // `(Bovine:0.69395,(Gibbon:0.36079,(Orangutan:0.33636,(Gorilla:0.17147,(Chimp:1.19268,Human:0.11927):0.08386):0.06124):0.15057):0.54939,Mouse:1.21460);`,
-                type: phylocanvas.TreeTypes.Rectangular,
+                type: phylocanvas.TreeTypes.Circular,
             },
             );
         </script>

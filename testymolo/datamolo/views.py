@@ -10,6 +10,7 @@ from django.utils.safestring import mark_safe
 #import datamolo.scr.add_item_in_model as scr
 import datamolo.scr.figures as fig
 import datamolo.scr.alignments as align
+import datamolo.scr.database as db
 import datamolo.tasks as tasks
 
 import datamolo.models as data
@@ -41,6 +42,11 @@ class Main(TemplateView):
 
 
     def index(request):
+
+        ###
+        #db.parse_Modulo(data.Modulo.objects.all())
+        db.parse_Protein(data.Protein.objects.all())
+        ###
 
         context:dict = {}
 

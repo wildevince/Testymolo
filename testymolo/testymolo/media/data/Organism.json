@@ -458,7 +458,7 @@
     {
         "TaxId": "28295",
         "Name": "Porcine epidemic diarrhea virus",
-        "abr": "PEDV [CV777]",
+        "abr": "PEDV[CV777]",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Alphacoronavirus; Pedacovirus"
     },
     {
