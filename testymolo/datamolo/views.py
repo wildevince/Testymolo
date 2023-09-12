@@ -45,7 +45,8 @@ class Main(TemplateView):
 
         ###
         #db.parse_Modulo(data.Modulo.objects.all())
-        db.parse_Protein(data.Protein.objects.all())
+        #db.parse_Organism(data.Organism.objects.all())
+        #db.parse_Protein(data.Protein.objects.all())
         ###
 
         context:dict = {}

@@ -69,6 +69,9 @@ class Modulo(models.Model):
     id = models.CharField(primary_key=True, max_length=10)  # PK
     ### vazymolo 1 Modo_familiy_id
 
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
+
     activity = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, blank=True) 
     ### ex: "#.#.#.#" ExplorEnz EC classification
 
@@ -112,6 +115,7 @@ class Modulo(models.Model):
             "id":item.id,
             "activity":item.activity,
             "moduloFamily":item.moduloFamily,
+            "complete":item.complete
         }
 
 
@@ -124,6 +128,9 @@ class Profile(models.Model):
     validated = models.BooleanField(default=False)
     modulo = models.OneToOneField(Modulo, on_delete=models.CASCADE) #FK
 
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
+
     # filepath = models.CharField(max_length=300)  # filepath = filefield( ? )
 
 
@@ -135,12 +142,27 @@ class Organism(models.Model):
     abr = models.CharField(verbose_name="abbreviate name", max_length=25)  # shortname (str)
     phylogeny = models.CharField(max_length=200)  # phylogeny absolute path
 
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
+
+    def serialize(item):
+        return {
+            "id":item.id,
+            "name":item.name,
+            "abr":item.abr,
+            "phylogeny":item.phylogeny,
+            "complete":item.complete
+        }
+
 
 class Genome(models.Model):
     #lvl 2
     name = models.CharField(max_length=50, blank=True)
     genbank = models.CharField(verbose_name="Genbank accession number", max_length=30)
     organism = models.OneToOneField(Organism, on_delete = models.CASCADE)  #FK
+    
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
 
 
 class Protein(models.Model):
@@ -155,6 +177,9 @@ class Protein(models.Model):
     header = models.CharField(max_length=30)  #fasta
     sequence = models.TextField(blank=True)  #sequence  #fasta
     #codedBy = models.OneToOneField(CDS, verbose_name="coded by", blank=True, on_delete=models.CASCADE) 
+    
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
 
     def serialize(item):
         return {
@@ -168,6 +193,7 @@ class Protein(models.Model):
             "header":item.header,
             "sequence":item.sequence,
             "length":len(item.sequence),
+            "complete":item.complete
         }
     
     def random():
@@ -185,6 +211,9 @@ class CDS(models.Model):
     start = models.PositiveIntegerField()
     end = models.PositiveIntegerField()
     sequence = models.TextField(verbose_name="nucleotide sequence")
+    
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
 
     def serialize(item):
         return {
@@ -194,6 +223,7 @@ class CDS(models.Model):
             "end":item.end,
             "sequence":item.sequence,
             "length":len(item.sequence),
+            "complete":item.complete
         }
 
 
@@ -206,6 +236,9 @@ class PolyProtein(models.Model):
     start = models.PositiveIntegerField()
     end = models.PositiveIntegerField()
     
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
+    
     def serialize(item):
         return {
             "PP":item.PP.id,
@@ -213,7 +246,8 @@ class PolyProtein(models.Model):
             "data_ac":item.PP.data_ac,
             "index":item.index,
             "start":item.start,
-            "end":item.end
+            "end":item.end,
+            "complete":item.complete
         }
     
 
@@ -225,6 +259,9 @@ class Subseq(models.Model):
     profile = models.ForeignKey(Profile, null=True, on_delete=models.SET_NULL)  #FK
     start = models.PositiveIntegerField()
     end = models.PositiveIntegerField()
+    
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
 
     class Meta:
         ordering = ['origin', 'start']
@@ -252,6 +289,7 @@ class Subseq(models.Model):
             "end":item.end,
             "sequence":seq,
             "length":len(seq),
+            "complete":item.complete,
         }
     
 
@@ -266,6 +304,9 @@ class Structure(models.Model):
     comment = models.CharField(max_length=200, default="")
     reference = models.BooleanField(default=False)
     origin = models.ForeignKey(Protein, on_delete=models.CASCADE)  #FK
+    
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
 
 
 
@@ -298,6 +339,9 @@ class Annotation(models.Model):
     #numb_profile -> start(int) and end(int)
     start_profile = models.PositiveIntegerField(default=0)
     end_profile = models.PositiveIntegerField(default=0)
+    
+    ### Vazymolo
+    complete = models.BooleanField(default=False)  
     
 
 

@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from datamolo import views
+from vazydata.views import Database
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+
+    path('resumedb/', Database.index, name='resumedb'),
 
     path('', views.Main.index, name='index'),
     path('new-session/', views.Main.new_session, name="new-session"),
