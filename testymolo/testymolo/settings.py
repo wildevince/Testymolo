@@ -142,7 +142,7 @@ STATIC_ROOT = path.join(BASE_DIR, "datamolo", "static")
 #    )
 
 
-MEDIA_ROOT = path.join(BASE_DIR,"testymolo/media")
+MEDIA_ROOT = path.join(BASE_DIR,"testymolo","media")
 MEDIA_URL = "media/"
 
 

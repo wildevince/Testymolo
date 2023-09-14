@@ -4,6 +4,9 @@ import numpy as np
 
 from django.conf import settings
 
+from Bio import Entrez
+Entrez.email = "VIMVer@univ-amu.fr"
+
 
 # 
 def parse_Protein(Proteins):
@@ -29,3 +32,4 @@ def parse_Organism(Organisms):
         txt:list = list([json.dumps(org.serialize()) for org in Organisms])
         handle.write('[\n'+ ',\n'.join(txt) + ']')
         
+

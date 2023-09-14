@@ -3,6 +3,7 @@
 
 {% block static %}
     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vazydata.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{% static 'js/alt.js' %}"></script>
 {% endblock %}
@@ -11,9 +12,36 @@
 {% block content %}
 
 <div class='TopPanel'>
-    <div>
-        <p>CDS:{{ number.CDS }}%<p>
-        <p><p>
-        <p>PolyProtein: {{ number.Poly }}%<p>
+    <div class='column'>
+        <p>CDS:{{ number.CDS }}%</p>
+        <p hidden='_'>_</p>
+        <p>PolyProtein: {{ number.PolyProtein }}%</p>
+    </div>
+    <div class='column'>
+        <p>Genome: {{ number.Genome }}%</p>
+        <p>Organism: {{ number.Organism }}%</p>
+        <p>Protein: {{ number.Protein }}%</p>
+    </div>
+    <div class='column'>
+        <p>Annotation: {{ number.Annotation }}%</p>
+        <p hidden='_'>_</p>
+        <p>Protein: {{ number.Protein }}%</p>
+    </div>
+    <div class='column'>
+        <p>Modulo: {{ number.Modulo }}%</p>
+        <p>Structure: {{ number.Structure }}%</p>
+        <p>Profile: {{ number.Profile }}%</p>
+    </div>
+</div>
 
-{% endblock %}
+<div class='CompletionForm'>
+    <button id='next_entity' onclick='' >Next</button> 
+    <form method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+    </form>
+</div>
+
+
+
+    {% endblock %}

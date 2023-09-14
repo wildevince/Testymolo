@@ -1,0 +1,15 @@
+div.TopPanel {
+    margin-left: 6vw;
+    /* margin-right: 6vw; */
+} 
+
+div.column {
+    display: inline-block;
+    width: 22vw
+}
+
+
+p[hidden] {
+    visibility: hidden;
+}
+

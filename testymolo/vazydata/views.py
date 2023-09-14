@@ -6,13 +6,21 @@ from django.views.generic import TemplateView
 import datamolo.scr.database as db
 import datamolo.models as data
 
+from vazydata.forms import ProteinForm
+
 
 # Create your views here.
 class Database(TemplateView):
 
     template_name = os.path.join("vazydata", "resumedb.html")
 
-
+    def next_entity():
+        ## protein
+        ToDoList:list = data.Protein.objects.filter(complete=False)
+        if len(ToDoList) > 0:
+            return ToDoList[0]
+        return None
+  
     def paintedByNumbers():
 
         def completedTable(table):
@@ -35,7 +43,16 @@ class Database(TemplateView):
 
         }
 
-    
     def index(request):
-        context:dict = {'Number': Database.paintedByNumbers()}
+        context:dict = {'number': Database.paintedByNumbers()}
+
+        if request.method == "POST":
+            form = ProteinForm(request.POST)
+            if form.is_valid():
+                return 
+        else :
+            form = ProteinForm()
+        
+        context['form'] = form
+
         return render(request, Database.template_name, context) 
