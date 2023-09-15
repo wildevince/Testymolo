@@ -146,8 +146,8 @@ MEDIA_ROOT = path.join(BASE_DIR,"testymolo","media")
 MEDIA_URL = "media/"
 
 
-SCREEN = [(16,10),(16,9)]
-RESOLUTION = [(1440,900),(1920,1080)]
+SCREEN = [(16,9)]
+RESOLUTION = [(1920,1080)]
 
 
 # Default primary key field type

@@ -6,5 +6,5 @@ import datamolo.models as data
 
 class ProteinForm(forms.ModelForm):
     class Meta:
-        model: data.Protein
+        model = data.Protein
         fields = '__all__'

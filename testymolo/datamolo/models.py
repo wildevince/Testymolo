@@ -170,7 +170,7 @@ class Protein(models.Model):
     #id autofield #PK
     isPP = models.BooleanField(verbose_name="is PolyProtein", default=False)
     derivedFromPP = models.BooleanField(verbose_name="derived_from_PolyProtein", default=False)
-    organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
+    organism = models.ForeignKey(Organism, db_column='abr', on_delete=models.PROTECT)  #FK
     genbank = models.CharField(max_length=20, default="")
     name = models.CharField(verbose_name="used name", max_length=100)
     data_ac = models.PositiveIntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping

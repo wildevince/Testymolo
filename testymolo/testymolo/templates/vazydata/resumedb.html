@@ -5,7 +5,7 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/vazydata.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{% static 'js/alt.js' %}"></script>
+    <script src="{% static 'js/vazydata.js' %}"></script>
 {% endblock %}
 
 
@@ -13,33 +13,49 @@
 
 <div class='TopPanel'>
     <div class='column'>
-        <p>CDS:{{ number.CDS }}%</p>
+        <p><a id="CDS" >CDS: <span class='progress'>{{ numbers.CDS }}</span>%</a></p>
         <p hidden='_'>_</p>
-        <p>PolyProtein: {{ number.PolyProtein }}%</p>
+        <p><a id="PolyProtein" >PolyProtein: <span class='progress'>{{ numbers.PolyProtein }}</span>%</a></p>
     </div>
     <div class='column'>
-        <p>Genome: {{ number.Genome }}%</p>
-        <p>Organism: {{ number.Organism }}%</p>
-        <p>Protein: {{ number.Protein }}%</p>
+        <p><a id="Genome" >Genome: <span class='progress'>{{ numbers.Genome }}</span>%</a></p>
+        <p><a id="Organism" >Organism: <span class='progress'>{{ numbers.Organism }}</span>%</a></p>
+        <p><a id="Protein" href="{% url 'resumedb_Protein' %}" >Protein: <span class='progress'>{{ numbers.Protein }}</span>%</a></p>
     </div>
     <div class='column'>
-        <p>Annotation: {{ number.Annotation }}%</p>
+        <p><a id="Annotation" >Annotation: <span class='progress'>{{ numbers.Annotation }}</span>%</a></p>
         <p hidden='_'>_</p>
-        <p>Protein: {{ number.Protein }}%</p>
+        <p><a id="Subseq" >Subseq: <span class='progress'>{{ numbers.Subseq }}</span>%</a></p>
     </div>
     <div class='column'>
-        <p>Modulo: {{ number.Modulo }}%</p>
-        <p>Structure: {{ number.Structure }}%</p>
-        <p>Profile: {{ number.Profile }}%</p>
+        <p><a id="Modulo" >Modulo: <span class='progress'>{{ numbers.Modulo }}</span>%</a></p>
+        <p><a id="Structure" >Structure: <span class='progress'>{{ numbers.Structure }}</span>%</a></p>
+        <p><a id="Profile" >Profile: <span class='progress'>{{ numbers.Profile }}</span>%</a></p>
     </div>
 </div>
 
-<div class='CompletionForm'>
-    <button id='next_entity' onclick='' >Next</button> 
-    <form method='post'>
+
+<div class='CompletionForm' table='Protein' id={{ object_id }}>
+    {% if form %}
+    <form method='post' action="/resumedb/Protein/" >
         {% csrf_token %}
         {{ form.as_p }}
+        <input type="submit" value='Next'>
     </form>
+    <div class='horizontal_buttons'>
+        <button id="parse_old_DB" onclick="parse_old_DB()" >Parse old VAZyMoloO</button>
+        <button id="query_NCBI" onclick="query_NCBI()" >ask NCBI</button>
+    </div>
+    <script>
+        function parse_old_DB() {
+            console.log("parse_old_DB !");
+        }
+        function query_NCBI() {
+            console.log("query_NCBI ! ");
+        }
+    </script>
+    {% endif %}
+    
 </div>
 
 

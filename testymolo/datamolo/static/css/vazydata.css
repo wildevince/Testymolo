@@ -1,15 +1,46 @@
 div.TopPanel {
-    margin-left: 6vw;
+    margin-left: 4vw;
+    width: 90vw;
+    height: min-content;
+    padding: 0.25vw;
+    border: darkblue solid 2px;
+    background: rgb(220,220,255)
     /* margin-right: 6vw; */
 } 
 
+
 div.column {
     display: inline-block;
-    width: 22vw
+    width: 20vw;
+    text-align: center;
 }
 
+.TopPanel .column p {
+    padding: 2px;
+    border: rgb(220,220,255) solid 1px
+}
+
+.TopPanel p a {
+    padding: 2px;
+    font-size: medium;
+    border: rgb(220,220,255) solid 1px;
+    background: none;
+    width: 10vw;
+    color: black;
+}
 
 p[hidden] {
     visibility: hidden;
+}
+
+
+.CompletionForm {
+    margin-top: 4vw;
+    margin-left: 4vw;
+    width: fit-content;
+}
+.CompletionForm form {
+    width: fit-content;
+    border: darkblue solid 1px;
 }
 

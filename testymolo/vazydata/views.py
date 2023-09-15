@@ -14,13 +14,34 @@ class Database(TemplateView):
 
     template_name = os.path.join("vazydata", "resumedb.html")
 
-    def next_entity():
+    def next_Protein():
         ## protein
         ToDoList:list = data.Protein.objects.filter(complete=False)
         if len(ToDoList) > 0:
             return ToDoList[0]
         return None
   
+
+    def next(request, Table:str='Protein'):
+        context:dict = {}
+
+        # treat POST request
+        if request.method == "POST":
+            print("YOU CAUGHT A POKEMON !")
+            form = ProteinForm(request.POST)
+            if form.is_valid():
+                ## update model item
+                pass
+
+        # next one
+        item = Database.next_Protein()
+        if not item is None:
+            context['form'] = ProteinForm(instance=item)
+            context['object_id'] = item.id
+        
+        return Database.index(request, context)
+
+
     def paintedByNumbers():
 
         def completedTable(table):
@@ -43,16 +64,18 @@ class Database(TemplateView):
 
         }
 
-    def index(request):
-        context:dict = {'number': Database.paintedByNumbers()}
+    def index(request, context:dict={}):
+        context['numbers'] = Database.paintedByNumbers()
 
+        """
         if request.method == "POST":
             form = ProteinForm(request.POST)
             if form.is_valid():
                 return 
         else :
             form = ProteinForm()
-        
         context['form'] = form
-
+        """
+        print(context)
         return render(request, Database.template_name, context) 
+    

@@ -23,6 +23,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 
     path('resumedb/', Database.index, name='resumedb'),
+    path('resumedb/Protein/', Database.next, name='resumedb_Protein'),
 
     path('', views.Main.index, name='index'),
     path('new-session/', views.Main.new_session, name="new-session"),
