@@ -908,37 +908,43 @@
     {
         "TaxId": "138948",
         "Name": "Enterovirus A",
-        "abr": "EV-A",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
     },
     {
         "TaxId": "138949",
         "Name": "Enterovirus B",
-        "abr": "EV-B",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
     },
     {
         "TaxId": "138950",
         "Name": "Enterovirus C",
-        "abr": "EV-C",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
     },
     {
         "TaxId": "138951",
         "Name": "Enterovirus D",
-        "abr": "EV-D",
+        "abr": null,
+        "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
+    },
+    {
+        "TaxId": "138950",
+        "Name": "Enterovirus C",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
     },
     {
         "TaxId": "147711",
         "Name": "Rhinovirus A",
-        "abr": "RhinoV-A",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
     },
     {
         "TaxId": "147712",
         "Name": "Rhinovirus B",
-        "abr": "RhinoV-B",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
     },
     {
@@ -962,7 +968,7 @@
     {
         "TaxId": "186538",
         "Name": "Zaire ebolavirus",
-        "abr": "ZEBOV",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Filoviridae; Orthoebolavirus; Orthoebolavirus zairense"
     },
     {
@@ -974,25 +980,25 @@
     {
         "TaxId": "194965",
         "Name": "Aichivirus B",
-        "abr": "AichiV-B",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Kodimesavirinae; Kobuvirus"
     },
     {
         "TaxId": "1803956",
         "Name": "Parechovirus A",
-        "abr": "ParechoV-A",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Paavivirinae; Parechovirus"
     },
     {
         "TaxId": "204711",
         "Name": "Theilovirus",
-        "abr": "ThV",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Caphthovirinae; Cardiovirus; Cardiovirus B"
     },
     {
         "TaxId": "310907",
         "Name": "Enterovirus H",
-        "abr": "EV-H",
+        "abr": null,
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Picornavirales; Picornaviridae; Ensavirinae; Enterovirus"
     }
 ]
