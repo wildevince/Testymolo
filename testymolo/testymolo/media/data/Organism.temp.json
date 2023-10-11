@@ -4,55 +4,55 @@
         "name": "Infectious bronchitis virus",
         "abr": "AIBV[Beaudette]",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Gammacoronavirus; Igacovirus; Avian coronavirus",
-        "complete": true
+        "complete": false
     },
     {
         "id": 11128,
         "name": "Bovine coronavirus",
         "abr": "BCoV-ENT",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Embecovirus; Betacoronavirus 1",
-        "complete": true
+        "complete": false
     },
     {
         "id": 11137,
         "name": "Human coronavirus 229E",
         "abr": "HCoV-229E",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Alphacoronavirus; Duvinacovirus",
-        "complete": true
+        "complete": false
     },
     {
         "id": 11138,
         "name": "Murine hepatitis virus",
         "abr": "MHV[A59]",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Embecovirus; Murine coronavirus",
-        "complete": true
+        "complete": false
     },
     {
         "id": 11149,
         "name": "Transmissible gastroenteritis virus",
         "abr": "TGV[Purdue]",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Alphacoronavirus; Tegacovirus; Alphacoronavirus 1",
-        "complete": true
+        "complete": false
     },
     {
         "id": 28295,
         "name": "Porcine epidemic diarrhea virus",
         "abr": "PEDV [CV777]",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Alphacoronavirus; Pedacovirus",
-        "complete": true
+        "complete": false
     },
     {
         "id": 31631,
         "name": "Human coronavirus OC43",
         "abr": "HCoV-OC43",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Embecovirus; Betacoronavirus 1",
-        "complete": true
+        "complete": false
     },
     {
         "id": 227859,
         "name": "Severe acute respiratory syndrome-related coronavirus TOR2",
         "abr": "SARS-TOR2",
         "phylogeny": "Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes; Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae; Betacoronavirus; Sarbecovirus",
-        "complete": true
+        "complete": false
     }
 ]

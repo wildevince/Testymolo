@@ -8,3 +8,7 @@ class ProteinForm(forms.ModelForm):
     class Meta:
         model = data.Protein
         fields = '__all__'
+
+
+class VazyRecord(forms.Form):
+    pass

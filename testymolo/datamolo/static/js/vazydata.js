@@ -62,6 +62,19 @@ function AJAX(url, value, parentDOM) {
 }
 
 
+function fetchTaxonkit() {
+    // read input
+    // run AJAX taxonkit
+    // return HTML in "div.taxonkit div.taxonkit-result"
+    taxid = $("input#input-taxid").val();
+
+    var url = '/resumedb/taxonkit/' + taxid + '/';
+
+    $("div.taxonkit div.taxonkit-result").html("...loading...")
+    
+    AJAX(url, taxid, "div.taxonkit div.taxonkit-result");
+}
+
 
 // ######################################################################################################################## //
 $(document).ready(function () {
@@ -72,3 +85,27 @@ $(document).ready(function () {
     TopPanel_selected();
 
 });
+
+
+
+// utilities
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+
+function checkCookie(cookieName) {
+    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*) + cookieName \s*=\s*([^;]*).*$)|^.*$/, "$1");
+    return cookieValue !== undefined;
+}
+  

@@ -19,7 +19,7 @@
     </div>
     <div class='column'>
         <p><a id="Genome" >Genome: <span class='progress'>{{ numbers.Genome }}</span>%</a></p>
-        <p><a id="Organism" >Organism: <span class='progress'>{{ numbers.Organism }}</span>%</a></p>
+        <p><a id="Organism" href="{% url 'resumedb' %}" >Organism: <span class='progress'>{{ numbers.Organism }}</span>%</a></p>
         <p><a id="Protein" href="{% url 'resumedb_Protein' %}" >Protein: <span class='progress'>{{ numbers.Protein }}</span>%</a></p>
     </div>
     <div class='column'>
@@ -33,6 +33,44 @@
         <p><a id="Profile" >Profile: <span class='progress'>{{ numbers.Profile }}</span>%</a></p>
     </div>
 </div>
+
+{% if Vazy1 %}
+<div class="parse_vazy_data_1" TaxId={{ TaxId }}>
+    <p>Organism</p>
+    {% for Vaz1_item in Vazy1.Organism %}
+    <ul>{% for Vaz1_value in Vaz1_item %}
+        <li>{{ Vaz1_value }}</li>{% endfor %}
+    </ul> {% endfor %}
+    <p>CAZy_DB</p>
+    {% for Vaz1_item in Vazy1.CAZy_DB %}
+    <ul>{% for Vaz1_value in Vaz1_item %}
+        <li>{{ Vaz1_value }}</li>{% endfor %}
+    </ul> {% endfor %}
+</div>
+{% endif %}
+
+
+
+<div class='taxonkit' taxid="">
+    <div class='taxonkit-query'>
+        {% csrf_token %}
+        <input type='text' id="input-taxid" name="taxid"><button onclick="fetchTaxonkit()">fetch</button>
+    </div>
+    <div class='taxonkit-result'>
+        {% if taxonkit %} {{ taxonkit }}
+        {% else %}
+        <ul><li>species</li><ul>
+            <li>sub-species</li>
+            <li>sub-species</li></ul>
+        <li>species</li>
+        <li>species</li></ul>
+        {% endif %}
+        
+    </div>
+    
+</div>
+
+
 
 
 <div class='CompletionForm' table='Protein' id={{ object_id }}>

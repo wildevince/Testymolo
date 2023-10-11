@@ -2,6 +2,7 @@ import os
 
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from django.http import HttpResponse
 
 import datamolo.scr.database as db
 import datamolo.models as data
@@ -13,6 +14,16 @@ from vazydata.forms import ProteinForm
 class Database(TemplateView):
 
     template_name = os.path.join("vazydata", "resumedb.html")
+    vazy_data_1:dict = {
+        'Organism': db.read_data_1('Organism'),
+        'CAZy_DB': db.read_data_1('CAZy_DB'),
+    }
+
+    vazy_data_2:dict = {
+        'Organism.temp': db.read_data_2('Organism.temp'),
+        'Protein.temp': db.read_data_2('Protein.temp'),
+        }
+
 
     def next_Protein():
         ## protein
@@ -41,7 +52,6 @@ class Database(TemplateView):
         
         return Database.index(request, context)
 
-
     def paintedByNumbers():
 
         def completedTable(table):
@@ -64,6 +74,11 @@ class Database(TemplateView):
 
         }
 
+
+    def run_taxonkit(request, taxid):
+        return HttpResponse(db.run_taxonkit(taxid))
+
+
     def index(request, context:dict={}):
         context['numbers'] = Database.paintedByNumbers()
 
@@ -76,6 +91,7 @@ class Database(TemplateView):
             form = ProteinForm()
         context['form'] = form
         """
+        
         print(context)
         return render(request, Database.template_name, context) 
     
