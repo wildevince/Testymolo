@@ -7,7 +7,7 @@ from django.http import HttpResponse
 import datamolo.scr.database as db
 import datamolo.models as data
 
-from vazydata.forms import ProteinForm
+from vazydata.forms import OrganismForm, ProteinFrom
 
 
 # Create your views here.
@@ -23,6 +23,8 @@ class Database(TemplateView):
         'Organism.temp': db.read_data_2('Organism.temp'),
         'Protein.temp': db.read_data_2('Protein.temp'),
         }
+    
+    resume_Organism:data.Organism = None
 
 
     def next_Protein():
@@ -32,26 +34,6 @@ class Database(TemplateView):
             return ToDoList[0]
         return None
   
-
-    def next(request, Table:str='Protein'):
-        context:dict = {}
-
-        # treat POST request
-        if request.method == "POST":
-            print("YOU CAUGHT A POKEMON !")
-            form = ProteinForm(request.POST)
-            if form.is_valid():
-                ## update model item
-                pass
-
-        # next one
-        item = Database.next_Protein()
-        if not item is None:
-            context['form'] = ProteinForm(instance=item)
-            context['object_id'] = item.id
-        
-        return Database.index(request, context)
-
     def paintedByNumbers():
 
         def completedTable(table):
@@ -74,24 +56,60 @@ class Database(TemplateView):
 
         }
 
-
     def run_taxonkit(request, taxid):
         return HttpResponse(db.run_taxonkit(taxid))
 
+    def parse_vazy_data_1(request, taxid):
+        Vazy1:dict = {'Organism':[], 'CAZy_DB':[]}
+        for item in Database.vazy_data_1['Organism']:
+            if taxid == item[0]:
+                Vazy1['Organism'].append(item)
+        for item in Database.vazy_data_1['CAZy_DB']:
+            if taxid == item[5]:
+                Vazy1['CAZy_DB'].append(item)
+        return HttpResponse(db.parse_vazy_data_1(Vazy1))
 
     def index(request, context:dict={}):
         context['numbers'] = Database.paintedByNumbers()
-
-        """
-        if request.method == "POST":
-            form = ProteinForm(request.POST)
-            if form.is_valid():
-                return 
-        else :
-            form = ProteinForm()
-        context['form'] = form
-        """
         
-        print(context)
+        if Database.resume_Organism is not None:
+            resume_last = Database.resume_Organism
+            context['resume'] = True
+            
+        else :
+            ToDoList:list = data.Organism.objects.filter(complete=False)
+            if len(ToDoList) > 0:
+                resume_last = ToDoList[0]
+                Database.resume_Organism = resume_last
+
+        context['object_id'] = resume_last.id
+        context['form'] = OrganismForm(initial=resume_last.serialize(False))
+        proteins = data.Protein.objects.filter(organism=resume_last)
+        proteinForm:list = []
+        for prot in proteins:
+            proteinForm.append(ProteinFrom(initial=prot.serialize(False)))
+        context["proteinForm"] = proteinForm
+
+        context['taxonkit'] =  Database.run_taxonkit(request, str(resume_last.id))
+
+        print(*context)
         return render(request, Database.template_name, context) 
     
+    def big_POST(request):
+        context:dict={}
+        if request.method == "POST":
+            return HttpResponse('You caught a POKEMON !')
+            form_org = VazyRecord(request.POST, prefix="Organism")
+            if form.is_valid():
+                _id = form.cleaned_data['id']
+                _name = form.cleaned_data['name']
+                _abr = form.cleaned_data['abr']
+                _phylogeny = form.cleaned_data['phylogeny']
+                _genome = form.cleaned_data['genome']
+                return 
+            
+        return HttpResponse("Damn! The wild POKEMON escaped ...")
+    
+    def add_form_Protein():
+        form = ProteinFrom()
+        HttpResponse(form.as_p())

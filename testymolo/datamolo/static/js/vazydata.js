@@ -75,6 +75,21 @@ function fetchTaxonkit() {
     AJAX(url, taxid, "div.taxonkit div.taxonkit-result");
 }
 
+function add_form_Protein() {
+    $("div.CompletionForm form span#add_form_Protein").html('There there, take an another bite my dear ...');
+}
+
+function parse_old_DB() {
+    var taxid = $(".CompletionForm").attr('object');
+    var url = '/resumedb/parse_vazy_data_1/' + taxid + '/';
+    var selector = ".parse_vazy_data_1";
+
+    $(selector).html("...loading...");
+    AJAX(url, taxid, selector);
+}
+
+
+
 
 // ######################################################################################################################## //
 $(document).ready(function () {
@@ -85,6 +100,11 @@ $(document).ready(function () {
     TopPanel_selected();
 
 });
+
+
+
+
+
 
 
 

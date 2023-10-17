@@ -23,8 +23,9 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 
     path('resumedb/', Database.index, name='resumedb'),
-    path('resumedb/Protein/', Database.next, name='resumedb_Protein'),
-    path('resumedb/taxonkit/<str:taxid>/', Database.run_taxonkit, name='resumedb_taxonkit'),
+    path('resumedb/next/', Database.big_POST, name='resumedb_next'),
+    path('resumedb/taxonkit/<str:taxid>/', Database.run_taxonkit, name='resumedb_taxonkit'), 
+    path('resumedb/parse_vazy_data_1/<str:taxid>/', Database.parse_vazy_data_1, name='parse_vazy_data_1'),
 
     path('', views.Main.index, name='index'),
     path('new-session/', views.Main.new_session, name="new-session"),

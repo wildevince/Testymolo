@@ -103,3 +103,13 @@ def run_taxonkit(taxid:str) -> str:
     return "<ul>"+json2html(var_json)+"</ul>"
 
 
+def parse_vazy_data_1(Vazy1:dict) -> str:
+    text:str = "<p>VaZyMolO.data 1</p>"
+    for key, item in Vazy1.items():
+        text += "<p>"+key+"</p>"
+        text += "<ul>"
+        for value in item:
+            text += "<li>"+str(value)+"</li>"
+        text += "</ul>"
+    
+    return text

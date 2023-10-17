@@ -44,3 +44,40 @@ p[hidden] {
     border: darkblue solid 1px;
 }
 
+
+.panel {
+    width: 33%;
+    display: inline-flex;
+}
+
+.taxonkit-result {
+    overflow-x: scroll;
+    width: max-content;
+    font-size: small;
+}
+
+
+.CompletionForm {
+    position: relative;
+    width: 100%;
+}
+
+.CompletionForm form {
+    position: relative;
+    width: 98%;
+}
+
+form div.subform {
+    margin: 5px;
+    margin-bottom: 35px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+
+.CompletionForm form input[type='text'] {
+    width:90%;
+}
+.CompletionForm form textarea {
+    width: 100%;
+}

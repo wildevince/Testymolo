@@ -145,14 +145,16 @@ class Organism(models.Model):
     ### Vazymolo
     complete = models.BooleanField(default=False)  
 
-    def serialize(item):
-        return {
+    def serialize(item, complete=True):
+        result:dict = {
             "id":item.id,
             "name":item.name,
             "abr":item.abr,
             "phylogeny":item.phylogeny,
-            "complete":item.complete
         }
+        if complete :
+            result['complete'] = item.complete
+        return result
 
 
 class Genome(models.Model):
@@ -181,20 +183,24 @@ class Protein(models.Model):
     ### Vazymolo
     complete = models.BooleanField(default=False)  
 
-    def serialize(item):
-        return {
-            'id':item.id,
+    def serialize(item, json=True):
+        result:dict =  {
             "isPP":item.isPP,
             "derivedFromPP":item.derivedFromPP,
-            "organism":item.organism.id,
             "genbank":item.genbank,
             "name":item.name,
             "data_ac":item.data_ac,
             "header":item.header,
             "sequence":item.sequence,
-            "length":len(item.sequence),
-            "complete":item.complete
         }
+        if json :
+            result['id'] = item.id,
+            result['complete'] = item.complete
+            result["organism"] = item.organism.id
+            result["length"] = len(item.sequence)
+        else:
+            result['organism'] = item.organism
+        return result
     
     def random():
         import random
@@ -202,7 +208,9 @@ class Protein(models.Model):
         N:int = len(PROTEINS)
         i = random.randint(1, N-1)
         return PROTEINS[i]
-
+    
+    def fasta(self):
+        return self.header.strip() + '\n'+ self.sequence.strip()
 class CDS(models.Model):
     #lvl 3
     protein = models.OneToOneField(Protein, verbose_name="protein product", on_delete=models.PROTECT)  #FK

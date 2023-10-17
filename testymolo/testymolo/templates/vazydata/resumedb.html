@@ -20,7 +20,7 @@
     <div class='column'>
         <p><a id="Genome" >Genome: <span class='progress'>{{ numbers.Genome }}</span>%</a></p>
         <p><a id="Organism" href="{% url 'resumedb' %}" >Organism: <span class='progress'>{{ numbers.Organism }}</span>%</a></p>
-        <p><a id="Protein" href="{% url 'resumedb_Protein' %}" >Protein: <span class='progress'>{{ numbers.Protein }}</span>%</a></p>
+        <p><a id="Protein" >Protein: <span class='progress'>{{ numbers.Protein }}</span>%</a></p>
     </div>
     <div class='column'>
         <p><a id="Annotation" >Annotation: <span class='progress'>{{ numbers.Annotation }}</span>%</a></p>
@@ -34,30 +34,38 @@
     </div>
 </div>
 
-{% if Vazy1 %}
-<div class="parse_vazy_data_1" TaxId={{ TaxId }}>
-    <p>Organism</p>
-    {% for Vaz1_item in Vazy1.Organism %}
-    <ul>{% for Vaz1_value in Vaz1_item %}
-        <li>{{ Vaz1_value }}</li>{% endfor %}
-    </ul> {% endfor %}
-    <p>CAZy_DB</p>
-    {% for Vaz1_item in Vazy1.CAZy_DB %}
-    <ul>{% for Vaz1_value in Vaz1_item %}
-        <li>{{ Vaz1_value }}</li>{% endfor %}
-    </ul> {% endfor %}
+<div class='horizontal_buttons'>
+    <button id="parse_old_DB" onclick="parse_old_DB()" >Parse old VAZyMoloO</button>
+    <button id="query_NCBI" onclick="query_NCBI()" >ask NCBI</button>
 </div>
-{% endif %}
 
 
 
-<div class='taxonkit' taxid="">
+<div class="parse_vazy_data_1" TaxId="{{ object_id }}">
+        {% if Vazy1 %}
+        <p>Organism</p>
+        {% for Vaz1_item in Vazy1.Organism %}
+        <ul>{% for Vaz1_value in Vaz1_item %}
+            <li>{{ Vaz1_value }}</li>{% endfor %}
+        </ul> {% endfor %}
+        <p>CAZy_DB</p>
+        {% for Vaz1_item in Vazy1.CAZy_DB %}
+        <ul>{% for Vaz1_value in Vaz1_item %}
+            <li>{{ Vaz1_value }}</li>{% endfor %}
+        </ul> {% endfor %}
+        {% endif %}
+</div>
+
+
+<div class='panel left'>
+
+<div class='taxonkit'>
     <div class='taxonkit-query'>
         {% csrf_token %}
         <input type='text' id="input-taxid" name="taxid"><button onclick="fetchTaxonkit()">fetch</button>
     </div>
     <div class='taxonkit-result'>
-        {% if taxonkit %} {{ taxonkit }}
+        {% if taxonkit %} {{ taxonkit|safe }}
         {% else %}
         <ul><li>species</li><ul>
             <li>sub-species</li>
@@ -69,33 +77,32 @@
     </div>
     
 </div>
+</div>
 
 
-
-
-<div class='CompletionForm' table='Protein' id={{ object_id }}>
+<div class='panel middle'>
+<div class='CompletionForm' table='Protein' object="{{ object_id }}">
     {% if form %}
-    <form method='post' action="/resumedb/Protein/" >
+    {% if resume %}<p>Resuming Organism:{{ object_id }}</p>{% endif %}
+    <form method='post' action="/resumedb/next/" >
         {% csrf_token %}
-        {{ form.as_p }}
+        <div class='subform'>{{ form.as_p }}</div>
+        {% for prot in proteinForm %}
+            <div class='subform'>{{ prot.as_p }}</div>
+        {% endfor %}
+        <button onclick='add_form_Protein()'>Add Protein</button>
+        <span id='add_form_Protein'></span>
         <input type="submit" value='Next'>
     </form>
-    <div class='horizontal_buttons'>
-        <button id="parse_old_DB" onclick="parse_old_DB()" >Parse old VAZyMoloO</button>
-        <button id="query_NCBI" onclick="query_NCBI()" >ask NCBI</button>
-    </div>
-    <script>
-        function parse_old_DB() {
-            console.log("parse_old_DB !");
-        }
-        function query_NCBI() {
-            console.log("query_NCBI ! ");
-        }
-    </script>
+    
     {% endif %}
     
 </div>
+</div>
 
+
+
+<div class='panel right'></div>
 
 
     {% endblock %}

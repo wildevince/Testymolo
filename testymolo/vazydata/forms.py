@@ -4,11 +4,12 @@ from django import forms
 import datamolo.models as data
 
 
-class ProteinForm(forms.ModelForm):
+class OrganismForm(forms.ModelForm):
+    class Meta:
+        model = data.Organism
+        fields = ("id", "name", "abr", "phylogeny",)
+
+class ProteinFrom(forms.ModelForm):
     class Meta:
         model = data.Protein
-        fields = '__all__'
-
-
-class VazyRecord(forms.Form):
-    pass
+        fields = ("isPP", "derivedFromPP", "organism", "genbank", "name", "data_ac", "header", "sequence",)
