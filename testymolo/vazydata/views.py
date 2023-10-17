@@ -87,10 +87,12 @@ class Database(TemplateView):
         proteins = data.Protein.objects.filter(organism=resume_last)
         proteinForm:list = []
         for prot in proteins:
-            proteinForm.append(ProteinFrom(initial=prot.serialize(False)))
+            prot_init = prot.serialize(False) 
+            prot_init['genbank'] = "null" ### debug
+            proteinForm.append(ProteinFrom(initial=prot_init))
         context["proteinForm"] = proteinForm
 
-        context['taxonkit'] =  Database.run_taxonkit(request, str(resume_last.id))
+        #context['taxonkit'] =  Database.run_taxonkit(request, str(resume_last.id))
 
         print(*context)
         return render(request, Database.template_name, context) 
@@ -110,6 +112,13 @@ class Database(TemplateView):
             
         return HttpResponse("Damn! The wild POKEMON escaped ...")
     
+    def POST_protein(request):
+        return HttpResponse("You caught a fish !")
+        pass
+    
     def add_form_Protein():
         form = ProteinFrom()
-        HttpResponse(form.as_p())
+        response:str = "<form method='post' action='/resumedb/protein/'>"
+        response += form.as_p()
+        response += "<input type='submit' name='Protein' value='Completed'></form>"
+        HttpResponse(response)

@@ -58,7 +58,6 @@
 
 
 <div class='panel left'>
-
 <div class='taxonkit'>
     <div class='taxonkit-query'>
         {% csrf_token %}
@@ -86,14 +85,18 @@
     {% if resume %}<p>Resuming Organism:{{ object_id }}</p>{% endif %}
     <form method='post' action="/resumedb/next/" >
         {% csrf_token %}
-        <div class='subform'>{{ form.as_p }}</div>
-        {% for prot in proteinForm %}
-            <div class='subform'>{{ prot.as_p }}</div>
-        {% endfor %}
-        <button onclick='add_form_Protein()'>Add Protein</button>
-        <span id='add_form_Protein'></span>
-        <input type="submit" value='Next'>
+        {{ form.as_p }}
+        <input type="submit" name='Organism' value='Next'>
     </form>
+    {% for prot in proteinForm %}
+    <form method='post' action="{% url 'resumedb_protein' %}">
+        {% csrf_token %}
+        {{ prot.as_p }}
+        <input type="submit" name="Protein" value='Completed'>
+    </form>
+    {% endfor %}
+    <button onclick='add_form_Protein()'>Add Protein</button>
+    <span id='add_form_Protein'></span>
     
     {% endif %}
     

@@ -12,4 +12,4 @@ class OrganismForm(forms.ModelForm):
 class ProteinFrom(forms.ModelForm):
     class Meta:
         model = data.Protein
-        fields = ("isPP", "derivedFromPP", "organism", "genbank", "name", "data_ac", "header", "sequence",)
+        fields = ("isPP", "derivedFromPP", "organism", "genbank", "name", "data_ac", "header", "sequence", "complete")

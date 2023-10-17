@@ -192,10 +192,10 @@ class Protein(models.Model):
             "data_ac":item.data_ac,
             "header":item.header,
             "sequence":item.sequence,
+            'complete':item.complete,
         }
         if json :
             result['id'] = item.id,
-            result['complete'] = item.complete
             result["organism"] = item.organism.id
             result["length"] = len(item.sequence)
         else:
