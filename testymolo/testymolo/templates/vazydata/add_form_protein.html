@@ -1,0 +1,9 @@
+<div class='sub-form add-form-protein' >
+<form method='post' action="{% url 'resumedb_protein' %}" >
+    {% csrf_token %}
+    {{ prot.as_p }}
+    <input type="submit" name="Protein" value='Completed'>
+</form>
+<button class='js-copy-fasta-clipboard'>to Clipboard</button>
+<button class='diamondBlastp_runner'>run blasp</button>
+</div>

@@ -185,21 +185,22 @@ class Protein(models.Model):
 
     def serialize(item, json=True):
         result:dict =  {
+            'id':item.id,
             "isPP":item.isPP,
             "derivedFromPP":item.derivedFromPP,
             "genbank":item.genbank,
             "name":item.name,
             "data_ac":item.data_ac,
-            "header":item.header,
-            "sequence":item.sequence,
             'complete':item.complete,
         }
         if json :
-            result['id'] = item.id,
             result["organism"] = item.organism.id
+            result["header"] = item.header
+            result["sequence"] = item.sequence
             result["length"] = len(item.sequence)
         else:
             result['organism'] = item.organism
+            result['fasta'] = item.header + '\n' + item.sequence
         return result
     
     def random():

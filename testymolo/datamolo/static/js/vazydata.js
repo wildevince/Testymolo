@@ -35,6 +35,19 @@ function TopPanel_selected() {
     });
 }
 
+function button_fasta_clipboard(){
+    $("button.js-copy-fasta-clipboard").click(function(e) {
+        //console.log("fasta copied to CLipboard")
+        var fasta = $(this).parent().find("textarea").text();
+        //console.log(fasta);
+        navigator.clipboard.writeText(fasta);
+    });
+}
+
+function Hide_form_fields() {
+    $(".CompletionForm form input[name*='hide']").parent().hide();
+}
+
 // AJAX
 function AJAX(url, value, parentDOM) {
     $.ajaxSetup({
@@ -76,7 +89,12 @@ function fetchTaxonkit() {
 }
 
 function add_form_Protein() {
-    $("div.CompletionForm form span#add_form_Protein").html('There there, take an another bite my dear ...');
+    var url = '/resumedb/addProtein/';
+    var selector = "div.CompletionForm span#add_form_Protein";
+    $(selector).html("...loading...");
+
+    AJAX(url, 'addProtein', selector);
+    //$("div.CompletionForm span#add_form_Protein").html('There there, take an another bite my dear ...');
 }
 
 function parse_old_DB() {
@@ -98,6 +116,10 @@ $(document).ready(function () {
     TopPanel_hightlight_100();
     TopPanel_mouseover();
     TopPanel_selected();
+
+    button_fasta_clipboard();
+    //Hide_form_fields();
+    
 
 });
 

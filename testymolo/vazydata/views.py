@@ -1,6 +1,7 @@
 import os
 
 from django.shortcuts import render
+from django.template.loader import render_to_string
 from django.views.generic import TemplateView
 from django.http import HttpResponse
 
@@ -14,6 +15,8 @@ from vazydata.forms import OrganismForm, ProteinFrom
 class Database(TemplateView):
 
     template_name = os.path.join("vazydata", "resumedb.html")
+    template_form_protein = os.path.join("vazydata", "form_protein.html")
+    template_add_form_protein = os.path.join("vazydata", "add_form_protein.html")
     vazy_data_1:dict = {
         'Organism': db.read_data_1('Organism'),
         'CAZy_DB': db.read_data_1('CAZy_DB'),
@@ -83,42 +86,82 @@ class Database(TemplateView):
                 Database.resume_Organism = resume_last
 
         context['object_id'] = resume_last.id
-        context['form'] = OrganismForm(initial=resume_last.serialize(False))
+        org = resume_last.serialize(False)
+        org['id_hide'] = resume_last.id
+        org['name_hide'] = resume_last.name
+        org['abr_hide'] = resume_last.abr
+        org['phylogeny_hide'] = resume_last.phylogeny
+        context['form'] = OrganismForm(initial=org)
         proteins = data.Protein.objects.filter(organism=resume_last)
         proteinForm:list = []
         for prot in proteins:
             prot_init = prot.serialize(False) 
+            prot_init['id'] = prot.id
             prot_init['genbank'] = "null" ### debug
+            prot_init['subseqs'] = len(data.Subseq.objects.filter(origin=prot)) 
+            prot_init['fasta'] = '>' + str(prot.header) + '\n' + str(prot.sequence)
+            ### 
             proteinForm.append(ProteinFrom(initial=prot_init))
         context["proteinForm"] = proteinForm
-
-        #context['taxonkit'] =  Database.run_taxonkit(request, str(resume_last.id))
-
-        print(*context)
         return render(request, Database.template_name, context) 
     
     def big_POST(request):
         context:dict={}
         if request.method == "POST":
-            return HttpResponse('You caught a POKEMON !')
-            form_org = VazyRecord(request.POST, prefix="Organism")
+            #return HttpResponse('You caught a POKEMON !')
+            form = OrganismForm(request.POST)
             if form.is_valid():
+                _id_hide = form.cleaned_data['id_hide']
+                _name_hide = form.cleaned_data['name_hide']
+                _abr_hide = form.cleaned_data['abr_hide']
+                _phylogeny_hide = form.cleaned_data['phylogeny_hide']
+                #
                 _id = form.cleaned_data['id']
                 _name = form.cleaned_data['name']
                 _abr = form.cleaned_data['abr']
                 _phylogeny = form.cleaned_data['phylogeny']
-                _genome = form.cleaned_data['genome']
-                return 
+
+                if not (_id_hide == _id): # taxid changed !
+                    print("taxid changed", _id_hide, "into", _id)
+                    pass
+                    org_old = data.Organism.objects.get(id=_id_hide)
+                    org_new = data.Organism.objects.create({})
+                else:
+                    pass
+                if not (_name == _name_hide): 
+                    print("changed", _name_hide, 'into', _name)
+                    pass
+                else:
+                    pass
+                if not (_abr == _abr_hide):
+                    print("changed", _abr_hide, 'into', _abr)
+                    pass
+                else:
+                    pass
+                if not (_phylogeny == _phylogeny_hide):
+                    print("changed", _phylogeny_hide[-10:], 'into', _phylogeny[-10:])
+                    pass
+                else:
+                    pass
+                resume_Organism = None
+                return HttpResponse("cleaning fields")
+            else:
+                print(form.errors)
+                # id
+                # Organism with this Tax_id already exists.
+                return HttpResponse("error form")
             
         return HttpResponse("Damn! The wild POKEMON escaped ...")
     
     def POST_protein(request):
-        return HttpResponse("You caught a fish !")
+        context:dict = {}
+        #if request.method == "POST":
+        #return HttpResponse("You caught a fish !")
         pass
     
-    def add_form_Protein():
-        form = ProteinFrom()
-        response:str = "<form method='post' action='/resumedb/protein/'>"
-        response += form.as_p()
-        response += "<input type='submit' name='Protein' value='Completed'></form>"
-        HttpResponse(response)
+    def add_form_Protein(request):
+        ## add csrf_token
+        #<button onclick='add_form_Protein()'>Add Protein</button>
+        #<span id='add_form_Protein'></span>
+        response = render_to_string(Database.template_add_form_protein, {'prot': ProteinFrom()})
+        return HttpResponse(response)

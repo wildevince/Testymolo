@@ -83,20 +83,11 @@
 <div class='CompletionForm' table='Protein' object="{{ object_id }}">
     {% if form %}
     {% if resume %}<p>Resuming Organism:{{ object_id }}</p>{% endif %}
-    <form method='post' action="/resumedb/next/" >
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" name='Organism' value='Next'>
-    </form>
+    {% include 'vazydata/form_organism.html' with org=form %}
     {% for prot in proteinForm %}
-    <form method='post' action="{% url 'resumedb_protein' %}">
-        {% csrf_token %}
-        {{ prot.as_p }}
-        <input type="submit" name="Protein" value='Completed'>
-    </form>
+    {% include 'vazydata/form_protein.html' with prot=prot %}
     {% endfor %}
-    <button onclick='add_form_Protein()'>Add Protein</button>
-    <span id='add_form_Protein'></span>
+    
     
     {% endif %}
     

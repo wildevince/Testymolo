@@ -25,6 +25,7 @@ urlpatterns = [
     path('resumedb/', Database.index, name='resumedb'),
     path('resumedb/next/', Database.big_POST, name='resumedb_next'),
     path('resumedb/protein/', Database.POST_protein, name='resumedb_protein'),
+    path('resumedb/addProtein/', Database.add_form_Protein, name='resumedb_addProtein'),
     path('resumedb/taxonkit/<str:taxid>/', Database.run_taxonkit, name='resumedb_taxonkit'), 
     path('resumedb/parse_vazy_data_1/<str:taxid>/', Database.parse_vazy_data_1, name='parse_vazy_data_1'),
 

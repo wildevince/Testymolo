@@ -1,0 +1,7 @@
+<div class='sub-form'>
+    <form method='post' action="/resumedb/next/">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" name='Organism' value='Next'>
+    </form>
+</div>

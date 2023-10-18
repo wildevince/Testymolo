@@ -62,22 +62,29 @@ p[hidden] {
     width: 100%;
 }
 
-.CompletionForm form {
-    position: relative;
-    width: 98%;
-}
 
-form div.subform {
+.CompletionForm .sub-form {
     margin: 5px;
     margin-bottom: 35px;
     padding: 10px;
     background-color: lightgray;
 }
 
+.CompletionForm form {
+    position: relative;
+    width: 100%;
+}
+
+
 
 .CompletionForm form input[type='text'] {
+    position:relative;
+    left: 5%;
     width:90%;
+    
 }
 .CompletionForm form textarea {
-    width: 100%;
+    position:relative;
+    left:5%;
+    width: 90%;
 }
