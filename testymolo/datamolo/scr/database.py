@@ -6,6 +6,9 @@ import subprocess as sh
 from django.conf import settings
 
 from Bio import Entrez
+import Bio.Blast.NCBIXML as BlastXML
+from datetime import datetime
+
 Entrez.email = "VIMVer@univ-amu.fr"
 data_1_path:str = settings.TABLES_CSV
 data_2_path:str = settings.DATA_DIR
@@ -113,3 +116,18 @@ def parse_vazy_data_1(Vazy1:dict) -> str:
         text += "</ul>"
     
     return text
+
+
+def run_diamond_blatp(fastaseq:str) -> str:
+    # return `out.fasta` 
+    #         0       1      2   3                                 4   5                   6   7       8 9
+    terms = "diamond blastp -d ./viral_protein_db/Nidovirales/nido -q ./protein_test.fasta -o ./var_4 -f 5"
+    terms = terms.split(' ')
+    with open(terms[5], 'w') as infile:
+        infile.write(fastaseq)
+    terms[7] = './'+datetime.now().strftime("%Y-%m-%d")+'.fasta'
+    
+    diamond_run = sh.run(terms, stderr=sh.PIPE, stdout=sh.PIPE, text=True)
+    print(' '.join(terms))
+
+    return terms[7]

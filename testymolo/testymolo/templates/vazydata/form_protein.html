@@ -4,18 +4,28 @@
     <p>Vazy1 : {{ prot.data_ac.value }}</p>
     <p>Genbank accession :{{ prot.genbank.value }}</p>
 </form>
+{% elif prot.complete.value is None %}
+<div class='sub-form'>
+    <form method='post' action="{% url 'resumedb_protein' %}" complete='{{ prot.complete.value }}'>
+        {% csrf_token %}
+        <p>{% if prot.isPP.value %}Polyprotein{% elif prot.derivedFromPP.value %}nsp{% else %}Protein{% endif %} : {{ prot.name }}</p>
+        <p>Id : {{ prot.id.value }} | Vazy1 : {{ prot.data_ac.value }} | Organism : {{ prot.organism.value }}</p>
+        <p>Genbank : {{ prot.genbank }}</p>
+        <p>Nbr. of subseqs attached : {{ prot.subseqs.value }}</p>
+        <span class='fasta'>{{ prot.fasta }}</span>
+        <input type="submit" name="Protein" value='Completed'>
+    </form>
+    <button class='js-copy-fasta-clipboard'>to Clipboard</button>
+    <button class='blastp_runner'>run blasp</button>
+    </div>
 {% else %}
 <div class='sub-form'>
-<form method='post' action="{% url 'resumedb_protein' %}" complete='{{ prot.complete.value }}'>
+<form method='post' action="{% url 'resumedb_protein' %}" protein='{{ prot.id.value }}' complete='{{ prot.complete.value }}'>
     {% csrf_token %}
-    <p>{% if prot.isPP.value %}Polyprotein{% elif prot.derivedFromPP.value %}nsp{% else %}Protein{% endif %} : {{ prot.name }}</p>
-    <p>Id : {{ prot.id.value }} | Vazy1 : {{ prot.data_ac.value }} | Organism : {{ prot.organism.value }}</p>
-    <p>Nbr. of subseqs attached : {{ prot.subseqs.value }}</p>
-    <span class='fasta'>
-    {{ prot.fasta }}</span>
+    {{ prot.as_p }}
     <input type="submit" name="Protein" value='Completed'>
 </form>
 <button class='js-copy-fasta-clipboard'>to Clipboard</button>
-<button class='diamondBlastp_runner'>run blasp</button>
+<button class='blastp_runner'>run blasp</button>
 </div>
 {% endif %}

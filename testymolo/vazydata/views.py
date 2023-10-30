@@ -28,7 +28,7 @@ class Database(TemplateView):
         }
     
     resume_Organism:data.Organism = None
-
+    ongoing_blastp:str = None
 
     def next_Protein():
         ## protein
@@ -100,8 +100,12 @@ class Database(TemplateView):
             prot_init['genbank'] = "null" ### debug
             prot_init['subseqs'] = len(data.Subseq.objects.filter(origin=prot)) 
             prot_init['fasta'] = '>' + str(prot.header) + '\n' + str(prot.sequence)
+            prot_init['fasta_hide'] = prot_init['fasta']
+            prot_init['genbank_hide'] = prot_init['genbank']
+            prot_init['name_hide'] = prot_init['name']
             ### 
             proteinForm.append(ProteinFrom(initial=prot_init))
+            break
         context["proteinForm"] = proteinForm
         return render(request, Database.template_name, context) 
     
@@ -121,43 +125,72 @@ class Database(TemplateView):
                 _abr = form.cleaned_data['abr']
                 _phylogeny = form.cleaned_data['phylogeny']
 
-                if not (_id_hide == _id): # taxid changed !
+                print(_id_hide, _name_hide, _abr_hide, _phylogeny_hide[-5:])
+                print(_id, _name, _abr, _phylogeny[-5:])
+                org = data.Organism.objects.get(id=_id_hide)
+                if not (_id == _id_hide): # taxid changed !
                     print("taxid changed", _id_hide, "into", _id)
-                    pass
-                    org_old = data.Organism.objects.get(id=_id_hide)
-                    org_new = data.Organism.objects.create({})
-                else:
-                    pass
+                    if len(data.Organism.objects.filter(id = _id)) == 0:
+                        org.id = _id
+                        # quid of Protein.organism
                 if not (_name == _name_hide): 
                     print("changed", _name_hide, 'into', _name)
-                    pass
-                else:
-                    pass
+                    org.name = _name
                 if not (_abr == _abr_hide):
                     print("changed", _abr_hide, 'into', _abr)
-                    pass
-                else:
-                    pass
+                    org.abr = _abr
                 if not (_phylogeny == _phylogeny_hide):
                     print("changed", _phylogeny_hide[-10:], 'into', _phylogeny[-10:])
-                    pass
-                else:
-                    pass
+                    org.phylogeny = _phylogeny
+                ## no change
                 resume_Organism = None
+                org.complete = True
+                ###org.save()
                 return HttpResponse("cleaning fields")
             else:
                 print(form.errors)
-                # id
-                # Organism with this Tax_id already exists.
                 return HttpResponse("error form")
             
         return HttpResponse("Damn! The wild POKEMON escaped ...")
     
     def POST_protein(request):
         context:dict = {}
-        #if request.method == "POST":
-        #return HttpResponse("You caught a fish !")
-        pass
+        if request.method == "POST":
+            form = ProteinFrom(request.POST)
+            if form.is_valid():
+                _id = form.cleaned_data['id']
+                _subseqs = form.cleaned_data['subseqs']
+                _fasta = form.cleaned_data['fasta']
+                _isPP = form.cleaned_data['isPP']
+                _derivedFromPP = form.cleaned_data['derivedFromPP']
+                _organism = form.cleaned_data['organism']
+                _genbank = form.cleaned_data['genbank']
+                _name = form.cleaned_data['name']
+                _data_ac = form.cleaned_data['data_ac']
+
+                _fasta_hide = form.cleaned_data['fasta_hide']
+                _genbank_hide = form.cleaned_data['genbank_hide']
+                _name_hide = form.cleaned_data['name_hide']
+
+                print(_id,_subseqs,_fasta[:5],_isPP,_derivedFromPP,str(_organism),_genbank,_name,_data_ac )
+                prot = data.Protein.objects.get(id=_id)
+                if not (_fasta == _fasta_hide):
+                    print("changed fasta sequence")
+                    header, *sequence = _fasta.split()
+                    prot.header = header
+                    prot.sequence = sequence
+                if not (_genbank == _genbank_hide):
+                    prot.genbank = _genbank
+                if not (_name == _name_hide):
+                    prot.name = _name
+
+                prot.complete = True
+                ###prot.save()
+                return Database.index(request)
+            else:
+                print(form.errors)
+                
+        return HttpResponse("ERROR : My precious ...")
     
     def add_form_Protein(request):
         ## add csrf_token
@@ -165,3 +198,20 @@ class Database(TemplateView):
         #<span id='add_form_Protein'></span>
         response = render_to_string(Database.template_add_form_protein, {'prot': ProteinFrom()})
         return HttpResponse(response)
+    
+    def blastp_inquiry(request, _id):
+        if _id is not None:
+            prot = data.Protein.objects.get(id=_id)
+            fasta = '>'+prot.header+'\n'+prot.sequence
+            
+            Database.ongoing_blastp = db.run_diamond_blatp(fasta)
+
+            answer = HttpResponse()
+            answer.set_cookie('ongoing_blastp', Database.ongoing_blastp)
+            return answer
+        
+    def blastp_response(request):
+        cookie = request.COOKIES.get('ongoing_blastp')
+        # if file ready
+        # True : return data
+        # False : return waiting message
