@@ -79,7 +79,6 @@ p[hidden] {
 
 .CompletionForm form input[type='text'] {
     position:relative;
-    left: 5%;
     width:90%;
     
 }
@@ -88,3 +87,35 @@ p[hidden] {
     left:5%;
     width: 90%;
 }
+
+.blastp {
+    display: block;
+    position: relative;
+    margin-left: 0.5em;
+    width: 96%;
+    border: 2px solid black;
+}
+
+.blastp span.title {
+    font-weight: bold;
+    
+}
+
+.blastp .blastp_hit {
+    position: relative;
+    width: 96%;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: smaller;
+    background-color: lightgrey;
+    border: 2px solid grey;
+}
+
+.blastp_hit p span[value='100.00'] {
+    font-weight : bold;
+}
+

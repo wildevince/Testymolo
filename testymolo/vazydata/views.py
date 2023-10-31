@@ -17,6 +17,7 @@ class Database(TemplateView):
     template_name = os.path.join("vazydata", "resumedb.html")
     template_form_protein = os.path.join("vazydata", "form_protein.html")
     template_add_form_protein = os.path.join("vazydata", "add_form_protein.html")
+    template_blastp_hit = os.path.join("vazydata", "blastp_hit.html")
     vazy_data_1:dict = {
         'Organism': db.read_data_1('Organism'),
         'CAZy_DB': db.read_data_1('CAZy_DB'),
@@ -107,7 +108,9 @@ class Database(TemplateView):
             proteinForm.append(ProteinFrom(initial=prot_init))
             break
         context["proteinForm"] = proteinForm
-        return render(request, Database.template_name, context) 
+        answer = render(request, Database.template_name, context) 
+        answer.delete_cookie('ongoing_blastp')
+        return answer
     
     def big_POST(request):
         context:dict={}
@@ -199,19 +202,33 @@ class Database(TemplateView):
         response = render_to_string(Database.template_add_form_protein, {'prot': ProteinFrom()})
         return HttpResponse(response)
     
-    def blastp_inquiry(request, _id):
-        if _id is not None:
-            prot = data.Protein.objects.get(id=_id)
+    def blastp_inquiry(request, id):
+        if id is not None:
+            prot = data.Protein.objects.get(id=id)
             fasta = '>'+prot.header+'\n'+prot.sequence
             
-            Database.ongoing_blastp = db.run_diamond_blatp(fasta)
+            Database.ongoing_blastp = db.run_diamond_blastp(fasta)
 
             answer = HttpResponse()
             answer.set_cookie('ongoing_blastp', Database.ongoing_blastp)
             return answer
         
     def blastp_response(request):
+        #AJAX
         cookie = request.COOKIES.get('ongoing_blastp')
         # if file ready
-        # True : return data
-        # False : return waiting message
+        if db.check_blastp_outfile_ready(Database.ongoing_blastp):
+            print('outfile found !')
+            # True : return data
+            blastp_results = db.parse_blastp_outfile(Database.ongoing_blastp)
+            blastp_results = [hit for hit in blastp_results if float(hit['Identities']) >= 70.0]
+            answer = render(request, Database.template_blastp_hit, {'data' : list(blastp_results)})
+            answer.delete_cookie('ongoing_blastp')
+            return answer
+        else:
+            print('outfile not found !')
+            # False : return waiting message
+            return HttpResponse("<p>Please wait few more seconds ...</p>")
+        
+    def parse_accessionNumber(request, accNbr):
+        return HttpResponse("Boule Magik !")

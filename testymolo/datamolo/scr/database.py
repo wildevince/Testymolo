@@ -118,16 +118,70 @@ def parse_vazy_data_1(Vazy1:dict) -> str:
     return text
 
 
-def run_diamond_blatp(fastaseq:str) -> str:
+def run_diamond_blastp(fastaseq:str) -> str:
     # return `out.fasta` 
-    #         0       1      2   3                                 4   5                   6   7       8 9
+    #         0       1      2   3                                  4   5                   6   7      8 9
     terms = "diamond blastp -d ./viral_protein_db/Nidovirales/nido -q ./protein_test.fasta -o ./var_4 -f 5"
     terms = terms.split(' ')
-    with open(terms[5], 'w') as infile:
-        infile.write(fastaseq)
-    terms[7] = './'+datetime.now().strftime("%Y-%m-%d")+'.fasta'
+    infile = os.path.join(settings.MEDIA_ROOT, 'temp', 'protein_test.fasta')
+    with open(infile, 'w') as handle:
+        handle.write(fastaseq)
+        terms[5] = infile
+    terms[3] = os.path.join(settings.DATA_DIR, 'viral_protein_db', 'Nidovirales','nido')
+    terms[7] = os.path.join(settings.MEDIA_ROOT, 'temp', datetime.now().strftime("%Y-%m-%d")+'.fasta')
     
     diamond_run = sh.run(terms, stderr=sh.PIPE, stdout=sh.PIPE, text=True)
     print(' '.join(terms))
 
     return terms[7]
+
+
+def check_blastp_outfile_ready(outfile_name:str):
+    outfile_path = os.path.join(settings.MEDIA_ROOT, 'temp', outfile_name)
+    try:
+        open(outfile_path, 'r')
+        return True
+    except Exception as e:
+        print(e)
+        return False
+    
+
+def parse_blastp_outfile(outfile:str) -> list:
+    answer:list = []
+    outfile = os.path.join(settings.MEDIA_ROOT, 'temp', outfile)
+    with open(outfile) as handle:
+        result = BlastXML.parse(handle)
+        for record in result:
+            for hit in record.alignments:
+                id = hit.hit_id
+                definition = hit.hit_def
+                start = hit.hsps[0].sbjct_start
+                end = hit.hsps[0].sbjct_end
+                align_length = hit.hsps[0].align_length
+                identities = hit.hsps[0].identities
+                _identities = str('{:10.2f}'.format(identities*100.0/align_length)).strip()
+                positives = hit.hsps[0].positives
+                _positives = str('{:10.2f}'.format(positives*100.0/align_length)).strip()
+                bits = hit.hsps[0].bits
+                answer.append({
+                    'id': id,
+                    'start': start,
+                    'end': end,
+                    'align_length': align_length,
+                    'identities': identities,
+                    'Identities': _identities,
+                    'positives': positives,
+                    'Positives': _positives,
+                    'bits':bits,
+                    'definition':definition
+                })
+    return answer
+
+
+def parse_accessionNumber(accNbr:str) -> dict:
+    #fetch accessionNumber in NCBI
+    #parse record : 
+    ##   ORF
+    ##   cds
+    ##   protein
+    return {'ORF':None, 'cds':None, 'protein':None}

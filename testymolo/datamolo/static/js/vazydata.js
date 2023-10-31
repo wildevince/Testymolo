@@ -108,12 +108,50 @@ function parse_old_DB() {
 
 function blastp_runner() {
     $("button.blastp_runner").click(function() {
+        console.log('clicked');
         var _id = $(this).parent().find("form").attr("protein");
-        let url = '/resumedb/blasp/' + _id + '/';
+        let url = '/resumedb/blastp/' + _id + '/';
         let selector = 'div.blastp';
         $(selector).html("...launching...");
         AJAX(url, _id, selector);
     });
+}
+
+var intervalId = setInterval(function() {
+    tempFasta = getCookie('ongoing_blastp')
+    if (tempFasta != null) {
+        $.ajax({
+            url: '/resumedb/blastp_response/',
+            dataType: 'html',
+            success: function(data) {
+                $("div.blastp").html(data);
+                blastp_sort_hit_value();
+            },
+            error: function(error) {
+                console.error('Error', error);
+            }
+        });
+        
+        clearInterval(intervalId);
+    }
+}, 1000); // Repeat every 1 second
+
+
+function blastp_sort_hit_value() {
+    $(".blastp .blastp_hit span[value]").each(function() {
+        if ($(this).attr('value') != '100.00') {
+            $(this).parent().css('background-color: rgb(190,190,190)')
+        }
+    })
+}
+
+function parse_accessionNumber() {
+    //AJAX
+    var value = $(".NCBIrecord .query #id_accesionNumber").val();
+    var url = '/resumedb/NCBIrecord/'+value+'/';
+    var selector = $(".NCBIrecord .response");
+    selector.html('...loading...');
+    AJAX(url, value, selector);
 }
 
 
@@ -127,24 +165,8 @@ $(document).ready(function () {
 
     button_fasta_clipboard();
     //Hide_form_fields();
-    
-    var intervalId = setInterval(function() {
-        tempFasta = getCookie('ongoing_blastp')
-        if (tempFasta != null) {
-            $.ajax({
-                url: '/blasp_response',
-                dataType: 'html',
-                success: function(data) {
-                    $("div.blastp").html(data);
-                },
-                error: function(error) {
-                    console.error('Error', error);
-                }
-            });
-            
-            clearInterval(intervalId);
-        }
-    }, 1000); // Repeat every 1 second
+
+    blastp_runner();
 
     });
 

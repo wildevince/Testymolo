@@ -1,0 +1,9 @@
+<div><span class='title'>Result of blastp :</span>
+    {% for hit in data %}
+        <div class='blastp_hit'>
+            <p><a href= 'https://www.ncbi.nlm.nih.gov/protein/{{ hit.id }}'>{{ hit.id }}</a>_{{ hit.start }}:{{ hit.end }}</p>
+            <p>{{ hit.align_length }} {{ hit.identities }}(<span value='{{ hit.Identities }}'>{{ hit.Identities }}%</span>) {{ hit.positives }}({{ hit.Positives }}%) {{ hit.bits }}</p>
+            <p>{{ hit.definition }}</p>
+        </div>
+    {% endfor %}
+</div>
