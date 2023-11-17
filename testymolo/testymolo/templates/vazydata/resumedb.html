@@ -98,15 +98,17 @@
 
 
 <div class='panel right'>
-    <div class='NCBIrecord'>
-        <div class='query'>
-            {% csrf_token %}
-            <span class='label'>accession number : </span>
-            <input type='text' id="id_accesionNumber" name="accessionNumber"><button onclick="parse_accessionNumber()">parse</button>
+    <div class='externals'>
+        <div class='NCBIrecord'>
+            <div class='query'>
+                {% csrf_token %}
+                <span class='label'>accession number : </span>
+                <input type='text' id="id_accesionNumber" name="accessionNumber"><button onclick="parse_accessionNumber()">parse</button>
+            </div>
+            
         </div>
-        <div class='response'></div>
+        <div class='blastp'></div>
     </div>
-    <div class='blastp'></div>
 </div>
 
 

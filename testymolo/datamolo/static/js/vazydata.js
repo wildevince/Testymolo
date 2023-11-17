@@ -148,10 +148,11 @@ function blastp_sort_hit_value() {
 function parse_accessionNumber() {
     //AJAX
     var value = $(".NCBIrecord .query #id_accesionNumber").val();
-    var url = '/resumedb/NCBIrecord/'+value+'/';
+    var url = "https://www.ncbi.nlm.nih.gov/protein/"+value+'/';
     var selector = $(".NCBIrecord .response");
     selector.html('...loading...');
-    AJAX(url, value, selector);
+    window.open(url, '_blank').focus();
+    //AJAX(url, value, selector);
 }
 
 

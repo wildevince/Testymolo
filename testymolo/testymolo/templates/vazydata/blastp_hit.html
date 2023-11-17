@@ -1,4 +1,4 @@
-<div><span class='title'>Result of blastp :</span>
+<div class='response' ><span class='title'>Result of blastp :</span>
     {% for hit in data %}
         <div class='blastp_hit'>
             <p><a href= 'https://www.ncbi.nlm.nih.gov/protein/{{ hit.id }}'>{{ hit.id }}</a>_{{ hit.start }}:{{ hit.end }}</p>

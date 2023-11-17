@@ -14,25 +14,10 @@ data_1_path:str = settings.TABLES_CSV
 data_2_path:str = settings.DATA_DIR
 
 # 
-def write_Protein(Proteins):
-    outfile = os.path.join(settings.DATA_DIR,"Protein.temp.json")
-
+def write_to_json(table, objects):
+    outfile = os.path.join(settings.DATA_DIR, table+".temp.json")
     with open(outfile, 'w') as handle:
-        txt:list = list([json.dumps(Protein.serialize()) for Protein in Proteins])
-        handle.write('[\n'+ ',\n'.join(txt) + ']')
-        
-def write_Modulo(Moduli):
-    outfile = os.path.join(settings.DATA_DIR,"Modulo.temp.json")
-
-    with open(outfile, 'w') as handle:
-        txt:list = list([json.dumps(Modulo.serialize()) for Modulo in Moduli])
-        handle.write('[\n'+ ',\n'.join(txt) + ']')
-      
-def write_Organism(Organisms):
-    outfile = os.path.join(settings.DATA_DIR,"Organism.temp.json")
-
-    with open(outfile, 'w') as handle:
-        txt:list = list([json.dumps(org.serialize()) for org in Organisms])
+        txt:list = list([json.dumps(item.serialize()) for item in objects])
         handle.write('[\n'+ ',\n'.join(txt) + ']')
 
 
@@ -176,12 +161,3 @@ def parse_blastp_outfile(outfile:str) -> list:
                     'definition':definition
                 })
     return answer
-
-
-def parse_accessionNumber(accNbr:str) -> dict:
-    #fetch accessionNumber in NCBI
-    #parse record : 
-    ##   ORF
-    ##   cds
-    ##   protein
-    return {'ORF':None, 'cds':None, 'protein':None}

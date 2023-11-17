@@ -30,7 +30,6 @@ urlpatterns = [
     path('resumedb/parse_vazy_data_1/<str:taxid>/', Database.parse_vazy_data_1, name='parse_vazy_data_1'),
     path('resumedb/blastp/<str:id>/', Database.blastp_inquiry, name='blasp'),
     path('resumedb/blastp_response/', Database.blastp_response, name='blasp_response'),
-    path('resumedb/NCBIrecord/<str:accNbr>/', Database.parse_accessionNumber, name='parse_accessionNumber'),
 
     path('', views.Main.index, name='index'),
     path('new-session/', views.Main.new_session, name="new-session"),

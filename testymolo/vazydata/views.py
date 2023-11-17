@@ -106,7 +106,7 @@ class Database(TemplateView):
             prot_init['name_hide'] = prot_init['name']
             ### 
             proteinForm.append(ProteinFrom(initial=prot_init))
-            break
+            #break
         context["proteinForm"] = proteinForm
         answer = render(request, Database.template_name, context) 
         answer.delete_cookie('ongoing_blastp')
@@ -176,19 +176,23 @@ class Database(TemplateView):
                 _name_hide = form.cleaned_data['name_hide']
 
                 print(_id,_subseqs,_fasta[:5],_isPP,_derivedFromPP,str(_organism),_genbank,_name,_data_ac )
+                print(_name_hide, _genbank_hide, _fasta_hide[:5])
+
                 prot = data.Protein.objects.get(id=_id)
                 if not (_fasta == _fasta_hide):
-                    print("changed fasta sequence")
+                    print("changes: fasta sequence")
                     header, *sequence = _fasta.split()
                     prot.header = header
                     prot.sequence = sequence
                 if not (_genbank == _genbank_hide):
+                    print("changes: genbank")
                     prot.genbank = _genbank
                 if not (_name == _name_hide):
+                    print("changes: name")
                     prot.name = _name
 
                 prot.complete = True
-                ###prot.save()
+                prot.save()
                 return Database.index(request)
             else:
                 print(form.errors)
@@ -229,6 +233,4 @@ class Database(TemplateView):
             print('outfile not found !')
             # False : return waiting message
             return HttpResponse("<p>Please wait few more seconds ...</p>")
-        
-    def parse_accessionNumber(request, accNbr):
-        return HttpResponse("Boule Magik !")
+    

@@ -41,12 +41,29 @@ class Main(TemplateView):
         return response
 
 
+    def fixing_starting_points():
+        for PP_nsp in data.PolyProtein.objects.all():
+            #PP = data.Protein.objects.get(id = PP_nsp.PP)
+            #nsp = data.Protein.objects.get(id = PP_nsp.protein)
+            PP_nsp.protein.sequence = PP_nsp.PP.sequence[PP_nsp.start-1 : PP_nsp.end]
+            PP_nsp.protein.save()
+
+
     def index(request):
 
         ###
         #db.parse_Modulo(data.Modulo.objects.all())
         #db.parse_Organism(data.Organism.objects.all())
         #db.parse_Protein(data.Protein.objects.all())
+        #db.write_Subseqs(data.Subseq.objects.all())
+
+        #db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
+        #Main.fixing_starting_points()
+        #db.write_to_json('Protein', data.Protein.objects.all())
+        #db.write_to_json('Subseq', data.Subseq.objects.all())
+        #db.write_to_json('Organism', data.Organism.objects.all())
+        #db.write_to_json('Profile', data.Profile.objects.all())
+        #db.write_to_json('Modulo', data.Modulo.objects.all())
         ###
 
         context:dict = {}
@@ -90,7 +107,8 @@ class Main(TemplateView):
         if(sessionID):
             SESSION = data.Session.objects.get(id=sessionID)
 
-            protein = data.Protein.random()
+            #protein = data.Protein.random()
+            protein = data.Protein.objects.get(id=1)
 
             SESSION.protein = protein.id
             SESSION.save()

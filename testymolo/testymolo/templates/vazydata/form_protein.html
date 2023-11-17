@@ -1,7 +1,8 @@
 {% if prot.complete.value %}
 <form complete='{{ prot.complete.value }}'>
     <p>{% if prot.isPP.value %}Polyprotein{% elif prot.derivedFromPP.value %}nsp{% else %}Protein{% endif %} : {{ prot.name.value }}</p>
-    <p>Vazy1 : {{ prot.data_ac.value }}</p>
+    <p>Id : {{ prot.id.value }} | Vazy1 : {{ prot.data_ac.value }} | Organism : {{ prot.organism.value }}</p>
+    <p>Nbr. of subseqs attached : {{ prot.subseqs.value }}</p>
     <p>Genbank accession :{{ prot.genbank.value }}</p>
 </form>
 {% elif prot.complete.value is None %}

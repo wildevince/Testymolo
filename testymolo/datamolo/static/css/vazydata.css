@@ -88,7 +88,24 @@ p[hidden] {
     width: 90%;
 }
 
+.externals {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.NCBIrecord {
+    padding-left : 0.5em;
+    margin-bottom: 1em;
+}
+
 .blastp {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.blastp .response{
     display: block;
     position: relative;
     margin-left: 0.5em;
@@ -100,6 +117,7 @@ p[hidden] {
     font-weight: bold;
     
 }
+
 
 .blastp .blastp_hit {
     position: relative;

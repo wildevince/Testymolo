@@ -131,6 +131,13 @@ class Profile(models.Model):
     ### Vazymolo
     complete = models.BooleanField(default=False)  
 
+    def serialize(item, json=True):
+        return {
+            'id': item.id,
+            'validated': item.validated,
+            'modulo': item.modulo.id,  #(str)
+            'complete': item.complete
+        }
     # filepath = models.CharField(max_length=300)  # filepath = filefield( ? )
 
 
@@ -252,11 +259,9 @@ class PolyProtein(models.Model):
         return {
             "PP":item.PP.id,
             "protein":item.protein.id,
-            "data_ac":item.PP.data_ac,
             "index":item.index,
             "start":item.start,
             "end":item.end,
-            "complete":item.complete
         }
     
 
@@ -279,27 +284,36 @@ class Subseq(models.Model):
         return f"{item.origin.header[:-1]}.{item.id}):[{item.start}-{item.end}]"
 
     def sequence(item) -> str:
-        return str(item.origin.sequence[item.start:item.end])
+        return str(item.origin.sequence[item.start-1:item.end])
 
-    def serialize(item):
-        seq = item.origin.sequence[item.start:item.end]
+    def serialize(item, json=True):
+        seq = item.origin.sequence[item.start-1:item.end]
         if(item.profile is not None):
-            profile = item.profile.id
+            profile = int(item.profile.id)
             module = item.profile.modulo.id
         else:
-            profile = None
-            module = None
-        return {
-            "id":item.id,
-            "origin":item.origin.id,
-            "profile":profile,
-            "module":module,
-            "start":item.start,
-            "end":item.end,
-            "sequence":seq,
-            "length":len(seq),
-            "complete":item.complete,
-        }
+            profile = -1
+            module = 'null'
+        if json:
+            return {
+                "id": int(item.id),
+                "origin": int(item.origin.id),
+                "profile": profile,
+                "start": int(item.start),
+                "end": int(item.end)
+            }
+        else:
+            return {
+                "id":item.id,
+                "origin":item.origin.id,
+                "profile":profile,
+                "module":module,
+                "start":item.start,
+                "end":item.end,
+                "sequence":seq,
+                "length":len(seq),
+                "complete":item.complete,
+            }
     
 
 class Structure(models.Model):

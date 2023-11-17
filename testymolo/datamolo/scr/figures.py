@@ -34,7 +34,7 @@ def generate_mainfigure_protein(protein:data.Protein):
     Subseqs = data.Subseq.objects.filter(origin=protein)
     for subseq in Subseqs:
         i+=1
-        lenseq = len(protein.sequence[subseq.start:subseq.end])
+        lenseq = len(protein.sequence[subseq.start-1:subseq.end])
         w = ((lenseq +1) / L) * WIDTH
         x = (subseq.start-1)/L *WIDTH +x0
         # find module
