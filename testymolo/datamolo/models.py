@@ -190,7 +190,7 @@ class Protein(models.Model):
     ### Vazymolo
     complete = models.BooleanField(default=False)  
 
-    def serialize(item, json=True):
+    def serialize(item, json=True, **kwargs):
         result:dict =  {
             'id':item.id,
             "isPP":item.isPP,
@@ -200,6 +200,10 @@ class Protein(models.Model):
             "data_ac":item.data_ac,
             'complete':item.complete,
         }
+        #kwargs
+        for key, val in kwargs.items():
+            result[key] = val
+
         if json :
             result["organism"] = item.organism.id
             result["header"] = item.header
@@ -219,6 +223,14 @@ class Protein(models.Model):
     
     def fasta(self):
         return self.header.strip() + '\n'+ self.sequence.strip()
+    
+    def get_all_nsps(self):
+        if(self.isPP):
+            nsps:list = PolyProtein.objects.filter(PP=self.id)
+            return list([ nsp.protein for nsp in nsps ])
+        else:
+            return []
+
 class CDS(models.Model):
     #lvl 3
     protein = models.OneToOneField(Protein, verbose_name="protein product", on_delete=models.PROTECT)  #FK
@@ -263,7 +275,7 @@ class PolyProtein(models.Model):
             "start":item.start,
             "end":item.end,
         }
-    
+        
 
 class Subseq(models.Model):
     #lvl 3
@@ -286,7 +298,8 @@ class Subseq(models.Model):
     def sequence(item) -> str:
         return str(item.origin.sequence[item.start-1:item.end])
 
-    def serialize(item, json=True):
+    def serialize(item, json=True, **kwargs):
+        result:dict = {}
         seq = item.origin.sequence[item.start-1:item.end]
         if(item.profile is not None):
             profile = int(item.profile.id)
@@ -295,7 +308,7 @@ class Subseq(models.Model):
             profile = -1
             module = 'null'
         if json:
-            return {
+            result = {
                 "id": int(item.id),
                 "origin": int(item.origin.id),
                 "profile": profile,
@@ -303,7 +316,7 @@ class Subseq(models.Model):
                 "end": int(item.end)
             }
         else:
-            return {
+            result = {
                 "id":item.id,
                 "origin":item.origin.id,
                 "profile":profile,
@@ -314,6 +327,9 @@ class Subseq(models.Model):
                 "length":len(seq),
                 "complete":item.complete,
             }
+        for k,v in kwargs.items():
+            result[k] = v
+        return result
     
 
 class Structure(models.Model):

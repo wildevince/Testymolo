@@ -4,7 +4,8 @@ from Bio import SeqIO
 import logomaker as logo
 
 
-def generate_mainfigure_protein(protein:data.Protein):
+### not used (old) --> generate_mainfigure_profile
+def generate_mainfigure_protein_old(protein:data.Protein):
     ## generate figure
     real_WIDTH = 1860
     WIDTH = 1800
@@ -82,7 +83,6 @@ def generate_mainfigure_protein(protein:data.Protein):
 
     return "<div class='figure'>"+html+"</div>"
 
-
 def generate_minusfigure_protein(protein:data.Protein):
     html:str = ""
     WIDTH = 1000
@@ -112,7 +112,6 @@ def generate_minusfigure_protein(protein:data.Protein):
     html += "</svg></div>"
 
     return "<div class='figure'>"+html+"</div>"
-
 
 def generate_mainfigure_profile(data:dict):
     msa:list = []   
@@ -175,5 +174,196 @@ def generate_mainfigure_profile(data:dict):
     ### 
     html += "</div>"
     return html 
+
+
+### main figure version 2.0
+def generate_mainfigure_protein(protein:data.Protein) -> dict:
+
+    class Figure():
+        Templates:list = {'protein':''}
+        TRUE_WIDTH:int = 1890  # [pixel]
+        WIDTH:int = 1780  # [pixel]
+        x0:int = 12  # x_offset  [pixel]
+        y0 = 75  # y_offset  [pixel]
+        h0 = 40  # feature height  [pixel]
+        h1 = 80  # between feature height  [pixel]
+
+        def __init__(self, protein:data.Protein) -> None:
+            """ return HTML content """
+            self.inputdata = Figure.formating_inputdata(protein)
+            self.PP = self.inputdata[0]
+            #self.HEIGHT = 300  # [pixel] 
+            N:int = len([p for p in self.inputdata if len(p['subseq']) > 0])
+            #print("nbr of protein:", N)
+            self.HEIGHT = Figure.y0 + (2 if len(self.inputdata) >1 else 1) * (Figure.h0 + Figure.h1)  # [pixel] 
+            self.HTML_data:dict = {}
+
+            self.HTML_data['protein_header'] = self.PP['header']
+            self.HTML_data['id'] = self.PP['id']
+            self.HTML_data['Width'] = str(Figure.TRUE_WIDTH)
+            self.HTML_data['Height'] = str(self.HEIGHT)
+        
+            # Organism
+            Org_name = data.Organism.objects.get(id=self.PP['organism']).name
+            self.HTML_data['Org'] = {'x':Figure.x0 +5, 'y':14, 'name':Org_name}
+
+            self.HTML_data['Protein'] = [self.Protein(0)]
+
+            if self.PP['isPP']:
+
+                for protein_i in range(1, len(self.inputdata)):
+                    if(len(self.inputdata[protein_i]['subseq']) > 0):
+                        self.HTML_data['Protein'].append(self.Protein(protein_i, 1))
+        
+        def Protein(self, i:int, n:int=0) -> dict:
+            protein = self.inputdata[i]
+            html:dict = {}
+            html['i'] = i
+            html['n'] = n
+
+            xi = Figure.x0  # x_offset 
+            xi += ((protein['start']-1) / self.PP['length']) * Figure.WIDTH  # + relative position from PP
+            yi = Figure.y0 + (n) * (Figure.h0 + Figure.h1)   # as downwards as many proteins to display
+            wi = (protein['length'] / self.PP['length']) * Figure.WIDTH  # adjust width with length protein
+            hi = Figure.h0
+
+            #dotted line for nsps
+            if n > 0:
+                x_bl1 = xi
+                y_bl1 = Figure.x0 -30
+                x_bl2 = x_bl1
+                y_bl2 = yi + hi + 30
+                html['x_bl1'] = x_bl1
+                html['y_bl1'] = y_bl1
+                html['x_bl2'] = x_bl2
+                html['y_bl2'] = y_bl2
+
+            #protein name
+            x_txt = xi +5
+            y_txt = yi -20
+            html['name'] = protein['name']
+            html['x_txt'] = x_txt
+            html['y_txt'] = y_txt
+
+            #protein rect
+            html['xi'] = xi
+            html['yi'] = yi
+            html['wi'] = wi
+            html['hi'] = hi
+
+            chtext:bool = False
+            chlvl:int = 0
+
+            html['subseq']:list = []
+            for sseq_i in range(len(protein['subseq'])):
+                html['subseq'].append(self.Subseq(protein, sseq_i, xi, yi, wi, hi, chtext, chlvl))
+                #pass
+
+            return html
+
+        def Subseq(self, protein, j, *coord) -> dict:
+            subseq = protein['subseq'][j]
+            xi, yi, wi, hi, chtext, chlvl, *_ = coord
+            html:dict = {}
+
+            L = len(protein['sequence'])
+            len_sseq:int = len(protein['sequence'][subseq['start']-1:subseq['end']])
+
+            xj = xi
+            if protein['isPP']:
+                xj += ((subseq['start']-1)/L *wi)
+            print(subseq['start'] , L, xi, xj)
+            yj = yi
+            wj = ((len_sseq +1) / L) *wi
+            hj = hi
+
+            html['j'] = j
+            html['id'] = subseq['id']
+            html['xj'] = xj
+            html['yj'] = yj
+            html['wj'] = wj
+            html['hj'] = hj
+            
+        
+            if(wj < (0.022 *Figure.WIDTH)):
+                chtext = True
+                chlvl += 1  
+            else:
+                chlvl = chlvl-1 if(chlvl > 0) else 0
+
+            # text module_name
+            x_mod = xj
+            y_mod = yj
+            if(wj > (0.022 *Figure.WIDTH)):
+                x_mod += wj*2/5
+            y_mod -= 5
+            if(chtext):
+                y_mod -= (12 *chlvl)
+
+            html['mod_id'] = subseq['modulo']['id']
+            html['x_mod'] = x_mod
+            html['y_mod'] = y_mod
+
+            #line separator
+            #x_sep1 = (subseq['end'] / L) *wi +xi 
+            x_sep1 = xj + wj
+            y_sep1 = yi
+            x_sep2 = x_sep1
+            y_sep2 = y_sep1 + Figure.h0
+            html['x_sep1'] = x_sep1
+            html['y_sep1'] = y_sep1
+            html['x_sep2'] = x_sep2
+            html['y_sep2'] = y_sep2
+
+            #text numbering
+            x_numb = x_sep1
+            y_numb = yi + Figure.h0 + 15
+            if(chtext):
+                chtext = False
+                y_numb += (12 *chlvl)
+            html['x_numb'] = x_numb
+            html['y_numb'] = y_numb
+            html['end'] = subseq['end']
+
+            html['color'] = 'blue'
+            if subseq['modulo']['id'] in ['TM', 'UNK', 'NF', 'PS', 'LNK', '?', None, 'null', '']:  #if unimportant module
+                html['color'] = 'grey'
+            elif protein['complete'] and subseq['modulo']['complete'] :  # protein and modulo complete
+                html['color'] = 'green'
+            elif protein['complete'] or subseq['modulo']['complete']:  # protein or modulo complete
+                html['color'] = 'teal'
+            
+            return html
+
+        def Display(self):
+            return self.HTML_data
+
+        def formating_inputdata(protein:data.Protein) -> list:
+            #data:list = []
+            ##META## 
+            # if len(data) == 1 : une protein
+            # if len(data) > 1 : 1er->
+                # -> proteins :dict
+                    # \-> { **prot, 'subseq':[{ **sseq, 'modulo':mod }] }
+            inputdata:list = [protein.serialize(start=1)]
+            if protein.isPP:
+                nsps = [nsp.serialize() for nsp in protein.get_all_nsps()]
+                inputdata = [*inputdata, *nsps]
+
+            for i in range(len(inputdata)):
+                inputdata[i]['subseq']:list = []
+
+                for item in data.PolyProtein.objects.filter(protein=inputdata[i]['id']):
+                    inputdata[i]['start'] = item.start
+                    break
+
+                for sseq in data.Subseq.objects.filter(origin=inputdata[i]['id']):
+                    inputdata[i]['subseq'].append(sseq.serialize(modulo=sseq.profile.modulo.serialize()))
+
+            return inputdata
+
+    figure = Figure(protein)
+    return figure.Display()
+
 
 

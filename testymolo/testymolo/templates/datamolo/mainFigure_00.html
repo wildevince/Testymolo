@@ -1,0 +1,26 @@
+<div class='figure'>
+    <div class='button-container'>
+        <button class='compare' >Compare with <span class='uni_star' value=false style='color: orange;'>★</span></button>
+        <button class='minus' onclick='updateSection_figure_minus()'>-</button>
+    </div>
+    <span class='sequence_selected_icon' arrow='arrow-thick-right' ><span class='whitespace'>_</span></span><span class='header'>{{ figure.protein_header }}</span>
+    <div class='svg-container'>
+        <svg protein="{{ figure.id }}" width="{{ figure.Width }}" height="{{ figure.Height }}" >
+            <rect class='background' width='100%' height='100%' fill='white' fill-opacity='1' stroke='black'></rect>
+            <text class='organism_name' id="{{ figure.Org.name }}" fill='black' font-weight='bold' font-size='16' x="{{ figure.Org.x }}" y="{{ figure.Org.y }}" >{{ figure.Org.name }}</text>
+            {% for prot in figure.Protein %}
+                {% if prot.n > 0 %}
+                    <line class='borderline' id="borderline_{{ prot.i }}" x1="{{ prot.x_bl1 }}" y1="{{ prot.y_bl1 }}" x2="{{ prot.x_bl2 }}" y2="{{ prot.y_bl2 }}" stroke='grey' stroke-width='0.5' stroke-dasharray='4' ></line>
+                {% endif %}
+                <text class='protein_name' id="protein_name_{{ prot.name }}" fill='grey' font-weight='bold' font-size='14' x="{{ prot.x_txt }}" y="{{ prot.y_txt }}" >{{ prot.name }}</text>
+                <rect class='protein' x="{{ prot.xi }}" y="{{ prot.yi }}" width="{{ prot.wi }}" height="{{ prot.hi }}" fill='blue' fill-opacity='0.1'></rect>
+                {% for sseq in prot.subseq %}
+                    <rect class='subseq' subseq="{{ sseq.id }}" x="{{ sseq.xj }}" y="{{ sseq.yj }}" width="{{ sseq.wj }}" height="{{ sseq.hj }}" fill="{{ sseq.color }}" fill-opacity='0.2'  ></rect>
+                    <text class='module_name' id="{{ sseq.mod_id }}" font-size='12' x="{{ sseq.x_mod }}" y="{{ sseq.y_mod }}">{{ sseq.mod_id }}</text>
+                    <line class='separator' id="separator_{{ sseq.j }}" x1="{{ sseq.x_sep1 }}" y1="{{ sseq.y_sep1 }}" x2="{{ sseq.x_sep2 }}" y2="{{ sseq.y_sep2 }}" stroke='black' stroke-width='2' ></line>
+                    <text class='numbering' id="numbering_{{ sseq.j }}" font-size='10' x="{{ sseq.x_numb }}" y="{{ sseq.y_numb }}">{{ sseq.end }}</text>
+                {% endfor %}
+            {% endfor %}
+        </svg>
+    </div>
+</div>

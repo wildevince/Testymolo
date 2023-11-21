@@ -5,6 +5,7 @@ from django.http import HttpResponse, JsonResponse
 from django.conf import settings
 from django.views.generic import TemplateView
 from django.utils.safestring import mark_safe
+from django.template.loader import render_to_string
 
 
 #import datamolo.scr.add_item_in_model as scr
@@ -22,6 +23,8 @@ class Main(TemplateView):
     
     template_name = os.path.join("datamolo", "main.html")
     moduleCard_template = os.path.join("datamolo", "moduleCard.html")
+    template_mainFigure = os.path.join("datamolo", "mainFigure_00.html")
+
 
     def new_session(request):
         # if cookie already exists -> so does Session
@@ -76,7 +79,7 @@ class Main(TemplateView):
             if(SESSION.protein):
                 protein_id = SESSION.protein
                 protein = data.Protein.objects.get(id=protein_id)
-                context['Protein'] = mark_safe(fig.generate_mainfigure_protein(protein))
+                context['Protein'] = Main.generate_mainfigure_protein(protein)
 
                 if(SESSION.subseq):
                     SESSION.module = None
@@ -99,6 +102,8 @@ class Main(TemplateView):
 
         return render(request, Main.template_name, context)
 
+    def generate_mainfigure_protein(protein):
+        return render_to_string(Main.template_mainFigure, {'figure':fig.generate_mainfigure_protein(protein)})
 
     def load_mainfigure_protein(request):
         # AJAX
@@ -114,7 +119,7 @@ class Main(TemplateView):
             SESSION.save()
 
             updated_html:str = ""
-            updated_html = fig.generate_mainfigure_protein(protein)
+            updated_html = Main.generate_mainfigure_protein(protein)
 
             return HttpResponse(updated_html)
         return HttpResponse(mark_safe("<p>session not valid : please accept our cookies</p>"))
@@ -130,7 +135,7 @@ class Main(TemplateView):
             SESSION.save()
 
             protein = data.Protein.objects.get(id=protein_id)
-            updated_html:str = fig.generate_mainfigure_protein(protein)
+            updated_html:str = Main.generate_mainfigure_protein(protein)
         
             return HttpResponse(updated_html)
         return HttpResponse(mark_safe("<p>session not valid : please accept our cookies</p>"))
