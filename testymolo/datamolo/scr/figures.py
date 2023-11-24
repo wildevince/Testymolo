@@ -195,7 +195,7 @@ def generate_mainfigure_protein(protein:data.Protein) -> dict:
             #self.HEIGHT = 300  # [pixel] 
             N:int = len([p for p in self.inputdata if len(p['subseq']) > 0])
             #print("nbr of protein:", N)
-            self.HEIGHT = Figure.y0 + (2 if len(self.inputdata) >1 else 1) * (Figure.h0 + Figure.h1)  # [pixel] 
+            self.HEIGHT = Figure.y0 + (2 if len(self.inputdata) >1 else 0) * (Figure.h0 + Figure.h1)  # [pixel] 
             self.HTML_data:dict = {}
 
             self.HTML_data['protein_header'] = self.PP['header']
@@ -358,7 +358,10 @@ def generate_mainfigure_protein(protein:data.Protein) -> dict:
                     break
 
                 for sseq in data.Subseq.objects.filter(origin=inputdata[i]['id']):
-                    inputdata[i]['subseq'].append(sseq.serialize(modulo=sseq.profile.modulo.serialize()))
+                    try:
+                        inputdata[i]['subseq'].append(sseq.serialize(modulo=sseq.profile.modulo.serialize()))
+                    except :
+                        inputdata[i]['subseq'].append(sseq.serialize(modulo={'id':'?'}))
 
             return inputdata
 
