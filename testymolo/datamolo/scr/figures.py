@@ -177,7 +177,7 @@ def generate_mainfigure_profile(data:dict):
 
 
 ### main figure version 2.0
-def generate_mainfigure_protein(protein:data.Protein) -> dict:
+def generate_mainfigure_protein(protein:data.Protein, showhide_allnsp:bool=False) -> dict:
 
     class Figure():
         Templates:list = {'protein':''}
@@ -188,14 +188,16 @@ def generate_mainfigure_protein(protein:data.Protein) -> dict:
         h0 = 40  # feature height  [pixel]
         h1 = 80  # between feature height  [pixel]
 
-        def __init__(self, protein:data.Protein) -> None:
+        def __init__(self, protein:data.Protein, showhide_allnsp:bool=False) -> None:
             """ return HTML content """
             self.inputdata = Figure.formating_inputdata(protein)
             self.PP = self.inputdata[0]
-            #self.HEIGHT = 300  # [pixel] 
-            N:int = len([p for p in self.inputdata if len(p['subseq']) > 0])
-            #print("nbr of protein:", N)
-            self.HEIGHT = Figure.y0 + (2 if len(self.inputdata) >1 else 0) * (Figure.h0 + Figure.h1)  # [pixel] 
+            self.HEIGHT = Figure.y0  # [pixel] 
+            if showhide_allnsp:
+                N:int = len(self.inputdata)
+            else:
+                N:int = len([p for p in self.inputdata if len(p['subseq']) > 0])
+            self.HEIGHT += N*(Figure.h0 + Figure.h1)  # [pixel]
             self.HTML_data:dict = {}
 
             self.HTML_data['protein_header'] = self.PP['header']
@@ -212,8 +214,10 @@ def generate_mainfigure_protein(protein:data.Protein) -> dict:
             if self.PP['isPP']:
 
                 for protein_i in range(1, len(self.inputdata)):
-                    if(len(self.inputdata[protein_i]['subseq']) > 0):
+                    if ((not showhide_allnsp) and (len(self.inputdata[protein_i]['subseq']) > 0)) :
                         self.HTML_data['Protein'].append(self.Protein(protein_i, 1))
+                    elif showhide_allnsp:
+                        self.HTML_data['Protein'].append(self.Protein(protein_i, protein_i))
         
         def Protein(self, i:int, n:int=0) -> dict:
             protein = self.inputdata[i]
@@ -365,7 +369,7 @@ def generate_mainfigure_protein(protein:data.Protein) -> dict:
 
             return inputdata
 
-    figure = Figure(protein)
+    figure = Figure(protein, showhide_allnsp)
     return figure.Display()
 
 
