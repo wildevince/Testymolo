@@ -162,6 +162,20 @@ class Organism(models.Model):
         if complete :
             result['complete'] = item.complete
         return result
+    
+    @staticmethod
+    def Add(indata:dict):
+        if len(Organism.objects.filter(id=indata['Organism']['id'])) < 0 :
+            newguy = Organism.objects.create(complete=True, **indata['Organism'])
+        else:
+            newguy = Organism.objects.get(id=int(indata['Organism']['id']))
+        proteins = []
+        for prot in indata['Protein']:
+            proteins.append(Protein.objects.create(organism=newguy, data_ac=0, complete=True, **prot))
+        for pp in indata['Polyprotein']:
+            pp['PP'] = proteins[0]
+            pp['protein'] = proteins[pp['protein']]
+            PolyProtein.objects.create(**pp)
 
 
 class Genome(models.Model):

@@ -22,6 +22,8 @@ DATA_DIR: str = path.join(BASE_DIR, "testymolo/media/data/")
 DATA: str = path.join(BASE_DIR, "testymolo/media/data/data.json")
 MULTIFASTA: str = path.join(BASE_DIR, "testymolo/media/data/sequences.fasta")
 
+WIP_DIR:str = path.join(BASE_DIR, 'datamolo/scr/workinprogress/')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
