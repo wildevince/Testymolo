@@ -164,14 +164,14 @@ class Organism(models.Model):
         return result
     
     @staticmethod
-    def Add(indata:dict):
-        if len(Organism.objects.filter(id=indata['Organism']['id'])) < 0 :
-            newguy = Organism.objects.create(complete=True, **indata['Organism'])
+    def ADD(indata:dict):
+        if len(Organism.objects.filter(id=indata['Organism']['id'])) > 0 :
+            org = Organism.objects.get(id=int(indata['Organism']['id']))
         else:
-            newguy = Organism.objects.get(id=int(indata['Organism']['id']))
+            org = Organism.objects.create(complete=True, **indata['Organism'])
         proteins = []
         for prot in indata['Protein']:
-            proteins.append(Protein.objects.create(organism=newguy, data_ac=0, complete=True, **prot))
+            proteins.append(Protein.objects.create(organism=org, data_ac=0, complete=True, **prot))
         for pp in indata['Polyprotein']:
             pp['PP'] = proteins[0]
             pp['protein'] = proteins[pp['protein']]

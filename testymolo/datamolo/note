@@ -271,10 +271,10 @@
         #db.parse_Protein(data.Protein.objects.all())
         #db.write_Subseqs(data.Subseq.objects.all())
 
+        db.write_to_json('Organism', data.Organism.objects.all())
         db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
         db.write_to_json('Protein', data.Protein.objects.all())
         db.write_to_json('Subseq', data.Subseq.objects.all())
-        db.write_to_json('Organism', data.Organism.objects.all())
         db.write_to_json('Profile', data.Profile.objects.all())
         db.write_to_json('Modulo', data.Modulo.objects.all())
         ###
@@ -299,3 +299,36 @@
             if item.genbank == '' and item.definition == '' :
                 item.complete = False
                 item.save()
+
+
+proteins = db.parse_from_json('Protein')
+        for prot in proteins:
+            if prot['genbank'] != '' and prot['definition'] != '':
+                print("updating ", prot['id'], '...')
+                data.Protein.UPDATE(prot)
+
+                
+
+
+                pp = data.Protein.objects.get(id=329)
+        list_deletion = data.PolyProtein.objects.filter(PP=pp)
+        for item in list_deletion:
+            if item.index != 11:
+                item.protein.delete()
+                try:
+                    item.delete()
+                except:
+                    pass
+            
+        db.write_to_json('Organism', data.Organism.objects.all())
+        db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
+        
+
+
+        virus_add_list = ['BatCoV_HK4_pp1ab.gp.json', 'BatCoV_HK5_pp1ab.gp.json']
+        for file in virus_add_list:
+            with open(os.path.join(settings.WIP_DIR, "outdata", file)) as handle:
+                content = json.loads(handle.read())
+                data.Organism.ADD(content)
+
+        

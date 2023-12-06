@@ -46,15 +46,9 @@ class Main(TemplateView):
 
 
     def fixing_starting_points(request):
-
-        proteins = db.parse_from_json('Protein')
-        for prot in proteins:
-            if prot['genbank'] != '' and prot['definition'] != '':
-                print("updating ", prot['id'], '...')
-                data.Protein.UPDATE(prot)
+        db.write_to_json('Protein', data.Protein.objects.all())
         
         return HttpResponse("C'est Ok !")
-
 
     def index(request):
 
