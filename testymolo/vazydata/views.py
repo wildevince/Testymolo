@@ -75,7 +75,8 @@ class Database(TemplateView):
 
     def index(request, context:dict={}):
         context['numbers'] = Database.paintedByNumbers()
-        
+        resume_last = None
+
         if Database.resume_Organism is not None:
             resume_last = Database.resume_Organism
             context['resume'] = True
@@ -86,28 +87,29 @@ class Database(TemplateView):
                 resume_last = ToDoList[0]
                 Database.resume_Organism = resume_last
 
-        context['object_id'] = resume_last.id
-        org = resume_last.serialize(False)
-        org['id_hide'] = resume_last.id
-        org['name_hide'] = resume_last.name
-        org['abr_hide'] = resume_last.abr
-        org['phylogeny_hide'] = resume_last.phylogeny
-        context['form'] = OrganismForm(initial=org)
-        proteins = data.Protein.objects.filter(organism=resume_last)
-        proteinForm:list = []
-        for prot in proteins:
-            prot_init = prot.serialize(False) 
-            prot_init['id'] = prot.id
-            prot_init['genbank'] = "null" ### debug
-            prot_init['subseqs'] = len(data.Subseq.objects.filter(origin=prot)) 
-            prot_init['fasta'] = '>' + str(prot.header) + '\n' + str(prot.sequence)
-            prot_init['fasta_hide'] = prot_init['fasta']
-            prot_init['genbank_hide'] = prot_init['genbank']
-            prot_init['name_hide'] = prot_init['name']
-            ### 
-            proteinForm.append(ProteinFrom(initial=prot_init))
+        if resume_last:
+            context['object_id'] = resume_last.id
+            org = resume_last.serialize(False)
+            org['id_hide'] = resume_last.id
+            org['name_hide'] = resume_last.name
+            org['abr_hide'] = resume_last.abr
+            org['phylogeny_hide'] = resume_last.phylogeny
+            context['form'] = OrganismForm(initial=org)
+            proteins = data.Protein.objects.filter(organism=resume_last)
+            proteinForm:list = []
+            for prot in proteins:
+                prot_init = prot.serialize(False) 
+                prot_init['id'] = prot.id
+                prot_init['genbank'] = "null" ### debug
+                prot_init['subseqs'] = len(data.Subseq.objects.filter(origin=prot)) 
+                prot_init['fasta'] = '>' + str(prot.header) + '\n' + str(prot.sequence)
+                prot_init['fasta_hide'] = prot_init['fasta']
+                prot_init['genbank_hide'] = prot_init['genbank']
+                prot_init['name_hide'] = prot_init['name']
+                ### 
+                proteinForm.append(ProteinFrom(initial=prot_init))
             #break
-        context["proteinForm"] = proteinForm
+            context["proteinForm"] = proteinForm
         answer = render(request, Database.template_name, context) 
         answer.delete_cookie('ongoing_blastp')
         return answer

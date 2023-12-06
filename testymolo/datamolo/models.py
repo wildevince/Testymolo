@@ -196,8 +196,9 @@ class Protein(models.Model):
     organism = models.ForeignKey(Organism, db_column='abr', on_delete=models.PROTECT)  #FK
     genbank = models.CharField(max_length=20, default="")
     name = models.CharField(verbose_name="used name", max_length=100)
+    definition = models.CharField(verbose_name="designation", max_length=20, default="")
     data_ac = models.PositiveIntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
-    header = models.CharField(max_length=30)  #fasta
+    header = models.CharField(max_length=50)  #fasta
     sequence = models.TextField(blank=True)  #sequence  #fasta
     #codedBy = models.OneToOneField(CDS, verbose_name="coded by", blank=True, on_delete=models.CASCADE) 
     
@@ -211,6 +212,7 @@ class Protein(models.Model):
             "derivedFromPP":item.derivedFromPP,
             "genbank":item.genbank,
             "name":item.name,
+            "definition":item.definition,
             "data_ac":item.data_ac,
             'complete':item.complete,
         }
@@ -245,6 +247,50 @@ class Protein(models.Model):
         else:
             return []
 
+    @staticmethod
+    def ADD(item:dict, can_modify=False, PP:dict=None):
+        item_genbank = item['genbank']
+        if not len(Protein.objects.filter(genbank=item_genbank)) > 0:
+            if can_modify:
+                prot = Protein.objects.get(id=item['id'])
+                prot.derivedFromPP = item['derivedFromPP']
+                prot.genbank = item['genbank']
+                prot.name = item['name']
+                prot.organism = Organism.objects.get(id=item['organism'])
+                prot.header = item['header']
+                prot.sequence = item['sequence']
+                prot.definition = item['definition']
+                prot.complete = True
+                prot.save()
+                print(prot.name, 'has been updated !')
+                if PP:
+                    PolyProtein.UPDATE(PP)
+            else:
+                prot = Protein.objects.create(**item)
+                prot.complete = True
+                prot.save()
+                print(prot.name, 'has been created !')
+                if PP:
+                    PolyProtein.UPDATE(PP)
+
+    @staticmethod
+    def UPDATE(item:dict, PP:dict=None):
+        prot = Protein.objects.get(id=item['id'])
+        prot.derivedFromPP = item['derivedFromPP']
+        prot.genbank = item['genbank']
+        prot.name = item['name']
+        prot.organism = Organism.objects.get(id=item['organism'])
+        prot.header = item['header']
+        prot.sequence = item['sequence']
+        prot.definition = item['definition']
+        prot.complete = True
+        prot.save()
+        print(prot.name, 'has been updated !')
+        if PP:
+            PP['protein'] = prot
+            PolyProtein.UPDATE(PP)
+
+
 class CDS(models.Model):
     #lvl 3
     protein = models.OneToOneField(Protein, verbose_name="protein product", on_delete=models.PROTECT)  #FK
@@ -272,7 +318,7 @@ class CDS(models.Model):
 class PolyProtein(models.Model):
     #lvl 3
     ## association class
-    PP = models.ForeignKey(Protein, related_name="mother", verbose_name="Polyprotein", on_delete=models.CASCADE)  #FK
+    PP = models.ForeignKey(Protein, related_name="mother", verbose_name="Polyprotein", on_delete=models.CASCADE)  #FK  #priority
     protein = models.ForeignKey(Protein, related_name="child", verbose_name="Real Protein", on_delete=models.CASCADE)  #FK
     index = models.PositiveIntegerField()
     start = models.PositiveIntegerField()
@@ -280,7 +326,28 @@ class PolyProtein(models.Model):
     
     ### Vazymolo
     complete = models.BooleanField(default=False)  
-    
+
+    @staticmethod
+    def UPDATE(item:dict):
+        item['PP'] = PolyProtein.objects.get(id=item['PP'])
+        qq:dict = {'PP': item['PP'], 'index':item['index']}
+        result:list = PolyProtein.objects.filter(**qq)
+        if len(result) > 0:
+            if len(result) > 1:
+                for other in result[1:]:
+                    other:PolyProtein
+                    other.delete()
+            pp:PolyProtein = result[0]
+            pp.protein = item['protein']
+            pp.start = item['start']
+            pp.end = item['end']
+            pp.save()
+            print(pp.PP.id, pp.protein.id, ' has been updated !')
+        else:
+            # create
+            PolyProtein.objects.create(**item)
+            print(pp.PP.id, pp.protein.id, ' has been created !')
+
     def serialize(item):
         return {
             "PP":item.PP.id,

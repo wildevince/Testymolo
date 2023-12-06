@@ -20,6 +20,13 @@ def write_to_json(table, objects):
         txt:list = list([json.dumps(item.serialize()) for item in objects])
         handle.write('[\n'+ ',\n'.join(txt) + ']')
 
+def parse_from_json(table:str, temp=True) -> list:
+    if temp:
+        table += ".temp"
+    table += ".json"
+    infile = os.path.join(settings.DATA_DIR, table)
+    with open(infile) as handle:
+        return json.loads(handle.read())
 
 def read_data_1(filename:str):
     with open(os.path.join(data_1_path, filename+".csv")) as handle:

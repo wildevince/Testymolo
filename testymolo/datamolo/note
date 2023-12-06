@@ -294,3 +294,8 @@
         for item in prot_to_delete:
             item.delete()
         
+
+        for item in data.Protein.objects.all():
+            if item.genbank == '' and item.definition == '' :
+                item.complete = False
+                item.save()
