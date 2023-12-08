@@ -331,4 +331,53 @@ proteins = db.parse_from_json('Protein')
                 content = json.loads(handle.read())
                 data.Organism.ADD(content)
 
+        old_org = data.Organism.objects.get(id = 227859)
+        new_org = data.Organism.objects.get(id = 227984)
+        result = data.Protein.objects.filter(organism=old_org)
+        for prot in result:
+            prot.organism = new_org
+            prot.save()
+        old_org.delete()
+
+
+for prot in data.Protein.objects.filter(genbank=""):
+            if prot.genbank == '':
+                prot.complete = False
+                prot.save()
+
+    
+    nsp4_murinehepatitis = {
+            'isPP':False, 'derivedFromPP':True,
+            'organism': data.Organism.objects.get(id=11138),
+            'genbank': "YP_009915691.1",
+            'name': 'nsp4', 'definition':'nsp4',
+            'data_ac':0,
+            'header': "nsp4__(@YP_009915691)",
+            'sequence': "RAFGDYTSVVVINVIVWCINFLMLFVFQVYPTLSCLYACFYFYTTLYFPSEISVVMHLQWLVMYGAIMPLWFCIIYVAVVVSNHALWLFSYCRKIGTEVRSDGTFEEMALTTFMITKESYCKLKNSVSDVAFNRYLSLYNKYRYFSGKMDTAAYREAACSQLAKAMETFNHNNGNDVLYQPPTASVTTSFLQ"
+        }
+        pp_4 = {
+            'PP': data.Protein.objects.get(id=31) , 
+            'index':4, 'start':3142, 'end':3333
+        }
         
+        pp_4['protein'] = data.Protein.ADD(nsp4_murinehepatitis)
+        data.PolyProtein.UPDATE(pp_4)
+
+        proteins = db.parse_from_json('Protein')
+        for prot in proteins:
+            data.Protein.UPDATE(prot)
+        
+        db.write_to_json('Organism', data.Organism.objects.all())
+        db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
+        db.write_to_json('Protein', data.Protein.objects.all())
+
+pps = db.parse_from_json('PolyProtein')
+        data.PolyProtein.LOAD(pps)
+        db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
+
+    org = data.Organism.objects.get(id=11120)
+        for prot in data.Protein.objects.filter(organism= org):
+            prot.complete = False
+            prot.save()
+        
+        WRITE()

@@ -100,12 +100,13 @@ class Database(TemplateView):
             for prot in proteins:
                 prot_init = prot.serialize(False) 
                 prot_init['id'] = prot.id
-                prot_init['genbank'] = "null" ### debug
+                #prot_init['genbank'] = "null" ### debug
                 prot_init['subseqs'] = len(data.Subseq.objects.filter(origin=prot)) 
                 prot_init['fasta'] = '>' + str(prot.header) + '\n' + str(prot.sequence)
                 prot_init['fasta_hide'] = prot_init['fasta']
                 prot_init['genbank_hide'] = prot_init['genbank']
                 prot_init['name_hide'] = prot_init['name']
+                prot_init['definition_hide'] = prot_init['definition']
                 ### 
                 proteinForm.append(ProteinFrom(initial=prot_init))
             #break
@@ -163,19 +164,21 @@ class Database(TemplateView):
         if request.method == "POST":
             form = ProteinFrom(request.POST)
             if form.is_valid():
-                _id = form.cleaned_data['id']
-                _subseqs = form.cleaned_data['subseqs']
-                _fasta = form.cleaned_data['fasta']
-                _isPP = form.cleaned_data['isPP']
-                _derivedFromPP = form.cleaned_data['derivedFromPP']
+                _id:int = form.cleaned_data['id']
+                _subseqs:int = form.cleaned_data['subseqs']
+                _fasta:str = form.cleaned_data['fasta']
+                _isPP:bool = form.cleaned_data['isPP']
+                _derivedFromPP:bool = form.cleaned_data['derivedFromPP']
                 _organism = form.cleaned_data['organism']
-                _genbank = form.cleaned_data['genbank']
-                _name = form.cleaned_data['name']
-                _data_ac = form.cleaned_data['data_ac']
+                _genbank:str = form.cleaned_data['genbank']
+                _name:str = form.cleaned_data['name']
+                _definition:str = form.cleaned_data['definition']
+                _data_ac:int = form.cleaned_data['data_ac']
 
-                _fasta_hide = form.cleaned_data['fasta_hide']
-                _genbank_hide = form.cleaned_data['genbank_hide']
-                _name_hide = form.cleaned_data['name_hide']
+                _fasta_hide:str = form.cleaned_data['fasta_hide']
+                _genbank_hide:str = form.cleaned_data['genbank_hide']
+                _name_hide:str = form.cleaned_data['name_hide']
+                _definition_hide:str = form.cleaned_data['definition_hide']
 
                 print(_id,_subseqs,_fasta[:5],_isPP,_derivedFromPP,str(_organism),_genbank,_name,_data_ac )
                 print(_name_hide, _genbank_hide, _fasta_hide[:5])
@@ -192,6 +195,9 @@ class Database(TemplateView):
                 if not (_name == _name_hide):
                     print("changes: name")
                     prot.name = _name
+                if not (_definition == _definition_hide):
+                    print("changes: definition")
+                    prot.definition = _definition
 
                 prot.complete = True
                 prot.save()

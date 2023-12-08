@@ -46,8 +46,16 @@ class Main(TemplateView):
 
 
     def fixing_starting_points(request):
-        db.write_to_json('Protein', data.Protein.objects.all())
-        
+        def LOAD_protein():
+            proteins = db.parse_from_json('Protein')
+            for prot in proteins:
+                data.Protein.UPDATE(prot)
+        def WRITE():
+            db.write_to_json('Organism', data.Organism.objects.all())
+            db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
+            db.write_to_json('Protein', data.Protein.objects.all())
+
+        #
         return HttpResponse("C'est Ok !")
 
     def index(request):

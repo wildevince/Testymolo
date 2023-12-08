@@ -25,12 +25,14 @@ class ProteinFrom(forms.Form):
     organism = forms.ModelChoiceField(queryset=data.Organism.objects.all(), required=False)
     genbank = forms.CharField(max_length=20, required=False)
     name = forms.CharField(max_length=100, required=False)
+    definition = forms.CharField(max_length=20, required=False)
     data_ac = forms.IntegerField(required=False)
     complete = forms.BooleanField(required=False)
 
     fasta_hide = forms.CharField(label='hide', required=False, widget=forms.HiddenInput)
     genbank_hide = forms.CharField(label='hide', max_length=20, required=False, widget=forms.HiddenInput)
     name_hide = forms.CharField(label='hide', max_length=100, required=False, widget=forms.HiddenInput)
+    definition_hide = forms.CharField(label='hide', max_length=100, required=False, widget=forms.HiddenInput)
 
 """
 class ProteinFrom(forms.ModelForm):

@@ -177,7 +177,7 @@ class Organism(models.Model):
             pp['protein'] = proteins[pp['protein']]
             PolyProtein.objects.create(**pp)
 
-
+    
 class Genome(models.Model):
     #lvl 2
     name = models.CharField(max_length=50, blank=True)
@@ -329,7 +329,8 @@ class PolyProtein(models.Model):
 
     @staticmethod
     def UPDATE(item:dict):
-        item['PP'] = PolyProtein.objects.get(id=item['PP'])
+        if isinstance(item['PP'], int) :
+            item['PP'] = PolyProtein.objects.get(id=item['PP'])
         qq:dict = {'PP': item['PP'], 'index':item['index']}
         result:list = PolyProtein.objects.filter(**qq)
         if len(result) > 0:
@@ -347,6 +348,19 @@ class PolyProtein(models.Model):
             # create
             PolyProtein.objects.create(**item)
             print(pp.PP.id, pp.protein.id, ' has been created !')
+
+    @staticmethod
+    def CLEAR():
+        PolyProtein.objects.all().delete()
+    
+    @staticmethod
+    def LOAD(indata:list):
+        PolyProtein.CLEAR()
+        #indata (json -> list[dict])
+        for item in indata:
+            item['PP'] = Protein.objects.get(id=item['PP'])
+            item['protein'] = Protein.objects.get(id=item['protein'])
+            PolyProtein.objects.create(**item)
 
     def serialize(item):
         return {
