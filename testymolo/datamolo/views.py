@@ -17,6 +17,7 @@ import datamolo.tasks as tasks
 
 import datamolo.models as data
 
+from VazySearch.views import SearchEngine
 
 
 # Create your views here.
@@ -90,6 +91,8 @@ class Main(TemplateView):
 
         else:
             Main.new_session(request)
+
+        context['searchForm'] = SearchEngine.searchForm()
 
         return render(request, Main.template_name, context)
 
@@ -232,13 +235,6 @@ class Main(TemplateView):
         response.delete_cookie('tempFasta')
         return response
         
-
- 
-
-
-
-
-
 
     # works !
     def download(request):

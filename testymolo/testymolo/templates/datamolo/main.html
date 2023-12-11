@@ -20,7 +20,7 @@
 
 
     <div id="mainfocus" class='frame'>
-        <button class="session-button" id="random-button" onclick="updateSection_figure()" >Random</button>
+        {% include "vazysearch/searchForm.html" with searchForm=searchForm %}
         <button class="session-button" id="refresh-button" onclick="session_refresh()" >Refresh</button>
         <button class="session-button" id="excecute-button" ><a href="{% url 'execute' %}">Excecute</a></button>
         <div id="loadingFigure" class="frame" >{{ Protein }}</div>

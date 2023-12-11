@@ -1,4 +1,5 @@
 from os import path
+import json
 
 from django.db import models
 from django.utils import timezone
@@ -476,18 +477,5 @@ class Annotation(models.Model):
     
     ### Vazymolo
     complete = models.BooleanField(default=False)  
-    
 
-
-"""
-class Protein_alt(models.Model):
-    
-    ### line number in multifasta file
-    id = models.IntegerField(primary_key=True, verbose_name="intern accession number")  #PK 
-
-    organism = models.ForeignKey(Organism, on_delete=models.PROTECT)  #FK
-    
-    name = models.CharField(verbose_name="used name", max_length=100)
-    
-    data_ac = models.IntegerField(verbose_name="VAZyMolO 1 CAZy_DB_id")  #old  #safeKeeping
-"""
+   

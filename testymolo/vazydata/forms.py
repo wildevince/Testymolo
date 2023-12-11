@@ -1,4 +1,3 @@
-from django.db import models
 from django import forms
 
 import datamolo.models as data

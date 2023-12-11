@@ -381,3 +381,7 @@ pps = db.parse_from_json('PolyProtein')
             prot.save()
         
         WRITE()
+
+
+
+<button class="session-button" id="random-button" onclick="updateSection_figure()" >Random</button>
