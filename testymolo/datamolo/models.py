@@ -77,7 +77,7 @@ class Modulo(models.Model):
     ### ex: "#.#.#.#" ExplorEnz EC classification
 
     ModuloFamily_choice = (
-        ("UNK", "unkwnow"),
+        ("UNK", "unknown"),
         ("S", "surface"),
         ('F', "functional"),
         ('DISF', "disorder functional"),
@@ -118,6 +118,32 @@ class Modulo(models.Model):
             "moduloFamily":item.moduloFamily,
             "complete":item.complete
         }
+    
+    @staticmethod
+    def SEARCH(kw:str) -> list :
+        #return list[tuple(item, score)]
+        result:list = []
+        for item in Modulo.objects.all():
+            score = item.search(kw)
+            if score > 0.1:
+                result.append(item, score)
+        return result.sort()
+    
+    def search(self, kw:str) -> float:
+        #return score
+        score:int = 0
+        for k,w in self.ModuloFamily_choice:
+            if kw == k:
+                score += 1
+                return score
+            elif k.startswith(kw):
+                score += 0.33 
+            elif kw in w:
+                score += 0.125
+        return score
+
+
+
 
 
 class Profile(models.Model):
@@ -148,6 +174,7 @@ class Organism(models.Model):
     id = models.IntegerField(verbose_name="Tax_id", primary_key=True)  # Tax_id[PK](int)
     name = models.CharField(verbose_name="scientific name", max_length=100)  # realname (str)
     abr = models.CharField(verbose_name="abbreviate name", max_length=25)  # shortname (str)
+    group = models.CharField(verbose_name="classification", max_length=50)  # shorten used classification
     phylogeny = models.CharField(max_length=200)  # phylogeny absolute path
 
     ### Vazymolo
@@ -158,11 +185,50 @@ class Organism(models.Model):
             "id":item.id,
             "name":item.name,
             "abr":item.abr,
+            'group':item.group,
             "phylogeny":item.phylogeny,
         }
         if complete :
             result['complete'] = item.complete
         return result
+    
+    @staticmethod
+    def SEARCH(kw:str) -> list :
+        #return list[tuple(item, score)]
+        result:list = []
+        for item in Modulo.objects.all():
+            score = item.search(kw)
+            if score > 0.1:
+                result.append(item, score)
+        return result.sort()
+    
+    def search(self, kw:str) -> float:
+        #return score
+        score:int = 0
+
+        if kw == str(self.id):
+            score += 1
+            return score
+        
+        if kw == self.group:
+            score += 0.33
+        elif self.group.startswith(kw):
+            score += 0.125
+
+        if kw == self.group:
+            score += 0.33
+        elif self.group.startswith(kw):
+            score += 0.125
+
+        for k,w in self.ModuloFamily_choice:
+            if kw == k:
+                score += 1
+                return score
+            elif k.startswith(kw):
+                score += 0.33 
+            elif kw in w:
+                score += 0.125
+        return score
     
     @staticmethod
     def ADD(indata:dict):
