@@ -8,6 +8,7 @@ from django.conf import settings
 #from django_mysql.models import ArrayField
 
 import datamolo.scr.alignments as align
+import VazySearch.scr as search
 
 
 class Session(models.Model):
@@ -83,7 +84,7 @@ class Modulo(models.Model):
         ('DISF', "disorder functional"),
         ('M', "matrice"),
         ('IHD', "?"),
-        ('HD', "??"),
+        ('HD', "hydrophobic domain"),
         ('ITM', "???"),
         ('TM', "trans-membrane"),
         ('LNK', "link"),
@@ -132,6 +133,7 @@ class Modulo(models.Model):
     def search(self, kw:str) -> float:
         #return score
         score:int = 0
+        # activity ?
         for k,w in self.ModuloFamily_choice:
             if kw == k:
                 score += 1
@@ -140,9 +142,7 @@ class Modulo(models.Model):
                 score += 0.33 
             elif kw in w:
                 score += 0.125
-        return score
-
-
+        return max(score,1)
 
 
 
@@ -203,32 +203,30 @@ class Organism(models.Model):
         return result.sort()
     
     def search(self, kw:str) -> float:
-        #return score
-        score:int = 0
+        score:float = 0
 
+        # id
         if kw == str(self.id):
             score += 1
             return score
         
-        if kw == self.group:
-            score += 0.33
-        elif self.group.startswith(kw):
-            score += 0.125
+        # group
+        align_group:float = search.word_aligner(self.group, kw)
+        score += ( 0.20 * align_group )
+        
+        # name
+        align_name:float = search.word_aligner(self.name, kw)
+        score += ( 0.35 * align_name )
 
-        if kw == self.group:
-            score += 0.33
-        elif self.group.startswith(kw):
-            score += 0.125
+        # abr
+        align_abr:float = search.word_aligner(self.abr, kw, True)
+        score += ( 0.55 * align_abr)
+        
+        # phylo 
+        align_phylo:float = search.taxo_aligner(self.phylogeny, kw)
+        score += align_phylo
 
-        for k,w in self.ModuloFamily_choice:
-            if kw == k:
-                score += 1
-                return score
-            elif k.startswith(kw):
-                score += 0.33 
-            elif kw in w:
-                score += 0.125
-        return score
+        return max(score, 1,0)
     
     @staticmethod
     def ADD(indata:dict):
@@ -296,7 +294,44 @@ class Protein(models.Model):
             result['organism'] = item.organism
             result['fasta'] = item.header + '\n' + item.sequence
         return result
+
+    @staticmethod
+    def SEARCH(kw:str) -> list :
+        #return list[tuple(item, score)]
+        result:list = []
+        for item in Modulo.objects.all():
+            score = item.search(kw)
+            if score > 0.1:
+                result.append(item, score)
+        return result.sort()
     
+    def search(self, kw:str) -> float:
+        score:float = 0
+
+        # isPP
+        align_PP:float = search.word_aligner('polyprotein', kw)
+        score += ( 0.5 * align_PP )
+
+        # genkank
+        score_genbank = 1 if kw == self.genbank.split('.')[0] else 0
+        score += score_genbank
+
+        # name
+        align_name:float = search.word_aligner(self.name, kw)
+        score += ( 0.35 * align_name )
+
+        # definition
+        align_def:float = search.word_aligner(self.definition, kw, True)
+        score += ( 0.35 * align_def)
+
+        # sequence search for motifs
+        regex_motif:bool = search.search_motif(kw, self.sequence)
+        regex_motif_score:float = 1.0
+        score += regex_motif_score
+
+        return max(score, 1,0)
+    
+
     def random():
         import random
         PROTEINS = Protein.objects.filter(derivedFromPP=False)
