@@ -114,3 +114,10 @@
         -> main: "IbsCharts.js"
 
     + TnT (PMID: 27153646)
+
+
+    CDsearch : conserved domains search
+    https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi
+
+    deepfri : machine leaning structure-function protein prediction (input=structure)
+    https://beta.deepfri.flatironinstitute.org/workspace/C5AGWN
