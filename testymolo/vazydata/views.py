@@ -93,6 +93,7 @@ class Database(TemplateView):
             org['id_hide'] = resume_last.id
             org['name_hide'] = resume_last.name
             org['abr_hide'] = resume_last.abr
+            org['group_hide'] = resume_last.group
             org['phylogeny_hide'] = resume_last.phylogeny
             context['form'] = OrganismForm(initial=org)
             proteins = data.Protein.objects.filter(organism=resume_last)
@@ -124,14 +125,16 @@ class Database(TemplateView):
                 _id_hide = form.cleaned_data['id_hide']
                 _name_hide = form.cleaned_data['name_hide']
                 _abr_hide = form.cleaned_data['abr_hide']
+                _group_hide = form.cleaned_data['group_hide']
                 _phylogeny_hide = form.cleaned_data['phylogeny_hide']
                 #
                 _id = form.cleaned_data['id']
                 _name = form.cleaned_data['name']
                 _abr = form.cleaned_data['abr']
+                _group = form.cleaned_data['group']
                 _phylogeny = form.cleaned_data['phylogeny']
 
-                print(_id_hide, _name_hide, _abr_hide, _phylogeny_hide[-5:])
+                print(_id_hide, _name_hide, _abr_hide, _group_hide, _phylogeny_hide[-5:])
                 print(_id, _name, _abr, _phylogeny[-5:])
                 org = data.Organism.objects.get(id=_id_hide)
                 if not (_id == _id_hide): # taxid changed !
@@ -145,6 +148,9 @@ class Database(TemplateView):
                 if not (_abr == _abr_hide):
                     print("changed", _abr_hide, 'into', _abr)
                     org.abr = _abr
+                if not (_group == _group_hide):
+                    print('changed', _group_hide, 'into', _group)
+                    org.group = _group
                 if not (_phylogeny == _phylogeny_hide):
                     print("changed", _phylogeny_hide[-10:], 'into', _phylogeny[-10:])
                     org.phylogeny = _phylogeny

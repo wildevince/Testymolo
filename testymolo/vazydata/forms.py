@@ -7,11 +7,13 @@ class OrganismForm(forms.Form):
     id = forms.IntegerField()
     name = forms.CharField()
     abr = forms.CharField(max_length=25)
+    group = forms.CharField(max_length=50)
     phylogeny = forms.CharField(max_length=200)
     
     id_hide = forms.IntegerField(label='hide', widget=forms.HiddenInput)
     name_hide = forms.CharField(label='hide', max_length=100, widget=forms.HiddenInput)
     abr_hide = forms.CharField(label='hide', max_length=25, widget=forms.HiddenInput)
+    group_hide = forms.CharField(label='hide', max_length=50, widget=forms.HiddenInput)
     phylogeny_hide = forms.CharField(label='hide', max_length=200, widget=forms.HiddenInput)
 
     

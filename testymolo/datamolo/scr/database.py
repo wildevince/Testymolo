@@ -148,7 +148,13 @@ def parse_blastp_outfile(outfile:str) -> list:
                 definition = hit.hit_def
                 start = hit.hsps[0].sbjct_start
                 end = hit.hsps[0].sbjct_end
-                align_length = hit.hsps[0].align_length
+                query_length = record.query_length 
+                query_end = hit.hsps[0].query_end
+                query_start = hit.hsps[0].query_start
+                hit_length = hit.length
+                align_length = hit.hsps[0].align_length 
+                _query_coverage = str('{:10.2f}'.format((query_end-query_start+1)*100.0/query_length)).strip()
+                _hit_coverage = str('{:10.2f}'.format((end-start+1)*100.0/hit_length)).strip()
                 identities = hit.hsps[0].identities
                 _identities = str('{:10.2f}'.format(identities*100.0/align_length)).strip()
                 positives = hit.hsps[0].positives
@@ -158,7 +164,11 @@ def parse_blastp_outfile(outfile:str) -> list:
                     'id': id,
                     'start': start,
                     'end': end,
+                    'query_length':query_length,
+                    'hit_length':hit_length,
                     'align_length': align_length,
+                    'query_coverage':_query_coverage,
+                    'hit_coverage':_hit_coverage,
                     'identities': identities,
                     'Identities': _identities,
                     'positives': positives,
