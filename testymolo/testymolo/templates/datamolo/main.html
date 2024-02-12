@@ -26,31 +26,40 @@
         <div id="loadingFigure" class="frame" >{{ Protein }}</div>
     </div>
 
+    {% if Module %}
     <div id="modulecard" class='frame'>{{ Module }}</div>
+    {% endif %}
 
+    {% if ProfileLogo %}
     <div id="loadingProfile" class="frame" >{{ ProfileLogo }}</div>
+    {% endif %}
 
+    {% if proteins %}
     <div id="mainminus" class='frame'>{{ proteins }}</div>
+    {% endif %}
 
+    {% if Phylo %}
     <div id="phylofocus" class='frame'>{{ Phylo }}
         <p>Taxonomy Tree</p>
         <div id='demo'></div>
         <script src="https://unpkg.com/@phylocanvas/phylocanvas.gl@latest/dist/bundle.min.js"></script>
-
     <script>
-    const tree = new phylocanvas.PhylocanvasGL(
-    document.querySelector("#demo"),
-      {
-        size: { width: 400, height: 300 },
-        source: `(((A:1,B:1):1,C:1):1,((D:1,E:1):1,F:1):1);`,
-        type: phylocanvas.TreeTypes.Rectangular,
-      },
-    );
+      /*
+      const tree = new phylocanvas.PhylocanvasGL(
+        document.querySelector("#demo"),
+        {
+          size: { width: 400, height: 300 },
+          source: `(((A:1,B:1):1,C:1):1,((D:1,E:1):1,F:1):1);`,
+          type: phylocanvas.TreeTypes.Rectangular,
+        },
+      );
+      */
     // (((A:1,B:1):1,C:1):1,((D:1,E:1):1,F:1):1);
     // ((((RubellaV):3,(VEEV):2):1,((KamitiRivV):1,HCV1a-H77:1,(Apoi[ApMAR]:1,RioBravoV[RiMAR]:1,Dengue_2:1,Tick-borneEV:1,YellowFV:1,JEV:1,(AlkhurmaV[1176]):1,LangatV[TP21]:1,LoupingIV[369/T2]:1,ModocV[M544]:1,MMLEV:1,MurrayValleyEV:1,West-NileV:1,OHFV:1,PowassanV[LB]:1,YokoseV[Oita36]:1):1,HGBV_A:1,(PV1[NADL]:1,(PV3 [X818]:1,PV-reindeer:1):1,PV2[Eystrup]:1,BVDV_2[C413]:1,PV-giraffe:1):1):1):1,((SCNV-20S-RNA-W[37-4C]):3,(((CPMV1[NB631]):1,OMV3a:1):1,(On-uMV4-Ld:1,On-uMV5-Ld:1,On-uMV6-Ld:1):1):1):1,(((MirafioriLV):4,((BornaV):1,((EbolaV):1,(EbV-Reston:1,None:1):1,MarburgV:1):1,(((AvianPV6):1,(NDV):1,GoosePVSF02:1):1,(Fer-lanceV:1,NipahV:1,CDV:1,(MossmanV:1,TupaiaV:1):1,SendaiV:1):1,(SPiV41-T/C:1,(TiomanV):1):1):1,((HmetaPV):1,(BRSV:1,HRSV:1):1):1,(((BEFV):1,RabiesV:1,SVCV:1,(VSVindiana:1,VSVindiana:1):1):1,((RiceYellowSV):1,(SYNV):1,NCMV:1):1,(HirameRV[CA 9703]):1):1):1):1,(((LCV[A_53b]):1,(AndesV[Chile]):2,(DugbeV):1,(BunyamweraV:1,LaCrosseV[Hu78]:1):1,((RiftValleyFV[MM12]):1,RGSV:1):1,(WSMV):1):1,((InfluAV[PR/8/34]):1,(InfluBV[B/Lee/40]):1):1):1):1,((((EAV):2,(SHFV):3,((PRRSV):2,(LDV-NV_C):1):1):1,((HCoV-229E:1,PEDV[CV777]:1,(TGV[Purdue]):1):1,((HCoV-OC43:1,MHV[A59]:1):1,SARS-TOR2:1):1,(AIBV[Beaudette]):2):1):1,((ERAV:1,(EMCV:1,None:1):1,(ERBV-1):1,TV-A:1):1,(BEV:1,Sapelovirus A:1):1,(HAV:1,Tremovirus A:1):1,(Aiv):1,(None):1,SPV-1:1):1):1);
     // `(Bovine:0.69395,(Gibbon:0.36079,(Orangutan:0.33636,(Gorilla:0.17147,(Chimp:1.19268,Human:0.11927):0.08386):0.06124):0.15057):0.54939,Mouse:1.21460);`
   </script>
     </div>
+    {% endif %}
 
 {% endblock %}
 

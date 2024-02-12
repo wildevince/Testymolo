@@ -258,7 +258,7 @@ def generate_mainfigure_protein(protein:data.Protein, showhide_allnsp:bool=False
             chtext:bool = False
             chlvl:int = 0
 
-            html['subseq']:list = []
+            html['subseq'] = []
             for sseq_i in range(len(protein['subseq'])):
                 html['subseq'].append(self.Subseq(protein, sseq_i, xi, yi, wi, hi, chtext, chlvl))
                 #pass
@@ -355,7 +355,7 @@ def generate_mainfigure_protein(protein:data.Protein, showhide_allnsp:bool=False
                 inputdata = [*inputdata, *nsps]
 
             for i in range(len(inputdata)):
-                inputdata[i]['subseq']:list = []
+                inputdata[i]['subseq'] = []
 
                 for item in data.PolyProtein.objects.filter(protein=inputdata[i]['id']):
                     inputdata[i]['start'] = item.start

@@ -9,7 +9,15 @@ from django.db import models
 # Create your models here.
 class SearchQuery(models.Model):
         
+    options_choices = (
+        ('keywords', 'keywords'),
+        ('DB_ac', 'DB_ac'),
+        ('protein_id', 'protein_id'),
+        ('Modulo', 'Modulo'),
+    )
+
     query = models.CharField(max_length=200, verbose_name="keywords")
+    option = models.CharField(max_length=25, choices=options_choices, default='DB_ac')
 
     @staticmethod
     def get_query(query:str):

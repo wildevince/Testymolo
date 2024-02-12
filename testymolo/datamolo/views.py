@@ -45,7 +45,7 @@ class Main(TemplateView):
         response.delete_cookie('tempFasta')
         return response
 
-
+    
     def fixing_starting_points(request):
         def LOAD_protein():
             proteins = db.parse_from_json('Protein')
@@ -59,26 +59,70 @@ class Main(TemplateView):
         #
         return HttpResponse("C'est Ok !")
 
+    def get_mainProtein_from_searchEngine(request, *args, **kwargs):
+        context:dict = kwargs.get('context', {})
+        
+        # generate protein figure
+        if 'DB_ac' in kwargs:
+            DB_ac = kwargs['DB_ac']
+            proteins = data.Protein.objects.filter(data_ac=DB_ac, derivedFromPP=False)
+            protein_id:int = proteins[0].id
+        elif 'protein_id' in kwargs:
+            protein_id = kwargs['protein_id']
+            proteins = data.Protein.objects.filter(id=protein_id)
+        protein = data.Protein.objects.get(id=protein_id)
+        context['Protein'] = Main.generate_mainfigure_protein(protein)
+
+        # check SESSION
+        sessionID = request.COOKIES.get('session')
+        new_session:bool = True
+        if not sessionID:
+            SESSION = data.Session.objects.create()
+        else:
+            SESSION = data.Session.objects.get(id=sessionID)
+            new_session = False
+        context['SESSION'] = SESSION
+        SESSION.protein = protein.id
+        SESSION.save()
+
+        # render HTML
+        print('searchEngine result', protein_id)
+        context['searchForm'] = SearchEngine.searchForm()
+        responseHTML = render(request, Main.template_name, context)
+        if new_session:
+            responseHTML.set_cookie('session', SESSION.id)
+            responseHTML.delete_cookie('tempFasta')
+        return responseHTML
+    
     def index(request):
 
         context:dict = {}
 
         sessionID = request.COOKIES.get('session')
+        new_session:bool = True
         if(sessionID):
             SESSION = data.Session.objects.get(id=sessionID)
+            new_session = False
             context['SESSION'] = SESSION
+            print('session', SESSION.id)
             
             if(SESSION.protein):
+                print('session protein.id', SESSION.protein)
                 protein_id = SESSION.protein
                 protein = data.Protein.objects.get(id=protein_id)
-                context['Protein'] = Main.generate_mainfigure_protein(protein)
+            else:
+                protein = data.Protein.random()
+                print('random protein.id', protein.id)
+                pass
 
-                if(SESSION.subseq):
-                    SESSION.module = None
-                    SESSION.subseq = None
+            context['Protein'] = Main.generate_mainfigure_protein(protein)
+            if(SESSION.subseq):
+                SESSION.module = None
+                SESSION.subseq = None
             
             if(SESSION.proteins):
                 proteins = SESSION.proteins.split(' ')
+                print('proteins', len(proteins))
                 html:str = ""
                 for protein_id in proteins:
                     protein = data.Protein.objects.get(id=protein_id)
@@ -88,16 +132,23 @@ class Main(TemplateView):
             if(SESSION.profile and SESSION.logo_prot_path):
                 #context['ProfileLogo'] = mark_safe(fig.generate_mainfigure_profileLogo(SESSION.logo_prot_path))
                 pass
-
         else:
-            Main.new_session(request)
-
+            SESSION = data.Session.objects.create()
+            context['SESSION'] = SESSION
+        
         context['searchForm'] = SearchEngine.searchForm()
+        responseHTTP = render(request, Main.template_name, context)
 
-        return render(request, Main.template_name, context)
+        if new_session:
+            responseHTTP.set_cookie('session', SESSION.id)
+            responseHTTP.delete_cookie('tempFasta')
+        return responseHTTP
 
-    def generate_mainfigure_protein(protein):
-        return render_to_string(Main.template_mainFigure, {'figure':fig.generate_mainfigure_protein(protein, True)})
+    def generate_mainfigure_protein(protein:data.Protein):
+        return render_to_string(Main.template_mainFigure, {
+            #'Protein':fig.generate_mainfigure_protein(protein, True) #new #broken
+            'Protein':fig.generate_mainfigure_protein_old(protein) #old
+            })
 
     def load_mainfigure_protein(request):
         # AJAX

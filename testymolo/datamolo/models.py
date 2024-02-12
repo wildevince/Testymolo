@@ -38,7 +38,7 @@ class Session(models.Model):
             Subseqs['file'] = path.join(settings.MEDIA_ROOT, 'temp/') + outpath
             item.logo_prot_path = outpath
 
-            Subseqs['subseq']:list = []
+            Subseqs['subseq'] = []
             for subseq in subseqs:
                 Subseqs['subseq'].append({'header': subseq.header() ,'sequence':subseq.sequence()})
 
@@ -331,7 +331,7 @@ class Protein(models.Model):
 
         return max(score, 1,0)
     
-
+    @staticmethod
     def random():
         import random
         PROTEINS = Protein.objects.filter(derivedFromPP=False)
