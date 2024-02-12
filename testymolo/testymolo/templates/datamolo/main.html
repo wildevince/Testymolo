@@ -23,7 +23,8 @@
         {% include "vazysearch/searchForm.html" with searchForm=searchForm %}
         <button class="session-button" id="refresh-button" onclick="session_refresh()" >Refresh</button>
         <button class="session-button" id="excecute-button" ><a href="{% url 'execute' %}">Excecute</a></button>
-        <div id="loadingFigure" class="frame" >{{ Protein }}</div>
+        <div id="loadingFigure" class="frame" >{% include "datamolo/mainFigure_00.html" with figure=Protein %}</div>
+        
     </div>
 
     {% if Module %}

@@ -45,7 +45,7 @@ class Main(TemplateView):
         response.delete_cookie('tempFasta')
         return response
 
-    
+
     def fixing_starting_points(request):
         def LOAD_protein():
             proteins = db.parse_from_json('Protein')
@@ -58,6 +58,7 @@ class Main(TemplateView):
 
         #
         return HttpResponse("C'est Ok !")
+
 
     def get_mainProtein_from_searchEngine(request, *args, **kwargs):
         context:dict = kwargs.get('context', {})
@@ -93,7 +94,8 @@ class Main(TemplateView):
             responseHTML.set_cookie('session', SESSION.id)
             responseHTML.delete_cookie('tempFasta')
         return responseHTML
-    
+
+
     def index(request):
 
         context:dict = {}
@@ -144,11 +146,14 @@ class Main(TemplateView):
             responseHTTP.delete_cookie('tempFasta')
         return responseHTTP
 
-    def generate_mainfigure_protein(protein:data.Protein):
-        return render_to_string(Main.template_mainFigure, {
-            #'Protein':fig.generate_mainfigure_protein(protein, True) #new #broken
-            'Protein':fig.generate_mainfigure_protein_old(protein) #old
-            })
+
+    def generate_mainfigure_protein(protein:data.Protein) -> dict:
+        """ Calculate all parameters of each feature of the given protein into a dict \\
+            It is passed to a sub-template included in the Main template """
+        return fig.generate_mainfigure_protein(protein, True) #new #broken
+        #return render_to_string(Main.template_mainFigure, {'figure':fig.generate_mainfigure_protein(protein, True)}) #new #broken
+        #return {'Protein': fig.generate_mainfigure_protein_old(protein)}
+
 
     def load_mainfigure_protein(request):
         # AJAX
