@@ -113,7 +113,7 @@ def generate_minusfigure_protein(protein:data.Protein):
 
     return "<div class='figure'>"+html+"</div>"
 
-def generate_mainfigure_profile(data:dict):
+def generate_mainfigure_profile_old(data:dict):
     msa:list = []   
     with open(data["outfile_path"]) as handle:
         for record in SeqIO.parse(handle, format="fasta"):
@@ -175,6 +175,56 @@ def generate_mainfigure_profile(data:dict):
     html += "</div>"
     return html 
 
+####################################################
+### profile - version 2.0
+class Profile:
+    
+    def __init__(self, filepath:str) -> None:
+        msa:list = []
+        with open(filepath) as handle:
+            for record in SeqIO.parse(handle, format='fasta'):
+                msa.append({'header': record.description, 'sequence':str(record.seq)})
+        self.N:int = len(msa) #number of sequences
+        self.L:int = len(msa[0]["sequence"]) #length of alignment
+        self.ruler:list = []
+        for l in range(self.L):
+            l += 1
+            if(l%10 == 0):
+                self.ruler.append({'i':l, 'v':'|'})
+            elif(l%5 == 0):
+                self.ruler.append({'i':l, 'v':'-'})
+            else:
+                self.ruler.append({'i':l, 'v':'_'})
+        
+        # MSA
+        self.icons:list = []
+        self.origin:list = []
+        self.headers:list = []
+        self.profile:list = []
+        for record in msa:
+            subseq_id:str = record['header']
+            subseq_id = subseq_id.split('@')[-1].split('.')[-1].split(')')[0]
+            sequence:list = []
+            p = 0  # real position
+            for n in range(1, len(record['sequence'])+1):  # aligned position
+                residue = record['sequence'][n-1]
+                if residue != '-':  # is not gap
+                    p += 1
+                sequence.append({'residue':residue, 'realPos':p, 'alignedPos':n})
+            
+            self.icons.append({'id':subseq_id})
+            self.origin.append({'origin':'null'})
+            self.headers.append({'id':subseq_id, 'header':record['header']})
+            self.profile.append({'id':subseq_id, 'sequence':sequence})
+
+    def Display(self):
+        return {'ruler': self.ruler, 'L': self.L, 'icons':self.icons, 'origin':self.origin, 'headers':self.headers, 'profile':self.profile}
+        
+def generate_mainfigure_profile(outfile_path:str):
+    print("generate_mainfigure_profile --version 2.0")
+    profile = Profile(outfile_path)
+    return profile.Display()
+    
 
 ##########################################################################################################################
 ### main figure version 2.0

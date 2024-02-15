@@ -1,30 +1,32 @@
 {% if profile %}
 <div class='msa'>
+
     <div class='icons' >
         <span class='whitespace'>_</span>
         <span class='whitespace'>_</span>
-        <div class='headers' >
-            <span class='residue' >Records:</span>
-            <span class='whitespace'>_</span>
-            <div >
-                <div class='scroll_values' >
-                    <span id='start' >1</span>
-                    <span id='middle' >
-                        <span class='whitespace'>_</span>
-                    </span>
-                    <span id='end' >{L}</span>
-                </div>
-                <div class='sequences' >
-                    <span class='sequence' >
-                    {% for rule in profile.ruler %}
-                        {% if rule.v == '_' %}
-                        <span class='whitespace' title={{ rule.i }} >_</span>
-                        {% else %}
-                        <span title={{ rule.i }} >{{ rule.v }}</span>
-                        {% endif %}
-                    </span> 
-                </div>
-            </div>
+        {% for icon in profile.icons %}
+        <span class='sequence_selected_icon' subseq={{ icon.id }}><span class='whitespace'>_</span></span>
+        {% endfor %}
+    </div>
+    
+    <div class='headers' >
+        <span class='residue' >Records:</span>
+        <span class='whitespace'>_</span>
+        {% for header in profile.headers %}
+        <span class='header' subseq={{ header.id }} >{{ header.header }}</span>
+        {% endfor %}
+    </div>
+    <div >
+        <div class='scroll_values' >
+            <span id='start' >1</span>
+            <span id='middle' >
+                <span class='whitespace'>_</span>
+            </span>
+            <span id='end' >{{ profile.L }}</span>
+        </div>
+        <div class='sequences' >
+            <span class='sequence' >{% for rule in profile.ruler %}{% if rule.v == '_' %}<span class='whitespace' title={{ rule.i }} >_</span>{% else %}<span title={{ rule.i }} >{{ rule.v }}</span>{% endif %}{% endfor %}</span>
+            {% for seq in profile.profile %}<span class='sequence' subseq={{ seq.id }}>{% for residue in seq.sequence %}<span class='residue' data-residue={{ residue.residue }} realpos={{ residue.realPos }} alignedpos={{ residue.alignedPos }} title="{{ residue.realPos }}-{{ residue.alignedPos }}">{{ residue.residue }}</span>{% endfor %}</span>{% endfor %}
         </div>
     </div>
 </div>

@@ -26,6 +26,7 @@ class Main(TemplateView):
     template_name = os.path.join("datamolo", "main.html")
     moduleCard_template = os.path.join("datamolo", "moduleCard.html")
     template_mainFigure = os.path.join("datamolo", "mainFigure_00.html")
+    template_mainProfile = os.path.join("datamolo", "mainProfileFigure_00.html")
 
 
     def new_session(request):
@@ -288,8 +289,9 @@ class Main(TemplateView):
 
     def load_mainfigure_profile(request, tempFasta):
         outfile_path = os.path.join(settings.MEDIA_ROOT, 'temp', tempFasta) + '.out'
-        for_logo:dict = {"outfile_path":outfile_path,'tempFasta':tempFasta}
-        response = HttpResponse(fig.generate_mainfigure_profile(for_logo))
+        outfile_path = outfile_path
+        context = {'profile': fig.generate_mainfigure_profile(outfile_path)}
+        response = render(request, Main.template_mainProfile, context)
         response.delete_cookie('tempFasta')
         return response
         
