@@ -1,0 +1,31 @@
+{% if profile %}
+<div class='msa'>
+    <div class='icons' >
+        <span class='whitespace'>_</span>
+        <span class='whitespace'>_</span>
+        <div class='headers' >
+            <span class='residue' >Records:</span>
+            <span class='whitespace'>_</span>
+            <div >
+                <div class='scroll_values' >
+                    <span id='start' >1</span>
+                    <span id='middle' >
+                        <span class='whitespace'>_</span>
+                    </span>
+                    <span id='end' >{L}</span>
+                </div>
+                <div class='sequences' >
+                    <span class='sequence' >
+                    {% for rule in profile.ruler %}
+                        {% if rule.v == '_' %}
+                        <span class='whitespace' title={{ rule.i }} >_</span>
+                        {% else %}
+                        <span title={{ rule.i }} >{{ rule.v }}</span>
+                        {% endif %}
+                    </span> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

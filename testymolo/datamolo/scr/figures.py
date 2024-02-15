@@ -195,7 +195,8 @@ class Figure():
         if showhide_allnsp:
             N:int = len(self.inputdata)
         else:
-            N:int = len([p for p in self.inputdata if len(p['subseq']) > 0])
+            N:int = len([p for p in self.inputdata if len(p['subseq']) > 0]) 
+            N:int = 2 if N > 1 else 1
         self.HEIGHT += N*(Figure.h0 + Figure.h1)  # [pixel]
         self.HTML_data:dict = {}
 
@@ -243,7 +244,7 @@ class Figure():
 
         #protein name
         x_txt = xi +5
-        y_txt = yi -20
+        y_txt = yi -32
         html['name'] = protein['name']
         html['x_txt'] = x_txt
         html['y_txt'] = y_txt
