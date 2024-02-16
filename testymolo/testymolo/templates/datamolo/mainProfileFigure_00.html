@@ -8,9 +8,15 @@
         <span class='sequence_selected_icon' subseq={{ icon.id }}><span class='whitespace'>_</span></span>
         {% endfor %}
     </div>
-    
+
+    <div class='organism'>
+        <span>Organism:</span>
+        <span class='whitespace'>_</span>
+        {% for org in profile.origin %}<span><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id={{ org.taxid }}">{{ org.abr }}</a></span>{% endfor %}
+    </div>
+            
     <div class='headers' >
-        <span class='residue' >Records:</span>
+        <span class='header' >Records:</span>
         <span class='whitespace'>_</span>
         {% for header in profile.headers %}
         <span class='header' subseq={{ header.id }} >{{ header.header }}</span>

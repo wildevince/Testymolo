@@ -63,9 +63,26 @@ span[arrow='arrow-thick-right'] svg {
 div.msa {
     /*background: lightcyan;*/
     display: inline-flex;
-    margin: 1em;
-    --sequences: 77vw;
+    margin-top: 1em ;
+    /*margin-right: 1em;*/
+    --sequences: 76.1vw;
  }
+
+ div.msa div.organism {
+     position: relative;
+     width: 6vw;
+     padding-bottom: 0.5vw;
+     overflow: scroll;
+}
+
+div.msa div.organism span {
+    display: block ruby;
+    font-family: Anonymous, monospace;
+    margin-bottom: 0.2em;
+}
+div.msa div.organism span a{
+    padding-right: 1em
+}
  
  div.msa div.icons {
      position: relative;
@@ -76,12 +93,15 @@ div.msa {
 
  div.msa div.headers {
      position: relative;
-     width: 18vw;
+     width: 14vw;
+     border-left-style: solid;
+     border-left-width: 2px;
      border-right-style: solid;
      border-right-width: 2px;
      padding-right: 1em;
      overflow: scroll;
      padding-bottom: 0.5vw;
+     margin-left: 10m;
  }
  
  div.headers img.sequence_selected_icon {
@@ -101,6 +121,10 @@ div.msa {
      display: block ruby;   
      font-family: Anonymous, monospace;
      margin-bottom: 0.2em; 
+ }
+
+ div.msa div.headers span:first-of-type {
+     margin-left: 0.5em; 
  }
 
 div.msa div.sequences {

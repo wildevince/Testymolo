@@ -204,6 +204,7 @@ class Profile:
         for record in msa:
             subseq_id:str = record['header']
             subseq_id = subseq_id.split('@')[-1].split('.')[-1].split(')')[0]
+            origin = data.Subseq.objects.get(id=int(subseq_id)).origin.organism
             sequence:list = []
             p = 0  # real position
             for n in range(1, len(record['sequence'])+1):  # aligned position
@@ -213,7 +214,7 @@ class Profile:
                 sequence.append({'residue':residue, 'realPos':p, 'alignedPos':n})
             
             self.icons.append({'id':subseq_id})
-            self.origin.append({'origin':'null'})
+            self.origin.append({'taxid':origin.id, 'abr':origin.abr})
             self.headers.append({'id':subseq_id, 'header':record['header']})
             self.profile.append({'id':subseq_id, 'sequence':sequence})
 
