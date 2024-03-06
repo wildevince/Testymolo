@@ -175,6 +175,28 @@ def generate_mainfigure_profile_old(data:dict):
     html += "</div>"
     return html 
 
+
+# LastCommonAncestor
+def LastCommonAncestor(phylos:list) -> str:
+    def AllSameStrings(strings:list) -> bool:
+        if len(strings) > 1:
+            item = strings[0]
+            for w in strings[1:]:
+                if item != w :
+                    return False
+            return True
+        else:
+            return False
+        
+    N = min([len(k) for k in phylos])
+    if N > 0:
+        lastCommonAncestor = ""
+        for k in range(N):
+            if AllSameStrings([phylo[k] for phylo in phylos]):
+                lastCommonAncestor = phylos[0][k]
+    return lastCommonAncestor
+
+
 ####################################################
 ### profile - version 2.0
 class Profile:
@@ -243,6 +265,7 @@ class Figure():
         self.inputdata = Figure.formating_inputdata(protein)
         self.PP = self.inputdata[0]
         self.HEIGHT = Figure.y0  # [pixel] 
+        self.solo:bool = True if len(self.inputdata) == 0 else False
         if showhide_allnsp:
             N:int = len(self.inputdata)
         else:
@@ -269,7 +292,7 @@ class Figure():
                     self.HTML_data['Protein'].append(self.Protein(protein_i, 1))
                 elif showhide_allnsp:
                     self.HTML_data['Protein'].append(self.Protein(protein_i, protein_i))
-    
+        
     def Protein(self, i:int, n:int=0) -> dict:
         protein = self.inputdata[i]
         html:dict = {}
@@ -325,7 +348,7 @@ class Figure():
         len_sseq:int = len(protein['sequence'][subseq['start']-1:subseq['end']])
 
         xj = xi
-        if protein['isPP']:
+        if protein['isPP'] or (not protein['isPP'] and not protein['derivedFromPP']):
             xj += ((subseq['start']-1)/L *wi)
         #print(subseq['start'] , L, xi, xj)
         yj = yi
@@ -401,15 +424,21 @@ class Figure():
             # -> proteins :dict
                 # \-> { **prot, 'subseq':[{ **sseq, 'modulo':mod }] }
         inputdata:list = [protein.serialize(start=1)]
+        solo_nsp:bool = False
         if protein.isPP:
             nsps = [nsp.serialize() for nsp in protein.get_all_nsps()]
             inputdata = [*inputdata, *nsps]
+        else:  # protein.derivedFromPP:
+            solo_nsp = True
 
         for i in range(len(inputdata)):
             inputdata[i]['subseq'] = []
 
             for item in data.PolyProtein.objects.filter(protein=inputdata[i]['id']):
-                inputdata[i]['start'] = item.start
+                if not solo_nsp:
+                    inputdata[i]['start'] = item.start
+                else:
+                    inputdata[i]['start'] = 1
                 break
 
             for sseq in data.Subseq.objects.filter(origin=inputdata[i]['id']):
@@ -417,7 +446,7 @@ class Figure():
                     inputdata[i]['subseq'].append(sseq.serialize(modulo=sseq.profile.modulo.serialize()))
                 except :
                     inputdata[i]['subseq'].append(sseq.serialize(modulo={'id':'?'}))
-
+        #print(inputdata)
         return inputdata
 
 def generate_mainfigure_protein(protein:data.Protein, showhide_allnsp:bool=False) -> dict:   

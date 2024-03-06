@@ -154,6 +154,8 @@ class Profile(models.Model):
     # id = models.AutoField(primary_key=True)  # PK
     validated = models.BooleanField(default=False)
     modulo = models.OneToOneField(Modulo, on_delete=models.CASCADE) #FK
+    Methods:tuple = (("OnTheFly", "OnTheFly"), ("HMM", "HMM"))
+    method = models.CharField(max_length=200, default=Methods[0][0], choices=Methods) 
 
     ### Vazymolo
     complete = models.BooleanField(default=False)  
@@ -163,10 +165,34 @@ class Profile(models.Model):
             'id': item.id,
             'validated': item.validated,
             'modulo': item.modulo.id,  #(str)
+            'method': item.method, 
             'complete': item.complete
         }
     # filepath = models.CharField(max_length=300)  # filepath = filefield( ? )
 
+    def LastCommonAncestor(self) -> str:
+        def AllSameStrings(strings:list) -> bool:
+            if len(strings) > 1:
+                item = strings[0]
+                for w in strings[1:]:
+                    if item != w :
+                        return False
+                return True
+            else:
+                return False
+        
+        listOf_phylogeny:list = []
+        for subseq in Subseq.objects.all():
+            if subseq.profile == self:
+                listOf_phylogeny.append(subseq.origin.organism.GetPhylogeny())
+
+        N = min([len(k) for k in listOf_phylogeny])
+        if N > 0:
+            lastCommonAncestor = ""
+            for k in range(N):
+                if AllSameStrings([phylo[k] for phylo in listOf_phylogeny]):
+                    lastCommonAncestor = listOf_phylogeny[0][k]
+        return lastCommonAncestor
 
 class Organism(models.Model):
     #lvl 1
@@ -228,6 +254,9 @@ class Organism(models.Model):
 
         return max(score, 1,0)
     
+    def GetPhylogeny(self) -> list:
+        return list([word.strip() for word in self.phylogeny.split(';')])
+
     @staticmethod
     def ADD(indata:dict):
         if len(Organism.objects.filter(id=indata['Organism']['id'])) > 0 :
@@ -334,7 +363,7 @@ class Protein(models.Model):
     @staticmethod
     def random():
         import random
-        PROTEINS = Protein.objects.filter(derivedFromPP=False)
+        PROTEINS = Protein.objects.filter(models.Q(derivedFromPP=True) | models.Q(isPP=True))
         N:int = len(PROTEINS)
         i = random.randint(1, N-1)
         return PROTEINS[i]

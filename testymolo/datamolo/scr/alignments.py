@@ -1,5 +1,5 @@
 import os
-from subprocess import Popen 
+from subprocess import Popen , DEVNULL
 
 from django.conf import settings
 import datamolo.models as data
@@ -20,7 +20,6 @@ def to_fasta_to_align(data:dict):
             handle.write(sequence+"\n")
     # to_align
     out_filepath = filepath+'.out'
-    command:str = str(MuscleCommandline(cmd='muscle', input=filepath, out=out_filepath))
-    print(command+" -quiet" )  # adding "-quiet" option ... doen't work in v3.8 ?! (but does in v5.)
-    Popen(command.split(' '))  # command must be a list of words
+    command:str = f"muscle -in {filepath} -out {out_filepath} -quiet"
+    Popen(command.split(' '), stdout=DEVNULL)  # command must be a list of words
     pass

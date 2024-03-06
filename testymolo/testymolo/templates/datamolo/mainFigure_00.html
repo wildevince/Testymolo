@@ -16,7 +16,7 @@
                 <text class='protein_name' id="protein_name_{{ prot.name }}" fill='grey' font-weight='bold' font-size='14' x="{{ prot.x_txt }}" y="{{ prot.y_txt }}" >{{ prot.name }}</text>
                 <rect class='protein' x="{{ prot.xi }}" y="{{ prot.yi }}" width="{{ prot.wi }}" height="{{ prot.hi }}" fill='blue' fill-opacity='0.1'></rect>
                 {% for sseq in prot.subseq %}
-                    <rect class='subseq' subseq="{{ sseq.id }}" x="{{ sseq.xj }}" y="{{ sseq.yj }}" width="{{ sseq.wj }}" height="{{ sseq.hj }}" fill="{{ sseq.color }}" fill-opacity='0.2'  ></rect>
+                    <rect class='subseq' id="subseq_{{ sseq.id }}" subseq="{{ sseq.id }}" x="{{ sseq.xj }}" y="{{ sseq.yj }}" width="{{ sseq.wj }}" height="{{ sseq.hj }}" fill="{{ sseq.color }}" fill-opacity='0.2'  ><title>{{ sseq.id }}</title></rect>
                     <text class='module_name' id="{{ sseq.mod_id }}" font-size='12' x="{{ sseq.x_mod }}" y="{{ sseq.y_mod }}">{{ sseq.mod_id }}</text>
                     <line class='separator' id="separator_{{ sseq.j }}" x1="{{ sseq.x_sep1 }}" y1="{{ sseq.y_sep1 }}" x2="{{ sseq.x_sep2 }}" y2="{{ sseq.y_sep2 }}" stroke='black' stroke-width='2' ></line>
                     <text class='numbering' id="numbering_{{ sseq.j }}" font-size='10' x="{{ sseq.x_numb }}" y="{{ sseq.y_numb }}">{{ sseq.end }}</text>

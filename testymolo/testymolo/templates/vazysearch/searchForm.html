@@ -5,4 +5,7 @@
     {{ searchForm }}
     <input type="submit" name="search" value='Search'>
 </form></div>
+{% if searchError %}
+    <p>{{ searchError }}</p>
+{% endif %}
 {% endif %}

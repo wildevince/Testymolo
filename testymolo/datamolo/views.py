@@ -56,6 +56,13 @@ class Main(TemplateView):
             db.write_to_json('Organism', data.Organism.objects.all())
             db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
             db.write_to_json('Protein', data.Protein.objects.all())
+        def WRITE_ALL():
+            db.write_to_json('Modulo', data.Modulo.objects.all())
+            db.write_to_json('Profile', data.Profile.objects.all())
+            db.write_to_json('Organism', data.Organism.objects.all())
+            db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
+            db.write_to_json('Protein', data.Protein.objects.all())
+            db.write_to_json('Subseq', data.Subseq.objects.all())
 
         #
         return HttpResponse("C'est Ok !")
@@ -69,14 +76,27 @@ class Main(TemplateView):
             DB_ac = kwargs['DB_ac']
             proteins = data.Protein.objects.filter(data_ac=DB_ac, derivedFromPP=False)
             if len(proteins) == 0:
-                print(DB_ac, "Does not exist yet !")
-            protein_id:int = proteins[0].id
+                context["searchError"] = DB_ac + " Does not exist yet !"
+                #print(DB_ac, "Does not exist yet !")
+                protein_id:int = -1
+            else :
+                protein_id:int = proteins[0].id
+        
         elif 'protein_id' in kwargs:
             protein_id = kwargs['protein_id']
             proteins = data.Protein.objects.filter(id=protein_id)
-        protein = data.Protein.objects.get(id=protein_id)
-        context['Protein'] = Main.generate_mainfigure_protein(protein)
-
+            if len(proteins) == 0:
+                context["searchError"] = protein_id + " Does not exist yet !"
+                #print(protein_id, "Does not exist yet !")
+                protein_id:int = -1
+            else :
+                protein_id:int = proteins[0].id
+        
+        # Get protein
+        if protein_id >= 0:
+            protein = data.Protein.objects.get(id=protein_id)
+            context['Protein'] = Main.generate_mainfigure_protein(protein)
+        
         # check SESSION
         sessionID = request.COOKIES.get('session')
         new_session:bool = True
@@ -86,7 +106,8 @@ class Main(TemplateView):
             SESSION = data.Session.objects.get(id=sessionID)
             new_session = False
         context['SESSION'] = SESSION
-        SESSION.protein = protein.id
+        if protein_id >= 0:
+            SESSION.protein = protein.id
         SESSION.save()
 
         # render HTML
@@ -231,10 +252,11 @@ class Main(TemplateView):
                 module = data.Modulo.objects.get(id=module_id)
                 context['module'] = module
                 context['subseq'] = subseq
+                context['method'] = subseq.profile.method
                 context['profile_id'] = subseq.profile.id
                 context['profile_length'] = len(data.Subseq.objects.filter(profile=subseq.profile))
                 context['Structures'] = [structure for structure in data.Structure.objects.filter(modulo=subseq.profile.modulo)]
-                context['commun_ancestor'] = "'...'"
+                context['common_ancestor'] = subseq.profile.LastCommonAncestor()
 
             return render(request, Main.moduleCard_template, context)
         return HttpResponse(mark_safe("<p>session not valid : please accept our cookies</p>"))
