@@ -76,7 +76,7 @@ class Main(TemplateView):
             DB_ac = kwargs['DB_ac']
             proteins = data.Protein.objects.filter(data_ac=DB_ac, derivedFromPP=False)
             if len(proteins) == 0:
-                context["searchError"] = DB_ac + " Does not exist yet !"
+                context["searchError"] = 'DB_ac : ' + str(DB_ac) + " Does not exist yet !"
                 #print(DB_ac, "Does not exist yet !")
                 protein_id:int = -1
             else :
@@ -86,7 +86,7 @@ class Main(TemplateView):
             protein_id = kwargs['protein_id']
             proteins = data.Protein.objects.filter(id=protein_id)
             if len(proteins) == 0:
-                context["searchError"] = protein_id + " Does not exist yet !"
+                context["searchError"] = 'The protein id : ' + str(protein_id) + " Does not exist yet !"
                 #print(protein_id, "Does not exist yet !")
                 protein_id:int = -1
             else :
@@ -174,7 +174,7 @@ class Main(TemplateView):
     def generate_mainfigure_protein(protein:data.Protein) -> dict:
         """ Calculate all parameters of each feature of the given protein into a dict \\
             It is passed to a sub-template included in the Main template """
-        return fig.generate_mainfigure_protein(protein, False) #new
+        return fig.generate_mainfigure_protein(protein, showhide_allnsp=True) #new
         #return render_to_string(Main.template_mainFigure, {'figure':fig.generate_mainfigure_protein(protein, True)}) #new #broken
         #return {'Protein': fig.generate_mainfigure_protein_old(protein)}
 

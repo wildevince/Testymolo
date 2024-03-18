@@ -1,0 +1,31 @@
+{% if figure %}
+<div class='figure'>
+    <div class='button-container'>
+        <button class='compare' >Compare with <span class='uni_star' value=false style='color: orange;'>★</span></button>
+        <button class='minus' onclick='updateSection_figure_minus()'>-</button>
+    </div>
+    <span class='sequence_selected_icon' arrow='arrow-thick-right' ><span class='whitespace'>_</span></span><span class='header'>{{ figure.protein_header }}</span>
+    <div class='svg-container'>
+        <svg protein="{{ figure.id }}" width="{{ figure.Width }}" height="{{ figure.Height }}" >
+            <rect class='background' width='100%' height='100%' fill='white' fill-opacity='1' stroke='black'></rect>
+            {% for prot in figure.protein %}
+
+                <text class='organism_name' id="{{ prot.Org.name }}" fill='black' font-weight='bold' font-size='16' x="{{ prot.Org.x }}" y="{{ prot.Org.y }}" >{{ prot.Org.name }}</text>
+                <text class='protein_name' id="protein_name_{{ prot.name }}" fill='grey' font-weight='bold' font-size='14' x="{{ prot.x_txt }}" y="{{ prot.y_txt }}" >{{ prot.name }}</text>
+                
+                <rect class='protein' id="{{ prot.id }}" x="{{ prot.xi }}" y="{{ prot.yi }}" width="{{ prot.wi }}" height="{{ prot.hi }}" fill='blue' fill-opacity='0.1'></rect>
+                
+                {% for sseq in protein.subseq %}
+                    <rect class='subseq' id="subseq_{{ sseq.id }}" module="{{ sseq.mod_id }}" subseq="{{ sseq.id }}" x="{{ sseq.xj }}" y="{{ sseq.yj }}" width="{{ sseq.wj }}" height="{{ sseq.hj }}" fill="{{ sseq.color }}" fill-opacity='0.2'><title>{{ sseq.mod_id }}</title></rect>
+                {% endfor %}
+                
+            {% endfor %}
+
+            {% for border in figure.borderline %}
+                <line class='borderline' id="borderline_{{ border.id }}" x1="{{ border.x1 }}" y1="{{ border.y1 }}" x2="{{ border.x2 }}" y2="{{ border.y2 }}" stroke='grey' stroke-width='0.5' stroke-dasharray='4' ></line>
+            {% endfor %}
+            
+        </svg>
+    </div>
+</div>
+{% endif %}

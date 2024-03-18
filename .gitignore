@@ -1,3 +1,8 @@
+.gitignore
 .venv/*
 .cpython-310.pyc
 testymolo/testymolo/media/temp/*
+testymolo/datamolo/__pycache__/*
+testymolo/testymolo/__pycache__/*
+testymolo/vazydata/__pycache__/*
+testymolo/VazySearch/__pycache__/*

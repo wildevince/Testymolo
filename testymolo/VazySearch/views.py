@@ -18,7 +18,7 @@ class SearchEngine(TemplateView):
     searchResult_template = os.path.join('vazysearch', 'searchResult.html')
 
     def searchForm() -> any:
-        searchForm = forms.SearchQuery_ModelForm()
+        searchForm = forms.SearchQuery_ModelForm(initial={'option':'protein_id'})
         return searchForm
     
     def search_keywords(request, keywords:list):
