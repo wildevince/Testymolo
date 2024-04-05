@@ -348,8 +348,8 @@ class Figure():
         len_sseq:int = len(protein['sequence'][subseq['start']-1:subseq['end']])
 
         xj = xi
-        if protein['isPP'] or (not protein['isPP'] and not protein['derivedFromPP']):
-            xj += ((subseq['start']-1)/L *wi)
+        #if protein['isPP'] or (not protein['isPP'] and not protein['derivedFromPP']):
+        xj += ((subseq['start']-1)/L *wi)
         #print(subseq['start'] , L, xi, xj)
         yj = yi
         wj = ((len_sseq +1) / L) *wi

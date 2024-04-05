@@ -385,3 +385,15 @@ pps = db.parse_from_json('PolyProtein')
 
 
 <button class="session-button" id="random-button" onclick="updateSection_figure()" >Random</button>
+
+
+
+
+Subseqs = data.Subseq.objects.all()
+        index = 1
+        for item in Subseqs:
+            old_item = data.Subseq.objects.get(id=item.id)
+            item.id = index
+            item.save()
+            old_item.delete()
+            index += 1

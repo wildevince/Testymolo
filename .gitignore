@@ -6,3 +6,9 @@ testymolo/datamolo/__pycache__/*
 testymolo/testymolo/__pycache__/*
 testymolo/vazydata/__pycache__/*
 testymolo/VazySearch/__pycache__/*
+testymolo/datamolo/scr/workinprogress/annotate/out/*
+testymolo/datamolo/scr/workinprogress/annotate/tmp/*
+testymolo/datamolo/scr/workinprogress/annotate/aln/*
+testymolo/datamolo/scr/workinprogress/annotate/fasta/*
+testymolo/datamolo/scr/workinprogress/annotate/in/sequences/*
+testymolo/datamolo/scr/workinprogress/annotate/data/tmp/*

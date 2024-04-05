@@ -64,6 +64,8 @@ class Main(TemplateView):
             db.write_to_json('Protein', data.Protein.objects.all())
             db.write_to_json('Subseq', data.Subseq.objects.all())
 
+                #
+        
         #
         return HttpResponse("C'est Ok !")
 
