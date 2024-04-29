@@ -448,10 +448,16 @@ class Figure():
                 break
 
             for sseq in data.Subseq.objects.filter(origin=inputdata[i]['id']):
-                try:
+                mod_id = sseq.profile.modulo.id  # get modulo.id
+                print(mod_id)
+                mod_data = sseq.profile.modulo.serialize()  # serialize modulo
+                sseq_data = sseq.serialize()  # serialize subseq
+                sseq_data['modulo'] = mod_data  # replace modulo item
+                inputdata[i]['subseq'].append(sseq_data)  # append to DATA
+                """try:
                     inputdata[i]['subseq'].append(sseq.serialize(modulo=sseq.profile.modulo.serialize()))
                 except :
-                    inputdata[i]['subseq'].append(sseq.serialize(modulo={'id':'?'}))
+                    inputdata[i]['subseq'].append(sseq.serialize(modulo={'id':'?'}))"""
         #print(inputdata)
         return inputdata
 

@@ -66,9 +66,9 @@ class Session(models.Model):
 
 # Create your models here.
 
-class Activity(models.Model):
+"""class Activity(models.Model):
     #lvl 1
-    """to regroup similar Modulo"""
+    ###to regroup similar Modulo###
     id = models.AutoField(primary_key=True)  # PK
     name = models.CharField(max_length=200)
     EC = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, default="") 
@@ -84,6 +84,8 @@ class Activity(models.Model):
             "EC":self.EC,
             "moduli":[m.id for m in self.moduli()],
         }
+*/"""
+
 
 class Modulo(models.Model):
     #lvl 2
@@ -94,6 +96,7 @@ class Modulo(models.Model):
     complete = models.BooleanField(default=False)  
 
     #activity = models.ForeignKey(Activity, on_delete=models.DO_NOTHING, blank=True, null=True)
+    activity = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, default="") 
     
 
     ModuloFamily_choice = (
@@ -134,7 +137,7 @@ class Modulo(models.Model):
     def serialize(item):
         return {
             "id":item.id,
-            "activity":item.activity.id,
+            "activity":item.activity,
             "moduloFamily":item.moduloFamily,
             "complete":item.complete
         }
