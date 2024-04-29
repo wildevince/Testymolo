@@ -81,5 +81,9 @@ class SearchEngine(TemplateView):
                 elif option == 'protein_id':
                     protein_id:str = int(keywords[0])
                     return datamolo.Main.get_mainProtein_from_searchEngine(request, protein_id=protein_id)
+                
+                elif option == 'Modulo':
+                    mod_id:str = keywords[0]
+                    return datamolo.Main.get_Module_from_searchEngine(request, Modulo=mod_id)
         
         return HttpResponse("Frek")

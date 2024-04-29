@@ -1,7 +1,7 @@
 {% if figure %}
 <div class='figure'>
     <div class='button-container'>
-        <button class='compare' >Compare with <span class='uni_star' value=false style='color: orange;'>★</span></button>
+        <button class='compare' org="{{ figure.Org.id }}" >Compare with <span class='uni_star' value=false style='color: orange;'>★</span></button>
         <button class='minus' onclick='updateSection_figure_minus()'>-</button>
     </div>
     <span class='sequence_selected_icon' arrow='arrow-thick-right' ><span class='whitespace'>_</span></span><span class='header'>{{ figure.protein_header }}</span>

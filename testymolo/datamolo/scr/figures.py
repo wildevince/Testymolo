@@ -2,6 +2,9 @@ import datamolo.models as data
 
 from Bio import SeqIO
 import logomaker as logo
+import os
+
+from django.conf import settings
 
 
 ### not used (old) --> generate_mainfigure_profile
@@ -201,7 +204,7 @@ def LastCommonAncestor(phylos:list) -> str:
 ### profile - version 2.0
 class Profile:
     
-    def __init__(self, filepath:str) -> None:
+    def __init__(self, filepath:str, method:str) -> None:
         msa:list = []
         with open(filepath) as handle:
             for record in SeqIO.parse(handle, format='fasta'):
@@ -225,7 +228,10 @@ class Profile:
         self.profile:list = []
         for record in msa:
             subseq_id:str = record['header']
-            subseq_id = subseq_id.split('@')[-1].split('.')[-1].split(')')[0]
+            if method == 'OnTheFly':
+                subseq_id = subseq_id.split('@')[-1].split('.')[-1].split(')')[0]
+            elif method == 'Aligned':
+                subseq_id = subseq_id.split('.')[2]
             origin = data.Subseq.objects.get(id=int(subseq_id)).origin.organism
             sequence:list = []
             p = 0  # real position
@@ -243,9 +249,9 @@ class Profile:
     def Display(self):
         return {'ruler': self.ruler, 'L': self.L, 'icons':self.icons, 'origin':self.origin, 'headers':self.headers, 'profile':self.profile}
         
-def generate_mainfigure_profile(outfile_path:str):
+def generate_mainfigure_profile(outfile_path:str, method:str):
     print("generate_mainfigure_profile --version 2.0")
-    profile = Profile(outfile_path)
+    profile = Profile(outfile_path, method)
     return profile.Display()
     
 
@@ -280,8 +286,8 @@ class Figure():
         self.HTML_data['Height'] = str(self.HEIGHT)
     
         # Organism
-        Org_name = data.Organism.objects.get(id=self.PP['organism']).name
-        self.HTML_data['Org'] = {'x':Figure.x0 +5, 'y':14, 'name':Org_name}
+        org = data.Organism.objects.get(id=self.PP['organism'])
+        self.HTML_data['Org'] = {'x':Figure.x0 +5, 'y':14, 'name':org.name, 'id':org.id}
 
         self.HTML_data['Protein'] = [self.Protein(0)]
 

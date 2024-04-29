@@ -12,3 +12,5 @@ testymolo/datamolo/scr/workinprogress/annotate/aln/*
 testymolo/datamolo/scr/workinprogress/annotate/fasta/*
 testymolo/datamolo/scr/workinprogress/annotate/in/sequences/*
 testymolo/datamolo/scr/workinprogress/annotate/data/tmp/*
+testymolo/datamolo/scr/workinprogress/annotate/in/tmp/*
+testymolo/datamolo/scr/workinprogress/profile/testCluster/tmp/*

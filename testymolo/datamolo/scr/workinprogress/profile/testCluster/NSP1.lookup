@@ -1,0 +1,17 @@
+0	pp1ab__(@NP_828849.7):[1-179]	0
+1	pp1a__(@YP_009944365.1):[1-179]	0
+2	pp1ab__(@NP_045299):[1-247]	1
+3	pp1a__(@NP_045298):[1-247]	1
+4	polyprotein_1ab__(@375):[1-246]	1
+5	ORF1a_polyprotein__(@474):[1-673]	2
+6	nsp_leader__(@NP_740634):[1-673]	2
+7	ORF1ab_polyprotein__(@451):[1-108]	3
+8	ORF1a_polyprotein__(@452):[1-108]	3
+9	ORF1ab_polyprotein__(@465):[1-111]	3
+10	ORF1a_polyprotein__(@466):[1-111]	3
+11	polyprotein__(@459):[1-110]	3
+12	ORF1ab_polyprotein__(@451):[109-879]	4
+13	ORF1a_polyprotein__(@452):[109-879]	4
+14	ORF1ab_polyprotein__(@465):[112-897]	4
+15	ORF1a_polyprotein__(@466):[112-897]	4
+16	polyprotein__(@459):[111-895]	4

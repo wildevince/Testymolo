@@ -36,3 +36,15 @@ mmseqs apply FASTA_clu_seq FASTA_clu_seq_msa -- clustalo -i - --threads=1
 (3) # search through DB
 mmseqs search in/MERS data/FASTA resultDB tmp -s 7.5 --num-iterations 2
 mmseqs convertalis in/MERS data/FASTA resultDB result.m8
+
+mmseqs easy-search MERS_nsp1.fasta NIDOVIRALES/data var1 tmp
+mmseqs result2profile MERS_nsp1.fasta NIDOVIRALES/data var1 profileDB  
+# err: <in> must be a DB
+
+mmseqs createdb MERS_nsp1.fasta in/seqDB
+mmseqs search in/seqDB NIDOVIRALES/data var2 tmp
+mmseqs result2profile in/seqDB  NIDOVIRALES/data var2 profileDB
+mmseqs convert2fasta profileDB out/profileDB.fasta
+# --> no ... file compressed ?
+mmseqs result2flat in/seqDB NIDOVIRALES/data  profileDB out/profileDB.flat 
+# --> same   file compressed ?

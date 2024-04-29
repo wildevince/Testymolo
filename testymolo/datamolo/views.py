@@ -57,6 +57,7 @@ class Main(TemplateView):
             db.write_to_json('PolyProtein', data.PolyProtein.objects.all())
             db.write_to_json('Protein', data.Protein.objects.all())
         def WRITE_ALL():
+            db.write_to_json('Activity', data.Activity.objects.all())
             db.write_to_json('Modulo', data.Modulo.objects.all())
             db.write_to_json('Profile', data.Profile.objects.all())
             db.write_to_json('Organism', data.Organism.objects.all())
@@ -65,9 +66,54 @@ class Main(TemplateView):
             db.write_to_json('Subseq', data.Subseq.objects.all())
 
                 #
+        #data.Activity.objects.create()
         
-        #
+        
         return HttpResponse("C'est Ok !")
+
+    def get_Module_from_searchEngine(request, *args, **kwargs):
+        context={}
+        mod_id = kwargs['Modulo']
+
+        if(not len(data.Modulo.objects.filter(id=mod_id))>0):
+            return HttpResponse("Modulo not found")
+        
+        module = data.Modulo.objects.get(id=mod_id)
+        profile = data.Profile.objects.get(modulo=module)
+        ## ModuloCard
+        mod_context:dict = {}
+        mod_context['module'] = module
+        mod_context['method'] = "Aligned"
+        mod_context['profile_id'] = profile.id
+        mod_context['profile_length'] = len(data.Subseq.objects.filter(profile=profile))
+        mod_context['Structures'] = [structure for structure in data.Structure.objects.filter(modulo=module)]
+        mod_context['common_ancestor'] = profile.LastCommonAncestor()
+        context["Module"] = render_to_string(request=request, template_name=Main.moduleCard_template, context=mod_context)
+
+        ## ProfileLogo
+        outfile_path = os.path.join(settings.DATA_DIR, 'profiles', mod_id+".aln.fasta")
+        ProfileLogo_context = {'profile': fig.generate_mainfigure_profile(outfile_path, "Aligned" )}
+        context["ProfileLogo"] = render_to_string(request=request, template_name=Main.template_mainProfile, context=ProfileLogo_context)
+
+        # check SESSION
+        sessionID = request.COOKIES.get('session')
+        new_session:bool = True
+        if not sessionID:
+            SESSION = data.Session.objects.create()
+        else:
+            SESSION = data.Session.objects.get(id=sessionID)
+            new_session = False
+        context['SESSION'] = SESSION
+        SESSION.save()
+
+        # render HTML
+        print('searchEngine result', mod_id)
+        context['searchForm'] = SearchEngine.searchForm()
+        responseHTML = render(request, Main.template_name, context)
+        if new_session:
+            responseHTML.set_cookie('session', SESSION.id)
+            responseHTML.delete_cookie('tempFasta')
+        return responseHTML
 
 
     def get_mainProtein_from_searchEngine(request, *args, **kwargs):
@@ -93,7 +139,7 @@ class Main(TemplateView):
                 protein_id:int = -1
             else :
                 protein_id:int = proteins[0].id
-        
+     
         # Get protein
         if protein_id >= 0:
             protein = data.Protein.objects.get(id=protein_id)
@@ -158,7 +204,7 @@ class Main(TemplateView):
                 context['proteins'] = mark_safe(html)
             
             if(SESSION.profile and SESSION.logo_prot_path):
-                #context['ProfileLogo'] = mark_safe(fig.generate_mainfigure_profileLogo(SESSION.logo_prot_path))
+                context['ProfileLogo'] = mark_safe(fig.generate_mainfigure_profileLogo(SESSION.logo_prot_path))
                 pass
         else:
             SESSION = data.Session.objects.create()
@@ -314,7 +360,7 @@ class Main(TemplateView):
     def load_mainfigure_profile(request, tempFasta):
         outfile_path = os.path.join(settings.MEDIA_ROOT, 'temp', tempFasta) + '.out'
         outfile_path = outfile_path
-        context = {'profile': fig.generate_mainfigure_profile(outfile_path)}
+        context = {'profile': fig.generate_mainfigure_profile(outfile_path, 'OnTheFly')}
         response = render(request, Main.template_mainProfile, context)
         response.delete_cookie('tempFasta')
         return response

@@ -66,16 +66,35 @@ class Session(models.Model):
 
 # Create your models here.
 
-class Modulo(models.Model):
+class Activity(models.Model):
     #lvl 1
+    """to regroup similar Modulo"""
+    id = models.AutoField(primary_key=True)  # PK
+    name = models.CharField(max_length=200)
+    EC = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, default="") 
+    ### ex: "#.#.#.#" ExplorEnz EC classification
+
+    def moduli(self) -> list:
+        return Modulo.objects.filter(activity=self)
+    
+    def serialize(self) -> dict:
+        return {
+            "id":self.id,
+            "name":self.name,
+            "EC":self.EC,
+            "moduli":[m.id for m in self.moduli()],
+        }
+
+class Modulo(models.Model):
+    #lvl 2
     id = models.CharField(primary_key=True, max_length=10)  # PK
     ### vazymolo 1 Modo_familiy_id
 
     ### Vazymolo
     complete = models.BooleanField(default=False)  
 
-    activity = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, blank=True) 
-    ### ex: "#.#.#.#" ExplorEnz EC classification
+    #activity = models.ForeignKey(Activity, on_delete=models.DO_NOTHING, blank=True, null=True)
+    
 
     ModuloFamily_choice = (
         ("UNK", "unknown"),
@@ -115,7 +134,7 @@ class Modulo(models.Model):
     def serialize(item):
         return {
             "id":item.id,
-            "activity":item.activity,
+            "activity":item.activity.id,
             "moduloFamily":item.moduloFamily,
             "complete":item.complete
         }
@@ -154,7 +173,7 @@ class Profile(models.Model):
     # id = models.AutoField(primary_key=True)  # PK
     validated = models.BooleanField(default=False)
     modulo = models.OneToOneField(Modulo, on_delete=models.CASCADE) #FK
-    Methods:tuple = (("OnTheFly", "OnTheFly"), ("HMM", "HMM"))
+    Methods:tuple = (("OnTheFly", "OnTheFly"), ("Aligned", "Aligned"), ("HMM", "HMM"))
     method = models.CharField(max_length=200, default=Methods[0][0], choices=Methods) 
 
     ### Vazymolo
@@ -572,6 +591,7 @@ class Structure(models.Model):
     
     ### Vazymolo
     complete = models.BooleanField(default=False)  
+
 
 
 
