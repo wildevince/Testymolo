@@ -66,7 +66,7 @@ class Session(models.Model):
 
 # Create your models here.
 
-"""class Activity(models.Model):
+class Activity(models.Model):
     #lvl 1
     ###to regroup similar Modulo###
     id = models.AutoField(primary_key=True)  # PK
@@ -84,7 +84,6 @@ class Session(models.Model):
             "EC":self.EC,
             "moduli":[m.id for m in self.moduli()],
         }
-*/"""
 
 
 class Modulo(models.Model):
@@ -95,8 +94,8 @@ class Modulo(models.Model):
     ### Vazymolo
     complete = models.BooleanField(default=False)  
 
-    #activity = models.ForeignKey(Activity, on_delete=models.DO_NOTHING, blank=True, null=True)
-    activity = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, default="") 
+    activity = models.ForeignKey(Activity, on_delete=models.DO_NOTHING, blank=True, null=True)
+    #activity = models.CharField(verbose_name="ExplorEnz EC classification", max_length=10, default="") 
     
 
     ModuloFamily_choice = (
@@ -135,9 +134,12 @@ class Modulo(models.Model):
         return False
 
     def serialize(item):
+        activity = None
+        if item.activity is not None:
+            activity = item.activity.id
         return {
             "id":item.id,
-            "activity":item.activity,
+            "activity":activity ,
             "moduloFamily":item.moduloFamily,
             "complete":item.complete
         }
@@ -541,7 +543,11 @@ class Subseq(models.Model):
         ordering = ['origin', 'start']
 
     def header(item) -> str:
-        return f"{item.origin.header[:-1]}.{item.id}):[{item.start}-{item.end}]"
+        header:str = f"{item.origin.header[:-1]}.{item.id}__{item.start}-{item.end}__"
+        header = header.replace('(','')
+        if item.profile is not None:
+            return f">{item.profile.modulo.id}."+header
+        return '>'+header
 
     def sequence(item) -> str:
         return str(item.origin.sequence[item.start-1:item.end])

@@ -108,6 +108,16 @@ def parse_vazy_data_1(Vazy1:dict) -> str:
     
     return text
 
+def write_fasta(item) -> str:
+    with open(os.path.join(settings.DATA_DIR, 'tmp.fasta' ), 'w') as out:
+        out.write(item.header() +'\n')
+        out.write(item.sequence() +'\n')
+
+def write_all_fasta(table) -> str:
+    with open(os.path.join(settings.DATA_DIR, 'tmp.fasta' ), 'w') as out:
+        for item in table:
+            out.write(item.header() +'\n')
+            out.write(item.sequence() +'\n')
 
 def run_diamond_blastp(fastaseq:str) -> str:
     # return `out.fasta` 

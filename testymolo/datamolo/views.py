@@ -67,6 +67,7 @@ class Main(TemplateView):
 
                 #
         #data.Activity.objects.create()
+        db.write_all_fasta(data.Subseq.objects.all())
         
         
         return HttpResponse("C'est Ok !")
