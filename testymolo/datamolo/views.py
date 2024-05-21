@@ -222,7 +222,7 @@ class Main(TemplateView):
     def generate_mainfigure_protein(protein:data.Protein) -> dict:
         """ Calculate all parameters of each feature of the given protein into a dict \\
             It is passed to a sub-template included in the Main template """
-        return fig.generate_mainfigure_protein(protein, showhide_allnsp=True) #new
+        return fig.generate_mainfigure_protein(protein, showhide_allnsp=False) #new
         #return render_to_string(Main.template_mainFigure, {'figure':fig.generate_mainfigure_protein(protein, True)}) #new #broken
         #return {'Protein': fig.generate_mainfigure_protein_old(protein)}
 

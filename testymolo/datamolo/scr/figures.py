@@ -284,27 +284,36 @@ class Figure():
         self.HTML_data['id'] = self.PP['id']
         self.HTML_data['Width'] = str(Figure.TRUE_WIDTH)
         self.HTML_data['Height'] = str(self.HEIGHT)
-    
+
+        
         # Organism
         org = data.Organism.objects.get(id=self.PP['organism'])
         self.HTML_data['Org'] = {'x':Figure.x0 +5, 'y':14, 'name':org.name, 'id':org.id}
 
+        self.ProteinName_overlapping:bool = False
+        self.ProteinName_corrected:bool = True
         self.HTML_data['Protein'] = [self.Protein(0)]
 
         if self.PP['isPP']:
 
+            # for each protein to present : do
             for protein_i in range(1, len(self.inputdata)):
+
+                # only when conditions are met
                 if ((not showhide_allnsp) and (len(self.inputdata[protein_i]['subseq']) > 0)) :
                     self.HTML_data['Protein'].append(self.Protein(protein_i, 1))
+
+                # show all
                 elif showhide_allnsp:
                     self.HTML_data['Protein'].append(self.Protein(protein_i, protein_i))
         
+
     def Protein(self, i:int, n:int=0) -> dict:
         protein = self.inputdata[i]
         html:dict = {}
         html['i'] = i
         html['n'] = n
-
+        
         xi = Figure.x0  # x_offset 
         xi += ((protein['start']-1) / self.PP['length']) * Figure.WIDTH  # + relative position from PP
         yi = Figure.y0 + (n) * (Figure.h0 + Figure.h1)   # as downwards as many proteins to display
@@ -323,9 +332,9 @@ class Figure():
             html['y_bl2'] = y_bl2
 
         #protein name
-        x_txt = xi +5
+        x_txt = xi +1
         y_txt = yi -32
-        html['name'] = protein['name']
+        html['name'] = protein['definition']
         html['x_txt'] = x_txt
         html['y_txt'] = y_txt
 
@@ -334,6 +343,22 @@ class Figure():
         html['yi'] = yi
         html['wi'] = wi
         html['hi'] = hi
+
+        # if is overlapping
+        if self.ProteinName_overlapping :
+            html['y_txt'] -= 14  # height correction by font-size value
+            self.ProteinName_overlapping = False
+            self.ProteinName_corrected = True
+
+        # or will overlap
+        ## length of name is longer than protein rect (a.k.a sequence)
+        if (len(html['name'])*14*2.5) > (protein["length"]) :
+            # next protein name will overlap
+            if not self.ProteinName_corrected:
+                self.ProteinName_overlapping = True
+        else :
+            self.ProteinName_corrected = False
+        
 
         chtext:bool = False
         chlvl:int = 0
@@ -378,7 +403,7 @@ class Figure():
         # text module_name
         x_mod = xj
         y_mod = yj
-        if(wj > (0.022 *Figure.WIDTH)):
+        if(wj > (0.030 *Figure.WIDTH)):
             x_mod += wj*2/5
         y_mod -= 5
         if(chtext):
