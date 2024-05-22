@@ -263,10 +263,13 @@ class Figure():
     WIDTH:int = 1780  # [pixel]
     x0:int = 12  # x_offset  [pixel]
     y0 = 75  # y_offset  [pixel]
-    h0 = 40  # feature height  [pixel]
-    h1 = 80  # between feature height  [pixel]
+    h0 = 25 #40 # feature height  [pixel]
+    h1 = 60 # between feature height  [pixel]
 
     def __init__(self, protein:data.Protein, showhide_allnsp:bool=False) -> None:
+        ### DEBUG ###
+        showhide_allnsp = False
+        ###       ###
         """ return HTML content """
         self.inputdata = Figure.formating_inputdata(protein)
         self.PP = self.inputdata[0]
@@ -277,6 +280,8 @@ class Figure():
         else:
             N:int = len([p for p in self.inputdata if len(p['subseq']) > 0]) 
             N:int = 2 if N > 1 else 1
+            alter:bool = any([True if len(p['subseq']) > 1 else False for p in self.inputdata])
+            N += (1 if alter else 0)
         self.HEIGHT += N*(Figure.h0 + Figure.h1)  # [pixel]
         self.HTML_data:dict = {}
 
@@ -288,10 +293,9 @@ class Figure():
         
         # Organism
         org = data.Organism.objects.get(id=self.PP['organism'])
-        self.HTML_data['Org'] = {'x':Figure.x0 +5, 'y':14, 'name':org.name, 'id':org.id}
+        self.HTML_data['Org'] = {'x':Figure.x0 +5, 'y':20, 'name':org.name, 'id':org.id, 'abr':org.abr}
 
-        self.ProteinName_overlapping:bool = False
-        self.ProteinName_corrected:bool = True
+        self.Protein_height = False  #switcher
         self.HTML_data['Protein'] = [self.Protein(0)]
 
         if self.PP['isPP']:
@@ -309,21 +313,38 @@ class Figure():
         
 
     def Protein(self, i:int, n:int=0) -> dict:
+        # n [constant] => number of Protein to display => html starting height
         protein = self.inputdata[i]
         html:dict = {}
         html['i'] = i
         html['n'] = n
+
+        self.ProteinName_overlapping:bool = False  #switcher
+        self.ProteinName_corrected:bool = True  # anteriority
+        self.SubseqModName_overlapping:bool = False  #switcher
         
         xi = Figure.x0  # x_offset 
         xi += ((protein['start']-1) / self.PP['length']) * Figure.WIDTH  # + relative position from PP
-        yi = Figure.y0 + (n) * (Figure.h0 + Figure.h1)   # as downwards as many proteins to display
+        # depends on $n
+        if(n > 1):
+            yi = Figure.y0 + (n) * (Figure.h0 + Figure.h1)   # as downwards as many proteins to display
+        else: 
+            # apply switcher
+            if self.Protein_height:
+                # downwards
+                yi = Figure.y0 + (n+1) * (Figure.h0 + Figure.h1)
+                self.Protein_height = False
+            else:
+                yi = Figure.y0 + n * (Figure.h0 + Figure.h1)
+                self.Protein_height = True
+
         wi = (protein['length'] / self.PP['length']) * Figure.WIDTH  # adjust width with length protein
         hi = Figure.h0
 
         #dotted line for nsps
         if n > 0:
-            x_bl1 = xi
-            y_bl1 = Figure.x0 -30
+            x_bl1 = xi 
+            y_bl1 = Figure.x0 + 20 #-30 + 15 #title offset
             x_bl2 = x_bl1
             y_bl2 = yi + hi + 30
             html['x_bl1'] = x_bl1
@@ -333,7 +354,7 @@ class Figure():
 
         #protein name
         x_txt = xi +1
-        y_txt = yi -32
+        y_txt = yi -20  #corner bottom-right  #(+)=>(down)
         html['name'] = protein['definition']
         html['x_txt'] = x_txt
         html['y_txt'] = y_txt
@@ -361,14 +382,14 @@ class Figure():
         
 
         chtext:bool = False
-        chlvl:int = 0
+        chlvl:int = 0  #height difference factor
 
         html['subseq'] = []
         for sseq_i in range(len(protein['subseq'])):
             html['subseq'].append(self.Subseq(protein, sseq_i, xi, yi, wi, hi, chtext, chlvl))
             #pass
-
         return html
+
 
     def Subseq(self, protein, j, *coord) -> dict:
         subseq = protein['subseq'][j]
@@ -393,12 +414,16 @@ class Figure():
         html['wj'] = wj
         html['hj'] = hj
         
-    
-        if(wj < (0.022 *Figure.WIDTH)):
-            chtext = True
-            chlvl += 1  
-        else:
-            chlvl = chlvl-1 if(chlvl > 0) else 0
+        # overlapping fix level
+        if self.SubseqModName_overlapping:
+            if(wj < (0.022 *Figure.WIDTH)):
+                #increase by 1
+                chtext = True
+                chlvl += 1  
+            else:
+                # decrease by 1
+                chlvl = chlvl-1 if(chlvl > 0) else 0
+        self.SubseqModName_overlapping = True
 
         # text module_name
         x_mod = xj
@@ -429,7 +454,7 @@ class Figure():
         y_numb = yi + Figure.h0 + 15
         if(chtext):
             chtext = False
-            y_numb += (12 *chlvl)
+            y_numb += (10 *chlvl)
         html['x_numb'] = x_numb
         html['y_numb'] = y_numb
         html['end'] = subseq['end']
@@ -441,8 +466,8 @@ class Figure():
             html['color'] = 'green'
         elif protein['complete'] or subseq['modulo']['complete']:  # protein or modulo complete
             html['color'] = 'teal'
-        
         return html
+
 
     def Display(self):
         return self.HTML_data

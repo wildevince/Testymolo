@@ -8,7 +8,7 @@
     <div class='svg-container'>
         <svg protein="{{ figure.id }}" width="{{ figure.Width }}" height="{{ figure.Height }}" >
             <rect class='background' width='100%' height='100%' fill='white' fill-opacity='1' stroke='black'></rect>
-            <text class='organism_name' id="{{ figure.Org.name }}" fill='black' font-weight='bold' font-size='16' x="{{ figure.Org.x }}" y="{{ figure.Org.y }}" >{{ figure.Org.name }}</text>
+            <text class='organism_name' id="{{ figure.Org.name }}" fill='black' font-weight='bold' font-size='16' x="{{ figure.Org.x }}" y="{{ figure.Org.y }}" >{{ figure.Org.id }} - {{ figure.Org.abr }} - {{ figure.Org.name }}</text>
             {% for prot in figure.Protein %}
                 {% if prot.n > 0 %}
                     <line class='borderline' id="borderline_{{ prot.i }}" x1="{{ prot.x_bl1 }}" y1="{{ prot.y_bl1 }}" x2="{{ prot.x_bl2 }}" y2="{{ prot.y_bl2 }}" stroke='grey' stroke-width='0.5' stroke-dasharray='4' ></line>

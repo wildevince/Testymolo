@@ -21,6 +21,10 @@ div#data_fig {
     width: fit-content;
 }
 
+#loadingFigure {
+    margin-top: 2em;
+}
+
 .button-container {
     display: flex;
     float:right;
