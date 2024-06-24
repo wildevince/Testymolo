@@ -268,7 +268,7 @@ class Figure():
 
     def __init__(self, protein:data.Protein, showhide_allnsp:bool=False) -> None:
         ### DEBUG ###
-        showhide_allnsp = False
+        showhide_allnsp = True
         ###       ###
         """ return HTML content """
         self.inputdata = Figure.formating_inputdata(protein)
@@ -276,7 +276,8 @@ class Figure():
         self.HEIGHT = Figure.y0  # [pixel] 
         self.solo:bool = True if len(self.inputdata) == 0 else False
         if showhide_allnsp:
-            N:int = len(self.inputdata)
+            #N:int = len(self.inputdata)
+            N:int = 3
         else:
             N:int = len([p for p in self.inputdata if len(p['subseq']) > 0]) 
             N:int = 2 if N > 1 else 1
@@ -309,7 +310,8 @@ class Figure():
 
                 # show all
                 elif showhide_allnsp:
-                    self.HTML_data['Protein'].append(self.Protein(protein_i, protein_i))
+                    #self.HTML_data['Protein'].append(self.Protein(protein_i, protein_i))
+                    self.HTML_data['Protein'].append(self.Protein(protein_i, 1))
         
 
     def Protein(self, i:int, n:int=0) -> dict:
@@ -462,10 +464,10 @@ class Figure():
         html['color'] = 'blue'
         if subseq['modulo']['id'] in ['TM', 'UNK', 'NF', 'PS', 'LNK', '?', None, 'null', '']:  #if unimportant module
             html['color'] = 'grey'
-        elif protein['complete'] and subseq['modulo']['complete'] :  # protein and modulo complete
-            html['color'] = 'green'
         elif protein['complete'] or subseq['modulo']['complete']:  # protein or modulo complete
             html['color'] = 'teal'
+        elif protein['complete'] and subseq['modulo']['complete'] :  # protein and modulo complete
+            html['color'] = 'green'
         return html
 
 

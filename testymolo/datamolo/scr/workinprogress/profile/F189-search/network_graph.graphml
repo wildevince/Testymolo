@@ -1,0 +1,4913 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="bit_score" attr.type="long"/>
+<key id="d0" for="edge" attr.name="e_value" attr.type="double"/>
+<graph edgedefault="directed"><node id="F189.42.149..[3999-4928]"/>
+<node id="NP_058422.1"/>
+<node id="YP_009199241.1"/>
+<node id="YP_004070193.2"/>
+<node id="YP_009019180.1"/>
+<node id="YP_009256195.1"/>
+<node id="YP_010799729.1"/>
+<node id="YP_009200734.1"/>
+<node id="YP_001552234.1"/>
+<node id="YP_009336483.1"/>
+<node id="YP_001718610.1"/>
+<node id="YP_001718603.1"/>
+<node id="YP_009199608.1"/>
+<node id="YP_010037467.1"/>
+<node id="YP_006908641.2"/>
+<node id="YP_009755889.1"/>
+<node id="YP_009199789.1"/>
+<node id="YP_010037473.1"/>
+<node id="YP_009824965.1"/>
+<node id="NP_839965.1"/>
+<node id="YP_009328933.1"/>
+<node id="YP_010799723.1"/>
+<node id="NP_598309.2"/>
+<node id="YP_009380520.1"/>
+<node id="YP_009201729.1"/>
+<node id="YP_010037559.1"/>
+<node id="YP_003766.2"/>
+<node id="YP_001351683.1"/>
+<node id="NP_835352.1"/>
+<node id="YP_010799342.1"/>
+<node id="NP_073549.1"/>
+<node id="YP_009194637.1"/>
+<node id="YP_008439222.1"/>
+<node id="YP_008439200.1"/>
+<node id="YP_010115715.1"/>
+<node id="YP_009389424.1"/>
+<node id="YP_009824973.1"/>
+<node id="YP_009755838.1"/>
+<node id="YP_009513008.1"/>
+<node id="YP_009944302.1"/>
+<node id="YP_007188577.3"/>
+<node id="YP_009047223.1"/>
+<node id="YP_009944349.1"/>
+<node id="YP_009047202.1"/>
+<node id="YP_001039961.1"/>
+<node id="YP_009944320.1"/>
+<node id="YP_001039952.1"/>
+<node id="YP_009361856.2"/>
+<node id="YP_009072438.1"/>
+<node id="NP_828849.7"/>
+<node id="YP_009725307.1"/>
+<node id="YP_009724389.1"/>
+<node id="NP_740629.1"/>
+<node id="NP_066134.1"/>
+<node id="YP_009755832.1"/>
+<node id="YP_009924393.1"/>
+<node id="YP_001039970.1"/>
+<node id="YP_009824989.2"/>
+<node id="YP_009924378.1"/>
+<node id="YP_003858583.1"/>
+<node id="YP_003029844.1"/>
+<node id="YP_009924352.1"/>
+<node id="YP_459941.1"/>
+<node id="YP_009824978.1"/>
+<node id="YP_173236.1"/>
+<node id="YP_009273004.1"/>
+<node id="YP_001941185.1"/>
+<node id="NP_150073.3"/>
+<node id="YP_009924419.1"/>
+<node id="YP_005454239.1"/>
+<node id="YP_009915683.1"/>
+<node id="NP_045299.2"/>
+<node id="NP_001012452.2"/>
+<node id="YP_209229.2"/>
+<node id="YP_001941164.2"/>
+<node id="YP_009555260.1"/>
+<node id="YP_009555238.1"/>
+<node id="YP_009113022.1"/>
+<node id="YP_001876435.1"/>
+<node id="YP_009755920.1"/>
+<node id="YP_009755895.1"/>
+<node id="YP_009825029.1"/>
+<node id="YP_009825006.1"/>
+<node id="YP_009824996.1"/>
+<node id="YP_005352862.1"/>
+<node id="YP_002308478.1"/>
+<node id="YP_002308505.1"/>
+<node id="YP_002308496.1"/>
+<node id="YP_005352845.1"/>
+<node id="YP_005352837.1"/>
+<node id="YP_005352853.1"/>
+<node id="YP_009513020.1"/>
+<node id="YP_005352880.1"/>
+<node id="YP_005352870.1"/>
+<node id="YP_010799913.1"/>
+<node id="YP_009755877.1"/>
+<node id="YP_009755843.1"/>
+<node id="YP_010800878.1"/>
+<node id="YP_010800876.1"/>
+<node id="YP_009344970.1"/>
+<node id="YP_010800022.1"/>
+<node id="YP_010800020.1"/>
+<node id="YP_009666299.1"/>
+<node id="YP_009408170.1"/>
+<node id="YP_009408168.1"/>
+<node id="YP_009142787.1"/>
+<node id="YP_010800007.1"/>
+<node id="YP_010800005.1"/>
+<node id="YP_009052475.1"/>
+<node id="YP_009666260.1"/>
+<node id="YP_010800375.1"/>
+<node id="YP_009130642.1"/>
+<node id="YP_009130641.1"/>
+<node id="YP_008798230.1"/>
+<node id="YP_009380535.1"/>
+<node id="YP_009505581.1"/>
+<node id="YP_803213.1"/>
+<node id="YP_009755883.1"/>
+<node id="YP_010800870.1"/>
+<node id="YP_337905.2"/>
+<node id="YP_010800868.1"/>
+<node id="YP_009551698.1"/>
+<node id="YP_009551696.1"/>
+<node id="YP_007697629.1"/>
+<node id="YP_010801050.1"/>
+<node id="YP_009666297.1"/>
+<node id="YP_010800014.1"/>
+<node id="YP_009666293.1"/>
+<node id="YP_010800012.1"/>
+<node id="YP_010800405.1"/>
+<node id="YP_009448185.1"/>
+<node id="YP_010800379.1"/>
+<node id="YP_009505590.1"/>
+<node id="YP_009333345.1"/>
+<node id="YP_004767305.1"/>
+<node id="YP_004598981.2"/>
+<node id="YP_007697636.1"/>
+<node id="YP_009505587.1"/>
+<node id="YP_009553214.1"/>
+<node id="YP_009026378.1"/>
+<node id="YP_007697642.1"/>
+<node id="YP_010087319.1"/>
+<node id="YP_009551452.1"/>
+<node id="YP_009121772.1"/>
+<node id="YP_009362006.1"/>
+<node id="YP_009666324.1"/>
+<node id="YP_009825018.1"/>
+<node id="F189.87.322.nsp9.[1-940]"/>
+<node id="YP_009336549.1"/>
+<node id="YP_009755862.1"/>
+<node id="YP_009221993.1"/>
+<node id="YP_009824997.1"/>
+<node id="YP_009551703.1"/>
+<node id="YP_009249810.1"/>
+<node id="YP_009755872.1"/>
+<node id="YP_009130631.2"/>
+<node id="YP_009755856.1"/>
+<node id="F189.68.286.pp1ab.[4370-5301]"/>
+<node id="YP_009067063.1"/>
+<node id="YP_009214659.1"/>
+<node id="YP_009824957.1"/>
+<node id="YP_009388590.1"/>
+<node id="F189.56.238..[4370-5297]"/>
+<node id="YP_009344807.1"/>
+<node id="F189.23.58..[4069-4995]"/>
+<node id="NP_066135.1"/>
+<node id="YP_009505548.1"/>
+<node id="YP_010800854.1"/>
+<node id="F189.50.194..[4101-5027]"/>
+<node id="YP_009118960.1"/>
+<node id="F189.31.102.pp1ab.[4457-5384]"/>
+<node id="YP_009755852.1"/>
+<node id="F189.264.339.nsp12.[1-931]"/>
+<edge source="F189.42.149..[3999-4928]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1928</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1901</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1884</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1697</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1688</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1512</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1508</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1508</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1506</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1499</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1496</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1490</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1490</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1490</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1489</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1487</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1486</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1486</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1485</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1483</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1482</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1482</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1480</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1476</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1471</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1470</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1465</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1463</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1463</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1463</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1463</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1448</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1448</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1444</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1357</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1354</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1263</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1164</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1162</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1162</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1157</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1157</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1155</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1149</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1146</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1144</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1144</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1136</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1136</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1135</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1133</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1133</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1133</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1132</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1132</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1132</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1132</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1131</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1126</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1125</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1124</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1124</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1123</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1123</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1121</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1120</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1120</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1120</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1116</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1114</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1114</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1112</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1112</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1054</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_005352862.1">
+  <data key="d0">6.616e-303</data>
+  <data key="d1">944</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_002308478.1">
+  <data key="d0">9.559e-295</data>
+  <data key="d1">921</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_002308505.1">
+  <data key="d0">6.255e-294</data>
+  <data key="d1">918</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_002308496.1">
+  <data key="d0">2.993e-293</data>
+  <data key="d1">916</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_005352845.1">
+  <data key="d0">1.9580000000000001e-292</data>
+  <data key="d1">914</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_005352837.1">
+  <data key="d0">2.678e-292</data>
+  <data key="d1">914</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_005352853.1">
+  <data key="d0">9.367e-292</data>
+  <data key="d1">912</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009513020.1">
+  <data key="d0">1.7519999999999997e-291</data>
+  <data key="d1">911</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_005352880.1">
+  <data key="d0">1.0029999999999999e-286</data>
+  <data key="d1">897</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_005352870.1">
+  <data key="d0">1.677e-285</data>
+  <data key="d1">894</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010799913.1">
+  <data key="d0">4.542e-194</data>
+  <data key="d1">627</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755877.1">
+  <data key="d0">4.716e-38</data>
+  <data key="d1">153</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755843.1">
+  <data key="d0">3.702e-35</data>
+  <data key="d1">144</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800878.1">
+  <data key="d0">1.956e-34</data>
+  <data key="d1">141</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800876.1">
+  <data key="d0">1.956e-34</data>
+  <data key="d1">141</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009344970.1">
+  <data key="d0">1.254e-32</data>
+  <data key="d1">136</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800022.1">
+  <data key="d0">2.1820000000000002e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800020.1">
+  <data key="d0">2.1820000000000002e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009666299.1">
+  <data key="d0">6.614e-32</data>
+  <data key="d1">133</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009408170.1">
+  <data key="d0">2.644e-31</data>
+  <data key="d1">131</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009408168.1">
+  <data key="d0">2.644e-31</data>
+  <data key="d1">131</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009142787.1">
+  <data key="d0">2.4250000000000002e-30</data>
+  <data key="d1">128</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800007.1">
+  <data key="d0">3.199e-30</data>
+  <data key="d1">128</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800005.1">
+  <data key="d0">3.199e-30</data>
+  <data key="d1">128</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009052475.1">
+  <data key="d0">2.933e-29</data>
+  <data key="d1">124</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009666260.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800375.1">
+  <data key="d0">2.459e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009130642.1">
+  <data key="d0">3.243e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009130641.1">
+  <data key="d0">3.243e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_008798230.1">
+  <data key="d0">5.64e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009380535.1">
+  <data key="d0">7.438e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009505581.1">
+  <data key="d0">9.808e-27</data>
+  <data key="d1">116</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_803213.1">
+  <data key="d0">1.293e-26</data>
+  <data key="d1">116</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009755883.1">
+  <data key="d0">1.7060000000000002e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800870.1">
+  <data key="d0">2.249e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_337905.2">
+  <data key="d0">2.249e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800868.1">
+  <data key="d0">2.249e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009551698.1">
+  <data key="d0">8.969e-26</data>
+  <data key="d1">113</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009551696.1">
+  <data key="d0">8.969e-26</data>
+  <data key="d1">113</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_007697629.1">
+  <data key="d0">1.081e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010801050.1">
+  <data key="d0">4.307e-24</data>
+  <data key="d1">108</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009666297.1">
+  <data key="d0">1.716e-23</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800014.1">
+  <data key="d0">2.983e-23</data>
+  <data key="d1">105</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009666293.1">
+  <data key="d0">2.983e-23</data>
+  <data key="d1">105</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800012.1">
+  <data key="d0">2.983e-23</data>
+  <data key="d1">105</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800405.1">
+  <data key="d0">1.566e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009448185.1">
+  <data key="d0">1.566e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010800379.1">
+  <data key="d0">2.0649999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009505590.1">
+  <data key="d0">1.429e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009333345.1">
+  <data key="d0">1.429e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_004767305.1">
+  <data key="d0">1.429e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_004598981.2">
+  <data key="d0">1.884e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_007697636.1">
+  <data key="d0">5.6890000000000005e-21</data>
+  <data key="d1">97</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009505587.1">
+  <data key="d0">7.499e-21</data>
+  <data key="d1">97</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009553214.1">
+  <data key="d0">3.934e-20</data>
+  <data key="d1">94</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009026378.1">
+  <data key="d0">2.064e-19</data>
+  <data key="d1">92</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_007697642.1">
+  <data key="d0">1.299e-17</data>
+  <data key="d1">86</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_010087319.1">
+  <data key="d0">4.7e-16</data>
+  <data key="d1">81</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009551452.1">
+  <data key="d0">3.492e-10</data>
+  <data key="d1">62</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009121772.1">
+  <data key="d0">7.865e-07</data>
+  <data key="d1">51</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009362006.1">
+  <data key="d0">4.91e-05</data>
+  <data key="d1">45</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009666324.1">
+  <data key="d0">8.521e-05</data>
+  <data key="d1">44</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="YP_009825018.1">
+  <data key="d0">0.0002566</data>
+  <data key="d1">42</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1948</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1948</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1906</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1902</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1777</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1712</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1712</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1628</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1628</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1405</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1206</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1206</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1205</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1201</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1200</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1200</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1200</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1200</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1199</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1195</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1195</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1191</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1191</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1189</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1189</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1186</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1186</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1185</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1184</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1183</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1183</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1181</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1181</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1180</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1180</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1180</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1179</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1176</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1176</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1176</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1176</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1172</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1172</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1164</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1161</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1159</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1157</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1156</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1154</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1153</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1152</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1144</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1143</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1141</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1137</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1136</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1136</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1135</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1135</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1134</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1134</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1133</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1132</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1128</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1128</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1107</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1096</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1068</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_005352862.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1022</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009513020.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1017</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_005352845.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1016</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_002308496.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1014</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_002308505.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1013</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_005352837.1">
+  <data key="d0">5e-324</data>
+  <data key="d1">1006</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_005352880.1">
+  <data key="d0">5e-324</data>
+  <data key="d1">1005</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_005352853.1">
+  <data key="d0">1e-323</data>
+  <data key="d1">1005</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_002308478.1">
+  <data key="d0">9.89e-321</data>
+  <data key="d1">996</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_005352870.1">
+  <data key="d0">6.941e-312</data>
+  <data key="d1">970</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010799913.1">
+  <data key="d0">9.618999999999999e-195</data>
+  <data key="d1">629</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755877.1">
+  <data key="d0">2.391e-40</data>
+  <data key="d1">161</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755843.1">
+  <data key="d0">8.223e-38</data>
+  <data key="d1">153</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009666299.1">
+  <data key="d0">4.3549999999999995e-37</data>
+  <data key="d1">150</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800022.1">
+  <data key="d0">2.125e-35</data>
+  <data key="d1">145</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800020.1">
+  <data key="d0">2.125e-35</data>
+  <data key="d1">145</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009344970.1">
+  <data key="d0">4.886e-35</data>
+  <data key="d1">143</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800405.1">
+  <data key="d0">1.654e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800007.1">
+  <data key="d0">2.004e-31</data>
+  <data key="d1">132</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800005.1">
+  <data key="d0">2.004e-31</data>
+  <data key="d1">132</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800878.1">
+  <data key="d0">2.644e-31</data>
+  <data key="d1">131</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800876.1">
+  <data key="d0">2.644e-31</data>
+  <data key="d1">131</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009052475.1">
+  <data key="d0">2.644e-31</data>
+  <data key="d1">131</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755883.1">
+  <data key="d0">4.601e-31</data>
+  <data key="d1">130</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009505581.1">
+  <data key="d0">1.838e-30</data>
+  <data key="d1">128</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009408170.1">
+  <data key="d0">1.685e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800375.1">
+  <data key="d0">1.685e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009408168.1">
+  <data key="d0">1.685e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009666260.1">
+  <data key="d0">8.876e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800870.1">
+  <data key="d0">1.171e-28</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800868.1">
+  <data key="d0">1.171e-28</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009142787.1">
+  <data key="d0">8.128e-28</data>
+  <data key="d1">120</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_008798230.1">
+  <data key="d0">2.459e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009666297.1">
+  <data key="d0">4.276e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009130641.1">
+  <data key="d0">1.293e-26</data>
+  <data key="d1">116</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009380535.1">
+  <data key="d0">6.802e-26</data>
+  <data key="d1">113</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010801050.1">
+  <data key="d0">8.969e-26</data>
+  <data key="d1">113</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009130642.1">
+  <data key="d0">1.5600000000000002e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009551698.1">
+  <data key="d0">1.5600000000000002e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009551696.1">
+  <data key="d0">1.5600000000000002e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_337905.2">
+  <data key="d0">2.0560000000000001e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_007697636.1">
+  <data key="d0">2.712e-25</data>
+  <data key="d1">111</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009666293.1">
+  <data key="d0">1.081e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800379.1">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_803213.1">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_007697629.1">
+  <data key="d0">7.488e-24</data>
+  <data key="d1">107</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009333345.1">
+  <data key="d0">9.872e-24</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800014.1">
+  <data key="d0">2.0649999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010800012.1">
+  <data key="d0">2.0649999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009505590.1">
+  <data key="d0">2.7219999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_004767305.1">
+  <data key="d0">2.7219999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009448185.1">
+  <data key="d0">3.5889999999999996e-22</data>
+  <data key="d1">101</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_004598981.2">
+  <data key="d0">1.084e-21</data>
+  <data key="d1">100</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009026378.1">
+  <data key="d0">1.884e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009505587.1">
+  <data key="d0">1.718e-20</data>
+  <data key="d1">96</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_007697642.1">
+  <data key="d0">3.934e-20</data>
+  <data key="d1">94</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_010087319.1">
+  <data key="d0">8.21e-19</data>
+  <data key="d1">90</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009336549.1">
+  <data key="d0">3.845e-11</data>
+  <data key="d1">65</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755862.1">
+  <data key="d0">7.251e-09</data>
+  <data key="d1">57</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009551452.1">
+  <data key="d0">5.97e-07</data>
+  <data key="d1">51</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009221993.1">
+  <data key="d0">1.798e-06</data>
+  <data key="d1">49</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009824997.1">
+  <data key="d0">1.798e-06</data>
+  <data key="d1">49</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009551703.1">
+  <data key="d0">1.631e-05</data>
+  <data key="d1">46</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009249810.1">
+  <data key="d0">0.0001122</data>
+  <data key="d1">44</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755872.1">
+  <data key="d0">0.0001479</data>
+  <data key="d1">43</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009130631.2">
+  <data key="d0">0.0001948</data>
+  <data key="d1">43</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="YP_009755856.1">
+  <data key="d0">0.0001948</data>
+  <data key="d1">43</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1932</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1896</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1877</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1877</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1545</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1432</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1429</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1429</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1425</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1422</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1418</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1418</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1412</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1412</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1411</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1409</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1409</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1406</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1406</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1293</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1290</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1290</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1287</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1287</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1287</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1282</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1282</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1280</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1280</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1280</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1280</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1278</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1278</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1277</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1277</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1274</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1184</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1184</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1183</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1183</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1177</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1176</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1175</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1172</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1172</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1170</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1166</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1162</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1161</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1159</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1159</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1157</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1154</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1154</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1154</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1151</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1149</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1146</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1145</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1144</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1143</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1143</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1143</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1143</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1141</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1138</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1138</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1138</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1135</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1133</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1125</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1119</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1118</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1117</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1092</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_005352862.1">
+  <data key="d0">7.386e-304</data>
+  <data key="d1">947</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_002308478.1">
+  <data key="d0">2.2739999999999999e-299</data>
+  <data key="d1">934</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_005352880.1">
+  <data key="d0">2.036e-298</data>
+  <data key="d1">931</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_005352845.1">
+  <data key="d0">3.809e-298</data>
+  <data key="d1">930</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_002308496.1">
+  <data key="d0">2.232e-296</data>
+  <data key="d1">925</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_005352853.1">
+  <data key="d0">4.175e-296</data>
+  <data key="d1">925</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_005352837.1">
+  <data key="d0">4.175e-296</data>
+  <data key="d1">925</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009513020.1">
+  <data key="d0">7.809e-296</data>
+  <data key="d1">924</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_002308505.1">
+  <data key="d0">1.068e-295</data>
+  <data key="d1">923</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_005352870.1">
+  <data key="d0">1.8319999999999999e-283</data>
+  <data key="d1">888</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010799913.1">
+  <data key="d0">7.42e-193</data>
+  <data key="d1">624</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755843.1">
+  <data key="d0">1.4769999999999998e-41</data>
+  <data key="d1">165</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009408170.1">
+  <data key="d0">2.5779999999999996e-41</data>
+  <data key="d1">164</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009408168.1">
+  <data key="d0">2.5779999999999996e-41</data>
+  <data key="d1">164</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009052475.1">
+  <data key="d0">3.406e-41</data>
+  <data key="d1">164</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755877.1">
+  <data key="d0">9.24e-36</data>
+  <data key="d1">146</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_008798230.1">
+  <data key="d0">1.123e-34</data>
+  <data key="d1">142</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009505581.1">
+  <data key="d0">2.582e-34</data>
+  <data key="d1">141</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800022.1">
+  <data key="d0">2.1820000000000002e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800020.1">
+  <data key="d0">2.1820000000000002e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755883.1">
+  <data key="d0">2.879e-32</data>
+  <data key="d1">134</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009666299.1">
+  <data key="d0">2.644e-31</data>
+  <data key="d1">131</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009380535.1">
+  <data key="d0">6.070000000000001e-31</data>
+  <data key="d1">130</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_803213.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009344970.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800007.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800005.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_337905.2">
+  <data key="d0">1.685e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800878.1">
+  <data key="d0">2.223e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800876.1">
+  <data key="d0">2.223e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009130642.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009130641.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009142787.1">
+  <data key="d0">8.876e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800870.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800868.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009666260.1">
+  <data key="d0">1.864e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009551698.1">
+  <data key="d0">2.459e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009551696.1">
+  <data key="d0">2.459e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010801050.1">
+  <data key="d0">8.969e-26</data>
+  <data key="d1">113</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800379.1">
+  <data key="d0">8.197000000000001e-25</data>
+  <data key="d1">110</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_007697629.1">
+  <data key="d0">8.197000000000001e-25</data>
+  <data key="d1">110</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800405.1">
+  <data key="d0">1.081e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800375.1">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_004598981.2">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009666293.1">
+  <data key="d0">1.879e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009448185.1">
+  <data key="d0">5.679e-24</data>
+  <data key="d1">107</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009505590.1">
+  <data key="d0">9.872e-24</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_007697636.1">
+  <data key="d0">9.872e-24</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009666297.1">
+  <data key="d0">1.716e-23</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_004767305.1">
+  <data key="d0">1.716e-23</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009333345.1">
+  <data key="d0">5.1849999999999996e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009505587.1">
+  <data key="d0">1.188e-22</data>
+  <data key="d1">103</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009026378.1">
+  <data key="d0">2.0649999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800014.1">
+  <data key="d0">1.429e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010800012.1">
+  <data key="d0">1.429e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_010087319.1">
+  <data key="d0">3.934e-20</data>
+  <data key="d1">94</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_007697642.1">
+  <data key="d0">1.188e-19</data>
+  <data key="d1">93</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009551452.1">
+  <data key="d0">5.067e-11</data>
+  <data key="d1">64</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009336549.1">
+  <data key="d0">1.052e-09</data>
+  <data key="d1">60</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009067063.1">
+  <data key="d0">2.184e-08</data>
+  <data key="d1">56</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009130631.2">
+  <data key="d0">5.415e-06</data>
+  <data key="d1">48</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009214659.1">
+  <data key="d0">2.83e-05</data>
+  <data key="d1">46</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009824957.1">
+  <data key="d0">3.728e-05</data>
+  <data key="d1">45</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755872.1">
+  <data key="d0">0.0001122</data>
+  <data key="d1">44</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009388590.1">
+  <data key="d0">0.0001479</data>
+  <data key="d1">43</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="YP_009755862.1">
+  <data key="d0">0.0007724</data>
+  <data key="d1">41</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1909</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1909</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1894</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1827</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1827</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1765</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1754</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1724</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1724</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1723</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1723</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1713</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1713</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1709</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1709</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1708</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1708</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1358</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1333</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1333</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1330</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1330</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1320</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1320</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1318</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1318</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1317</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1310</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1303</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1300</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1300</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1293</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1279</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1276</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1276</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1269</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1163</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1163</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1154</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1152</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1151</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1144</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1144</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1141</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1141</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1135</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1131</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1127</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1126</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1125</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1121</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1120</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1117</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1115</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1115</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1114</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1114</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1114</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1112</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1112</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1111</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1111</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1110</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1107</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1107</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1101</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1100</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1099</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1097</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1097</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1097</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1091</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1091</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1084</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1078</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1072</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1071</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1069</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1063</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1055</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_005352862.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1026</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_005352880.1">
+  <data key="d0">8.380000000000001e-308</data>
+  <data key="d1">959</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_002308478.1">
+  <data key="d0">4.0130000000000004e-307</data>
+  <data key="d1">957</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_005352845.1">
+  <data key="d0">1.922e-306</data>
+  <data key="d1">955</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_002308496.1">
+  <data key="d0">6.728e-306</data>
+  <data key="d1">953</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_002308505.1">
+  <data key="d0">1.722e-305</data>
+  <data key="d1">952</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009513020.1">
+  <data key="d0">2.355e-305</data>
+  <data key="d1">951</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_005352853.1">
+  <data key="d0">4.837e-303</data>
+  <data key="d1">945</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_005352837.1">
+  <data key="d0">1.2380000000000001e-302</data>
+  <data key="d1">944</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_005352870.1">
+  <data key="d0">5.21e-298</data>
+  <data key="d1">930</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010799913.1">
+  <data key="d0">9.131e-197</data>
+  <data key="d1">635</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755877.1">
+  <data key="d0">1.37e-40</data>
+  <data key="d1">162</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009344970.1">
+  <data key="d0">1.086e-37</data>
+  <data key="d1">152</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755883.1">
+  <data key="d0">1.6100000000000001e-35</data>
+  <data key="d1">145</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800022.1">
+  <data key="d0">2.805e-35</data>
+  <data key="d1">144</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800020.1">
+  <data key="d0">2.805e-35</data>
+  <data key="d1">144</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755843.1">
+  <data key="d0">1.033e-33</data>
+  <data key="d1">139</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009666299.1">
+  <data key="d0">7.199999999999999e-33</data>
+  <data key="d1">136</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800878.1">
+  <data key="d0">2.879e-32</data>
+  <data key="d1">134</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800876.1">
+  <data key="d0">2.879e-32</data>
+  <data key="d1">134</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009408170.1">
+  <data key="d0">6.614e-32</data>
+  <data key="d1">133</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009408168.1">
+  <data key="d0">6.614e-32</data>
+  <data key="d1">133</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009052475.1">
+  <data key="d0">8.726e-32</data>
+  <data key="d1">133</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800007.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009666260.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800375.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800005.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_007697629.1">
+  <data key="d0">1.685e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_008798230.1">
+  <data key="d0">1.685e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_004767305.1">
+  <data key="d0">2.223e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800870.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800868.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009666293.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009142787.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009551698.1">
+  <data key="d0">2.6860000000000003e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009551696.1">
+  <data key="d0">2.6860000000000003e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800405.1">
+  <data key="d0">4.673e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009448185.1">
+  <data key="d0">4.673e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_004598981.2">
+  <data key="d0">4.673e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009505587.1">
+  <data key="d0">1.414e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009505590.1">
+  <data key="d0">1.414e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009666297.1">
+  <data key="d0">1.414e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_007697636.1">
+  <data key="d0">1.864e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800379.1">
+  <data key="d0">2.966e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009026378.1">
+  <data key="d0">2.966e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009505581.1">
+  <data key="d0">3.912e-26</data>
+  <data key="d1">114</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009130642.1">
+  <data key="d0">5.1580000000000005e-26</data>
+  <data key="d1">114</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009130641.1">
+  <data key="d0">5.1580000000000005e-26</data>
+  <data key="d1">114</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800014.1">
+  <data key="d0">1.5600000000000002e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009380535.1">
+  <data key="d0">1.5600000000000002e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010800012.1">
+  <data key="d0">1.5600000000000002e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009333345.1">
+  <data key="d0">3.576e-25</data>
+  <data key="d1">111</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_337905.2">
+  <data key="d0">6.217e-25</data>
+  <data key="d1">110</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_007697642.1">
+  <data key="d0">9.872e-24</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010801050.1">
+  <data key="d0">6.836e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009553214.1">
+  <data key="d0">6.836e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_803213.1">
+  <data key="d0">9.011999999999999e-23</data>
+  <data key="d1">103</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_010087319.1">
+  <data key="d0">4.316e-21</data>
+  <data key="d1">98</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009121772.1">
+  <data key="d0">5.503e-09</data>
+  <data key="d1">58</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009551452.1">
+  <data key="d0">2.878e-08</data>
+  <data key="d1">55</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009130631.2">
+  <data key="d0">5.97e-07</data>
+  <data key="d1">51</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009344807.1">
+  <data key="d0">7.133e-06</data>
+  <data key="d1">48</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755872.1">
+  <data key="d0">1.631e-05</data>
+  <data key="d1">46</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="YP_009755862.1">
+  <data key="d0">4.91e-05</data>
+  <data key="d1">45</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1923</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1923</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1873</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1666</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1665</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1608</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1597</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1597</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1596</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1596</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1590</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1589</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1588</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1587</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1585</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1579</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1574</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1568</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1558</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1542</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1539</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1539</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1538</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1538</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1528</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1526</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1519</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1469</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1466</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1465</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1461</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1461</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1453</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1427</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1323</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1318</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1212</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1154</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1154</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1151</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1150</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1143</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1131</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1131</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1118</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1118</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1118</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1116</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1116</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1116</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1116</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1115</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1114</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1111</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1109</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1109</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1103</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1103</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1098</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1098</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1097</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1096</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1095</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1094</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1094</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1091</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1091</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1089</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1089</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1082</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1082</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1077</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1077</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1037</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_005352862.1">
+  <data key="d0">8.104e-302</data>
+  <data key="d1">941</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_005352845.1">
+  <data key="d0">2.732e-295</data>
+  <data key="d1">922</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_005352837.1">
+  <data key="d0">1.307e-294</data>
+  <data key="d1">920</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009513020.1">
+  <data key="d0">2.445e-294</data>
+  <data key="d1">919</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_002308496.1">
+  <data key="d0">6.255e-294</data>
+  <data key="d1">918</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_002308505.1">
+  <data key="d0">1.6e-293</data>
+  <data key="d1">917</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_002308478.1">
+  <data key="d0">1.281e-291</data>
+  <data key="d1">912</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_005352853.1">
+  <data key="d0">4.0080000000000004e-290</data>
+  <data key="d1">907</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_005352870.1">
+  <data key="d0">1.121e-287</data>
+  <data key="d1">900</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_005352880.1">
+  <data key="d0">2.097e-287</data>
+  <data key="d1">899</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010799913.1">
+  <data key="d0">2.696e-190</data>
+  <data key="d1">616</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755877.1">
+  <data key="d0">2.705e-38</data>
+  <data key="d1">154</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755843.1">
+  <data key="d0">1.4329999999999999e-37</data>
+  <data key="d1">152</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800022.1">
+  <data key="d0">4.3549999999999995e-37</data>
+  <data key="d1">150</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800020.1">
+  <data key="d0">4.3549999999999995e-37</data>
+  <data key="d1">150</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009344970.1">
+  <data key="d0">3.043e-36</data>
+  <data key="d1">147</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009408170.1">
+  <data key="d0">2.375e-33</data>
+  <data key="d1">138</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009408168.1">
+  <data key="d0">2.375e-33</data>
+  <data key="d1">138</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009666299.1">
+  <data key="d0">4.1349999999999996e-33</data>
+  <data key="d1">137</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009052475.1">
+  <data key="d0">3.488e-31</data>
+  <data key="d1">131</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_803213.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_008798230.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009505581.1">
+  <data key="d0">4.22e-30</data>
+  <data key="d1">127</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009130642.1">
+  <data key="d0">9.687e-30</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009130641.1">
+  <data key="d0">9.687e-30</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800007.1">
+  <data key="d0">1.278e-29</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800005.1">
+  <data key="d0">1.278e-29</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009142787.1">
+  <data key="d0">5.101999999999999e-29</data>
+  <data key="d1">124</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_337905.2">
+  <data key="d0">1.5440000000000001e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800878.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800876.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800870.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800868.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009380535.1">
+  <data key="d0">4.673e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009551698.1">
+  <data key="d0">3.243e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009551696.1">
+  <data key="d0">3.243e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755883.1">
+  <data key="d0">3.243e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009666260.1">
+  <data key="d0">4.276e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800014.1">
+  <data key="d0">2.478e-24</data>
+  <data key="d1">108</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800012.1">
+  <data key="d0">2.478e-24</data>
+  <data key="d1">108</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010801050.1">
+  <data key="d0">5.679e-24</data>
+  <data key="d1">107</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800405.1">
+  <data key="d0">9.011999999999999e-23</data>
+  <data key="d1">103</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800379.1">
+  <data key="d0">2.7219999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009666293.1">
+  <data key="d0">6.238e-22</data>
+  <data key="d1">100</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800375.1">
+  <data key="d0">8.222999999999999e-22</data>
+  <data key="d1">100</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_007697629.1">
+  <data key="d0">1.884e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009333345.1">
+  <data key="d0">2.483e-21</data>
+  <data key="d1">98</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009505587.1">
+  <data key="d0">3.274e-21</data>
+  <data key="d1">98</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009666297.1">
+  <data key="d0">3.274e-21</data>
+  <data key="d1">98</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009448185.1">
+  <data key="d0">3.934e-20</data>
+  <data key="d1">94</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009505590.1">
+  <data key="d0">3.934e-20</data>
+  <data key="d1">94</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_007697636.1">
+  <data key="d0">2.064e-19</data>
+  <data key="d1">92</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_004767305.1">
+  <data key="d0">4.726e-19</data>
+  <data key="d1">91</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009026378.1">
+  <data key="d0">8.21e-19</data>
+  <data key="d1">90</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_004598981.2">
+  <data key="d0">5.673e-18</data>
+  <data key="d1">87</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010087319.1">
+  <data key="d0">6.195e-16</data>
+  <data key="d1">81</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009553214.1">
+  <data key="d0">2.462e-15</data>
+  <data key="d1">79</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_007697642.1">
+  <data key="d0">7.426e-15</data>
+  <data key="d1">77</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="NP_066135.1">
+  <data key="d0">2.878e-08</data>
+  <data key="d1">55</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009505548.1">
+  <data key="d0">4.995e-08</data>
+  <data key="d1">55</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_010800854.1">
+  <data key="d0">1.505e-07</data>
+  <data key="d1">53</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009221993.1">
+  <data key="d0">1.238e-05</data>
+  <data key="d1">47</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009825018.1">
+  <data key="d0">0.0001122</data>
+  <data key="d1">44</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="YP_009755862.1">
+  <data key="d0">0.0007724</data>
+  <data key="d1">41</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1926</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1914</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1760</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1728</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1724</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1675</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1660</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1660</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1647</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1640</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1638</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1634</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1627</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1622</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1622</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1618</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1617</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1614</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1598</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1585</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1570</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1568</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1555</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1549</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1536</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1525</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1525</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1495</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1493</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1489</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1486</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1473</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1463</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1446</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1347</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1346</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1227</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1184</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1184</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1177</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1171</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1171</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1159</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1155</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1155</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1153</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1153</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1153</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1150</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1149</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1140</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1139</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1139</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1139</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1138</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1138</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1131</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1127</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1124</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1124</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1122</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1109</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1047</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_005352862.1">
+  <data key="d0">2.232e-296</data>
+  <data key="d1">925</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_002308496.1">
+  <data key="d0">1.917e-289</data>
+  <data key="d1">905</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_005352837.1">
+  <data key="d0">4.903e-289</data>
+  <data key="d1">904</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_002308478.1">
+  <data key="d0">3.207e-288</data>
+  <data key="d1">902</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_005352870.1">
+  <data key="d0">1.534e-287</data>
+  <data key="d1">900</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_005352880.1">
+  <data key="d0">2.5639999999999996e-286</data>
+  <data key="d1">896</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_002308505.1">
+  <data key="d0">2.5639999999999996e-286</data>
+  <data key="d1">896</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_005352845.1">
+  <data key="d0">2.293e-285</data>
+  <data key="d1">893</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009513020.1">
+  <data key="d0">8.017e-285</data>
+  <data key="d1">892</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_005352853.1">
+  <data key="d0">1.8319999999999999e-283</data>
+  <data key="d1">888</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010799913.1">
+  <data key="d0">1.342e-199</data>
+  <data key="d1">644</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755877.1">
+  <data key="d0">1.37e-40</data>
+  <data key="d1">162</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755843.1">
+  <data key="d0">1.323e-36</data>
+  <data key="d1">149</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800022.1">
+  <data key="d0">9.24e-36</data>
+  <data key="d1">146</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800020.1">
+  <data key="d0">9.24e-36</data>
+  <data key="d1">146</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009344970.1">
+  <data key="d0">5.9340000000000006e-34</data>
+  <data key="d1">140</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009130641.1">
+  <data key="d0">3.134e-33</data>
+  <data key="d1">138</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009130642.1">
+  <data key="d0">4.1349999999999996e-33</data>
+  <data key="d1">137</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_803213.1">
+  <data key="d0">5.456e-33</data>
+  <data key="d1">137</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009052475.1">
+  <data key="d0">1.654e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009408170.1">
+  <data key="d0">3.799e-32</data>
+  <data key="d1">134</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009408168.1">
+  <data key="d0">3.799e-32</data>
+  <data key="d1">134</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009666299.1">
+  <data key="d0">8.726e-32</data>
+  <data key="d1">133</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009505581.1">
+  <data key="d0">8.726e-32</data>
+  <data key="d1">133</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009380535.1">
+  <data key="d0">7.344e-30</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800375.1">
+  <data key="d0">9.687e-30</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_008798230.1">
+  <data key="d0">1.278e-29</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_337905.2">
+  <data key="d0">1.278e-29</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755883.1">
+  <data key="d0">2.933e-29</data>
+  <data key="d1">124</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009551698.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009551696.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800878.1">
+  <data key="d0">1.5440000000000001e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800876.1">
+  <data key="d0">1.5440000000000001e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800007.1">
+  <data key="d0">1.072e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800005.1">
+  <data key="d0">1.072e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800405.1">
+  <data key="d0">1.293e-26</data>
+  <data key="d1">116</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800379.1">
+  <data key="d0">2.249e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009142787.1">
+  <data key="d0">5.1580000000000005e-26</data>
+  <data key="d1">114</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009666260.1">
+  <data key="d0">6.802e-26</data>
+  <data key="d1">113</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010801050.1">
+  <data key="d0">2.0560000000000001e-25</data>
+  <data key="d1">112</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_007697629.1">
+  <data key="d0">4.715e-25</data>
+  <data key="d1">111</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800870.1">
+  <data key="d0">6.217e-25</data>
+  <data key="d1">110</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800868.1">
+  <data key="d0">6.217e-25</data>
+  <data key="d1">110</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009666293.1">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009448185.1">
+  <data key="d0">3.267e-24</data>
+  <data key="d1">108</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_004767305.1">
+  <data key="d0">3.267e-24</data>
+  <data key="d1">108</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009666297.1">
+  <data key="d0">4.307e-24</data>
+  <data key="d1">108</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009333345.1">
+  <data key="d0">1.3019999999999999e-23</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009505590.1">
+  <data key="d0">2.263e-23</data>
+  <data key="d1">105</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_004598981.2">
+  <data key="d0">2.983e-23</data>
+  <data key="d1">105</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009505587.1">
+  <data key="d0">6.836e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_007697636.1">
+  <data key="d0">6.836e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009026378.1">
+  <data key="d0">1.884e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009553214.1">
+  <data key="d0">7.499e-21</data>
+  <data key="d1">97</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_007697642.1">
+  <data key="d0">9.886e-21</data>
+  <data key="d1">96</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800014.1">
+  <data key="d0">1.718e-20</data>
+  <data key="d1">96</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010800012.1">
+  <data key="d0">1.718e-20</data>
+  <data key="d1">96</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_010087319.1">
+  <data key="d0">8.163e-16</data>
+  <data key="d1">80</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009505548.1">
+  <data key="d0">2.184e-08</data>
+  <data key="d1">56</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009666324.1">
+  <data key="d0">1.036e-06</data>
+  <data key="d1">50</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009825018.1">
+  <data key="d0">4.111e-06</data>
+  <data key="d1">48</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755862.1">
+  <data key="d0">5.415e-06</data>
+  <data key="d1">48</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009118960.1">
+  <data key="d0">1.631e-05</data>
+  <data key="d1">46</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009130631.2">
+  <data key="d0">0.0002566</data>
+  <data key="d1">42</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="YP_009755872.1">
+  <data key="d0">0.0003379</data>
+  <data key="d1">42</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1910</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1910</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1900</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1900</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1895</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1895</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1879</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1879</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1753</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1753</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1751</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1751</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1743</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1737</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1733</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1728</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1728</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1363</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1351</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1351</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1349</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1349</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1345</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1345</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1343</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1343</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1341</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1315</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1310</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1302</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1302</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1301</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1283</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1283</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1279</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1277</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1181</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1181</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1177</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1172</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1151</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1151</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1141</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1133</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1130</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1127</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1127</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1124</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1123</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1120</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1120</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1117</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1116</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1115</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1113</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1113</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1112</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1110</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1110</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1108</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1107</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1103</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1095</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1094</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1090</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1085</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1084</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1084</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1083</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1083</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1080</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1079</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1068</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1053</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_005352862.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1013</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_002308478.1">
+  <data key="d0">4.077e-310</data>
+  <data key="d1">965</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_005352880.1">
+  <data key="d0">1.043e-309</data>
+  <data key="d1">964</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009513020.1">
+  <data key="d0">1.953e-309</data>
+  <data key="d1">963</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_002308505.1">
+  <data key="d0">1.953e-309</data>
+  <data key="d1">963</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_005352853.1">
+  <data key="d0">9.352e-309</data>
+  <data key="d1">961</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_005352845.1">
+  <data key="d0">3.274e-308</data>
+  <data key="d1">960</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_002308496.1">
+  <data key="d0">1.1460000000000002e-307</data>
+  <data key="d1">958</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_005352837.1">
+  <data key="d0">1.259e-305</data>
+  <data key="d1">952</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_005352870.1">
+  <data key="d0">1.089e-298</data>
+  <data key="d1">932</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010799913.1">
+  <data key="d0">1.611e-198</data>
+  <data key="d1">640</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755877.1">
+  <data key="d0">8.895999999999999e-39</data>
+  <data key="d1">156</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755843.1">
+  <data key="d0">4.3549999999999995e-37</data>
+  <data key="d1">150</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009344970.1">
+  <data key="d0">1.002e-36</data>
+  <data key="d1">149</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800022.1">
+  <data key="d0">1.6100000000000001e-35</data>
+  <data key="d1">145</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800020.1">
+  <data key="d0">1.6100000000000001e-35</data>
+  <data key="d1">145</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755883.1">
+  <data key="d0">6.448e-35</data>
+  <data key="d1">143</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009666299.1">
+  <data key="d0">4.4970000000000006e-34</data>
+  <data key="d1">140</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009052475.1">
+  <data key="d0">1.654e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009408170.1">
+  <data key="d0">2.1820000000000002e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009408168.1">
+  <data key="d0">2.1820000000000002e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800375.1">
+  <data key="d0">1.1510000000000001e-31</data>
+  <data key="d1">132</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009666260.1">
+  <data key="d0">8.008e-31</data>
+  <data key="d1">130</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_007697629.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009448185.1">
+  <data key="d0">3.868e-29</data>
+  <data key="d1">124</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800878.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800876.1">
+  <data key="d0">6.728999999999999e-29</data>
+  <data key="d1">123</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800007.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009551698.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009551696.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800005.1">
+  <data key="d0">2.037e-28</data>
+  <data key="d1">122</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009505587.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009505590.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_004767305.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009142787.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_004598981.2">
+  <data key="d0">1.414e-27</data>
+  <data key="d1">119</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800379.1">
+  <data key="d0">3.243e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009666293.1">
+  <data key="d0">3.243e-27</data>
+  <data key="d1">118</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009505581.1">
+  <data key="d0">4.276e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009130642.1">
+  <data key="d0">7.438e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009026378.1">
+  <data key="d0">7.438e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009130641.1">
+  <data key="d0">7.438e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800405.1">
+  <data key="d0">9.808e-27</data>
+  <data key="d1">116</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_008798230.1">
+  <data key="d0">9.808e-27</data>
+  <data key="d1">116</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009333345.1">
+  <data key="d0">1.7060000000000002e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009666297.1">
+  <data key="d0">1.7060000000000002e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_007697636.1">
+  <data key="d0">1.7060000000000002e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800870.1">
+  <data key="d0">2.966e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800868.1">
+  <data key="d0">2.966e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_007697642.1">
+  <data key="d0">1.183e-25</data>
+  <data key="d1">113</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009380535.1">
+  <data key="d0">3.576e-25</data>
+  <data key="d1">111</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_337905.2">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010801050.1">
+  <data key="d0">2.478e-24</data>
+  <data key="d1">108</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010087319.1">
+  <data key="d0">1.716e-23</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800014.1">
+  <data key="d0">3.933e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_010800012.1">
+  <data key="d0">3.933e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009553214.1">
+  <data key="d0">1.884e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_803213.1">
+  <data key="d0">3.274e-21</data>
+  <data key="d1">98</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009551452.1">
+  <data key="d0">2.438e-12</data>
+  <data key="d1">69</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009121772.1">
+  <data key="d0">3.845e-11</data>
+  <data key="d1">65</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009130631.2">
+  <data key="d0">1.258e-08</data>
+  <data key="d1">57</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755872.1">
+  <data key="d0">2.369e-06</data>
+  <data key="d1">49</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009344807.1">
+  <data key="d0">1.631e-05</data>
+  <data key="d1">46</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755862.1">
+  <data key="d0">8.521e-05</data>
+  <data key="d1">44</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="YP_009755852.1">
+  <data key="d0">0.0002566</data>
+  <data key="d1">42</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009725307.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1934</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009724389.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1934</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_828849.7">
+  <data key="d0">0.0</data>
+  <data key="d1">1872</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_003858583.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1855</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009072438.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1541</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009824989.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1434</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009924393.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1432</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001039970.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1432</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009273004.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1424</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009513008.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1420</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009944349.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1408</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001039961.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1408</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009361856.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1406</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009047223.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1403</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009047202.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1403</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009944302.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1401</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_007188577.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1401</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009944320.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1400</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001039952.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1400</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009924378.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1292</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755832.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1292</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_003029844.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1292</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_459941.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1290</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_173236.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1290</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009924352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1288</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009824978.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1288</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009113022.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1286</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009555260.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1285</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009555238.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1285</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009924419.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1281</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_005454239.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1281</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009915683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1277</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_150073.3">
+  <data key="d0">0.0</data>
+  <data key="d1">1277</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_045299.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1277</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_001012452.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1276</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_209229.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1276</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_740629.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1191</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_066134.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1191</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755920.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1189</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755895.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1189</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001941164.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1182</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010799342.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1182</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001941185.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001351683.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1178</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009200734.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1172</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009825029.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1171</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009825006.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1171</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001552234.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1170</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010037467.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1169</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001876435.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010799729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009824965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_598309.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1164</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009199608.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1163</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010037559.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1161</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755889.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1159</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009019180.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1159</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_839965.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1158</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_004070193.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1156</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009256195.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1155</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_006908641.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1155</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009199789.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1153</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_008439222.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1152</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010037473.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1152</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009328933.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1152</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_008439200.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1152</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_835352.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1150</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_073549.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1150</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="NP_058422.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009194637.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001718610.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010799723.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1146</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_001718603.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1146</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009201729.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1145</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009199241.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010115715.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1142</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_003766.2">
+  <data key="d0">0.0</data>
+  <data key="d1">1138</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755838.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1135</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009336483.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1134</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009380520.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1129</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009389424.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1126</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009824973.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1126</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009824996.1">
+  <data key="d0">0.0</data>
+  <data key="d1">1099</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_005352862.1">
+  <data key="d0">3.654e-309</data>
+  <data key="d1">962</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_002308478.1">
+  <data key="d0">9.049e-303</data>
+  <data key="d1">944</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_005352880.1">
+  <data key="d0">7.258e-301</data>
+  <data key="d1">938</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_002308505.1">
+  <data key="d0">1.358e-300</data>
+  <data key="d1">938</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_005352845.1">
+  <data key="d0">3.474e-300</data>
+  <data key="d1">936</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009513020.1">
+  <data key="d0">4.752e-300</data>
+  <data key="d1">936</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_002308496.1">
+  <data key="d0">4.752e-300</data>
+  <data key="d1">936</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_005352853.1">
+  <data key="d0">3.111e-299</data>
+  <data key="d1">934</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_005352837.1">
+  <data key="d0">1.489e-298</data>
+  <data key="d1">932</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_005352870.1">
+  <data key="d0">3.507e-286</data>
+  <data key="d1">896</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010799913.1">
+  <data key="d0">1.152e-193</data>
+  <data key="d1">626</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755843.1">
+  <data key="d0">9.773e-44</data>
+  <data key="d1">172</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009408170.1">
+  <data key="d0">5.21e-43</data>
+  <data key="d1">169</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009408168.1">
+  <data key="d0">5.21e-43</data>
+  <data key="d1">169</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009052475.1">
+  <data key="d0">8.46e-42</data>
+  <data key="d1">166</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755877.1">
+  <data key="d0">1.7460000000000002e-36</data>
+  <data key="d1">148</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_008798230.1">
+  <data key="d0">7e-36</data>
+  <data key="d1">146</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009505581.1">
+  <data key="d0">1.6100000000000001e-35</data>
+  <data key="d1">145</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755883.1">
+  <data key="d0">1.7999999999999998e-33</data>
+  <data key="d1">138</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800022.1">
+  <data key="d0">1.654e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800020.1">
+  <data key="d0">1.654e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009344970.1">
+  <data key="d0">2.1820000000000002e-32</data>
+  <data key="d1">135</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_803213.1">
+  <data key="d0">5.013e-32</data>
+  <data key="d1">134</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009380535.1">
+  <data key="d0">1.519e-31</data>
+  <data key="d1">132</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009666299.1">
+  <data key="d0">2.004e-31</data>
+  <data key="d1">132</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_337905.2">
+  <data key="d0">8.008e-31</data>
+  <data key="d1">130</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009130642.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800878.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009130641.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800876.1">
+  <data key="d0">1.056e-30</data>
+  <data key="d1">129</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800870.1">
+  <data key="d0">1.278e-29</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800868.1">
+  <data key="d0">1.278e-29</data>
+  <data key="d1">126</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800007.1">
+  <data key="d0">2.223e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800005.1">
+  <data key="d0">2.223e-29</data>
+  <data key="d1">125</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009666260.1">
+  <data key="d0">5.101999999999999e-29</data>
+  <data key="d1">124</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009142787.1">
+  <data key="d0">3.543e-28</data>
+  <data key="d1">121</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800405.1">
+  <data key="d0">4.276e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009551698.1">
+  <data key="d0">5.64e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009551696.1">
+  <data key="d0">5.64e-27</data>
+  <data key="d1">117</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010801050.1">
+  <data key="d0">1.293e-26</data>
+  <data key="d1">116</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_007697629.1">
+  <data key="d0">2.966e-26</data>
+  <data key="d1">115</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800375.1">
+  <data key="d0">2.712e-25</data>
+  <data key="d1">111</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009666297.1">
+  <data key="d0">3.576e-25</data>
+  <data key="d1">111</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009448185.1">
+  <data key="d0">8.197000000000001e-25</data>
+  <data key="d1">110</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009666293.1">
+  <data key="d0">1.081e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009505590.1">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_004767305.1">
+  <data key="d0">1.425e-24</data>
+  <data key="d1">109</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009505587.1">
+  <data key="d0">5.679e-24</data>
+  <data key="d1">107</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_004598981.2">
+  <data key="d0">5.679e-24</data>
+  <data key="d1">107</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_007697636.1">
+  <data key="d0">1.716e-23</data>
+  <data key="d1">106</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800379.1">
+  <data key="d0">2.983e-23</data>
+  <data key="d1">105</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009026378.1">
+  <data key="d0">6.836e-23</data>
+  <data key="d1">104</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009333345.1">
+  <data key="d0">2.0649999999999997e-22</data>
+  <data key="d1">102</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800014.1">
+  <data key="d0">1.429e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010800012.1">
+  <data key="d0">1.429e-21</data>
+  <data key="d1">99</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_007697642.1">
+  <data key="d0">6.836000000000001e-20</data>
+  <data key="d1">94</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_010087319.1">
+  <data key="d0">1.566e-19</data>
+  <data key="d1">93</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009551452.1">
+  <data key="d0">4.233e-12</data>
+  <data key="d1">68</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009336549.1">
+  <data key="d0">4.601e-10</data>
+  <data key="d1">61</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009067063.1">
+  <data key="d0">2.184e-08</data>
+  <data key="d1">56</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009130631.2">
+  <data key="d0">1.238e-05</data>
+  <data key="d1">47</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009214659.1">
+  <data key="d0">2.83e-05</data>
+  <data key="d1">46</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755872.1">
+  <data key="d0">8.521e-05</data>
+  <data key="d1">44</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009824957.1">
+  <data key="d0">8.521e-05</data>
+  <data key="d1">44</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009388590.1">
+  <data key="d0">0.0002566</data>
+  <data key="d1">42</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="YP_009755862.1">
+  <data key="d0">0.0003379</data>
+  <data key="d1">42</data>
+</edge>
+</graph></graphml>

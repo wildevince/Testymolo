@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="bit_score" attr.type="long"/>
+<key id="d0" for="edge" attr.name="e_value" attr.type="double"/>
+<graph edgedefault="directed"><node id="F189.264.339.nsp12.[1-931]"/>
+<node id="F189.68.286.pp1ab.[4370-5301]"/>
+<node id="F189.31.102.pp1ab.[4457-5384]"/>
+<node id="F189.56.238..[4370-5297]"/>
+<node id="F189.87.322.nsp9.[1-940]"/>
+<node id="F189.50.194..[4101-5027]"/>
+<node id="F189.23.58..[4069-4995]"/>
+<node id="F189.42.149..[3999-4928]"/>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1960</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1902</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1307</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1297</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1210</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1177</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1171</data>
+</edge>
+<edge source="F189.264.339.nsp12.[1-931]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1962</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1901</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1306</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1296</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1203</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1173</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1169</data>
+</edge>
+<edge source="F189.68.286.pp1ab.[4370-5301]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1162</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1931</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1744</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1304</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1304</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1200</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1147</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1146</data>
+</edge>
+<edge source="F189.31.102.pp1ab.[4457-5384]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1106</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1933</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1744</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1294</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1294</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1182</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1156</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1141</data>
+</edge>
+<edge source="F189.56.238..[4370-5297]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1111</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1972</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1212</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1206</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1205</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1186</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1167</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1152</data>
+</edge>
+<edge source="F189.87.322.nsp9.[1-940]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1150</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1950</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1547</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1516</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1183</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1180</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1165</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1156</data>
+</edge>
+<edge source="F189.50.194..[4101-5027]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1156</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1947</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1542</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1488</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1171</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1170</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1115</data>
+</edge>
+<edge source="F189.23.58..[4069-4995]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1110</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.42.149..[3999-4928]">
+  <data key="d0">0.0</data>
+  <data key="d1">1951</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.50.194..[4101-5027]">
+  <data key="d0">0.0</data>
+  <data key="d1">1508</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.23.58..[4069-4995]">
+  <data key="d0">0.0</data>
+  <data key="d1">1485</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.87.322.nsp9.[1-940]">
+  <data key="d0">0.0</data>
+  <data key="d1">1162</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.264.339.nsp12.[1-931]">
+  <data key="d0">0.0</data>
+  <data key="d1">1162</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.68.286.pp1ab.[4370-5301]">
+  <data key="d0">0.0</data>
+  <data key="d1">1160</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.31.102.pp1ab.[4457-5384]">
+  <data key="d0">0.0</data>
+  <data key="d1">1148</data>
+</edge>
+<edge source="F189.42.149..[3999-4928]" target="F189.56.238..[4370-5297]">
+  <data key="d0">0.0</data>
+  <data key="d1">1141</data>
+</edge>
+</graph></graphml>
